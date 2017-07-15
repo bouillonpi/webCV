@@ -95,9 +95,7 @@
 @media screen and (min-width: 1300px) {
 
     .home-intro .key-info .col p {
-        width: 70%;
-        margin: 0 auto;
-        color: #797979;
+        width: 65%;
     }
 
 }
