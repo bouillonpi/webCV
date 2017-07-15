@@ -14,9 +14,17 @@
 
     .home-hero {
         background: #80b3de;
-        background-size: cover;
-        height:80%;
+        height: auto;
         width:100%;
+        margin-top: -70px;
+    }
+
+    .home-hero .hero-content {
+        position: relative;
+        margin: auto;
+        width: 100%;
+        height: auto;
+        margin-top: 70px;
     }
 
     .home-hero h1 {
@@ -26,6 +34,10 @@
     .home-hero h2 {
         margin: 0 auto;
         width: 80%;
+    }
+
+    .home-hero .call-to-action {
+        padding-bottom: 50px;
     }
 
 }

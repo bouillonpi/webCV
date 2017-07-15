@@ -1,7 +1,9 @@
 nav {
+    position: relative;
     height: 70px;
     line-height: 70px;
     background: #fff;
+    box-shadow: none;
 }
 
 nav .nav-wrapper {
