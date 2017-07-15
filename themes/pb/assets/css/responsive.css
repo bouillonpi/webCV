@@ -82,11 +82,22 @@
 /*--------------------------------------------------------------------------*/
 
 
-/* NAVBAR RESPONSIVE */
+/* NAVBAR ITEM SHORTER */
 @media screen and (max-width: 1200px) {
 
     nav .conception {
         display: none;
+    }
+
+}
+
+/* BIG SCREEN */
+@media screen and (min-width: 1300px) {
+
+    .home-intro .key-info .col p {
+        width: 70%;
+        margin: 0 auto;
+        color: #797979;
     }
 
 }
