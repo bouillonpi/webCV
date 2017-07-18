@@ -265,3 +265,33 @@
     padding-right: 15px;
 }
 
+/* ---------------------------------------------- */
+
+.home-timeline {
+    background: #484848;
+}
+
+.home-timeline > #cd-timeline {
+    width: 85%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.home-timeline > .block-title {
+    width: 450px;
+    margin: 0 auto;
+    padding-top: 50px;
+    margin-bottom: -25px;
+}
+
+.home-timeline > .block-title > h1 {
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-family: ProximaThin, serif;
+    font-size: 14px;
+    padding: 15px;
+    background: #484848;
+    color: #fff;
+    border: 2px solid #fff;
+}
