@@ -60,6 +60,10 @@
 
 @media screen and (max-width: 992px) {
 
+    .home-education .content-container {
+        width: 100%;
+    }
+
 }
 
 
