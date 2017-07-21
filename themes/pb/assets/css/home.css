@@ -154,7 +154,7 @@
 
 .home-intro .key-info {
     margin-top: 45px;
-    margin-bottom: 100px;
+    margin-bottom: 110px;
 }
 
 .home-intro .key-info .col {
@@ -186,12 +186,12 @@
 
 .home-education {
     background: #eaeaea;
-    margin-bottom: 200px;
 }
 
 .home-education > .container > .row {
     padding-top: 100px;
     padding-bottom: 100px;
+    margin-bottom: 0;
 }
 
 .home-education .cover-picture {
@@ -267,13 +267,125 @@
 
 /* ---------------------------------------------- */
 
+.home-award {
+    margin-bottom: 200px;
+    text-align: center;
+}
+
+.home-award > .container {
+    width: 75%;
+    margin: 0 auto;
+    max-width: inherit;
+}
+
+.home-award > .container > img {
+    margin: 0 auto;
+    margin-top: 90px;
+    width: 150px;
+}
+
+.home-award .block-title {
+    position: relative;
+    margin-top: 5px;
+}
+
+.home-award .block-title h1 {
+    position: relative;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-family: ProximaThin, serif;
+    font-size: 14px;
+    width: 485px;
+    margin: 0 auto;
+    margin-bottom: -1px;
+    padding: 15px;
+    background: #484848;
+    color: #fff;
+    z-index: 1;
+}
+
+.home-award .block-title .custom-line {
+    position: relative;
+    width: 70%;
+    margin: 0 auto;
+    border: 1px solid #cacaca;
+}
+
+.home-award .container-fluid {
+    text-align: center;
+    margin-top: 50px;
+    padding-bottom: 80px;
+}
+
+.home-award .cover-picture {
+    background: url(../img/IPB01.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height:50%;
+    min-height: 450px;
+    border: 5px solid #d4d4d4;
+}
+
+.home-award .content-container {
+    width: 90%;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.home-award h2 {
+    font-family: SourceSansProRegular, serif;
+    margin-top: -5px;
+    font-size: 15px;
+    color: #848484;
+}
+
+.home-award h2:first-of-type {
+    margin-top: 15px;
+}
+
+.home-award h2 i {
+    margin-right: 6px;
+}
+
+.home-award h2 a {
+    color: #80b5df;
+    text-decoration: none;
+}
+
+.home-award .cursus {
+    margin-top: 30px;
+    border-left: 5px solid #80b5df;
+    padding-top: 20px;
+    padding-bottom: 25px;
+}
+
+.home-award .cursus li {
+    font-family: SourceSansProRegular, serif;
+    margin-top: 15px;
+    margin-left: 20px;
+    color: #484848;
+}
+
+.home-award .cursus li:first-of-type {
+    margin-top: 0;
+}
+
+.home-award .cursus li span {
+    font-family: ProximaBold, sans-serif;
+    color: #484848;
+    padding-right: 15px;
+}
+
+/* ---------------------------------------------- */
+
 .home-timeline {
     background: #484848;
 }
 
 .home-timeline > #cd-timeline {
-    width: 85%;
-    max-width: 1200px;
+    width: 90%;
+    max-width: 1250px;
     margin: 0 auto;
 }
 
