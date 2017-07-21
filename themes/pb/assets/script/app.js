@@ -8,7 +8,8 @@ $( document ).ready(function(){
         'disableScrolling': true,
         'wrapAround': true,
         'fitImagesInViewport': true,
-        'albumLabel': "%1/%2"
+        'albumLabel': "%1/%2",
+        'scaleWidthPercentageForFitImageInViewport': 75
     })
 
 });

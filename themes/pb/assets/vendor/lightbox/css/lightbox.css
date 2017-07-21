@@ -103,6 +103,7 @@ body.lb-disable-scrolling {
   height: 100%;
   cursor: pointer;
   display: block;
+  z-index: 0;
 }
 
 .lb-nav a.lb-prev {
@@ -195,6 +196,7 @@ body.lb-disable-scrolling {
   -moz-transition: opacity 0.2s;
   -o-transition: opacity 0.2s;
   transition: opacity 0.2s;
+  z-index: 10;
 }
 
 .lb-data .lb-close:hover {

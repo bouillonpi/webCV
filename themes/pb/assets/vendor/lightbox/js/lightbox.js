@@ -48,6 +48,7 @@
         imageFadeDuration: 600,
         // maxWidth: 800,
         // maxHeight: 600,
+        scaleWidthPercentageForFitImageInViewport: 80,
         positionFromTop: 50,
         resizeDuration: 700,
         showImageNumberLabel: true,
@@ -305,7 +306,7 @@
                 // option than we need to size down while maintaining the aspect ratio.
                 if ((preloader.width > maxImageWidth) || (preloader.height > maxImageHeight)) {
                     if ((preloader.width / maxImageWidth) > (preloader.height / maxImageHeight)) {
-                        imageWidth  = maxImageWidth;
+                        imageWidth  = (self.options.scaleWidthPercentageForFitImageInViewport < 100 ) ? maxImageWidth * (self.options.scaleWidthPercentageForFitImageInViewport / 100) : maxImageWidth;
                         imageHeight = parseInt(preloader.height / (preloader.width / imageWidth), 10);
                         $image.width(imageWidth);
                         $image.height(imageHeight);
