@@ -350,7 +350,7 @@
 .home-award .container-fluid {
     text-align: center;
     margin-top: 50px;
-    padding-bottom: 85px;
+    padding-bottom: 105px;
 }
 
 .home-award .cover-picture {
@@ -475,41 +475,65 @@
 /* ---------------------------------------------- */
 
 .home-technology {
-    margin-bottom: 200px;
     text-align: center;
 }
 
 .home-technology > .container {
     width: 75%;
     margin: 0 auto;
-    padding-top: 50px;
+    padding-top: 100px;
+    padding-bottom: 50px;
 }
 
-.home-technology > .container > h1 {
+.home-technology .block-title {
+    position: relative;
+}
+
+.home-technology .block-title h1 {
     position: relative;
     text-transform: uppercase;
     letter-spacing: 5px;
-    font-family: ProximaThin, serif;
+    font-family: ProximaBold, serif;
     font-size: 14px;
-    width: 440px;
+    width: 370px;
+    margin: 0 auto;
+    margin-bottom: -2px;
     padding: 15px;
-    background: #484848;
-    color: #fff;
+    border: 2px solid #484848;
+    color: #484848;
     z-index: 1;
 }
 
+.home-technology .block-title .custom-line {
+    position: relative;
+    width: 70%;
+    margin: 0 auto;
+    border: 1px solid #484848;
+}
+
 .home-technology .technologies {
-    padding-top: 30px;
+    padding-top: 70px;
 }
 
 .home-technology .technology {
-    margin-bottom: 30px;
+    margin-bottom: 40px;
 }
 
 .home-technology .technology img {
-    width: 120px;
-    height: 120px;
+    width: 90px;
+    height: 90px;
     margin: 0 auto;
+}
+
+.home-technology .details {
+    width: 90%;
+    padding-top: 22px;
+    padding-bottom: 20px;
+    margin: 0 auto;
+    margin-top: -30px;
+    background: #eaeaea;
+    border: 1px solid rgba(72, 72, 72, 0.22);
+    border-bottom: transparent;
 }
 
 .home-technology .technology h1 {
@@ -526,4 +550,24 @@
     margin: 0 auto;
     font-family: SourceSansProRegular, serif;
     color: #848484;
+}
+
+.home-technology .technology ul {
+    width: 90%;
+    margin: 0 auto;
+    background: #484848;
+    padding-top: 16px;
+    padding-bottom: 18px;
+    color: rgba(255, 255, 255, 0.74);
+    text-align: left;
+}
+
+.home-technology .technology li {
+    font-family: SourceSansProRegular, serif;
+    padding-left: 40px;
+}
+
+.home-technology .technology li i {
+    font-size: 12px;
+    margin-right: 10px;
 }
