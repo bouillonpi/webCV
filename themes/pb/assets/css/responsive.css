@@ -64,6 +64,19 @@
         width: 100%;
     }
 
+    footer.page-footer {
+        text-align: center!important;
+    }
+
+    footer.page-footer p {
+        width: 90%;
+        margin: 0 auto;
+        text-align: center!important;
+    }
+
+    footer.page-footer > .container > .row > .col:not(:last-of-type) {
+        margin-bottom: 30px;
+    }
 }
 
 
