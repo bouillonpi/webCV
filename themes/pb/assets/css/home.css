@@ -306,6 +306,19 @@
 /* ---------------------------------------------- */
 /* ---------------------------------------------- */
 
+.home-picture-ipag {
+    background-image: url(../img/IPB/IPB01.jpg);
+    background-size:cover;
+    background-position-x: center;
+    background-position-y: top;
+    width:100%;
+    height:900px;
+    border-top: 5px solid #fff;
+}
+
+/* ---------------------------------------------- */
+/* ---------------------------------------------- */
+
 .home-award {
     background: #eaeaea;
     text-align: center;
@@ -319,8 +332,12 @@
 
 .home-award > .container > img {
     margin: 0 auto;
-    margin-top: 120px;
+    margin-top: 90px;
     width: 150px;
+}
+
+.home-award .row {
+    background: #d4d4d4;
 }
 
 .home-award .block-title {
@@ -357,9 +374,10 @@
 }
 
 .home-award .cover-picture {
-    background: url(../img/IPB/IPB01.jpg);
+    background: url(../img/IPB/IPB02.jpg);
     background-size: cover;
-    background-position: center;
+    background-position-x: right;
+    background-position-y: center;
     width: 100%;
     height:50%;
     min-height: 450px;
@@ -376,11 +394,11 @@
     font-family: SourceSansProRegular, serif;
     margin-top: -5px;
     font-size: 15px;
-    color: #848484;
+    color: #757575;
 }
 
 .home-award h2:first-of-type {
-    margin-top: 20px;
+    margin-top: 30px;
 }
 
 .home-award h2 i {
@@ -393,7 +411,7 @@
 }
 
 .home-award .details {
-    background: #dadada;
+    background: #eaeaea;
     margin-top: 35px;
     border-left: 5px solid #80b5df;
     padding-top: 25px;
@@ -586,8 +604,8 @@
 .home-international > .container {
     width: 75%;
     margin: 0 auto;
-    padding-top: 120px;
-    padding-bottom: 70px;
+    padding-top: 140px;
+    padding-bottom: 60px;
 }
 
 .home-international .block-title {
@@ -678,3 +696,48 @@
 /* ---------------------------------------------- */
 /* ---------------------------------------------- */
 
+.home-cool {
+    border-top: 10px solid #dadada;
+    background: #80b5df;
+    text-align: center;
+}
+
+.home-cool .row {
+    padding-top: 70px;
+    padding-bottom: 70px;
+    margin: 0;
+}
+
+.home-cool img {
+    width: 100%;
+    border: 6px solid #484848;
+}
+
+.home-cool h1 {
+    font-size: 25px;
+    font-family: SourceSansProRegular;
+    color: #ffffff;
+    margin: 0;
+}
+
+.home-cool .button-about {
+    display: inline-block;
+    margin-top: 30px;
+    background: #484848;
+    color: #fff;
+    font-size: 15px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-family: ProximaRegular, serif;
+    padding: 15px 50px;
+}
+
+.home-cool .button-about:hover {
+    background: #676767;
+    box-shadow: 0 2px 0 0 #fff;
+    -webkit-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    -ms-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    transition: all 0.4s;
+}
