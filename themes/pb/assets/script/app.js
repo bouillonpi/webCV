@@ -9,7 +9,7 @@ $( document ).ready(function(){
         'wrapAround': true,
         'fitImagesInViewport': true,
         'albumLabel': "%1/%2",
-        'scaleWidthPercentageForFitImageInViewport': 75
+        'scaleWidthPercentageForFitImageInViewport': 70
     })
 
 });
