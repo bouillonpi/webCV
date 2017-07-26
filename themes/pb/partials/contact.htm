@@ -1,0 +1,41 @@
+==
+
+<div class="contact-form">
+
+    <form class="flexiContactForm" role="form"
+          data-request="contactForm::onMailSent"
+          data-request-update="confirm: '.confirm-container'"
+          data-request-success="$('.home-contact').slideUp(700)">
+
+        <h1>Laissez-moi un message</h1>
+
+        <div class="form-groups">
+
+            <div class="input-field">
+                <input id="contact-name" type="text" name="name" required>
+                <label for="contact-name"><i class="fa fa-user-o"></i>Name</label>
+            </div>
+
+            <div class="input-field">
+                <input id="contact-email" type="email" name="email" required>
+                <label for="contact-email"><i class="fa fa-envelope-o"></i>Email</label>
+            </div>
+
+            <div class="input-field">
+                <input id="contact-subject" type="text" name="subject" required>
+                <label for="contact-subject"><i class="fa fa-bookmark-o"></i>Subject</label>
+            </div>
+
+            <div class="input-field">
+                <textarea id="contact-body" name="body" class="materialize-textarea" required></textarea>
+                <label for="contact-body"><i class="fa fa-file-text-o"></i>Message</label>
+            </div>
+
+            <div class="g-recaptcha" data-sitekey="6LetTCoUAAAAAJSHgaVBgZsg6h4ZeDLWOTiGVtFg"></div>
+
+            <button type="submit">Envoyer</button>
+        </div>
+    </form>
+
+</div>
+

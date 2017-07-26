@@ -1,4 +1,8 @@
+[contactForm]
+injectBootstrapAssets = 0
+injectMainScript = 0
 ==
+
 <html lang="fr">
 <head>
 
@@ -21,7 +25,8 @@
             'assets/css/home.css',
             'assets/css/app.css',
             'assets/css/responsive.css',
-            'assets/css/map.css'
+            'assets/css/map.css',
+            'assets/css/contact.css'
         ]|theme }}">
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -43,11 +48,13 @@
                     'assets/vendor/materialize/js/materialize.min.js',
                     'assets/vendor/lightbox/js/lightbox.js',
                     'assets/script/app.js',
-                    'assets/script/map.js'
                 ]|theme }}">
     </script>
 
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB5QmfXh-nRwGwz77KD_UAMQX2mrt4Ssm8&callback=initMap" async defer></script>
+    <script type="text/javascript" src="https://www.google.com/recaptcha/api.js?hl=fr" async defer></script>
+    <!-- Language codes : fr | en -->
+
+    {% framework %}
 
 </body>
 </html>

@@ -8,13 +8,21 @@
             <li {% if this.page.id == 'about' %}class="active"{% endif %}><a href="{{ 'about'|page }}">À propos</a></li>
         </ul>
         <ul class="right hide-on-med-and-down">
-            <li class="contact-button"><span>Contact</span></li>
+            <li class="contact-button"><a href="#contact-modal">Contact</a></li>
         </ul>
         <ul class="side-nav" id="mobile-demo">
             <li {% if this.page.id == 'home' %}class="active"{% endif %}><a href="{{ 'home'|page }}">Profil</a></li>
             <li {% if this.page.id == 'websites' %}class="active"{% endif %}><a href="{{ 'websites'|page }}">Sites web</a></li>
             <li {% if this.page.id == 'about' %}class="active"{% endif %}><a href="{{ 'about'|page }}">À propos</a></li>
-            <li class="contact-button"><span>Contact</span></li>
+            <li class="contact-button"><a href="#contact-modal">Contact</a></li>
         </ul>
     </div>
 </nav>
+
+<div id="contact-modal" class="modal">
+    <div class="modal-content">
+        <div class="row">
+            Test
+        </div>
+    </div>
+</div>

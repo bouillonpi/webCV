@@ -1,0 +1,134 @@
+.contact-form h1 {
+    color: #fff;
+    padding: 15px 60px;
+    background: #484848;
+    font-family: ProximaBold, serif;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 14px;
+    margin-top: -25px;
+    margin-bottom: 0;
+    text-align: center;
+    display: inline-block;
+}
+
+.contact-form form {
+    text-align: center;
+}
+
+.contact-form .form-groups {
+    width: 75%;
+    margin: 0 auto;
+    padding-top: 40px;
+    padding-bottom: 30px;
+    text-align: center;
+
+}
+
+.contact-form .input-field i {
+    margin-right: 8px;
+}
+
+.contact-form .g-recaptcha {
+    margin: 0 auto;
+    width: 304px;
+}
+
+input[type=text]:focus:not([readonly]),
+input[type=email]:focus:not([readonly]),
+textarea.materialize-textarea:focus:not([readonly]) {
+    border-bottom: 1px solid #80b5df;
+    box-shadow: 0 1px 0 0 #80b5df;
+}
+
+input[type=text]:focus:not([readonly])+label,
+input[type=email]:focus:not([readonly])+label,
+textarea.materialize-textarea:focus:not([readonly])+label {
+    color: #80b5df;
+}
+
+.contact-form button {
+    color: #fff;
+    padding: 10px 40px;
+    background: #80b5df;
+    border: none;
+    font-family: ProximaBold, serif;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 14px;
+    margin-top: 15px;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.contact-form button:hover {
+    background: #6995b9;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+/* ---------------------------------------------- */
+/* ---------------------------------------------- */
+
+.confirm {
+    background: #2ecc71;
+    text-align: center;
+}
+
+.confirm i {
+    color: #fff;
+    padding-top: 90px;
+    font-size: 60px;
+}
+
+.confirm h1 {
+    color: #fff;
+    font-size: 18px;
+    letter-spacing: 2px;
+    font-family: ProximaThin, serif;
+    text-transform: uppercase;
+    padding-top: 0px;
+}
+
+.confirm p {
+    font-family: SourceSansProRegular, serif;
+    font-size: 15px;
+    padding-top: 5px;
+    color: #254431;
+}
+
+.confirm button {
+    color: #fff;
+    padding: 10px 40px;
+    background: #239855;
+    border: none;
+    font-family: ProximaBold, serif;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 14px;
+    margin-top: 15px;
+    margin-bottom: 110px;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.confirm button:hover {
+    background: #4cab70;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+/* ---------------------------------------------- */
+/* ---------------------------------------------- */

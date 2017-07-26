@@ -2,6 +2,8 @@ $( document ).ready(function(){
 
     $(".button-collapse").sideNav();
 
+    $('.modal').modal();
+
     lightbox.option({
         'resizeDuration': 0,
         'fadeDuration': 20,

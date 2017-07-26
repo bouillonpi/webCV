@@ -741,3 +741,20 @@
     -o-transition: all 0.4s;
     transition: all 0.4s;
 }
+
+/* ---------------------------------------------- */
+/* ---------------------------------------------- */
+
+.home-contact {
+    background: #dadada;
+}
+
+.home-contact > .container {
+    padding-top: 110px;
+    padding-bottom: 60px;
+}
+
+.home-contact > .container > .row > .col {
+    background: #fff;
+    border: 2px solid gray;
+}

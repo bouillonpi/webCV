@@ -3,6 +3,18 @@ url = "/"
 layout = "standard"
 is_hidden = 0
 ==
+
+<script>
+    var latitude = 42.360082;
+    var longitude = -71.058880;
+    var zoom = 12;
+</script>
+
+<script src="{{ 'assets/script/map.js' |theme }}"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB5QmfXh-nRwGwz77KD_UAMQX2mrt4Ssm8&callback=initMap" async defer></script>
+
+<!------------------------------------------------>
+
 <div class="home-hero">
     <div class="hero-content">
         <h1>Pierre-Baptiste Bouillon</h1>
@@ -598,12 +610,6 @@ is_hidden = 0
     </div>
 </div>
 
-<script>
-    var latitude = 42.360082;
-    var longitude = -71.058880;
-    var zoom = 12;
-</script>
-
 <!------------------------------------------------>
 
 <div class="home-international">
@@ -672,6 +678,22 @@ is_hidden = 0
 
         </div>
     </div>
+</div>
+
+<!------------------------------------------------>
+
+<div class="home-contact">
+    <div class="container">
+        <div class="row">
+            <div class="col l8 offset-l2 m8 offset-m2 s12">
+                {% partial 'contact' %}
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="confirm-container">
+    <!--This will contain the confirmation when the email is successfully sent-->
 </div>
 
 <!------------------------------------------------>
