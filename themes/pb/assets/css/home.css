@@ -698,13 +698,13 @@
 
 .home-cool {
     border-top: 10px solid #dadada;
-    background: #80b5df;
+    background-image: url(../img/BG/BG02.png);
     text-align: center;
 }
 
 .home-cool .row {
-    padding-top: 70px;
-    padding-bottom: 70px;
+    padding-top: 100px;
+    padding-bottom: 95px;
     margin: 0;
 }
 
@@ -715,38 +715,56 @@
 
 .home-cool h1 {
     font-size: 25px;
-    font-family: SourceSansProRegular;
-    color: #ffffff;
+    font-family: SourceSansProRegular, serif;
+    color: #484848;
     margin: 0;
+}
+
+.home-cool h1 i {
+    margin-left : 5px;
+}
+
+.home-cool #typeWrite {
+    color: #80b5df!important;
 }
 
 .home-cool .button-about {
     display: inline-block;
     margin-top: 30px;
-    background: #484848;
+    background: #80b5df;
+    border-radius: 40px;
     color: #fff;
+    cursor: pointer;
     font-size: 15px;
     letter-spacing: 2px;
     text-transform: uppercase;
     font-family: ProximaRegular, serif;
     padding: 15px 50px;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
 }
 
 .home-cool .button-about:hover {
-    background: #676767;
+    background: #6995b9;
     box-shadow: 0 2px 0 0 #fff;
-    -webkit-transition: all 0.4s;
-    -moz-transition: all 0.4s;
-    -ms-transition: all 0.4s;
-    -o-transition: all 0.4s;
-    transition: all 0.4s;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
 }
 
 /* ---------------------------------------------- */
 /* ---------------------------------------------- */
 
 .home-contact {
-    background: #dadada;
+    background-image: url(../img/BG/BG01.png);
+    border-top: 10px solid #dadada;
+    border-bottom: 10px solid #dadada;
+
 }
 
 .home-contact > .container {

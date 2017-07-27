@@ -40,6 +40,13 @@
         padding-bottom: 50px;
     }
 
+    .modal {
+        top: 0!important;
+        bottom: 0;
+        height: 80%;
+        width: 90%;
+    }
+
 }
 
 /*--------------------------------------------------------------------------*/
@@ -49,6 +56,12 @@
 
 @media screen and (min-width: 601px) and (max-width: 992px) {
 
+    .modal {
+        top: 0!important;
+        bottom: 0;
+        height: 80%;
+        width: 80%;
+    }
 
 }
 
