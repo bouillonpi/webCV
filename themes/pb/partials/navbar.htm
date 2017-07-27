@@ -8,9 +8,25 @@
             <li {% if this.page.id == 'about' %}class="active"{% endif %}><a href="{{ 'about'|page }}">À propos</a></li>
         </ul>
         <ul class="right hide-on-med-and-down">
+            <li class="language-picker">
+                {% if activeLocale == 'fr' %}
+                    <a href="#" data-request="onSwitchLocale" data-request-data="locale: 'en'"><img src="{{ 'assets/img/flags/FR.png'|theme }}"></a>
+                {% endif %}
+                {% if activeLocale == 'en' %}
+                    <a href="#" data-request="onSwitchLocale" data-request-data="locale: 'fr'"><img src="{{ 'assets/img/flags/US.png'|theme }}"></a>
+                {% endif %}
+            </li>
             <li class="contact-button"><a href="#contact-modal">Contact</a></li>
         </ul>
         <ul class="side-nav" id="mobile-demo">
+            <li class="language-picker">
+                {% if activeLocale == 'fr' %}
+                <a href="#" data-request="onSwitchLocale" data-request-data="locale: 'en'"><img src="{{ 'assets/img/flags/FR.png'|theme }}"></a>
+                {% endif %}
+                {% if activeLocale == 'en' %}
+                <a href="#" data-request="onSwitchLocale" data-request-data="locale: 'fr'"><img src="{{ 'assets/img/flags/US.png'|theme }}"></a>
+                {% endif %}
+            </li>
             <li {% if this.page.id == 'home' %}class="active"{% endif %}><a href="{{ 'home'|page }}">Profil</a></li>
             <li {% if this.page.id == 'websites' %}class="active"{% endif %}><a href="{{ 'websites'|page }}">Sites web</a></li>
             <li {% if this.page.id == 'about' %}class="active"{% endif %}><a href="{{ 'about'|page }}">À propos</a></li>

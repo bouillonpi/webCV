@@ -22,15 +22,19 @@ $("#explore").click(function() {
     }, 800);
 });
 
+$('.language-button').click(function(){
+    $('.tooltiptext').toggleClass('tooltiptext-active');
+});
+
 // https://macarthur.me/typeit
 // https://macarthur.me/typeit/docs
 $('#typeWrite').typeIt({
     speed: 80,
     autoStart: false,
     breakLines: false,
-    deleteDelay: 5000,
+    deleteDelay: 4500,
     loop: true,
-    loopDelay: 4000,
+    loopDelay: 4500,
     strings: [
         'Je vis à <i class="fa fa-tachometer"></i> 100 km/h !',
         'Je pratique le Kung Fu et le Karaté <i class="fa fa-hand-rock-o"></i>',

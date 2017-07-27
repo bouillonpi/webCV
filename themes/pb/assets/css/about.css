@@ -7,14 +7,17 @@
     height:695px;
 }
 
-.about-hero::before {
-    background: #484848;
-    content: "";
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    opacity: .7;
-    z-index: 1;
+.about-hero > .container {
+
+}
+
+.about-hero h1 {
+    margin-top: 0;
+    padding-top: 100px;
+    font-size: 35px;
+    letter-spacing: 6px;
+    word-spacing: 10px;
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
 }

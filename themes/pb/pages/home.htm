@@ -18,11 +18,14 @@ is_hidden = 0
 <div class="home-hero">
     <div class="hero-content">
         <h1>Pierre-Baptiste Bouillon</h1>
-        <h2>Ingénieur logiciel bilingue diplômé de <a href="http://eisti.fr/">l'EISTI</a> <br class="hide-on-small-and-down"> Disponible dès novembre 2017 pour premier emploi</h2>
+        <h2>{% if activeLocale == 'fr' %} Ingénieur logiciel bilingue diplômé de l'EISTI {% else %} Software engineer graduated from EISTI, bilingual French/English {% endif %}
+            <br class="hide-on-small-and-down">
+            {% if activeLocale == 'fr' %} Disponible dès novembre 2017 pour premier emploi {% else %} Available for first opportunity in November 2017 {% endif %}</h2>
         <div class="call-to-action">
             <div class="row">
                 <div class="col l6 m6 s12">
-                    <div id="explore" class="button-profil">Voir profil</div>
+                    <div id="explore" class="button-profil">
+                        {% if activeLocale == 'fr' %} Voir profil {% else %} Profile {% endif %}</div>
                 </div>
                 <div class="col l6 m6 s12">
                     <div class="button-cv"><i class="fa fa-download"></i>Download CV</div>
@@ -39,7 +42,7 @@ is_hidden = 0
     <img src="{{ 'assets/img/PB/PB01.jpg'| theme }}">
 
     <div class="block-title">
-        <h1>Information Clé</h1>
+        <h1>{% if activeLocale == 'fr' %} Information Clé {% else %} Key Information {% endif %}</h1>
         <div class="custom-line"></div>
     </div>
 
