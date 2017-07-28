@@ -18,14 +18,20 @@ is_hidden = 0
 <div class="home-hero">
     <div class="hero-content">
         <h1>Pierre-Baptiste Bouillon</h1>
-        <h2>{% if activeLocale == 'fr' %} Ingénieur logiciel bilingue diplômé de l'EISTI {% else %} Software engineer graduated from EISTI, bilingual French/English {% endif %}
+        <h2>
+            {% if activeLocale == 'fr' %} Ingénieur logiciel bilingue diplômé de l'EISTI
+            {% else %} Software Engineer graduated from EISTI, bilingual French/English {% endif %}
             <br class="hide-on-small-and-down">
-            {% if activeLocale == 'fr' %} Disponible dès novembre 2017 pour premier emploi {% else %} Available for first opportunity in November 2017 {% endif %}</h2>
+            {% if activeLocale == 'fr' %} Disponible dès novembre 2017 pour premier emploi
+            {% else %} Available for first opportunity in November 2017 {% endif %}
+        </h2>
         <div class="call-to-action">
             <div class="row">
                 <div class="col l6 m6 s12">
                     <div id="home-scroll" class="button-profil">
-                        {% if activeLocale == 'fr' %} Voir profil {% else %} Profile {% endif %}</div>
+                        {% if activeLocale == 'fr' %} Voir profil
+                        {% else %} Profile {% endif %}
+                    </div>
                 </div>
                 <div class="col l6 m6 s12">
                     <div class="button-cv"><i class="fa fa-download"></i>Download CV</div>
@@ -42,7 +48,10 @@ is_hidden = 0
     <img src="{{ 'assets/img/PB/PB01.jpg'| theme }}">
 
     <div class="block-title">
-        <h1>{% if activeLocale == 'fr' %} Information Clé {% else %} Key Information {% endif %}</h1>
+        <h1>
+            {% if activeLocale == 'fr' %} Information Clé
+            {% else %} Key Information {% endif %}
+        </h1>
         <div class="custom-line"></div>
     </div>
 
@@ -50,32 +59,56 @@ is_hidden = 0
 
         <div class="col l4 m6 s12">
             <i class="fa fa-graduation-cap"></i>
-            <h1>Ingénieur</h1>
-            <p>Diplôme d'ingénieur logiciel EISTI spécialité Could Computing</p>
+            <h1>
+                {% if activeLocale == 'fr' %} Ingénieur
+                {% else %} Engineer {% endif %}
+            </h1>
+            <p>
+                {% if activeLocale == 'fr' %} Diplôme d'ingénieur logiciel EISTI spécialité Could Computing
+                {% else %} Cloud Computing Software Engineer graduated from EISTI, France {% endif %}
+            </p>
         </div>
 
         <div class="col l4 m6 s12">
             <i class="fa fa-cubes"></i>
-            <h1>Stages</h1>
-            <p>Trois stages développement web full stack dont deux aux États-Unis</p>
+            <h1>
+                {% if activeLocale == 'fr' %} Stages
+                {% else %} Internships {% endif %}
+            </h1>
+            <p>
+                {% if activeLocale == 'fr' %} Trois stages développement web full stack dont deux aux États-Unis
+                {% else %} Three full-stack web development internships, two of which in the USA {% endif %}
+            </p>
         </div>
 
         <div class="col l4 m6 s12">
             <i class="fa fa-briefcase"></i>
             <h1>Entrepreneur</h1>
-            <p>Fondateur d'une entreprise de création de sites internet innovants</p>
+            <p>
+                {% if activeLocale == 'fr' %} Fondateur d'une entreprise de création de sites internet innovants
+                {% else %} Founder of a web development and webdesign innovative company {% endif %}
+            </p>
         </div>
 
         <div class="col l4 m6 s12">
             <i class="fa fa-windows"></i>
             <h1>Microsoft</h1>
-            <p>Lauréat 2015 Concours Microsoft de présentation professionnelle</p>
+            <p>
+                {% if activeLocale == 'fr' %} Lauréat 2015 Concours Microsoft de présentation professionnelle
+                {% else %} Winner of the Microsoft professional presentation contest 2015 {% endif %}
+            </p>
         </div>
 
         <div class="col l4 m6 s12">
             <i class="fa fa-globe"></i>
-            <h1>Bilingue</h1>
-            <p>Bilingue Français/Anglais - 12 mois de stage aux États-Unis</p>
+            <h1>
+                {% if activeLocale == 'fr' %} Bilingue
+                {% else %} Bilingual {% endif %}
+            </h1>
+            <p>
+                {% if activeLocale == 'fr' %} Bilingue Français/Anglais - 12 mois de stage aux États-Unis
+                {% else %} Bilingual French/English - 12 months of internship in Boston, United States {% endif %}
+            </p>
         </div>
 
         <div class="col l4 m6 s12">
@@ -97,14 +130,21 @@ is_hidden = 0
 
             <div class="col l6 m12 s12">
                 <div class="content-container">
-                    <h1>Diplôme d'ingénieur logiciel</h1>
-                    <h2><i class="fa fa-map-marker"></i> EISTI - École Internationale des Sciences du Traitement de l'Information</h2>
-                    <h2><i class="fa fa-star"></i> Classée N°1 des écoles d'ingénieurs en informatique 2017 - <a href="https://issuu.com/eisti-ecoledingenieursmathsinfo/docs/classements-eisti-l-etudiant-smbg20">Source</a></h2>
+                    <h1>
+                        {% if activeLocale == 'fr' %} Diplôme d'ingénieur logiciel
+                        {% else %} Software Engineering Degree {% endif %}
+                    </h1>
+                    <h2><i class="fa fa-map-marker"></i> EISTI - International School of Computer Science</h2>
+                    <h2><i class="fa fa-star"></i>
+                        {% if activeLocale == 'fr' %} Classée N°1 des écoles d'ingénieurs en informatique 2017 -
+                        {% else %} Ranked N°1 IT Engineering School 2017 in France - {% endif %}
+                        <a href="https://issuu.com/eisti-ecoledingenieursmathsinfo/docs/classements-eisti-l-etudiant-smbg20">Source</a>
+                    </h2>
                     <ul class="cursus">
-                        <li><span>2016 - 2017</span> Ingénierie du Cloud Computing</li>
-                        <li><span>2015 - 2016</span> Génie des Systèmes d'Information</li>
-                        <li><span>2014 - 2015</span> Génie Informatique </li>
-                        <li><span>2012 - 2014</span> Prépa Intégrée MP à l'EISTI</li>
+                        <li><span>2016 - 2017</span> {% if activeLocale == 'fr' %} Ingénierie du Cloud Computing {% else %} Cloud Computing Engineering {% endif %}</li>
+                        <li><span>2015 - 2016</span> {% if activeLocale == 'fr' %} Génie des Systèmes d'Information {% else %} Software Engineering {% endif %}</li>
+                        <li><span>2014 - 2015</span> {% if activeLocale == 'fr' %} Génie Informatique {% else %} Information Technology Engineering {% endif %}</li>
+                        <li><span>2012 - 2014</span> {% if activeLocale == 'fr' %} Prépa Intégrée MP à l'EISTI {% else %} Computer Science & core course {% endif %}</li>
                     </ul>
                 </div>
             </div>
@@ -118,7 +158,10 @@ is_hidden = 0
 <div class="home-timeline container-fluid">
 
     <div class="block-title">
-        <h1>Expérience Professionnelle</h1>
+        <h1>
+            {% if activeLocale == 'fr' %} Expérience Professionnelle
+            {% else %} Experience Timeline {% endif %}
+        </h1>
     </div>
 
     <section id="cd-timeline">
@@ -130,22 +173,36 @@ is_hidden = 0
 
                 <div class="row experience-title">
                     <div class="col l2 logo-company"><img src="{{ 'assets/img/OT.png'| theme }}"></div>
-                    <div class="col l10"><h2>Stage Architecte Frontend</h2></div>
+                    <div class="col l10">
+                        <h2>
+                            {% if activeLocale == 'fr' %} Stage Architecte Frontend
+                            {% else %} Front End Architect Internship {% endif %}
+                        </h2>
+                    </div>
                 </div>
 
                 <h3><i class="fa fa-map-marker"></i> OT-Morpho | <a href="http://www.oberthur.com/" target="_blank">www.oberthur.com</a></h3>
-                <h3><i class="fa fa-clock-o"></i> Mai 2017 - Octobre 2017 | 6 mois</h3>
-                <h3><i class="fa fa-globe"></i> Boston, États-Unis</h3>
+                <h3><i class="fa fa-clock-o"></i>
+                    {% if activeLocale == 'fr' %} Mai 2017 - Octobre 2017 | 6 mois
+                    {% else %} May 2017 - October 2017 | 6 months {% endif %}
+                </h3>
+                <h3><i class="fa fa-globe"></i>
+                    {% if activeLocale == 'fr' %} Boston, États-Unis
+                    {% else %} Boston, United States {% endif %}
+                </h3>
 
-                <p>Refonte de l'architecture du produit principal Digital Wallet de l'entreprise en vue d'une migration AngularJS vers Angular 4.0. Cette migration vise à affiner les performances du produit en utilisant les dernières technologies en date.</p>
+                <p>
+                    {% if activeLocale == 'fr' %} Refonte de l'architecture du produit principal Digital Wallet de l'entreprise en vue d'une migration AngularJS vers Angular 4.0. Cette migration vise à affiner les performances du produit en utilisant les dernières technologies en date.
+                    {% else %} Architecture redesign of Digital Wallet core product to migrate the AngularJS app to Angular 4.0. This migration aims to enhance application performance by using by using the latest technologies. {% endif %}
+                </p>
 
                 <ul class="tasks-list">
-                    <li><i class="fa fa-circle"></i>Factorisation de l'application en composants</li>
-                    <li><i class="fa fa-circle"></i>Refonte et optimisation des services backend</li>
-                    <li><i class="fa fa-circle"></i>Développement Full-Stack</li>
-                    <li><i class="fa fa-circle"></i>Équipe internationale : Inde | Pologne | États-Unis</li>
-                    <li><i class="fa fa-circle"></i>Supervision d'un stagiaire travaillant sur le projet</li>
-                    <li><i class="fa fa-circle"></i>Maîtrise des méthodes Agiles et Scrum</li>
+                    <li><i class="fa fa-circle"></i>{% if activeLocale == 'fr' %} Factorisation de l'application en composants {% else %} Componentized the application {% endif %}</li>
+                    <li><i class="fa fa-circle"></i>{% if activeLocale == 'fr' %} Refonte et optimisation des services backend {% else %} Redesigned and improved backend services {% endif %}</li>
+                    <li><i class="fa fa-circle"></i>{% if activeLocale == 'fr' %} Développement Full-Stack {% else %} Full-stack web development {% endif %}</li>
+                    <li><i class="fa fa-circle"></i>{% if activeLocale == 'fr' %} Équipe internationale : Inde | Pologne | États-Unis {% else %} International team: India | Poland | United States {% endif %}</li>
+                    <li><i class="fa fa-circle"></i>{% if activeLocale == 'fr' %} Gestion du projet et supervision d'un nouveau stagiaire {% else %} Managed project and oversaw the work of a new intern {% endif %}</li>
+                    <li><i class="fa fa-circle"></i>{% if activeLocale == 'fr' %} Maîtrise des méthodes Agiles et Scrum {% else %} Mastered Agile approach and Scrum {% endif %}</li>
                 </ul>
 
                 <ul class="chips-list">
@@ -162,14 +219,19 @@ is_hidden = 0
                 </ul>
 
                 <div class="actions">
-                    <a href="{{ 'assets/img/OT/WF01.jpg'| theme }}" data-lightbox="picture-set-1" data-title="Test 1" class="call-to-action media"><i class="fa fa-th"></i>Voir photos</a>
-                    <a href="http://www.oberthur.com/" target="_blank" class="call-to-action"><i class="fa fa-globe"></i>Site OT-Morpho</a>
+                    <a href="{{ 'assets/img/OT/WF01.jpg'| theme }}" data-lightbox="picture-set-1" class="call-to-action media">
+                        <i class="fa fa-th"></i>
+                        {% if activeLocale == 'fr' %} Voir photos {% else %} Pictures {% endif %}
+                    </a>
+                    <a href="http://www.oberthur.com/" target="_blank" class="call-to-action">
+                        <i class="fa fa-globe"></i>
+                        {% if activeLocale == 'fr' %} Site OT-Morpho {% else %} Website OT-Morpho {% endif %}
+                    </a>
                 </div>
 
                 <a class="experience-picture"
                    href="{{ 'assets/img/FR.png'| theme }}"
-                   data-lightbox="picture-set-1"
-                   data-title="Test 2">
+                   data-lightbox="picture-set-1">
                 </a>
 
                 <span class="cd-date">2017</span>
@@ -183,28 +245,42 @@ is_hidden = 0
 
                 <div class="row experience-title">
                     <div class="col l2 logo-company"><img src="{{ 'assets/img/OT.png'| theme }}"></div>
-                    <div class="col l10"><h2>Stage web development full-stack</h2></div>
+                    <div class="col l10">
+                        <h2>
+                            {% if activeLocale == 'fr' %} Stage web development full-stack
+                            {% else %} Full-stack Web Development Internship {% endif %}
+                        </h2>
+                    </div>
                 </div>
 
                 <h3><i class="fa fa-map-marker"></i> OT-Morpho | <a href="http://www.oberthur.com/" target="_blank">www.oberthur.com</a></h3>
-                <h3><i class="fa fa-clock-o"></i> Mai 2016 - Octobre 2016 | 6 mois</h3>
-                <h3><i class="fa fa-globe"></i> Boston, États-Unis</h3>
+                <h3><i class="fa fa-clock-o"></i>
+                    {% if activeLocale == 'fr' %} Mai 2016 - Octobre 2016 | 6 mois
+                    {% else %} May 2016 - October 2016 | 6 months {% endif %}
+                </h3>
+                <h3><i class="fa fa-globe"></i>
+                    {% if activeLocale == 'fr' %} Boston, États-Unis
+                    {% else %} Boston, United States {% endif %}
+                </h3>
 
-                <p>Développement full-stack d'une plateforme Digital Wallet visant à sécuriser les opérations financières des clients de l'entreprise de télécommunications LycaMobile.</p>
+                <p>
+                    {% if activeLocale == 'fr' %} Développement full-stack d'une plateforme Digital Wallet visant à sécuriser les opérations financières des clients de l'entreprise de télécommunications LycaMobile.
+                    {% else %} Full-stack development of a Digital Wallet application to secure financial transactions of customers from the telecommunications operator LycaMobile. Bug fixing and implementation of new features through Agile approach. {% endif %}
+                </p>
 
                 <ul class="tasks-list">
-                    <li><i class="fa fa-circle"></i>Construction de l'interface client de l'application</li>
-                    <li><i class="fa fa-circle"></i>Optimisation backend et sécurité financière</li>
-                    <li><i class="fa fa-circle"></i>Développement Full-Stack</li>
-                    <li><i class="fa fa-circle"></i>Implémentation sécurité financière anti-fraude</li>
-                    <li><i class="fa fa-circle"></i>Équipe internationale : Inde | Pologne | États-Unis</li>
-                    <li><i class="fa fa-circle"></i>Utilisation des méthodes Agiles et Scrum</li>
-                    <li><i class="fa fa-circle"></i>Félicitations du directeur pour la résolution de 125 bugs</li>
+                    <li><i class="fa fa-circle"></i>{% if activeLocale == 'fr' %} Construction de l'interface client de l'application {% else %} Designed application UI and front end {% endif %}</li>
+                    <li><i class="fa fa-circle"></i>{% if activeLocale == 'fr' %} Optimisation backend et sécurité financière {% else %} Backend services enhancement and financial security {% endif %}</li>
+                    <li><i class="fa fa-circle"></i>{% if activeLocale == 'fr' %} Développement Full-Stack {% else %} Full-stack web development {% endif %}</li>
+                    <li><i class="fa fa-circle"></i>{% if activeLocale == 'fr' %} Implémentation sécurité financière anti-fraude {% else %} Anti-fraud financial security implementation {% endif %}</li>
+                    <li><i class="fa fa-circle"></i>{% if activeLocale == 'fr' %} Équipe internationale : Inde | Pologne | États-Unis {% else %} International team: India | Poland | United States {% endif %}</li>
+                    <li><i class="fa fa-circle"></i>{% if activeLocale == 'fr' %} Utilisation des méthodes Agiles et Scrum {% else %} Used Agile approach and Scrum {% endif %}</li>
+                    <li><i class="fa fa-circle"></i>{% if activeLocale == 'fr' %} Félicitations du directeur pour la résolution de 125 bugs {% else %} Congratulations of the director for fixing 125 bugs {% endif %}</li>
                 </ul>
 
                 <ul class="chips-list">
                     <li class="chip">AngularJS</li>
-                    <li class="chip">Sécurité financière</li>
+                    <li class="chip">{% if activeLocale == 'fr' %} Sécurité financière {% else %} Financial security {% endif %}</li>
                     <li class="chip">REST</li>
                     <li class="chip">Java</li>
                     <li class="chip">Oracle</li>
@@ -216,32 +292,51 @@ is_hidden = 0
                 </ul>
 
                 <div class="actions">
-                    <a href="{{ 'assets/img/flags/FR.png'| theme }}" data-lightbox="picture-set-2" data-title="Test 3" class="call-to-action media"><i class="fa fa-th"></i>Voir photos</a>
-                    <a href="http://www.oberthur.com/" target="_blank" class="call-to-action"><i class="fa fa-globe"></i>Site OT-Morpho</a>
+                    <a href="{{ 'assets/img/flags/FR.png'| theme }}" data-lightbox="picture-set-2" class="call-to-action media">
+                        <i class="fa fa-th"></i>
+                        {% if activeLocale == 'fr' %} Voir photos {% else %} Pictures {% endif %}
+                    </a>
+                    <a href="http://www.oberthur.com/" target="_blank" class="call-to-action">
+                        <i class="fa fa-globe"></i>
+                        {% if activeLocale == 'fr' %} Site OT-Morpho {% else %} Website OT-Morpho {% endif %}
+                    </a>
                 </div>
 
                 <a class="experience-picture"
                    href="{{ 'assets/img/OT.png'| theme }}"
-                   data-lightbox="picture-set-2"
-                   data-title="Test 4">
+                   data-lightbox="picture-set-2">
                 </a>
 
                 <span class="cd-date">2016</span>
             </div>
         </div>
 
-        <!-- CAMELEON DESIGN -->
+        <!-- CAMELEON DESIGN -->  {% if activeLocale == 'fr' %} {% else %} {% endif %}
         <div class="cd-timeline-block">
             <div class="cd-timeline-img"><img src="{{ 'assets/img/flags/FR.png'| theme }}"></div>
             <div class="cd-timeline-content">
 
                 <div class="row experience-title">
                     <div class="col l2 logo-company"><img src="{{ 'assets/img/cameleon-green.png'| theme }}"></div>
-                    <div class="col l10"><h2>Fondateur d'une entreprise de création sites internet</h2></div>
+                    <div class="col l10">
+                        <h2>
+                            {% if activeLocale == 'fr' %} Fondateur d'une entreprise de création sites internet
+                            {% else %} Founder of a Web Development Company {% endif %}
+                        </h2>
+                    </div>
                 </div>
 
-                <h3><i class="fa fa-map-marker"></i> Caméléon Design | <a href="{{ 'websites'|page }}">Découvrir mes travaux</a></h3>
-                <h3><i class="fa fa-clock-o"></i> Juin 2015 - Aujourd'hui | {{ "now"|date('Y') - 2015 }} ans</h3>
+                <h3><i class="fa fa-map-marker"></i>
+                    Caméléon Design |
+                    <a href="{{ 'websites'|page }}">
+                        {% if activeLocale == 'fr' %} Découvrir mes travaux
+                        {% else %} Check out my work {% endif %}
+                    </a>
+                </h3>
+                <h3><i class="fa fa-clock-o"></i>
+                    {% if activeLocale == 'fr' %} Juin 2015 - Aujourd'hui | {{ "now"|date('Y') - 2015 }} ans
+                    {% else %} June 2015 - Today | {{ "now"|date('Y') - 2015 }} years {% endif %}
+                </h3>
                 <h3><i class="fa fa-globe"></i> Pau & Sud-Ouest, France</h3>
 
                 <p>Passionné d'informatique et de web design, je porte un grand intérêt pour les nouvelles technologies. En créant mon entreprise Caméléon Design, je place mes passions au service des particuliers et des entreprises dans la réalisation de sites internet. Mes réalisations s'ancrent dans la tendance du web d'aujourd'hui pour construire l'Internet de demain.</p>
