@@ -8,12 +8,12 @@
 }
 
 .about-hero > .container {
-
+    text-align: center;
 }
 
 .about-hero h1 {
     margin-top: 0;
-    padding-top: 180px;
+    padding-top: 140px;
     font-size: 39px;
     letter-spacing: 6px;
     word-spacing: 10px;
@@ -23,7 +23,7 @@
 }
 
 .about-hero .separator {
-    width: 50%;
+    width: 60%;
     margin: 0 auto;
     border-bottom: 2px solid rgba(255, 255, 255, 0.17);
 }
@@ -31,16 +31,126 @@
 .about-hero h2 {
     padding-top: 10px;
     text-align: center;
-    font-size: 21px;
+    font-size: 18px;
     font-family: ProximaRegular, serif;
     color: #484848;
     letter-spacing: 5px;
     text-transform: uppercase;
 }
 
+.about-hero h2 i:first-of-type {
+    color: rgba(255, 255, 255, 0.27);
+    margin-right: 20px;
+}
+
+.about-hero h2 i:last-of-type {
+    color: rgba(255, 255, 255, 0.27);
+    margin-left: 20px;
+}
+
 .about-hero h3 {
-    font-size: 23px;
+    font-size: 20px;
     font-family: SourceSansProRegular, serif;
     text-align: center;
+    color: #484848;
+    height: 60px;
+    margin-top: -10px;
+}
+
+.about-hero .button-scroll {
+    display: inline-block;
+    margin-top: 50px;
+    background: #80b5df;
+    border-radius: 40px;
     color: #fff;
+    cursor: pointer;
+    font-size: 15px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-family: ProximaRegular, serif;
+    padding: 15px 50px;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.about-hero .button-scroll:hover {
+    background: #6995b9;
+    box-shadow: 0 2px 0 0 #496786;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+/* ---------------------------------------------- */
+/* ---------------------------------------------- */
+
+.about-intro {
+    background-image: url(../img/BG/BG03.png);
+    text-align: center;
+}
+
+.about-intro > .container {
+    padding-top: 90px;
+    padding-bottom: 100px;
+}
+
+.about-intro > .container > .hobbies {
+    margin-bottom: 0;
+    margin-top: 50px;
+}
+
+.about-intro .block-title {
+    position: relative;
+}
+
+.about-intro .block-title h1 {
+    position: relative;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-family: ProximaThin, serif;
+    font-size: 14px;
+    display: inline-block;
+    margin: 0 auto;
+    padding: 15px 75px;
+    background: #484848;
+    color: #fff;
+    z-index: 1;
+}
+
+.about-intro .block-title .custom-line {
+    position: relative;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: -1px;
+    border: 1px solid #dcdcdc;
+}
+
+.about-intro .col {
+    margin: 30px 0;
+}
+
+.about-intro .hobbies .col i {
+    font-size: 35px;
+    color: #80b5df;
+}
+
+.about-intro .hobbies .col h1 {
+    font-size: 16px;
+    margin-top: 20px;
+    margin-bottom: 12px;
+    letter-spacing: 2px;
+    font-family: ProximaBold, serif;
+    text-transform: uppercase;
+}
+
+.about-intro .hobbies .col p {
+    width: 90%;
+    margin: 0 auto;
+    font-family: SourceSansProRegular, serif;
+    color: #848484;
 }

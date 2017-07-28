@@ -124,7 +124,8 @@
 /* BIG SCREEN */
 @media screen and (min-width: 1300px) {
 
-    .home-intro .key-info .col p {
+    .home-intro .key-info .col p,
+    .about-intro .hobbies .col p {
         width: 65%;
     }
 

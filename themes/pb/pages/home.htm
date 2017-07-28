@@ -24,7 +24,7 @@ is_hidden = 0
         <div class="call-to-action">
             <div class="row">
                 <div class="col l6 m6 s12">
-                    <div id="explore" class="button-profil">
+                    <div id="home-scroll" class="button-profil">
                         {% if activeLocale == 'fr' %} Voir profil {% else %} Profile {% endif %}</div>
                 </div>
                 <div class="col l6 m6 s12">
@@ -37,7 +37,7 @@ is_hidden = 0
 
 <!------------------------------------------------>
 
-<div id="intro" class="home-intro container">
+<div id="home-intro" class="home-intro container">
 
     <img src="{{ 'assets/img/PB/PB01.jpg'| theme }}">
 
@@ -677,7 +677,7 @@ is_hidden = 0
 
             <h1>En dehors du travail ?</h1>
             <h1 id="typeWriteHome-FR"></h1>
-            <div class="button-about">Découvrir</div>
+            <a href="{{ 'about'|page }}" class="button-about">Découvrir</a>
 
         </div>
     </div>

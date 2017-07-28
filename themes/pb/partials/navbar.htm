@@ -1,13 +1,37 @@
 <nav>
     <div class="nav-wrapper">
+
+        <!-- LOGO CENTERED -->
         <a href="{{ 'home'|page }}" class="brand-logo center"><img src="{{ 'assets/img/Valknut.svg'|theme }}"></a>
+
+        <!-- HAMBURGER -->
         <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="fa fa-bars"></i></a>
+
+        <!-- NAV LINKS DESKTOP -->
         <ul class="left hide-on-med-and-down">
-            <li {% if this.page.id == 'home' %}class="active"{% endif %}><a href="{{ 'home'|page }}">Profil</a></li>
-            <li {% if this.page.id == 'websites' %}class="active"{% endif %}><a href="{{ 'websites'|page }}"><span class="conception">Conception</span> Sites web</a></li>
-            <li {% if this.page.id == 'about' %}class="active"{% endif %}><a href="{{ 'about'|page }}">À propos</a></li>
+            <li {% if this.page.id == 'home' %}class="active"{% endif %}>
+                <a href="{{ 'home'|page }}">
+                    {% if activeLocale == 'fr' %} Profil
+                    {% else %} Profile {% endif %}
+                </a>
+            </li>
+            <li {% if this.page.id == 'websites' %}class="active"{% endif %}>
+                <a href="{{ 'websites'|page }}">
+                    {% if activeLocale == 'fr' %} <span class="conception">Conception</span> Sites web
+                    {% else %} Website Design {% endif %}
+                </a>
+            </li>
+            <li {% if this.page.id == 'about' %}class="active"{% endif %}>
+                <a href="{{ 'about'|page }}">
+                    {% if activeLocale == 'fr' %} À propos
+                    {% else %} About {% endif %}
+                </a>
+            </li>
         </ul>
+
+        <!-- LOCALE PICKER AND CONTACT BUTTON -->
         <ul class="right hide-on-med-and-down">
+
             <li class="language-picker">
                 {% if activeLocale == 'fr' %}
                     <a href="#" data-request="onSwitchLocale" data-request-data="locale: 'en'"><img src="{{ 'assets/img/flags/FR.png'|theme }}"></a>
@@ -16,9 +40,14 @@
                     <a href="#" data-request="onSwitchLocale" data-request-data="locale: 'fr'"><img src="{{ 'assets/img/flags/US.png'|theme }}"></a>
                 {% endif %}
             </li>
+
             <li class="contact-button"><a href="#contact-modal">Contact</a></li>
+
         </ul>
+
+        <!-- SIDE-NAV -->
         <ul class="side-nav" id="mobile-demo">
+
             <li class="language-picker">
                 {% if activeLocale == 'fr' %}
                 <a href="#" data-request="onSwitchLocale" data-request-data="locale: 'en'"><img src="{{ 'assets/img/flags/FR.png'|theme }}"></a>
@@ -27,9 +56,26 @@
                 <a href="#" data-request="onSwitchLocale" data-request-data="locale: 'fr'"><img src="{{ 'assets/img/flags/US.png'|theme }}"></a>
                 {% endif %}
             </li>
-            <li {% if this.page.id == 'home' %}class="active"{% endif %}><a href="{{ 'home'|page }}">Profil</a></li>
-            <li {% if this.page.id == 'websites' %}class="active"{% endif %}><a href="{{ 'websites'|page }}">Sites web</a></li>
-            <li {% if this.page.id == 'about' %}class="active"{% endif %}><a href="{{ 'about'|page }}">À propos</a></li>
+
+            <li {% if this.page.id == 'home' %}class="active"{% endif %}>
+                <a href="{{ 'home'|page }}">
+                    {% if activeLocale == 'fr' %} Profil
+                    {% else %} Profile {% endif %}
+                </a>
+            </li>
+            <li {% if this.page.id == 'websites' %}class="active"{% endif %}>
+                <a href="{{ 'websites'|page }}">
+                    {% if activeLocale == 'fr' %} <span class="conception">Conception</span> Sites web
+                    {% else %} Website Design {% endif %}
+                </a>
+            </li>
+            <li {% if this.page.id == 'about' %}class="active"{% endif %}>
+                <a href="{{ 'about'|page }}">
+                    {% if activeLocale == 'fr' %} À propos
+                    {% else %} About {% endif %}
+                </a>
+            </li>
+
             <li class="contact-button"><a href="#contact-modal">Contact</a></li>
         </ul>
     </div>
@@ -44,7 +90,10 @@
             <div class="col l6 m12 s12">
                 <div class="contact-info">
                     <i class="fa fa-phone"></i>
-                    <h2>Téléphone</h2>
+                    <h2>
+                        {% if activeLocale == 'fr' %} Téléphone
+                        {% else %} Mobile {% endif %}
+                    </h2>
                     <h3><img src="{{ 'assets/img/flags/FR.png'|theme }}">+33 642 165 402</h3>
                 </div>
             </div>
