@@ -44,8 +44,7 @@ $('#typeWriteHome-FR').typeIt({
         'Je suis mauvais à League of Legends <i class="fa fa-thumbs-o-down"></i>',
         'Je fais des blagues bien nulles <i class="fa fa-meh-o"></i>',
         'Je suis le caméraman de ZeratoR <i class="fa fa-camera"></i>',
-        'Je n\'arrive pas à faire ça : <i class="fa fa-hand-spock-o"></i>',
-        'Mes amis m\'appellent PB'
+        'Je n\'arrive pas à faire ça : <i class="fa fa-hand-spock-o"></i>'
     ]
 });
 

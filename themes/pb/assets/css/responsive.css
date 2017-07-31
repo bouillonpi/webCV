@@ -47,6 +47,11 @@
         width: 90%;
     }
 
+    .about-detection .content-container p {
+        width: 85%;
+        columns: 1;
+    }
+
 }
 
 /*--------------------------------------------------------------------------*/
@@ -61,6 +66,11 @@
         bottom: 0;
         height: 80%;
         width: 80%;
+    }
+
+    .about-detection .content-container p {
+        width: 70%;
+        columns: 1;
     }
 
 }

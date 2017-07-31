@@ -764,20 +764,3 @@
 
 /* ---------------------------------------------- */
 /* ---------------------------------------------- */
-
-.home-contact {
-    background-image: url(../img/BG/BG01.png);
-    border-top: 10px solid #dadada;
-    border-bottom: 10px solid #dadada;
-
-}
-
-.home-contact > .container {
-    padding-top: 110px;
-    padding-bottom: 70px;
-}
-
-.home-contact > .container > .row > .col {
-    background: #fff;
-    border: 2px solid gray;
-}

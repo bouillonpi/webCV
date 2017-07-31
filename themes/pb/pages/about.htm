@@ -21,7 +21,7 @@ is_hidden = 0
 
         <div class="block-title">
             <h1>{% if activeLocale == 'fr' %} Mes hobbies {% else %} During my spare time {% endif %}</h1>
-            <div class="custom-line"></div>
+            <div class="custom-line hide-on-med-and-down"></div>
         </div>
 
         <div class="hobbies row">
@@ -121,16 +121,96 @@ is_hidden = 0
 
         <div class="block-title">
             <h1>Détection de métaux</h1>
-            <div class="custom-line"></div>
+            <div class="custom-line hide-on-med-and-down"></div>
         </div>
 
         <div class="content-container">
 
             <h2><i class="fa fa-map-marker"></i>Landes et Pyrénées Altantiques, France</h2>
             <h2><i class="fa fa-cog"></i>Détecteur métaux Teknetics Gamma 6000</h2>
-            <p>Lorem ipsum dolor sit amet, fermentum fuga cum torquent nunc. Odio sodales, vehicula at quod tortor vehicula, pulvinar eget porttitor magna vivamus quis. Praesent quisque consectetuer, ut aliquam suspendisse lacinia placerat omnis, odio commodo nibh nisl, magnis fringilla et donec ligula ante sodales. Sollicitudin sem quis vehicula sit. Quisque commodo wisi placerat accumsan, libero libero.</p>
+            <p>
+                Ma passion pour la détection commence il y a {{ "now"|date('Y') - 2010 }} ans lorsque je découvre un vieux couteau rouillé
+                en creusant une tranchée avec mon père le long d'une vieille bâtisse landaise. Peu de temps après, je me procure un détecteur de métaux
+                et commence à arpenter les sentiers de la forêt des Landes. Bien que cette forêt soit jeune, son histoire n'en est pas moins riche.
+                Il y a près de 200 ans, la région des Landes était marécageuse et ses terres difficilement cultivables.
+                Tombé amoureux de la région, Napoléon III entreprend d'assainir les marécages et stabiliser les dunes en par la
+                plantation massive de pins maritimes, aujourd'hui devenu l'arbre emblèmatique de la région.
+                Cette nouvelle forêt apporte avec elle une activité économique très lucrative : le gemmage.
+                Ce métier consiste à récolter la résine des pins en plantant une bandelette de zinc dans le tronc de l'arbre pour que la sève s'écoule dans un pot.
+                En détectant dans la forêt landaise, j'ai pu déterrer des centaines de bandelettes de zinc, témoins silencieux de cette époque.
+                Parmi mes trouvailles je compte des monnaies Napoléon, des boutons d'infanterie de l'armée Napoléonienne,
+                des monnaies de la Révolution, des bijoux en bronze ou en argent. Ma trouvaille la plus ancienne est un Double Tournois datant de 1624.
+                Il y a quelque chose d'extrêmement fort, une puissante émotion lorsque l'on déterre un objet ayant été perdu
+                il y a des centaines d'années par une personne d'une autre époque. C'est ce clin d'oeil du temps que je préfère dans la détection de métaux.
+            </p>
+            <div class="row">
+
+                <div class="col l3 m4 s6">
+                    <a href="{{ 'assets/img/detection/01.jpg'| theme }}" data-lightbox="picture-set-detection"> <img src="{{ 'assets/img/detection/01.jpg'| theme }}"> </a>
+                </div>
+
+                <div class="col l3 m4 s6">
+                    <a href="{{ 'assets/img/detection/07.jpg'| theme }}" data-lightbox="picture-set-detection"> <img src="{{ 'assets/img/detection/07.jpg'| theme }}"> </a>
+                </div>
+
+                <div class="col l3 m4 s6">
+                    <a href="{{ 'assets/img/detection/18.jpg'| theme }}" data-lightbox="picture-set-detection"> <img src="{{ 'assets/img/detection/18.jpg'| theme }}"> </a>
+                </div>
+
+                <div class="col l3 m4 s6">
+                    <a href="{{ 'assets/img/detection/05.jpg'| theme }}" data-lightbox="picture-set-detection"> <img src="{{ 'assets/img/detection/05.jpg'| theme }}"> </a>
+                </div>
+
+                <div class="col l3 m4 s6 hide-on-small-and-down">
+                    <a href="{{ 'assets/img/detection/04.jpg'| theme }}" data-lightbox="picture-set-detection"> <img src="{{ 'assets/img/detection/04.jpg'| theme }}"> </a>
+                </div>
+
+                <div class="col l3 m4 s6 hide-on-small-and-down">
+                    <a href="{{ 'assets/img/detection/10.jpg'| theme }}" data-lightbox="picture-set-detection"> <img src="{{ 'assets/img/detection/10.jpg'| theme }}"> </a>
+                </div>
+
+                <div class="col l3 m4 s6 hide-on-med-and-down">
+                    <a href="{{ 'assets/img/detection/11.jpg'| theme }}" data-lightbox="picture-set-detection"> <img src="{{ 'assets/img/detection/11.jpg'| theme }}"> </a>
+                </div>
+
+                <div class="col l3 m4 s6 hide-on-med-and-down">
+                    <a href="{{ 'assets/img/detection/08.jpg'| theme }}" data-lightbox="picture-set-detection"> <img src="{{ 'assets/img/detection/08.jpg'| theme }}"> </a>
+                </div>
+
+            </div>
+
+            <a class="detection-picture" href="{{ 'assets/img/detection/02.jpg'| theme }}" data-lightbox="picture-set-detection"></a>
+            <a class="detection-picture" href="{{ 'assets/img/detection/03.jpg'| theme }}" data-lightbox="picture-set-detection"></a>
+            <a class="detection-picture" href="{{ 'assets/img/detection/06.jpg'| theme }}" data-lightbox="picture-set-detection"></a>
+            <a class="detection-picture" href="{{ 'assets/img/detection/09.jpg'| theme }}" data-lightbox="picture-set-detection"></a>
+            <a class="detection-picture" href="{{ 'assets/img/detection/12.jpg'| theme }}" data-lightbox="picture-set-detection"></a>
+            <a class="detection-picture" href="{{ 'assets/img/detection/13.jpg'| theme }}" data-lightbox="picture-set-detection"></a>
+            <a class="detection-picture" href="{{ 'assets/img/detection/14.jpg'| theme }}" data-lightbox="picture-set-detection"></a>
+            <a class="detection-picture" href="{{ 'assets/img/detection/15.jpg'| theme }}" data-lightbox="picture-set-detection"></a>
+            <a class="detection-picture" href="{{ 'assets/img/detection/16.jpg'| theme }}" data-lightbox="picture-set-detection"></a>
+            <a class="detection-picture" href="{{ 'assets/img/detection/17.jpg'| theme }}" data-lightbox="picture-set-detection"></a>
+            <a class="detection-picture" href="{{ 'assets/img/detection/19.jpg'| theme }}" data-lightbox="picture-set-detection"></a>
 
         </div>
 
     </div>
 </section>
+
+<!------------------------------------------------>
+
+<div class="page-contact">
+    <div class="container">
+        <div class="row">
+            <div class="col l6 offset-l3 m8 offset-m2 s12">
+                {% partial 'contact' %}
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="confirm-container">
+    <!--This will contain the confirmation when the email is successfully sent-->
+</div>
+
+<!------------------------------------------------>
+

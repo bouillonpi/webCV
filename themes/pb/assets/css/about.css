@@ -338,7 +338,7 @@
 
 .about-detection > .container {
     padding-top: 100px;
-    padding-bottom: 100px;
+    padding-bottom: 70px;
 }
 
 .about-detection .block-title {
@@ -368,7 +368,7 @@
 }
 
 .about-detection .content-container {
-    padding-top: 35px;
+    padding-top: 45px;
     font-family: SourceSansProRegular, serif;
 }
 
@@ -384,7 +384,7 @@
 }
 
 .about-detection .content-container p {
-    width: 70%;
+    width: 90%;
     font-size: 15px;
     margin: 0 auto;
     margin-top: 40px;
@@ -393,3 +393,20 @@
     columns: 2;
     column-gap: 30px;
 }
+
+.about-detection .content-container .row {
+    margin-top: 50px;
+}
+
+.about-detection .content-container .row .col {
+    margin-bottom: 30px;
+}
+
+.about-detection .content-container .row img {
+    width: 100%;
+    border: 1px solid #383838;
+    border-left: 3px solid #80b5df;
+}
+
+/* ---------------------------------------------- */
+/* ---------------------------------------------- */

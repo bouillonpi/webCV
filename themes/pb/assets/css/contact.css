@@ -1,3 +1,19 @@
+.page-contact {
+    background-image: url(../img/BG/BG01.png);
+    border-top: 10px solid #dadada;
+    border-bottom: 10px solid #dadada;
+}
+
+.page-contact > .container {
+    padding-top: 110px;
+    padding-bottom: 70px;
+}
+
+.page-contact > .container > .row > .col {
+    background: #fff;
+    border: 2px solid gray;
+}
+
 .contact-form h1 {
     color: #fff;
     padding: 15px 60px;
