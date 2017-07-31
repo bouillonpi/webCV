@@ -43,80 +43,83 @@ is_hidden = 0
 
 <!------------------------------------------------>
 
-<div id="home-intro" class="home-intro container">
+<div id="home-intro" class="home-intro">
 
-    <img src="{{ 'assets/img/PB/PB01.jpg'| theme }}">
+    <div class="container">
 
-    <div class="block-title">
-        <h1>
-            {% if activeLocale == 'fr' %} Information Clé
-            {% else %} Key Information {% endif %}
-        </h1>
-        <div class="custom-line"></div>
-    </div>
+        <img src="{{ 'assets/img/PB/PB01.jpg'| theme }}">
 
-    <div class="key-info row">
-
-        <div class="col l4 m6 s12">
-            <i class="fa fa-graduation-cap"></i>
+        <div class="block-title">
             <h1>
-                {% if activeLocale == 'fr' %} Ingénieur
-                {% else %} Engineer {% endif %}
+                {% if activeLocale == 'fr' %} Information Clé
+                {% else %} Key Information {% endif %}
             </h1>
-            <p>
-                {% if activeLocale == 'fr' %} Diplôme d'ingénieur logiciel EISTI spécialité Could Computing
-                {% else %} Cloud Computing Software Engineer graduated from EISTI, France {% endif %}
-            </p>
+            <div class="custom-line"></div>
         </div>
 
-        <div class="col l4 m6 s12">
-            <i class="fa fa-cubes"></i>
-            <h1>
-                {% if activeLocale == 'fr' %} Stages
-                {% else %} Internships {% endif %}
-            </h1>
-            <p>
-                {% if activeLocale == 'fr' %} Trois stages développement web full stack dont deux aux États-Unis
-                {% else %} Three full-stack web development internships, two of which in the USA {% endif %}
-            </p>
-        </div>
+        <div class="key-info row">
 
-        <div class="col l4 m6 s12">
-            <i class="fa fa-briefcase"></i>
-            <h1>Entrepreneur</h1>
-            <p>
-                {% if activeLocale == 'fr' %} Fondateur d'une entreprise de création de sites internet innovants
-                {% else %} Founder of a web development and webdesign innovative company {% endif %}
-            </p>
-        </div>
+            <div class="col l4 m6 s12">
+                <i class="fa fa-graduation-cap"></i>
+                <h1>
+                    {% if activeLocale == 'fr' %} Ingénieur
+                    {% else %} Engineer {% endif %}
+                </h1>
+                <p>
+                    {% if activeLocale == 'fr' %} Diplôme d'ingénieur logiciel EISTI spécialité Could Computing
+                    {% else %} Cloud Computing Software Engineer graduated from EISTI, France {% endif %}
+                </p>
+            </div>
 
-        <div class="col l4 m6 s12">
-            <i class="fa fa-windows"></i>
-            <h1>Microsoft</h1>
-            <p>
-                {% if activeLocale == 'fr' %} Lauréat 2015 Concours Microsoft de présentation professionnelle
-                {% else %} Winner of the Microsoft professional presentation contest 2015 {% endif %}
-            </p>
-        </div>
+            <div class="col l4 m6 s12">
+                <i class="fa fa-cubes"></i>
+                <h1>
+                    {% if activeLocale == 'fr' %} Stages
+                    {% else %} Internships {% endif %}
+                </h1>
+                <p>
+                    {% if activeLocale == 'fr' %} Trois stages développement web full stack dont deux aux États-Unis
+                    {% else %} Three full-stack web development internships, two of which in the USA {% endif %}
+                </p>
+            </div>
 
-        <div class="col l4 m6 s12">
-            <i class="fa fa-globe"></i>
-            <h1>
-                {% if activeLocale == 'fr' %} Bilingue
-                {% else %} Bilingual {% endif %}
-            </h1>
-            <p>
-                {% if activeLocale == 'fr' %} Bilingue Français/Anglais - 12 mois de stage aux États-Unis
-                {% else %} Bilingual French/English - 12 months of internship in Boston, United States {% endif %}
-            </p>
-        </div>
+            <div class="col l4 m6 s12">
+                <i class="fa fa-briefcase"></i>
+                <h1>Entrepreneur</h1>
+                <p>
+                    {% if activeLocale == 'fr' %} Fondateur d'une entreprise de création de sites internet innovants
+                    {% else %} Founder of a web development and webdesign innovative company {% endif %}
+                </p>
+            </div>
 
-        <div class="col l4 m6 s12">
-            <i class="fa fa-shield"></i>
-            <h1>Expertise</h1>
-            <p>AngularJS | Angular 4 | Java | Scala | UI/UX | HTML/CSS/JS</p>
-        </div>
+            <div class="col l4 m6 s12">
+                <i class="fa fa-windows"></i>
+                <h1>Microsoft</h1>
+                <p>
+                    {% if activeLocale == 'fr' %} Lauréat 2015 Concours Microsoft de présentation professionnelle
+                    {% else %} Winner of the Microsoft professional presentation contest 2015 {% endif %}
+                </p>
+            </div>
 
+            <div class="col l4 m6 s12">
+                <i class="fa fa-globe"></i>
+                <h1>
+                    {% if activeLocale == 'fr' %} Bilingue
+                    {% else %} Bilingual {% endif %}
+                </h1>
+                <p>
+                    {% if activeLocale == 'fr' %} Bilingue Français/Anglais - 12 mois de stage aux États-Unis
+                    {% else %} Bilingual French/English - 12 months of internship in Boston, United States {% endif %}
+                </p>
+            </div>
+
+            <div class="col l4 m6 s12">
+                <i class="fa fa-shield"></i>
+                <h1>Expertise</h1>
+                <p>AngularJS | Angular 4 | Java | Scala | UI/UX | HTML/CSS/JS</p>
+            </div>
+
+        </div>
     </div>
 </div>
 
@@ -783,7 +786,7 @@ is_hidden = 0
 <div class="home-contact">
     <div class="container">
         <div class="row">
-            <div class="col l8 offset-l2 m8 offset-m2 s12">
+            <div class="col l6 offset-l3 m8 offset-m2 s12">
                 {% partial 'contact' %}
             </div>
         </div>

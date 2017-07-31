@@ -110,10 +110,12 @@
 /* ---------------------------------------------- */
 
 .home-intro {
+    border-top: 10px solid #e2e2e2;
+    border-bottom: 10px solid #e2e2e2;
     text-align: center;
 }
 
-.home-intro > img {
+.home-intro > .container > img {
     margin: 0 auto;
     margin-top: 90px;
     width: 160px;
@@ -187,6 +189,7 @@
 /* ---------------------------------------------- */
 
 .home-education {
+    border-bottom: 10px solid #dadada;
     background: #eaeaea;
 }
 
@@ -320,6 +323,7 @@
 /* ---------------------------------------------- */
 
 .home-award {
+    border-bottom: 10px solid #e2e2e2;
     background: #eaeaea;
     text-align: center;
 }
@@ -770,7 +774,7 @@
 
 .home-contact > .container {
     padding-top: 110px;
-    padding-bottom: 60px;
+    padding-bottom: 70px;
 }
 
 .home-contact > .container > .row > .col {

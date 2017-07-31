@@ -33,7 +33,7 @@
     text-align: center;
     font-size: 18px;
     font-family: ProximaRegular, serif;
-    color: #484848;
+    color: #fff;
     letter-spacing: 5px;
     text-transform: uppercase;
 }
@@ -90,12 +90,14 @@
 /* ---------------------------------------------- */
 
 .about-intro {
-    background-image: url(../img/BG/BG03.png);
+    border-top: 10px solid #d2d2d2;
+    border-bottom: 10px solid #d2d2d2;
+    background: url(../img/BG/BG03.png);
     text-align: center;
 }
 
 .about-intro > .container {
-    padding-top: 90px;
+    padding-top: 100px;
     padding-bottom: 100px;
 }
 
@@ -112,7 +114,7 @@
     position: relative;
     text-transform: uppercase;
     letter-spacing: 5px;
-    font-family: ProximaThin, serif;
+    font-family: ProximaBold, serif;
     font-size: 14px;
     display: inline-block;
     margin: 0 auto;
@@ -124,7 +126,7 @@
 
 .about-intro .block-title .custom-line {
     position: relative;
-    width: 80%;
+    width: 65%;
     margin: 0 auto;
     margin-top: -1px;
     border: 1px solid #dcdcdc;
@@ -144,6 +146,7 @@
     margin-top: 20px;
     margin-bottom: 12px;
     letter-spacing: 2px;
+    color: #000;
     font-family: ProximaBold, serif;
     text-transform: uppercase;
 }
@@ -153,4 +156,240 @@
     margin: 0 auto;
     font-family: SourceSansProRegular, serif;
     color: #848484;
+}
+
+/* ---------------------------------------------- */
+/* ---------------------------------------------- */
+
+.about-onfocus {
+    background: #eaeaea;
+    text-align: center;
+}
+
+.about-onfocus > .container {
+    width: 75%;
+    margin: 0 auto;
+    max-width: inherit;
+}
+
+.about-onfocus > .container > img {
+    margin: 0 auto;
+    margin-top: 90px;
+    width: 250px;
+}
+
+.about-onfocus .row {
+    background: #d4d4d4;
+}
+
+.about-onfocus .block-title {
+    position: relative;
+    margin-top: 25px;
+}
+
+.about-onfocus .block-title h1 {
+    position: relative;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-family: ProximaThin, serif;
+    font-size: 14px;
+    display: inline-block;
+    margin: 0 auto;
+    margin-bottom: -1px;
+    padding: 15px 60px;
+    background: #484848;
+    color: #fff;
+    z-index: 1;
+}
+
+.about-onfocus .container-fluid {
+    text-align: center;
+    margin-top: 40px;
+    padding-bottom: 90px;
+}
+
+.about-onfocus .cover-picture {
+    background: url(../img/onfocus/of2.jpg);
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: top;
+    width: 100%;
+    height:50%;
+    min-height: 450px;
+    border: 5px solid #d4d4d4;
+}
+
+.about-onfocus .content-container {
+    width: 90%;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.about-onfocus h2 {
+    font-family: SourceSansProRegular, serif;
+    margin-top: -5px;
+    font-size: 15px;
+    color: #757575;
+}
+
+.about-onfocus h2:first-of-type {
+    margin-top: 40px;
+}
+
+.about-onfocus h2 i {
+    margin-right: 6px;
+}
+
+.about-onfocus h2 a {
+    color: #80b5df;
+    text-decoration: none;
+}
+
+.about-onfocus .details {
+    background: #eaeaea;
+    margin-top: 35px;
+    border-left: 5px solid #80b5df;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.about-onfocus .details li {
+    font-family: SourceSansProRegular, serif;
+    margin-top: 15px;
+    margin-left: 20px;
+    color: #484848;
+}
+
+.about-onfocus .details li:first-of-type {
+    margin-top: 0;
+}
+
+.about-onfocus .details li span:first-of-type {
+    font-family: ProximaBold, sans-serif;
+    color: #484848;
+    display: inline-block;
+    width: 100px;
+}
+
+.about-onfocus .details li span:last-of-type {
+    margin-left: 12px;
+    text-align: left;
+}
+
+.about-onfocus .actions {
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+.about-onfocus .call-to-action {
+    display: inline-block;
+    margin-bottom: 6px;
+    cursor: pointer;
+    background: #848484;
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 14px;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+    margin-right: 5px;
+}
+
+.about-onfocus .call-to-action:hover {
+    background: #6f6f6f;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.about-onfocus .call-to-action i {
+    margin-right: 8px;
+}
+
+.about-onfocus .media {
+    background: #80b5df;
+}
+
+.about-onfocus .media:hover {
+    background: #72a1c5;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.about-onfocus .experience-picture {
+    display: none;
+}
+
+/* ---------------------------------------------- */
+/* ---------------------------------------------- */
+
+.about-detection {
+    background: #484848;
+    text-align: center;
+}
+
+.about-detection > .container {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.about-detection .block-title {
+    position: relative;
+}
+
+.about-detection .block-title h1 {
+    position: relative;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-family: ProximaBold, serif;
+    font-size: 14px;
+    display: inline-block;
+    margin: 0 auto;
+    padding: 15px 75px;
+    background: #fff;
+    color: #484848;
+    z-index: 1;
+}
+
+.about-detection .block-title .custom-line {
+    position: relative;
+    width: 65%;
+    margin: 0 auto;
+    margin-top: -1px;
+    border: 1px solid #dcdcdc;
+}
+
+.about-detection .content-container {
+    padding-top: 35px;
+    font-family: SourceSansProRegular, serif;
+}
+
+.about-detection .content-container h2 {
+    font-size: 15px;
+    color: #80b5df;
+    margin-bottom: 0;
+    margin-top: 15px;
+}
+
+.about-detection .content-container h2 i {
+    margin-right: 12px;
+}
+
+.about-detection .content-container p {
+    width: 70%;
+    font-size: 15px;
+    margin: 0 auto;
+    margin-top: 40px;
+    text-align: justify;
+    color: #d4d4d4;
+    columns: 2;
+    column-gap: 30px;
 }
