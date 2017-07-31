@@ -1,0 +1,131 @@
+.websites-hero {
+    position: relative;
+    background: url(../img/work.png);
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: bottom;
+    width:100%;
+    height:600px;
+    text-align: center;
+}
+
+.websites-hero > section {
+    text-align: center;
+    padding-top: 110px;
+}
+
+.websites-hero > section > img {
+    width: 50px;
+}
+
+.websites-hero > h1 {
+    margin-top: 0;
+    padding-top: 40px;
+    font-size: 38px;
+    letter-spacing: 6px;
+    word-spacing: 10px;
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.websites-hero > .separator {
+    width: 60%;
+    margin: 0 auto;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.17);
+}
+
+.websites-hero > h2 {
+    padding-top: 10px;
+    font-size: 15px;
+    font-family: ProximaRegular, serif;
+    color: #80b5df;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    margin-bottom: 0;
+}
+
+.websites-hero > h3 {
+    font-size: 15px;
+    font-family: ProximaRegular, serif;
+    color: rgba(255, 255, 255, 0.64);
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    margin-top: 10px;
+}
+
+.websites-hero > h3 > i {
+    font-size: 12px;
+    color: #80b5df;
+}
+
+/* ---------------------------------------------- */
+/* ---------------------------------------------- */
+
+.websites-services {
+    border-top: 10px solid #d2d2d2;
+    border-bottom: 10px solid #d2d2d2;
+    text-align: center;
+}
+
+.websites-services > .container {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.websites-services > .container > .services {
+    margin-bottom: 0;
+    margin-top: 50px;
+}
+
+.websites-services .block-title {
+    position: relative;
+}
+
+.websites-services .block-title h1 {
+    position: relative;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-family: ProximaBold, serif;
+    font-size: 14px;
+    display: inline-block;
+    margin: 0 auto;
+    padding: 15px 75px;
+    background: #484848;
+    color: #fff;
+    z-index: 1;
+}
+
+.websites-services .block-title .custom-line {
+    position: relative;
+    width: 65%;
+    margin: 0 auto;
+    margin-top: -1px;
+    border: 1px solid #dcdcdc;
+}
+
+.websites-services .col {
+    margin: 30px 0;
+}
+
+.websites-services .services .col i {
+    font-size: 35px;
+    color: #80b5df;
+}
+
+.websites-services .services .col h1 {
+    font-size: 16px;
+    margin-top: 20px;
+    margin-bottom: 12px;
+    letter-spacing: 2px;
+    color: #000;
+    font-family: ProximaBold, serif;
+    text-transform: uppercase;
+}
+
+.websites-services .services .col p {
+    width: 90%;
+    margin: 0 auto;
+    font-family: SourceSansProRegular, serif;
+    color: #848484;
+}
