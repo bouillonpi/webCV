@@ -22,41 +22,131 @@ is_hidden = 0
 
         <div class="services row">
 
-            <div class="col l4 m6 s12">
+            <div class="col l4 m6 s12" onclick="triggerTab('tab1')">
                 <i class="fa fa-magic"></i>
                 <h1>Design</h1>
-                <p>Construction du site, charte graphique, développement du contenu, création logo</p>
+                <p>Construction du site, charte graphique, développement contenu, création logo</p>
             </div>
 
-            <div class="col l4 m6 s12">
+            <div class="col l4 m6 s12" onclick="triggerTab('tab2')">
                 <i class="fa fa-laptop"></i>
                 <h1>Adaptabilité</h1>
-                <p>Site internet responsive fonctionnel sur tous les types d'appareils et de navigateurs</p>
+                <p>Site internet responsive fonctionnel sur tous les types d'appareils et navigateurs</p>
             </div>
 
-            <div class="col l4 m6 s12">
+            <div class="col l4 m6 s12" onclick="triggerTab('tab3')">
                 <i class="fa fa-hdd-o"></i>
                 <h1>Hébergement</h1>
                 <p>Nom de domaine, hébergement et base de données pris en compte et renouvelés</p>
             </div>
 
-            <div class="col l4 m6 s12">
+            <div class="col l4 m6 s12" onclick="triggerTab('tab4')">
                 <i class="fa fa-wrench"></i>
                 <h1>Maintenance</h1>
-                <p>Maintenance du site internet et possibilité d'ajouter de nouvelles fonctionnalités </p>
+                <p>Maintenance du site internet et possibilité d'ajouter de nouvelles fonctionnalités</p>
             </div>
 
-            <div class="col l4 m6 s12">
+            <div class="col l4 m6 s12" onclick="triggerTab('tab5')">
                 <i class="fa fa-line-chart"></i>
                 <h1>Référencement</h1>
                 <p>Optimisation SEO de l'architecture du site pour améliorer son référencement</p>
             </div>
 
-            <div class="col l4 m6 s12">
+            <div class="col l4 m6 s12" onclick="triggerTab('tab6')">
                 <i class="fa fa-lock"></i>
-                <h1>Interface Admin</h1>
-                <p>Suivi du trafic sur le site, modification du contenu via l'interface administrateur </p>
+                <h1>Administration</h1>
+                <p>Suivi du trafic sur le site, modification du contenu via l'interface administrateur</p>
             </div>
+
+        </div>
+
+    </div>
+</section>
+
+<section id="websites-tabs" class="websites-tabs">
+    <div class="container-fluid">
+
+        <div class="row">
+
+            <!-- TABS HEADERS -->
+            <div class="col s12">
+                <ul class="tabs">
+                    <li class="tab col s2"><a href="#tab1" class="active"><i class="fa fa-magic"></i><h1 class="hide-on-med-and-down">Design</h1></a></li>
+                    <li class="tab col s2"><a href="#tab2"><i class="fa fa-laptop"></i><h1 class="hide-on-med-and-down">Adaptabilité</h1></a></li>
+                    <li class="tab col s2"><a href="#tab3"><i class="fa fa-hdd-o"></i><h1 class="hide-on-med-and-down">Hébergement</h1></a></li>
+                    <li class="tab col s2"><a href="#tab4"><i class="fa fa-wrench"></i><h1 class="hide-on-med-and-down">Maintenance</h1></a></li>
+                    <li class="tab col s2"><a href="#tab5"><i class="fa fa-line-chart"></i ><h1 class="hide-on-med-and-down">Référencement</h1></a></li>
+                    <li class="tab col s2"><a href="#tab6"><i class="fa fa-lock"></i><h1 class="hide-on-med-and-down">Administration</h1></a></li>
+                </ul>
+            </div>
+
+            <!-- DESIGN TAB -->
+            <div id="tab1" class="col s12 tab-content">
+                <div class="container">
+                    <div class="row">
+                        <div class="col l6 m12 s12">
+                            <h1>Design épuré & innovant</h1>
+                            <p>
+                                Fort de mes expériences professionnelles aux États-Unis, je maîtrise
+                                les dernières technologies en matière de webdesign et d'expérience utilisateur.
+                                J'aime travailler avec un style épuré et rester dans la simplicité.
+                            </p>
+                            <ul>
+                                <li><i class="fa fa-circle"></i>Mise en place de la charte graphique</li>
+                                <li><i class="fa fa-circle"></i>Création d'un logo pour le projet</li>
+                                <li><i class="fa fa-circle"></i>Construction des pages du site</li>
+                                <li><i class="fa fa-circle"></i>Développement du contenu texte & médias</li>
+                            </ul>
+                        </div>
+                        <div class="col l6 hide-on-med-and-down"><img class="cover-picture border-picture" src="{{ 'assets/img/EISTI.jpg'| theme }}"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- RESPONSIVE TAB -->
+            <div id="tab2" class="col s12 tab-content">
+                <div class="container">
+                    <div class="row">
+                        <div class="col l6 m12 s12">
+                            <h1>Site compatible avec tous les Appareils et Navigateurs</h1>
+                            <p>
+                                En 2017, la navigation web dans le monde compte 48% de navigation sur mobile, 47% sur ordinateur et 5% sur tablette.
+                                Ces statistiques confirment le fait qu'un site web doit pouvoir être consulté depuis n'importe quel appareil ou navigateur.
+                            </p>
+                            <ul>
+                                <li><i class="fa fa-circle"></i>Compatible avec tous les appareils</li>
+                                <li><i class="fa fa-circle"></i>Compatible avec tous les navigateurs web</li>
+                                <li><i class="fa fa-circle"></i>Possibilité de site multilingue</li>
+                            </ul>
+                        </div>
+                        <div class="col l6 hide-on-med-and-down"><img class="cover-picture border-picture" src="{{ 'assets/img/EISTI.jpg'| theme }}"></div>
+                    </div>
+                </div>
+            </div>
+            <div id="tab3" class="col s12 tab-content">
+                <div class="container">
+                    <div class="row">
+                        <div class="col l6 m12 s12">
+                            <h1>Domaine & Hébergement</h1>
+                            <p>
+                                Pour mettre en ligne un site internet, il est nécessaire d'enregistrer un nom de domaine (l'url de votre site),
+                                disposer d'un hébergement contenant la structure du site et lier une base de données à cet hébergement pour y stocker les
+                                données. Je prends en charge l'ensemble de ces opérations ainsi que le renouvelement de votre nom de domaine.
+                            </p>
+                            <ul>
+                                <li><i class="fa fa-circle"></i>Engistrement du nom de domaine</li>
+                                <li><i class="fa fa-circle"></i>Hébergement sur serveur mutualisé</li>
+                                <li><i class="fa fa-circle"></i>Association d'une base de donnée au serveur</li>
+                                <li><i class="fa fa-circle"></i>Possibilité de mise en place de cerficat HTTPS</li>
+                            </ul>
+                        </div>
+                        <div class="col l6 hide-on-med-and-down"><img class="cover-picture border-picture" src="{{ 'assets/img/EISTI.jpg'| theme }}"></div>
+                    </div>
+                </div>
+            </div>
+            <div id="tab4" class="col s12 tab-content">Test 4</div>
+            <div id="tab5" class="col s12 tab-content">Test 5</div>
+            <div id="tab6" class="col s12 tab-content">Test 6</div>
 
         </div>
 

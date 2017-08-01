@@ -105,7 +105,13 @@
 }
 
 .websites-services .col {
-    margin: 30px 0;
+    padding: 30px 0;
+    cursor: pointer;
+}
+
+.websites-services .col:hover {
+    background: #f3f3f3;
+    border-radius: 6px;
 }
 
 .websites-services .services .col i {
@@ -128,4 +134,123 @@
     margin: 0 auto;
     font-family: SourceSansProRegular, serif;
     color: #848484;
+}
+
+
+/* ---------------------------------------------- */
+/* ---------------------------------------------- */
+
+.websites-tabs {
+
+}
+
+.websites-tabs > .container-fluid > .row {
+    margin-bottom: 0;
+}
+
+.websites-tabs > .container-fluid > .row > .col {
+    padding: 0;
+}
+
+.websites-tabs .tabs {
+    height: 110px;
+    line-height: inherit;
+    background: #484848;
+}
+
+.websites-tabs .tabs li {
+    height: 110px;
+    line-height: inherit;
+}
+
+.websites-tabs .tabs .tab a:not(.active):hover {
+    background-color: #636363;
+}
+
+.websites-tabs .tabs .tab a.active {
+    background-color: #fff;
+}
+
+.websites-tabs .tabs .tab a.active h1 {
+    color: #484848;
+}
+
+.websites-tabs .tabs .indicator {
+    background-color: #80b5df;
+}
+
+.websites-tabs .tabs h1 {
+    font-size: 12px;
+    font-family: ProximaRegular, serif;
+    letter-spacing: 2px;
+    line-height: normal;
+    color: #fff;
+    margin: inherit;
+    margin-top: 10px;
+}
+
+.websites-tabs .tabs i {
+    font-size: 20px;
+    color: #80b5df;
+    margin-top: 32px;
+}
+
+.websites-tabs .tab-content {
+    background: url(../img/BG/BG03.png);
+    font-family: SourceSansProRegular, serif;
+}
+
+.websites-tabs .tab-content > .container {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.websites-tabs .tab-content > .container > .row {
+    margin-bottom: 0;
+}
+
+.websites-tabs .tab-content .cover-picture {
+    width: 100%;
+}
+
+.websites-tabs .tab-content .border-picture {
+    border: 5px solid #d4d4d4;
+}
+
+.websites-tabs .tab-content h1 {
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-family: ProximaRegular, serif;
+    font-size: 14px;
+    line-height: 20px;
+    margin: 0 auto;
+    padding: 15px;
+    background: #fff;
+    color: #484848;
+    border: 2px solid #484848;
+}
+
+.websites-tabs .tab-content p {
+    padding-top: 15px;
+    text-align: justify;
+    font-size: 14px;
+    color: #7b7b7b;
+}
+
+.websites-tabs .tab-content ul {
+    margin-top: 10px;
+    display: inline-block;
+    padding: 30px;
+    background: #fff;
+    border: 1px solid #d0d0d0;
+}
+
+.websites-tabs .tab-content li {
+    font-size: 15px;
+}
+
+.websites-tabs .tab-content li i {
+    color: #80b5df;
+    margin-right: 10px;
 }

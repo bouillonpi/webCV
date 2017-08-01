@@ -4,6 +4,8 @@ $( document ).ready(function(){
 
     $('.modal').modal();
 
+    $('ul.tabs').tabs();
+
     lightbox.option({
         'resizeDuration': 0,
         'fadeDuration': 20,
@@ -70,3 +72,10 @@ $('#typeWriteAbout-FR').typeIt({
         'Mon chat Ioda pèse 11kg et mesure 1,40m de long. Fat kid.'
     ]
 });
+
+function triggerTab(tab_id) {
+    $('ul.tabs').tabs('select_tab', tab_id);
+    $('html, body').animate({
+        scrollTop: $('#websites-tabs').offset().top - 40
+    }, 700);
+}
