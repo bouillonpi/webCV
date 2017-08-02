@@ -181,6 +181,7 @@
 .home-intro .key-info .col p {
     width: 90%;
     margin: 0 auto;
+    font-size: 14px;
     font-family: SourceSansProRegular, serif;
     color: #848484;
 }

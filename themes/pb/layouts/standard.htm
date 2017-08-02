@@ -3,8 +3,9 @@ injectBootstrapAssets = 0
 injectMainScript = 0
 
 [localePicker]
+forceUrl = 0
 ==
-
+<!DOCTYPE html>
 <html lang="fr">
 <head>
 
@@ -41,7 +42,7 @@ injectMainScript = 0
 
     {% partial "navbar" %}
 
-    <main>{% page %}</main>
+    {% page %}
 
     {% partial "footer" %}
 
@@ -52,7 +53,7 @@ injectMainScript = 0
                     'assets/vendor/materialize/js/materialize.min.js',
                     'assets/vendor/lightbox/js/lightbox.js',
                     'assets/vendor/typewriter/typewriter.js',
-                    'assets/script/app.js',
+                    'assets/script/app.js'
                 ]|theme }}">
     </script>
 

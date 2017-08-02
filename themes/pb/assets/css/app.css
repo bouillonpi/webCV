@@ -1,3 +1,8 @@
+body,
+html {
+    height:100%;
+}
+
 .css-badass {
     color:#BADA55;
     background: #484848;

@@ -6,16 +6,6 @@ $( document ).ready(function(){
 
     $('ul.tabs').tabs();
 
-    lightbox.option({
-        'resizeDuration': 0,
-        'fadeDuration': 20,
-        'disableScrolling': true,
-        'wrapAround': true,
-        'fitImagesInViewport': true,
-        'albumLabel': "%1/%2",
-        'scaleWidthPercentageForFitImageInViewport': 70
-    })
-
 });
 
 $("#home-scroll").click(function() {

@@ -233,7 +233,7 @@ is_hidden = 0
                 </div>
 
                 <a class="experience-picture"
-                   href="{{ 'assets/img/FR.png'| theme }}"
+                   href="{{ 'assets/img/WF01.png'| theme }}"
                    data-lightbox="picture-set-1">
                 </a>
 
@@ -340,14 +340,32 @@ is_hidden = 0
                     {% if activeLocale == 'fr' %} Juin 2015 - Aujourd'hui | {{ "now"|date('Y') - 2015 }} ans
                     {% else %} June 2015 - Today | {{ "now"|date('Y') - 2015 }} years {% endif %}
                 </h3>
-                <h3><i class="fa fa-globe"></i> Pau & Sud-Ouest, France</h3>
+                <h3><i class="fa fa-globe"></i>
+                    {% if activeLocale == 'fr' %} Pau & Sud-Ouest, France
+                    {% else %} Southwest France {% endif %}
+                </h3>
 
-                <p>Passionné d'informatique et de web design, je porte un grand intérêt pour les nouvelles technologies. En créant mon entreprise Caméléon Design, je place mes passions au service des particuliers et des entreprises dans la réalisation de sites internet. Mes réalisations s'ancrent dans la tendance du web d'aujourd'hui pour construire l'Internet de demain.</p>
+                <p>
+                    {% if activeLocale == 'fr' %} Passionné d'informatique et de web design, je porte un grand intérêt pour les nouvelles technologies. En créant mon entreprise Caméléon Design, je place mes passions au service des particuliers et des entreprises dans la réalisation de sites internet. Mes réalisations s'ancrent dans la tendance du web d'aujourd'hui pour construire l'Internet de demain.
+                    {% else %} Passionate about IT and webdesign, I have an acute interest in new technologies. I founded the company Caméléon Design to place my passions at the service of people and companies, designing websites. I use today's webdesign technologies to build the Internet of tomorrow. {% endif %}
+                </p>
 
                 <ul class="tasks-list">
-                    <li><i class="fa fa-circle"></i>2014-2015 : Mise en place du business model avec PEPITE</li>
-                    <li><i class="fa fa-circle"></i>2015-2017 : Réalisation et Consulting de 11 sites internet</li>
-                    <li><i class="fa fa-circle"></i>2016-2017 : Création et mise en ligne de mon portfolio</li>
+                    <li>
+                        <i class="fa fa-circle"></i>
+                        {% if activeLocale == 'fr' %} 2014-2015 : Mise en place du business model avec PEPITE
+                        {% else %} 2014-2015 : Set up the business model of the company {% endif %}
+                    </li>
+                    <li>
+                        <i class="fa fa-circle"></i>
+                        {% if activeLocale == 'fr' %} 2015-2017 : Réalisation et Consulting de 11 sites internet
+                        {% else %} 2015-2017 : Designed and consulted 11 websites {% endif %}
+                    </li>
+                    <li>
+                        <i class="fa fa-circle"></i>
+                        {% if activeLocale == 'fr' %} 2016-2017 : Création et mise en ligne de mon portfolio
+                        {% else %} 2016-2017 : Designed my portfolio {% endif %}
+                    </li>
                 </ul>
 
                 <ul class="chips-list">
@@ -367,8 +385,14 @@ is_hidden = 0
                 </ul>
 
                 <div class="actions">
-                    <a href="{{ 'assets/img/Interface-Admin.png'| theme }}" data-lightbox="picture-set-3" data-title="Exemple d'interface administrateur réalisée pour le site biarritzdreamrentals.com. L'interface permet un suivi analytique complet du traffic sur le site." class="call-to-action media"><i class="fa fa-th"></i>Voir photos</a>
-                    <a href="{{ 'websites'|page }}" class="call-to-action"><i class="fa fa-globe"></i>Découvrir mes travaux</a>
+                    <a href="{{ 'assets/img/Interface-Admin.png'| theme }}" data-lightbox="picture-set-3" class="call-to-action media">
+                        <i class="fa fa-th"></i>
+                        {% if activeLocale == 'fr' %} Voir photos {% else %} Pictures {% endif %}
+                    </a>
+                    <a href="{{ 'websites'|page }}" class="call-to-action">
+                        <i class="fa fa-globe"></i>
+                        {% if activeLocale == 'fr' %} Découvrir mes travaux {% else %} Ckeck out my work {% endif %}
+                    </a>
                 </div>
 
                 <a class="experience-picture"

@@ -8,8 +8,6 @@
  * Copyright 2007, 2015 Lokesh Dhakar
  * Released under the MIT license
  * https://github.com/lokesh/lightbox2/blob/master/LICENSE
- *
- * @preserve
  */
 
 // Uses Node, AMD or browser globals to create a module.
@@ -48,20 +46,19 @@
         imageFadeDuration: 600,
         // maxWidth: 800,
         // maxHeight: 600,
-        scaleWidthPercentageForFitImageInViewport: 80,
         positionFromTop: 50,
         resizeDuration: 700,
         showImageNumberLabel: true,
         wrapAround: false,
         disableScrolling: false,
-      /*
-       Sanitize Title
-       If the caption data is trusted, for example you are hardcoding it in, then leave this to false.
-       This will free you to add html tags, such as links, in the caption.
+        /*
+         Sanitize Title
+         If the caption data is trusted, for example you are hardcoding it in, then leave this to false.
+         This will free you to add html tags, such as links, in the caption.
 
-       If the caption data is user submitted or from some other untrusted source, then set this to true
-       to prevent xss and other injection attacks.
-       */
+         If the caption data is user submitted or from some other untrusted source, then set this to true
+         to prevent xss and other injection attacks.
+         */
         sanitizeTitle: false
     };
 
@@ -159,19 +156,19 @@
             return false;
         });
 
-      /*
-       Show context menu for image on right-click
+        /*
+         Show context menu for image on right-click
 
-       There is a div containing the navigation that spans the entire image and lives above of it. If
-       you right-click, you are right clicking this div and not the image. This prevents users from
-       saving the image or using other context menu actions with the image.
+         There is a div containing the navigation that spans the entire image and lives above of it. If
+         you right-click, you are right clicking this div and not the image. This prevents users from
+         saving the image or using other context menu actions with the image.
 
-       To fix this, when we detect the right mouse button is pressed down, but not yet clicked, we
-       set pointer-events to none on the nav div. This is so that the upcoming right-click event on
-       the next mouseup will bubble down to the image. Once the right-click/contextmenu event occurs
-       we set the pointer events back to auto for the nav div so it can capture hover and left-click
-       events as usual.
-       */
+         To fix this, when we detect the right mouse button is pressed down, but not yet clicked, we
+         set pointer-events to none on the nav div. This is so that the upcoming right-click event on
+         the next mouseup will bubble down to the image. Once the right-click/contextmenu event occurs
+         we set the pointer events back to auto for the nav div so it can capture hover and left-click
+         events as usual.
+         */
         this.$nav.on('mousedown', function(event) {
             if (event.which === 3) {
                 self.$nav.css('pointer-events', 'none');
@@ -267,6 +264,11 @@
 
         this.$overlay.fadeIn(this.options.fadeDuration);
 
+        $('.lb-loader').fadeIn('slow');
+        this.$lightbox.find('.lb-image, .lb-nav, .lb-prev, .lb-next, .lb-dataContainer, .lb-numbers, .lb-caption').hide();
+
+        this.$outerContainer.addClass('animating');
+
         // When image to show is preloaded, we send the width and height to sizeContainer()
         var preloader = new Image();
         preloader.onload = function() {
@@ -302,11 +304,10 @@
                     maxImageHeight = self.options.maxHeight;
                 }
 
-                // Is the current image's width or height is greater than the maxImageWidth or maxImageHeight
-                // option than we need to size down while maintaining the aspect ratio.
+                // Is there a fitting issue?
                 if ((preloader.width > maxImageWidth) || (preloader.height > maxImageHeight)) {
                     if ((preloader.width / maxImageWidth) > (preloader.height / maxImageHeight)) {
-                        imageWidth  = (self.options.scaleWidthPercentageForFitImageInViewport < 100 ) ? maxImageWidth * (self.options.scaleWidthPercentageForFitImageInViewport / 100) : maxImageWidth;
+                        imageWidth  = maxImageWidth;
                         imageHeight = parseInt(preloader.height / (preloader.width / imageWidth), 10);
                         $image.width(imageWidth);
                         $image.height(imageHeight);

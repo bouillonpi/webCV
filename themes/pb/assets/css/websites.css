@@ -37,7 +37,7 @@
 
 .websites-hero > h2 {
     padding-top: 10px;
-    font-size: 15px;
+    font-size: 14px;
     font-family: ProximaRegular, serif;
     color: #80b5df;
     letter-spacing: 5px;
@@ -46,7 +46,7 @@
 }
 
 .websites-hero > h3 {
-    font-size: 15px;
+    font-size: 14px;
     font-family: ProximaRegular, serif;
     color: rgba(255, 255, 255, 0.64);
     letter-spacing: 5px;
@@ -110,7 +110,7 @@
 }
 
 .websites-services .col:hover {
-    background: #f3f3f3;
+    background: #fbfbfb;
     border-radius: 6px;
 }
 
@@ -132,6 +132,7 @@
 .websites-services .services .col p {
     width: 90%;
     margin: 0 auto;
+    font-size: 14px;
     font-family: SourceSansProRegular, serif;
     color: #848484;
 }
@@ -141,7 +142,7 @@
 /* ---------------------------------------------- */
 
 .websites-tabs {
-
+    border-bottom: 10px solid #d2d2d2;
 }
 
 .websites-tabs > .container-fluid > .row {
@@ -253,4 +254,135 @@
 .websites-tabs .tab-content li i {
     color: #80b5df;
     margin-right: 10px;
+}
+
+/* ---------------------------------------------- */
+/* ---------------------------------------------- */
+
+.websites-realisations {
+    text-align: center;
+}
+
+.websites-realisations > .container {
+    padding-top: 100px;
+    padding-bottom: 70px;
+}
+
+.websites-realisations .block-title {
+    position: relative;
+}
+
+.websites-realisations .block-title h1 {
+    position: relative;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-family: ProximaBold, serif;
+    font-size: 14px;
+    display: inline-block;
+    margin: 0 auto;
+    margin-bottom: -2px;
+    padding: 15px 60px;
+    border: 2px solid #484848;
+    color: #484848;
+}
+
+.websites-realisations .block-title .custom-line {
+    position: relative;
+    width: 70%;
+    margin: 0 auto;
+    border: 1px solid #484848;
+}
+
+.websites-realisations .realisations {
+    padding-top: 70px;
+}
+
+.websites-realisations .realisations img {
+    width: 100%;
+}
+
+.websites-realisations > .container > .realisations > .col {
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.websites-realisations > .container > .realisations > .col:hover .mask {
+    opacity: 1;
+    background: rgba(50, 50, 50, 0.95);
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.websites-realisations .mask {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.websites-realisations .mask .mask-container {
+    display: table;
+    width: 100%;
+    height: 100%;
+}
+
+.websites-realisations .mask .mask-content {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.websites-realisations .mask .mask-content h1 {
+    color: #fff;
+    font-size: 20px;
+    font-family: ProximaBold, serif;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.websites-realisations .mask .mask-content p {
+    color: #80b5df;
+    font-size: 14px;
+    font-family: SourceSansProRegular, serif;
+    padding-top: 10px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.websites-realisations .mask .mask-content a {
+    display: inline-block;
+    padding: 10px 30px;
+    color: #fff;
+    background: #80b5df;
+    font-size: 14px;
+    font-family: ProximaBold, serif;
+    letter-spacing: 4px;
+    border-radius: 50px;
+    margin-top: 15px;
+    text-transform: uppercase;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.websites-realisations .mask .mask-content a:hover {
+    background: #6995b9;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
 }
