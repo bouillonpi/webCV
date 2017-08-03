@@ -34,7 +34,11 @@ is_hidden = 0
                     </div>
                 </div>
                 <div class="col l6 m6 s12">
-                    <div class="button-cv"><i class="fa fa-download"></i>Download CV</div>
+                    {% if activeLocale == 'fr' %}
+                        <a href="{{ 'assets/doc/resume/CV-BOUILLON-FRENCH.pdf'| theme }}" download><div class="button-cv"><i class="fa fa-download"></i>Download CV</div></a>
+                    {% else %}
+                        <a href="{{ 'assets/doc/resume/CV-BOUILLON-ENGLISH.pdf'| theme }}" download><div class="button-cv"><i class="fa fa-download"></i>Download CV</div></a>
+                    {% endif %}
                 </div>
             </div>
         </div>
@@ -228,12 +232,12 @@ is_hidden = 0
                     </a>
                     <a href="http://www.oberthur.com/" target="_blank" class="call-to-action">
                         <i class="fa fa-globe"></i>
-                        {% if activeLocale == 'fr' %} Site OT-Morpho {% else %} Website OT-Morpho {% endif %}
+                        {% if activeLocale == 'fr' %} Site OT-Morpho {% else %} OT-Morpho Website {% endif %}
                     </a>
                 </div>
 
                 <a class="experience-picture"
-                   href="{{ 'assets/img/WF01.png'| theme }}"
+                   href="{{ 'assets/img/NYC01.jpg'| theme }}"
                    data-lightbox="picture-set-1">
                 </a>
 
@@ -301,7 +305,7 @@ is_hidden = 0
                     </a>
                     <a href="http://www.oberthur.com/" target="_blank" class="call-to-action">
                         <i class="fa fa-globe"></i>
-                        {% if activeLocale == 'fr' %} Site OT-Morpho {% else %} Website OT-Morpho {% endif %}
+                        {% if activeLocale == 'fr' %} Site OT-Morpho {% else %} OT-Morpho Website {% endif %}
                     </a>
                 </div>
 
@@ -314,7 +318,7 @@ is_hidden = 0
             </div>
         </div>
 
-        <!-- CAMELEON DESIGN -->  {% if activeLocale == 'fr' %} {% else %} {% endif %}
+        <!-- CAMELEON DESIGN -->
         <div class="cd-timeline-block">
             <div class="cd-timeline-img"><img src="{{ 'assets/img/flags/FR.png'| theme }}"></div>
             <div class="cd-timeline-content">
@@ -412,21 +416,53 @@ is_hidden = 0
 
                 <div class="row experience-title">
                     <div class="col l2 logo-company"><img src="{{ 'assets/img/Soprasteria.png'| theme }}"></div>
-                    <div class="col l10"><h2>Stage web development full-stack</h2></div>
+                    <div class="col l10">
+                        <h2>
+                            {% if activeLocale == 'fr' %} Stage web development full-stack
+                            {% else %} Full-stack Web Development Internship {% endif %}
+                        </h2>
+                    </div>
                 </div>
 
                 <h3><i class="fa fa-map-marker"></i> SopraSteria Group | <a href="https://www.soprasteria.com" target="_blank">www.soprasteria.com</a></h3>
-                <h3><i class="fa fa-clock-o"></i> Juin 2015 - Septembre 2015 | 4 mois</h3>
+                <h3>
+                    <i class="fa fa-clock-o"></i>
+                    {% if activeLocale == 'fr' %} Juin 2015 - Septembre 2015 | 4 mois
+                    {% else %} June 2015 - September 2015 | 4 months {% endif %}
+                </h3>
                 <h3><i class="fa fa-globe"></i> Pau, France</h3>
 
-                <p>Intégré au sein d'une équipe de développement web, j'ai participé à la refonte du portail intranet de l'entreprise TIGF. Au cours de ces 4 mois, j'ai contribué à l'ensemble des étapes de la refonte décrites ci-contre. </p>
+                <p>
+                    {% if activeLocale == 'fr' %} Intégré au sein d'une équipe de développement web, j'ai participé à la refonte du portail intranet de l'entreprise TIGF. Au cours de ces 4 mois, j'ai contribué à l'ensemble des étapes de la refonte décrites ci-contre.
+                    {% else %} Part of a web development team, I contributed to the intranet portal redesign of the company TIGF. During this 4 months internship I worked on all stages of the redesign as detailed below. {% endif %}
+                </p>
 
                 <ul class="tasks-list">
-                    <li><i class="fa fa-circle"></i>Réalisation d'une maquette d'application</li>
-                    <li><i class="fa fa-circle"></i>Réunions client avec le métier de l'entreprise TIGF</li>
-                    <li><i class="fa fa-circle"></i>Implémentation d'un prototype</li>
-                    <li><i class="fa fa-circle"></i>Développement de l'interface client</li>
-                    <li><i class="fa fa-circle"></i>Livraison du produit fini et maintenance</li>
+                    <li>
+                        <i class="fa fa-circle"></i>
+                        {% if activeLocale == 'fr' %} Réalisation d'une maquette d'application
+                        {% else %} Designed mock-up of the redesigned application {% endif %}
+                    </li>
+                    <li>
+                        <i class="fa fa-circle"></i>
+                        {% if activeLocale == 'fr' %} Réunions client avec le métier de l'entreprise TIGF
+                        {% else %} Held customer meetings with TIGF company {% endif %}
+                    </li>
+                    <li>
+                        <i class="fa fa-circle"></i>
+                        {% if activeLocale == 'fr' %} Implémentation d'un prototype
+                        {% else %} Implemented a prototype of the redesign {% endif %}
+                    </li>
+                    <li>
+                        <i class="fa fa-circle"></i>
+                        {% if activeLocale == 'fr' %} Développement de l'interface client
+                        {% else %} Developed user interface and user experience {% endif %}
+                    </li>
+                    <li>
+                        <i class="fa fa-circle"></i>
+                        {% if activeLocale == 'fr' %} Livraison du produit fini et maintenance
+                        {% else %} Delivered redesigned application and fixed production bugs {% endif %}
+                    </li>
                 </ul>
 
                 <ul class="chips-list">
@@ -443,14 +479,19 @@ is_hidden = 0
                 </ul>
 
                 <div class="actions">
-                    <a href="{{ 'assets/img/NYC01.jpg'| theme }}" data-lightbox="picture-set-4" data-title="Test 7" class="call-to-action media"><i class="fa fa-th"></i>Voir photos</a>
-                    <a href="https://www.soprasteria.com" target="_blank" class="call-to-action"><i class="fa fa-globe"></i>Site SopraSteria</a>
+                    <a href="{{ 'assets/img/NYC01.jpg'| theme }}" data-lightbox="picture-set-4" class="call-to-action media">
+                        <i class="fa fa-th"></i>
+                        {% if activeLocale == 'fr' %} Voir photos {% else %} Pictures {% endif %}
+                    </a>
+                    <a href="https://www.soprasteria.com" target="_blank" class="call-to-action">
+                        <i class="fa fa-globe"></i>
+                        {% if activeLocale == 'fr' %} Site SopraSteria {% else %} SopraSteria Website {% endif %}
+                    </a>
                 </div>
 
                 <a class="experience-picture"
                    href="{{ 'assets/img/EISTI.jpg'| theme }}"
-                   data-lightbox="picture-set-4"
-                   data-title="Test 8">
+                   data-lightbox="picture-set-4">
                 </a>
 
                 <span class="cd-date">2015</span>
@@ -472,7 +513,10 @@ is_hidden = 0
         <img src="{{ 'assets/img/IPB/microsoft.png'| theme }}">
 
         <div class="block-title">
-            <h1>Lauréat Concours Microsoft IPAG</h1>
+            <h1>
+                {% if activeLocale == 'fr' %} Lauréat Concours Microsoft IPAG
+                {% else %} Microsoft Competition Winner {% endif %}
+            </h1>
             <div class="custom-line hide-on-med-and-down"></div>
         </div>
 
@@ -483,41 +527,67 @@ is_hidden = 0
 
                 <div class="col l5 m12 s12">
                     <div class="content-container">
-                        <h2><i class="fa fa-trophy"></i> Concours Microsoft IPAG PowerPoint Battle 2015</h2>
-                        <h2><i class="fa fa-microphone"></i> Présentation professionnelle devant jury</h2>
-                        <h2><i class="fa fa-map-marker"></i> Siège Microsoft France, Issy-les-Moulineaux</h2>
+                        <h2>
+                            <i class="fa fa-trophy"></i>
+                            {% if activeLocale == 'fr' %} Concours Microsoft IPAG PowerPoint Battle 2015
+                            {% else %} Microsoft IPAG PowerPoint Battle 2015 {% endif %}
+                        </h2>
+                        <h2>
+                            <i class="fa fa-microphone"></i>
+                            {% if activeLocale == 'fr' %} Présentation professionnelle devant jury
+                            {% else %} Professional presentation before a jury of experts {% endif %}
+                        </h2>
+                        <h2>
+                            <i class="fa fa-map-marker"></i>
+                            {% if activeLocale == 'fr' %} Siège Microsoft France, Issy-les-Moulineaux
+                            {% else %} Microsoft France Headquarters, Paris {% endif %}
+                        </h2>
 
                         <ul class="details">
-                            <li><span>Candidats</span> <span>400 participants</span></li>
-                            <li><span>Performance</span> <span>Première place</span></li>
-                            <li><span>Prix remporté</span> <span>8000€</span></li>
-                            <li><span>Récompense</span> <span>Entretien Microsoft</span></li>
+                            <li>
+                                <span>{% if activeLocale == 'fr' %} Candidats {% else %} Candidates {% endif %}</span>
+                                <span>400 participants</span>
+                            </li>
+                            <li>
+                                <span>Performance</span>
+                                <span>{% if activeLocale == 'fr' %} Première place {% else %} First place {% endif %}</span>
+                            </li>
+                            <li>
+                                <span>{% if activeLocale == 'fr' %} Prix remporté {% else %} Cash Prize {% endif %}</span>
+                                <span>8000€</span>
+                            </li>
+                            <li>
+                                <span>{% if activeLocale == 'fr' %} Récompense {% else %} Reward {% endif %}</span>
+                                <span>{% if activeLocale == 'fr' %} Entretien Microsoft {% else %} Microsoft Job Interview {% endif %}</span>
+                            </li>
                         </ul>
 
                         <div class="actions">
-                            <a href="{{ 'assets/img/IPB/IPB02.jpg'| theme }}" data-lightbox="picture-set-award" data-title="Test 1" class="call-to-action media"><i class="fa fa-th"></i>Voir photos</a>
-                            <a href="http://www.ipagpowerpointbattle.com/edition-2015/" target="_blank" class="call-to-action"><i class="fa fa-plus"></i>En savoir plus</a>
+                            <a href="{{ 'assets/img/IPB/IPB02.jpg'| theme }}" data-lightbox="picture-set-award" class="call-to-action media">
+                                <i class="fa fa-th"></i>
+                                {% if activeLocale == 'fr' %} Voir photos {% else %} Pictures {% endif %}
+                            </a>
+                            <a href="http://www.ipagpowerpointbattle.com/edition-2015/" target="_blank" class="call-to-action">
+                                <i class="fa fa-plus"></i>
+                                {% if activeLocale == 'fr' %} En savoir plus {% else %} Learn more {% endif %}
+                            </a>
                         </div>
 
                         <a class="experience-picture"
                            href="{{ 'assets/img/IPB/IPB01.jpg'| theme }}"
-                           data-lightbox="picture-set-award"
-                           data-title="Test 2">
+                           data-lightbox="picture-set-award">
                         </a>
                         <a class="experience-picture"
                            href="{{ 'assets/img/IPB/IPB03.jpg'| theme }}"
-                           data-lightbox="picture-set-award"
-                           data-title="Test 3">
+                           data-lightbox="picture-set-award">
                         </a>
                         <a class="experience-picture"
                            href="{{ 'assets/img/IPB/IPB04.jpg'| theme }}"
-                           data-lightbox="picture-set-award"
-                           data-title="Test 4">
+                           data-lightbox="picture-set-award">
                         </a>
                         <a class="experience-picture"
                            href="{{ 'assets/img/IPB/campus-microsoft.jpg'| theme }}"
-                           data-lightbox="picture-set-award"
-                           data-title="Test 4">
+                           data-lightbox="picture-set-award">
                         </a>
 
                     </div>
@@ -534,7 +604,10 @@ is_hidden = 0
     <div class="container">
 
         <div class="block-title">
-            <h1>Compétences Techniques</h1>
+            <h1>
+                {% if activeLocale == 'fr' %} Compétences Techniques
+                {% else %} Technical Skills {% endif %}
+            </h1>
             <div class="custom-line hide-on-med-and-down"></div>
         </div>
 
@@ -545,7 +618,11 @@ is_hidden = 0
                     <img src="{{ 'assets/img/logos/angular.svg'| theme }}">
                     <div class="details">
                         <h1>Angular</h1>
-                        <p><b>{{ "now"|date('Y') - 2014 }}</b> ans d'expérience <br> Utilisé dans <b>+15</b> projets</p>
+                        <p>
+                            <b>{{ "now"|date('Y') - 2014 }}</b>
+                            {% if activeLocale == 'fr' %} ans d'expérience <br> Utilisé dans <b>+15</b> projets
+                            {% else %} years of experience <br> Used in <b>+15</b> projects {% endif %}
+                        </p>
                     </div>
                     <ul>
                         <li><i class="fa fa-circle"></i> AngularJS</li>
@@ -560,7 +637,11 @@ is_hidden = 0
                     <img src="{{ 'assets/img/logos/html.png'| theme }}">
                     <div class="details">
                         <h1>HTML</h1>
-                        <p><b>{{ "now"|date('Y') - 2012 }}</b> ans d'expérience <br> Utilisé dans <b>+25</b> projets</p>
+                        <p>
+                            <b>{{ "now"|date('Y') - 2012 }}</b>
+                            {% if activeLocale == 'fr' %} ans d'expérience <br> Utilisé dans <b>+25</b> projets
+                            {% else %} years of experience <br> Used in <b>+25</b> projects {% endif %}
+                        </p>
                     </div>
                     <ul>
                         <li><i class="fa fa-circle"></i> HTML 5</li>
@@ -575,7 +656,11 @@ is_hidden = 0
                     <img src="{{ 'assets/img/logos/css.png'| theme }}">
                     <div class="details">
                         <h1>CSS</h1>
-                        <p><b>{{ "now"|date('Y') - 2012 }}</b> ans d'expérience <br> Utilisé dans <b>+25</b> projets</p>
+                        <p>
+                            <b>{{ "now"|date('Y') - 2012 }}</b>
+                            {% if activeLocale == 'fr' %} ans d'expérience <br> Utilisé dans <b>+25</b> projets
+                            {% else %} years of experience <br> Used in <b>+25</b> projects {% endif %}
+                        </p>
                     </div>
                     <ul>
                         <li><i class="fa fa-circle"></i> CSS 3</li>
@@ -590,7 +675,11 @@ is_hidden = 0
                     <img src="{{ 'assets/img/logos/js.png'| theme }}">
                     <div class="details">
                         <h1>JavaScript</h1>
-                        <p><b>{{ "now"|date('Y') - 2012 }}</b> ans d'expérience <br> Utilisé dans <b>+20</b> projets</p>
+                        <p>
+                            <b>{{ "now"|date('Y') - 2012 }}</b>
+                            {% if activeLocale == 'fr' %} ans d'expérience <br> Utilisé dans <b>+20</b> projets
+                            {% else %} years of experience <br> Used in <b>+20</b> projects {% endif %}
+                        </p>
                     </div>
                     <ul>
                         <li><i class="fa fa-circle"></i> jQuery</li>
@@ -605,7 +694,11 @@ is_hidden = 0
                     <img src="{{ 'assets/img/logos/java.svg'| theme }}">
                     <div class="details">
                         <h1>Java</h1>
-                        <p><b>{{ "now"|date('Y') - 2014 }}</b> ans d'expérience <br> Utilisé dans <b>+15</b> projets</p>
+                        <p>
+                            <b>{{ "now"|date('Y') - 2014 }}</b>
+                            {% if activeLocale == 'fr' %} ans d'expérience <br> Utilisé dans <b>+15</b> projets
+                            {% else %} years of experience <br> Used in <b>+15</b> projects {% endif %}
+                        </p>
                     </div>
                     <ul>
                         <li><i class="fa fa-circle"></i> JEE</li>
@@ -620,7 +713,11 @@ is_hidden = 0
                     <img src="{{ 'assets/img/logos/scala.png'| theme }}">
                     <div class="details">
                         <h1>Scala</h1>
-                        <p><b>{{ "now"|date('Y') - 2016 }}</b> ans d'expérience <br> Utilisé dans <b>+5</b> projets</p>
+                        <p>
+                            <b>{{ "now"|date('Y') - 2016 }}</b>
+                            {% if activeLocale == 'fr' %} ans d'expérience <br> Utilisé dans <b>+5</b> projets
+                            {% else %} years of experience <br> Used in <b>+5</b> projects {% endif %}
+                        </p>
                     </div>
                     <ul>
                         <li><i class="fa fa-circle"></i> Scala 2</li>
@@ -635,7 +732,11 @@ is_hidden = 0
                     <img src="{{ 'assets/img/logos/php.png'| theme }}">
                     <div class="details">
                         <h1>PHP</h1>
-                        <p><b>{{ "now"|date('Y') - 2013 }}</b> ans d'expérience <br> Utilisé dans <b>+15</b> projets</p>
+                        <p>
+                            <b>{{ "now"|date('Y') - 2013 }}</b>
+                            {% if activeLocale == 'fr' %} ans d'expérience <br> Utilisé dans <b>+15</b> projets
+                            {% else %} years of experience <br> Used in <b>+15</b> projects {% endif %}
+                        </p>
                     </div>
                     <ul>
                         <li><i class="fa fa-circle"></i> PHP 7</li>
@@ -650,7 +751,11 @@ is_hidden = 0
                     <img src="{{ 'assets/img/logos/sql.png'| theme }}">
                     <div class="details">
                         <h1>Database</h1>
-                        <p><b>{{ "now"|date('Y') - 2012 }}</b> ans d'expérience <br> Utilisé dans <b>+25</b> projets</p>
+                        <p>
+                            <b>{{ "now"|date('Y') - 2012 }}</b>
+                            {% if activeLocale == 'fr' %} ans d'expérience <br> Utilisé dans <b>+25</b> projets
+                            {% else %} years of experience <br> Used in <b>+25</b> projects {% endif %}
+                        </p>
                     </div>
                     <ul>
                         <li><i class="fa fa-circle"></i> MySQL</li>
@@ -665,7 +770,11 @@ is_hidden = 0
                     <img src="{{ 'assets/img/logos/c.png'| theme }}">
                     <div class="details">
                         <h1>Langage C</h1>
-                        <p><b>{{ "now"|date('Y') - 2014 }}</b> ans d'expérience <br> Utilisé dans <b>+5</b> projets</p>
+                        <p>
+                            <b>{{ "now"|date('Y') - 2014 }}</b>
+                            {% if activeLocale == 'fr' %} ans d'expérience <br> Utilisé dans <b>+5</b> projets
+                            {% else %} years of experience <br> Used in <b>+5</b> projects {% endif %}
+                        </p>
                     </div>
                     <ul>
                         <li><i class="fa fa-circle"></i> C</li>
@@ -679,8 +788,12 @@ is_hidden = 0
                 <div class="technology">
                     <img src="{{ 'assets/img/logos/atlassian.png'| theme }}">
                     <div class="details">
-                        <h1>Méthode Agile</h1>
-                        <p><b>{{ "now"|date('Y') - 2013 }}</b> ans d'expérience <br> Utilisé dans <b>+25</b> projets</p>
+                        <h1>{% if activeLocale == 'fr' %} Méthode Agile {% else %} Agile Method {% endif %}</h1>
+                        <p>
+                            <b>{{ "now"|date('Y') - 2013 }}</b>
+                            {% if activeLocale == 'fr' %} ans d'expérience <br> Utilisé dans <b>+25</b> projets
+                            {% else %} years of experience <br> Used in <b>+25</b> projects {% endif %}
+                        </p>
                     </div>
                     <ul>
                         <li><i class="fa fa-circle"></i> JIRA</li>
@@ -695,7 +808,11 @@ is_hidden = 0
                     <img src="{{ 'assets/img/logos/adobe.png'| theme }}">
                     <div class="details">
                         <h1>Adobe Suite</h1>
-                        <p><b>{{ "now"|date('Y') - 2011 }}</b> ans d'expérience <br> Utilisé dans <b>+25</b> projets</p>
+                        <p>
+                            <b>{{ "now"|date('Y') - 2011 }}</b>
+                            {% if activeLocale == 'fr' %} ans d'expérience <br> Utilisé dans <b>+25</b> projets
+                            {% else %} years of experience <br> Used in <b>+25</b> projects {% endif %}
+                        </p>
                     </div>
                     <ul>
                         <li><i class="fa fa-circle"></i> Photoshop</li>
@@ -710,7 +827,11 @@ is_hidden = 0
                     <img src="{{ 'assets/img/logos/troll.png'| theme }}">
                     <div class="details">
                         <h1>Funny Code</h1>
-                        <p><b>-10</b> ans d'expérience <br> Utilisé dans <b>0</b> projet concret</p>
+                        <p>
+                            <b>-10</b>
+                            {% if activeLocale == 'fr' %} ans d'expérience <br> Utilisé dans <b>0</b> projet concret
+                            {% else %} years of experience <br> Used in <b>0</b> concrete project {% endif %}
+                        </p>
                     </div>
                     <ul>
                         <li><i class="fa fa-circle"></i> Prolog </li>
@@ -730,8 +851,15 @@ is_hidden = 0
 <div class="home-map">
     <div id="contact-map" class="contact-map"></div>
     <div class="property-map-info">
-        <h1>Ma localisation</h1>
-        <h2><i class="fa fa-globe"></i>Dans le monde</h2>
+        <h1>
+            {% if activeLocale == 'fr' %} Ma localisation
+            {% else %} My location {% endif %}
+        </h1>
+        <h2>
+            <i class="fa fa-globe"></i>
+            {% if activeLocale == 'fr' %} Dans le monde
+            {% else %} In the world {% endif %}
+        </h2>
     </div>
 </div>
 
@@ -741,7 +869,10 @@ is_hidden = 0
     <div class="container">
 
         <div class="block-title">
-            <h1>Langues</h1>
+            <h1>
+                {% if activeLocale == 'fr' %} Langues
+                {% else %} Languages {% endif %}
+            </h1>
             <div class="custom-line hide-on-med-and-down"></div>
         </div>
 
@@ -749,26 +880,49 @@ is_hidden = 0
 
             <div class="col l4 m12 s12">
                 <img src="{{ 'assets/img/flags/UK.png'| theme }}">
-                <h1>Anglais</h1>
-                <div class="level">Bilingue</div>
+                <h1>{% if activeLocale == 'fr' %} Anglais {% else %} English {% endif %}</h1>
+                <div class="level">{% if activeLocale == 'fr' %} Bilingue {% else %} Fluent {% endif %}</div>
                 <div class="items">
                     <ul>
-                        <li><i class="fa fa-circle"></i>12 mois aux États-Unis</li>
-                        <li><i class="fa fa-circle"></i>3 mois en Irlande</li>
-                        <li><i class="fa fa-circle"></i>TOEIC 2015 : 884/990</li>
+                        <li>
+                            <i class="fa fa-circle"></i>
+                            {% if activeLocale == 'fr' %} 12 mois aux États-Unis
+                            {% else %} 12 months in the US {% endif %}
+                        </li>
+                        <li>
+                            <i class="fa fa-circle"></i>
+                            {% if activeLocale == 'fr' %} 3 mois en Irlande
+                            {% else %} 3 months in Ireland {% endif %}
+                        </li>
+                        <li>
+                            <i class="fa fa-circle"></i>
+                            TOEIC 2015 : 884/990
+                        </li>
                     </ul>
                 </div>
             </div>
 
             <div class="col l4 m12 s12">
                 <img src="{{ 'assets/img/flags/FR.png'| theme }}">
-                <h1>Français</h1>
-                <div class="level">Langue Natale</div>
+                <h1>{% if activeLocale == 'fr' %} Français {% else %} French {% endif %}</h1>
+                <div class="level">{% if activeLocale == 'fr' %} Langue Natale {% else %} Native Language {% endif %}</div>
                 <div class="items">
                     <ul>
-                        <li><i class="fa fa-circle"></i>1er prix d'éloquence 2012</li>
-                        <li><i class="fa fa-circle"></i>5ème prix d'éloquence 2013</li>
-                        <li><i class="fa fa-circle"></i>1er prix d'éloquence 2014</li>
+                        <li>
+                            <i class="fa fa-circle"></i>
+                            {% if activeLocale == 'fr' %} 1er prix d'éloquence 2012
+                            {% else %} 1st prize eloquence 2012 {% endif %}
+                        </li>
+                        <li>
+                            <i class="fa fa-circle"></i>
+                            {% if activeLocale == 'fr' %} 5ème prix d'éloquence 2013
+                            {% else %} 5th prize eloquence 2013 {% endif %}
+                        </li>
+                        <li>
+                            <i class="fa fa-circle"></i>
+                            {% if activeLocale == 'fr' %} 1er prix d'éloquence 2014
+                            {% else %} 1st prize eloquence 2014 {% endif %}
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -776,12 +930,24 @@ is_hidden = 0
             <div class="col l4 m12 s12">
                 <img src="{{ 'assets/img/flags/ES.png'| theme }}">
                 <h1>Espagnol</h1>
-                <div class="level">Intermédiaire</div>
+                <div class="level">{% if activeLocale == 'fr' %} Intermédiaire {% else %} Intermediate {% endif %}</div>
                 <div class="items">
                     <ul>
-                        <li><i class="fa fa-circle"></i>8 années de cours</li>
-                        <li><i class="fa fa-circle"></i>1 mois à Madrid</li>
-                        <li><i class="fa fa-circle"></i>1 mois à Barcelone</li>
+                        <li>
+                            <i class="fa fa-circle"></i>
+                            {% if activeLocale == 'fr' %} 8 années de cours
+                            {% else %} 8 years school course {% endif %}
+                        </li>
+                        <li>
+                            <i class="fa fa-circle"></i>
+                            {% if activeLocale == 'fr' %} 1 mois à Madrid
+                            {% else %} 1 month in Madrid {% endif %}
+                        </li>
+                        <li>
+                            <i class="fa fa-circle"></i>
+                            {% if activeLocale == 'fr' %} 1 mois à Barcelone
+                            {% else %} 1 month in Barcelona {% endif %}
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -796,11 +962,15 @@ is_hidden = 0
 <div class="home-cool">
     <div class="container-fluid">
         <div class="row">
-
-            <h1>En dehors du travail ?</h1>
+            <h1>
+                {% if activeLocale == 'fr' %} En dehors du travail ?
+                {% else %} Outside of work? {% endif %}
+            </h1>
             <h1 id="typeWriteHome-FR"></h1>
-            <a href="{{ 'about'|page }}" class="button-about">Découvrir</a>
-
+            <a href="{{ 'about'|page }}" class="button-about">
+                {% if activeLocale == 'fr' %} Découvrir
+                {% else %} Learn more about me {% endif %}
+            </a>
         </div>
     </div>
 </div>
