@@ -6,6 +6,10 @@ $( document ).ready(function(){
 
     $('ul.tabs').tabs();
 
+    lightbox.option({
+        disableScrolling: true
+    })
+
 });
 
 $("#home-scroll").click(function() {
