@@ -16,8 +16,8 @@ is_hidden = 0
     <div class="container">
 
         <div class="block-title">
-            <h1>Création d'un site web</h1>
-            <div class="custom-line hide-on-med-and-down"></div>
+            <h1>Création de site web</h1>
+            <div class="custom-line"></div>
         </div>
 
         <div class="services row">
@@ -84,21 +84,31 @@ is_hidden = 0
             <div id="tab1" class="col s12 tab-content">
                 <div class="container">
                     <div class="row">
-                        <div class="col l6 m12 s12">
-                            <h1>Design épuré & innovant</h1>
+                        <div class="col l10 offset-l1 m10 offset-m1 s12">
+                            <h1>Design épuré & innovant <br>pour votre site</h1>
                             <p>
-                                Fort de mes expériences professionnelles aux États-Unis, je maîtrise
+                                Mes expériences professionnelles aux États-Unis m'ont permis de maîtriser
                                 les dernières technologies en matière de webdesign et d'expérience utilisateur.
                                 J'aime travailler avec un style épuré et rester dans la simplicité.
+                                La mise en place d'une charte graphique constitue la première étape de la réalisation du design d'un site internet.
+                                Il s'agit de définir ensemble des couleurs, polices et designs qui correspondent au mieux
+                                à l'image que vous souhaitez véhiculer auprès des futurs visiteurs.
+                                La réalisation du logo est plus évidente une fois la charte graphique mise en place.
+                                Dans le cas où vous auriez déja un logo, la charte graphique peut s'en inspirer en reprenant les couleurs ou le style de police.
+                                L'étape suivante de la réalisation du site consiste à construire ensemble une maquette simplifiée des pages du site en
+                                choisissant le type de contenu à afficher (carousel, images, vidéos, etc).
+                                Une fois cette maquette réalisée, je développe une première version du site à faire évoluer ensemble par la suite.
+                                L'étape finale consiste à optimiser le contenu texte et média du site
+                                comme par exemple en retouchant les photos ou en améliorant le contenu texte.
                             </p>
                             <ul>
+                                <h2>Services</h2>
                                 <li><i class="fa fa-pencil-square-o"></i>Mise en place de la charte graphique</li>
                                 <li><i class="fa fa-magic"></i>Création d'un logo pour le projet</li>
                                 <li><i class="fa fa-code"></i>Construction des pages du site</li>
-                                <li><i class="fa fa-file-text-o"></i>Développement du contenu texte & médias</li>
+                                <li><i class="fa fa-file-text-o"></i>Développement du contenu texte & média</li>
                             </ul>
                         </div>
-                        <div class="col l6 hide-on-med-and-down"><img class="cover-picture border-picture" src="{{ 'assets/img/EISTI.jpg'| theme }}"></div>
                     </div>
                 </div>
             </div>
@@ -107,19 +117,34 @@ is_hidden = 0
             <div id="tab2" class="col s12 tab-content">
                 <div class="container">
                     <div class="row">
-                        <div class="col l6 m12 s12">
-                            <h1>Site compatible avec tous les Appareils et Navigateurs</h1>
-                            <p>
-                                En 2017, la navigation web dans le monde compte 48% de navigation sur mobile, 47% sur ordinateur et 5% sur tablette.
-                                Ces statistiques confirment le fait qu'un site web doit pouvoir être consulté depuis n'importe quel appareil ou navigateur.
-                            </p>
+                        <div class="col l10 offset-l1 m10 offset-m1 s12">
+                            <h1>Site compatible avec <br> tous les Appareils et Navigateurs</h1>
+                            <div class="adaptability">
+                                <img src="{{ 'assets/img/responsive.png'| theme }}">
+                                <p>
+                                    En 2017, la navigation web dans le monde compte 48% de navigation sur mobile, 47% sur ordinateur et 5% sur tablette.
+                                    Ces statistiques confirment le fait qu'un site web doit pouvoir être consulté depuis n'importe quel appareil ou navigateur.
+                                    Je développe avec les frameworks <a href="https://material.angular.io/" target="_blank">Angular Material</a> et
+                                    <a href="http://materializecss.com/" target="_blank">MaterializeCSS</a>
+                                    pour assurer une compatibilité maximale du site avec l'ensemble des appareils et navigateurs.
+                                    Le site développé sera donc consultable sur ordinateur de bureau, tablette et mobile depuis les navigateurs listés ci-contre.
+                                </p>
+                                <div class="row browsers">
+                                    <div class="col l2"><img src="{{ 'assets/img/logos/chrome.png'| theme }}"></div>
+                                    <div class="col l2"><img src="{{ 'assets/img/logos/firefox.png'| theme }}"></div>
+                                    <div class="col l2"><img src="{{ 'assets/img/logos/safari.png'| theme }}"></div>
+                                    <div class="col l2"><img src="{{ 'assets/img/logos/edge.png'| theme }}"></div>
+                                    <div class="col l2"><img src="{{ 'assets/img/logos/explorer.png'| theme }}"></div>
+                                    <div class="col l2"><img src="{{ 'assets/img/logos/opera.png'| theme }}"></div>
+                                </div>
+                            </div>
                             <ul>
+                                <h2>Services</h2>
                                 <li><i class="fa fa-desktop"></i>Compatible avec tous les appareils</li>
                                 <li><i class="fa fa-chrome"></i>Compatible avec tous les navigateurs web</li>
                                 <li><i class="fa fa-globe"></i>Possibilité de site multilingue</li>
                             </ul>
                         </div>
-                        <div class="col l6 hide-on-med-and-down"><img class="cover-picture border-picture" src="{{ 'assets/img/EISTI.jpg'| theme }}"></div>
                     </div>
                 </div>
             </div>
@@ -128,20 +153,23 @@ is_hidden = 0
             <div id="tab3" class="col s12 tab-content">
                 <div class="container">
                     <div class="row">
-                        <div class="col l6 m12 s12">
+                        <div class="col l10 offset-l1 m10 offset-m1 s12">
                             <h1>Domaine & Hébergement</h1>
                             <p>
                                 Pour mettre en ligne un site internet, il est nécessaire d'enregistrer un nom de domaine,
                                 disposer d'un hébergement contenant la structure du site et lier une base de données à cet hébergement pour y stocker les
-                                données. Je prends en charge l'ensemble de ces opérations ainsi que le renouvelement de votre nom de domaine.
+                                données. Lors de la création d'un site web, je prends en charge l'ensemble de ces opérations :
+                                hébergement du site sur un serveur mutualisé <a href="https://www.ovh.com" target="_blank">OVH</a>,
+                                mise en place d'une nouvelle base de données et renouvelement annuel de votre nom de domaine.
                             </p>
+                            <img src="{{ 'assets/img/logos/ovh.png'| theme}}" class="logo-company" style="margin-top:20px;margin-bottom:30px;">
                             <ul>
+                                <h2>Services</h2>
                                 <li><i class="fa fa-globe"></i>Engistrement du nom de domaine</li>
                                 <li><i class="fa fa-hdd-o"></i>Hébergement sur serveur mutualisé</li>
                                 <li><i class="fa fa-link"></i>Association d'une base de donnée au serveur</li>
                             </ul>
                         </div>
-                        <div class="col l6 hide-on-med-and-down"><img class="cover-picture border-picture" src="{{ 'assets/img/EISTI.jpg'| theme }}"></div>
                     </div>
                 </div>
             </div>
@@ -150,21 +178,25 @@ is_hidden = 0
             <div id="tab4" class="col s12 tab-content">
                 <div class="container">
                     <div class="row">
-                        <div class="col l6 m12 s12">
+                        <div class="col l10 offset-l1 m10 offset-m1 s12">
                             <h1>Maintenance & Évolution du site</h1>
                             <p>
                                 Après avoir réalisé le site internet, j'assure une maintenance régulière de
                                 l'architecture pour garantir un fonctionnement optimal sur la durée.
-                                Lorsque des changements mineurs ou l'ajout de nouvelles fonctionnalités s'imposent,
+                                Lorsque des changements mineurs ou l'ajout de nouvelles fonctionnalités deviennent nécessaires,
                                 modifier le contenu du site est très rapide grâce à l'architecture modulaire mise en place.
+                                Je développe l'architecture du site avec le CMS (Content Management System)
+                                <a href="https://octobercms.com/" target="_blank">OctoberCMS</a>
+                                permettant de maintenir et de faire évoluer le site et son back office efficacement.
                             </p>
+                            <img src="{{ 'assets/img/logos/october.png'| theme}}" class="logo-company"></div>
                             <ul>
+                                <h2>Services</h2>
                                 <li><i class="fa fa-wrench"></i>Maintenance régulière du site</li>
                                 <li><i class="fa fa-cog"></i>Changements mineurs rapides</li>
                                 <li><i class="fa fa-plus"></i>Ajout possible de nouvelles fonctionnalités</li>
                             </ul>
                         </div>
-                        <div class="col l6 hide-on-med-and-down"><img class="cover-picture border-picture" src="{{ 'assets/img/EISTI.jpg'| theme }}"></div>
                     </div>
                 </div>
             </div>
@@ -173,21 +205,24 @@ is_hidden = 0
             <div id="tab5" class="col s12 tab-content">
                 <div class="container">
                     <div class="row">
-                        <div class="col l6 m12 s12">
+                        <div class="col l10 offset-l1 m10 offset-m1 s12">
                             <h1>Référencement naturel optimisé</h1>
                             <p>
                                 Le référencement (en anglais SEO pour Search Engine Optimization, traduisez Optimisation pour les moteurs de recherche)
                                 désigne l'ensemble des techniques permettant d'améliorer la visibilité d'un site web, à savoir le positionnement
                                 des pages d'un site en bonne place dans les pages de résultats pour certains mots-clés.
                                 Je mets ces techniques en application sur les sites que je conçois pour un résultat de référencement naturel optimal.
+                                Le HTTPS est devenu un des points clés du web de 2017. Ce protocole est la version sécurisée de HTTP et assure le chiffrement
+                                de l'ensemble des communications entre le navigateur de l'utilisateur et le site consulté. Disposer d'un certificat HTTPS pour son site
+                                permet également d'améliorer son référencement.
                             </p>
                             <ul>
+                                <h2>Services</h2>
                                 <li><i class="fa fa-bar-chart"></i>Optimisation référencement naturel</li>
                                 <li><i class="fa fa-plus"></i>Ajout de métadonnées SEO</li>
-                                <li><i class="fa fa-lock"></i>Possibilité de mise en place d'un cerficat HTTPS</li>
+                                <li><i class="fa fa-lock"></i>Mise en place optionnelle d'un cerficat HTTPS</li>
                             </ul>
                         </div>
-                        <div class="col l6 hide-on-med-and-down"><img class="cover-picture border-picture" src="{{ 'assets/img/EISTI.jpg'| theme }}"></div>
                     </div>
                 </div>
             </div>
@@ -196,7 +231,7 @@ is_hidden = 0
             <div id="tab6" class="col s12 tab-content">
                 <div class="container">
                     <div class="row">
-                        <div class="col l6 m12 s12">
+                        <div class="col l10 offset-l1 m10 offset-m1 s12">
                             <h1>Interface administrateur</h1>
                             <p>
                                 L'espace administrateur intégré au site permet de consulter le trafic ayant lieu sur le site à travers plusieurs paramètres :
@@ -205,16 +240,15 @@ is_hidden = 0
                                 site ainsi que de votre projet. Un aperçu d'une interface administrateur développée pour un
                                 client est disponible sur la photo ci-contre. Cet espace permet aussi de changer directement le contenu du site internet.
                             </p>
-                            <ul>
-                                <li><i class="fa fa-pie-chart"></i>Suivi complet du trafic du site</li>
-                                <li><i class="fa fa-google"></i>Données récoltées par Google Analytics</li>
-                                <li><i class="fa fa-cloud-upload"></i>Modification du contenu du site</li>
-                            </ul>
-                        </div>
-                        <div class="col l6 hide-on-med-and-down">
                             <a href="{{ 'assets/img/Interface-Admin.png'| theme }}" data-lightbox="picture-set-admin-tab">
                                 <img class="cover-picture border-picture" src="{{ 'assets/img/Interface-Admin.png'| theme }}">
                             </a>
+                            <ul>
+                                <h2>Services</h2>
+                                <li><i class="fa fa-pie-chart"></i>Interface de suivi complet du trafic du site</li>
+                                <li><i class="fa fa-google"></i>Données récoltées par Google Analytics</li>
+                                <li><i class="fa fa-cloud-upload"></i>Modification directe du contenu du site</li>
+                            </ul>
                         </div>
                     </div>
                 </div>
@@ -235,8 +269,7 @@ is_hidden = 0
 
         <div class="row realisations">
             <div class="col l6 m6 s12">
-                <section>
-                    <img src="{{ 'assets/img/entreprise/bbluxe.jpg'| theme }}">
+                <section style="background-image: url({{ 'assets/img/entreprise/bbluxe.jpg'| theme }});">
                     <div class="mask">
                         <div class="mask-container">
                             <div class="mask-content">
@@ -249,8 +282,7 @@ is_hidden = 0
                 </section>
             </div>
             <div class="col l6 m6 s12">
-                <section>
-                    <img src="{{ 'assets/img/entreprise/onfocus.jpg'| theme }}">
+                <section style="background-image: url({{ 'assets/img/entreprise/onfocus.jpg'| theme }});">
                     <div class="mask">
                         <div class="mask-container">
                             <div class="mask-content">
@@ -263,8 +295,7 @@ is_hidden = 0
                 </section>
             </div>
             <div class="col l6 m6 s12">
-                <section>
-                    <img src="{{ 'assets/img/entreprise/ucrowd.jpg'| theme }}">
+                <section style="background-image: url({{ 'assets/img/entreprise/ucrowd.jpg'| theme }});">
                     <div class="mask">
                         <div class="mask-container">
                             <div class="mask-content">
@@ -277,8 +308,7 @@ is_hidden = 0
                 </section>
             </div>
             <div class="col l6 m6 s12">
-                <section>
-                    <img src="{{ 'assets/img/entreprise/nightwave.jpg'| theme }}">
+                <section style="background-image: url({{ 'assets/img/entreprise/nightwave.jpg'| theme }});">
                     <div class="mask">
                         <div class="mask-container">
                             <div class="mask-content">

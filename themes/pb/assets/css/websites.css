@@ -86,7 +86,7 @@
     position: relative;
     text-transform: uppercase;
     letter-spacing: 5px;
-    font-family: ProximaBold, serif;
+    font-family: ProximaThin, serif;
     font-size: 14px;
     display: inline-block;
     margin: 0 auto;
@@ -98,7 +98,7 @@
 
 .websites-services .block-title .custom-line {
     position: relative;
-    width: 65%;
+    width: 70%;
     margin: 0 auto;
     margin-top: -1px;
     border: 1px solid #dcdcdc;
@@ -120,7 +120,7 @@
 }
 
 .websites-services .services .col h1 {
-    font-size: 16px;
+    font-size: 15px;
     margin-top: 20px;
     margin-bottom: 12px;
     letter-spacing: 2px;
@@ -169,7 +169,8 @@
 }
 
 .websites-tabs .tabs .tab a.active {
-    background-color: #fff;
+    background-image: url(../img/BG/BG01.png);
+    background-position-y: bottom;
 }
 
 .websites-tabs .tabs .tab a.active h1 {
@@ -197,12 +198,13 @@
 }
 
 .websites-tabs .tab-content {
-    background: url(../img/BG/BG03.png);
+    background: url(../img/BG/BG01.png);
     font-family: SourceSansProRegular, serif;
+    text-align: center;
 }
 
 .websites-tabs .tab-content > .container {
-    padding-top: 60px;
+    padding-top: 70px;
     padding-bottom: 60px;
 }
 
@@ -220,40 +222,102 @@
 
 .websites-tabs .tab-content h1 {
     text-align: center;
+    display: inline-block;
     text-transform: uppercase;
-    letter-spacing: 5px;
+    letter-spacing: 4px;
     font-family: ProximaRegular, serif;
     font-size: 14px;
     line-height: 20px;
     margin: 0 auto;
-    padding: 15px;
+    padding: 20px 45px;
     background: #fff;
     color: #484848;
     border: 2px solid #484848;
 }
 
 .websites-tabs .tab-content p {
-    padding-top: 15px;
+    padding-top: 25px;
     text-align: justify;
     font-size: 14px;
     color: #7b7b7b;
+    column-count: 2;
+    column-gap: 24px;
+    margin-bottom: 30px;
+}
+
+.websites-tabs .tab-content img {
+    margin-bottom: 30px;
 }
 
 .websites-tabs .tab-content ul {
-    margin-top: 10px;
+    margin-top: 0px;
     display: inline-block;
-    padding: 30px;
+    padding: 35px 50px;
     background: #fff;
     border: 1px solid #d0d0d0;
+    text-align: left;
+}
+
+.websites-tabs .tab-content ul h2 {
+    font-size: 15px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    letter-spacing: 2px;
+    text-align: center;
+    background: #484848;
+    margin-top: 0;
+    margin-bottom: 30px;
+    color: #fff;
+    font-family: ProximaRegular, serif;
+    text-transform: uppercase;
 }
 
 .websites-tabs .tab-content li {
     font-size: 15px;
 }
 
+.websites-tabs .tab-content li:not(:last-of-type) {
+    margin-bottom: 8px;
+}
+
 .websites-tabs .tab-content li i {
     color: #80b5df;
-    margin-right: 10px;
+    margin-right: 14px;
+}
+
+.websites-tabs .tab-content .adaptability {
+    margin-top: 45px;
+    margin-bottom: 30px;
+}
+
+.websites-tabs .tab-content .adaptability img {
+    width: 450px;
+    margin: 0 auto;
+}
+
+.websites-tabs .tab-content .adaptability p {
+    padding-top: 20px;
+    padding-bottom: 5px;
+}
+
+.websites-tabs .tab-content .adaptability .browsers {
+    width: 65%;
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
+
+.websites-tabs .tab-content .adaptability .browsers img {
+    width: 35px;
+    height: 35px;
+    margin: 0 auto;
+}
+
+.websites-tabs .tab-content .logo-company {
+    width: 250px;
+    margin: 0 auto;
+    margin-top: -10px;
+    margin-bottom: 20px;
+    display: block;
 }
 
 /* ---------------------------------------------- */
@@ -299,6 +363,12 @@
 
 .websites-realisations .realisations section {
     position: relative;
+    overflow: hidden;
+    width: 100%;
+    margin: 0 auto;
+    height: 350px;
+    background-size: cover;
+    background-position: center;
 }
 
 .websites-realisations .realisations img {
