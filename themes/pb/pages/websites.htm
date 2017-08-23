@@ -15,9 +15,19 @@ is_hidden = 0
 <section class="websites-services">
     <div class="container">
 
+        <img src="{{ 'assets/img/logos/globe.png'| theme }}">
+
         <div class="block-title">
-            <h1>Création de site web</h1>
+            <h1>Création de sites web</h1>
             <div class="custom-line"></div>
+        </div>
+
+        <div class="intro">
+            <p>
+                Depuis {{ "now"|date('Y') - 2015 }} ans, je place l'innovation au service des entreprises en réalisant
+                des sites internet dont le design s'ancre dans la tendance du web d'aujourd'hui. Je décompose la construction d'un
+                site en 6 parties, détaillées ci-contre.
+            </p>
         </div>
 
         <div class="services row">
@@ -89,7 +99,9 @@ is_hidden = 0
                             <p>
                                 Mes expériences professionnelles aux États-Unis m'ont permis de maîtriser
                                 les dernières technologies en matière de webdesign et d'expérience utilisateur.
-                                J'aime travailler avec un style épuré et rester dans la simplicité.
+                                J'aime travailler avec un style épuré et rester dans la simplicité en développant avec des frameworks tels que
+                                <a href="https://material.angular.io/" target="_blank">Angular Material</a> et
+                                <a href="http://materializecss.com/" target="_blank">MaterializeCSS</a>.
                                 La mise en place d'une charte graphique constitue la première étape de la réalisation du design d'un site internet.
                                 Il s'agit de définir ensemble des couleurs, polices et designs qui correspondent au mieux
                                 à l'image que vous souhaitez véhiculer auprès des futurs visiteurs.
@@ -101,6 +113,7 @@ is_hidden = 0
                                 L'étape finale consiste à optimiser le contenu texte et média du site
                                 comme par exemple en retouchant les photos ou en améliorant le contenu texte.
                             </p>
+                            <img class="cover-picture border-picture" src="{{ 'assets/img/webdesign.jpg'| theme }}">
                             <ul>
                                 <h2>Services</h2>
                                 <li><i class="fa fa-pencil-square-o"></i>Mise en place de la charte graphique</li>

@@ -66,6 +66,6 @@ $('#typeWriteAbout-FR').typeIt({
 function triggerTab(tab_id) {
     $('ul.tabs').tabs('select_tab', tab_id);
     $('html, body').animate({
-        scrollTop: $('#websites-tabs').offset().top - 40
+        scrollTop: $('#websites-tabs').offset().top
     }, 700);
 }
