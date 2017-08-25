@@ -228,6 +228,8 @@
 .websites-tabs .tab-content > .container {
     padding-top: 70px;
     padding-bottom: 60px;
+    width: 80%;
+    margin: 0 auto;
 }
 
 .websites-tabs .tab-content > .container > .row {
@@ -350,13 +352,14 @@
 /* ---------------------------------------------- */
 
 .websites-realisations {
+    background: #eaeaea;
     text-align: center;
 }
 
 .websites-realisations > .container {
     padding-top: 100px;
     padding-bottom: 70px;
-    width:80%;
+    width:75%;
 }
 
 .websites-realisations .block-title {
@@ -487,4 +490,119 @@
     -ms-transition: all 0.3s;
     -o-transition: all 0.3s;
     transition: all 0.3s;
+}
+
+/* ---------------------------------------------- */
+/* ---------------------------------------------- */
+
+.websites-casestudy {
+    background: #fff;
+    border-top: 10px solid #dadada;
+    border-bottom: 10px solid #dadada;
+    text-align: center;
+    margin-bottom: 400px;
+}
+
+.websites-casestudy > .container {
+    padding-top: 60px;
+    padding-bottom: 80px;
+}
+
+.websites-casestudy > .container > h1 {
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-family: ProximaRegular, serif;
+    font-size: 14px;
+    color: #484848;
+    margin-bottom: 20px;
+}
+
+.websites-casestudy > .container > h2 {
+    background: #484848;
+    position: relative;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-family: ProximaThin, serif;
+    font-size: 14px;
+    display: inline-block;
+    margin: 0 auto;
+    padding: 18px 60px;
+    padding-top: 22px;
+    border: 2px solid #484848;
+    color: #fff;
+    line-height: 17px;
+}
+
+.websites-casestudy .intro {
+    margin-top: 40px;
+}
+
+.websites-casestudy .intro .cover-picture {
+    background: url(../img/bbluxe/team.png);
+    background-size: cover;
+    background-position: center;
+    height: 450px;
+    border: 4px solid #dadada;
+}
+
+.websites-casestudy .intro .details {
+    text-align: left;
+}
+
+.websites-casestudy .intro .details p {
+    border: 2px solid #dadada;
+    margin: 0;
+    color: #848484;
+    padding: 25px;
+    font-size: 14px;
+    text-align: justify;
+    font-family: SourceSansProRegular, serif;
+}
+
+.websites-casestudy .intro .details ul {
+    background: #f5f5f5;
+    margin-top: 15px;
+    border-left: 5px solid #80b5df;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 14px;
+}
+
+.websites-casestudy .intro .details ul li {
+    font-family: SourceSansProRegular, serif;
+    margin-top: 15px;
+    margin-left: 20px;
+    color: #484848;
+}
+
+.websites-casestudy .intro .details ul li:first-of-type {
+    margin-top: 0;
+}
+
+.websites-casestudy .intro .details ul li span:first-of-type {
+    font-family: ProximaBold, sans-serif;
+    color: #484848;
+    display: inline-block;
+    width: 130px;
+}
+
+.websites-casestudy .intro .details ul li span:first-of-type i {
+    margin-right: 10px;
+}
+
+.websites-casestudy .intro .details ul li span:last-of-type {
+    margin-left: 12px;
+    text-align: left;
+}
+
+.websites-casestudy .intro .button-site {
+    background: #80b5df;
+    padding: 10px 20px;
+    color: #fff;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+.websites-casestudy .intro .button-site i {
+    margin-right: 4px;
 }
