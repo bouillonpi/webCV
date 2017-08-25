@@ -966,7 +966,7 @@ is_hidden = 0
                 {% if activeLocale == 'fr' %} En dehors du travail ?
                 {% else %} Outside of work? {% endif %}
             </h1>
-            <h1 id="typeWriteHome-FR"></h1>
+            <h1 id="typeWriteHome-{{activeLocale}}"></h1>
             <a href="{{ 'about'|page }}" class="button-about">
                 {% if activeLocale == 'fr' %} Découvrir
                 {% else %} Learn more about me {% endif %}
