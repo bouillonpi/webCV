@@ -5,13 +5,13 @@
     background-position-x: center;
     background-position-y: bottom;
     width:100%;
-    height:560px;
+    height:650px;
     text-align: center;
 }
 
 .websites-hero > section {
     text-align: center;
-    padding-top: 115px;
+    padding-top: 160px;
 }
 
 .websites-hero > section > img {
@@ -617,6 +617,11 @@
 
 .websites-casestudy .step {
     margin-top: 50px;
+    font-family: SourceSansProRegular, serif;
+}
+
+.websites-casestudy .step .container {
+    width: 75%;
 }
 
 .websites-casestudy .step > h1 {
@@ -642,19 +647,110 @@
     margin-left: 0;
 }
 
+.websites-casestudy .step > .container > section {
+    background: #fbfbfb;
+    padding: 30px 50px;
+    border: solid 1px #d8d8d8;
+    border-top: solid 2px rgba(128, 181, 223, 0.60);
+}
+
 .websites-casestudy .step h2 {
     text-align: left;
     font-family: SourceSansProRegular, serif;
-    font-size: 16px;
+    font-size: 17px;
     text-transform: uppercase;
     letter-spacing: 1px;
     color: #8a8a8a;
     margin-top: 0;
-    padding-bottom: 10px;
+    margin-bottom: 0;
+    padding-bottom: 15px;
+}
+
+.websites-casestudy .step h2:not(:first-of-type) {
+    margin-top: 50px;
+}
+
+.websites-casestudy .step h2:first-of-type {
+    margin-top: 45px;
 }
 
 .websites-casestudy .step h2 > i {
-    color: #d6d6d6;
+    color: #80b5df;
     margin-right: 10px;
     font-size: 16px;
+}
+
+.websites-casestudy .step p {
+    font-size: 14px;
+    color: #484848;
+    text-align: justify;
+}
+
+.websites-casestudy .step ul {
+    text-align: left;
+    margin-left: 30px;
+    font-family: SourceSansProRegular, serif;
+    font-size: 14px;
+    color: #484848;
+}
+
+.websites-casestudy .step ul li {
+    margin-bottom: 6px;
+}
+
+.websites-casestudy .step ul li i {
+    font-size: 10px;
+    margin-right: 8px;
+    color: #80b5df;
+}
+
+.websites-casestudy .step ul li a {
+    color: #80b5df;
+    font-family: ProximaRegular, serif;
+    text-transform: uppercase;
+    margin-right: 3px;
+}
+
+.websites-casestudy .colors {
+    padding-top: 10px;
+    margin-bottom: 20px;
+}
+
+.websites-casestudy .colors .color {
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.websites-casestudy .colors .color div {
+    width: 50px;
+    height: 50px;
+}
+
+.websites-casestudy .colors .color > span {
+    position: absolute;
+    left: 70px;
+    top: 5px;
+    color: #484848;
+    font-size: 14px;
+    text-align: left;
+}
+
+.websites-casestudy .logowork {
+    text-align: left;
+    margin-top: 35px;
+    margin-bottom: 40px;
+}
+
+.websites-casestudy .logowork img {
+    width: 350px;
+}
+
+.websites-casestudy .logowork .panel {
+    float: left;
+}
+
+.websites-casestudy .logowork .finished {
+    width: 235px;
+    margin-top: 20px;
+    margin-left: 50px;
 }
