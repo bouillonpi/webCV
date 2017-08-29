@@ -359,7 +359,6 @@
 /* ---------------------------------------------- */
 
 .websites-realisations {
-    background: #eaeaea;
     text-align: center;
 }
 
@@ -503,11 +502,10 @@
 /* ---------------------------------------------- */
 
 .websites-casestudy {
-    background: #fff;
+    background: url(../img/BG/BG01.png);
     border-top: 10px solid #dadada;
     border-bottom: 10px solid #dadada;
     text-align: center;
-    margin-bottom: 400px;
 }
 
 .websites-casestudy > .container {
@@ -520,7 +518,7 @@
     text-transform: uppercase;
     letter-spacing: 5px;
     font-family: ProximaRegular, serif;
-    font-size: 14px;
+    font-size: 16px;
     color: #484848;
     margin-bottom: 20px;
 }
@@ -531,14 +529,14 @@
     text-transform: uppercase;
     letter-spacing: 4px;
     font-family: ProximaThin, serif;
-    font-size: 14px;
+    font-size: 16px;
     display: inline-block;
     margin: 0 auto;
     padding: 18px 60px;
     padding-top: 22px;
     border: 2px solid #484848;
     color: #fff;
-    line-height: 17px;
+    line-height: 19px;
 }
 
 .websites-casestudy .intro {
@@ -558,6 +556,7 @@
 }
 
 .websites-casestudy .intro .details p {
+    background: #fff;
     border: 2px solid #dadada;
     margin: 0;
     color: #848484;
@@ -568,8 +567,9 @@
 }
 
 .websites-casestudy .intro .details ul {
-    background: #f5f5f5;
+    background: #fff;
     margin-top: 15px;
+    border: 2px solid #dadada;
     border-left: 5px solid #80b5df;
     padding-top: 20px;
     padding-bottom: 20px;
@@ -616,7 +616,7 @@
 }
 
 .websites-casestudy .step {
-    margin-top: 50px;
+    margin-top: 60px;
     font-family: SourceSansProRegular, serif;
 }
 
@@ -631,7 +631,7 @@
     text-transform: uppercase;
     letter-spacing: 2px;
     color: #484848;
-    border-bottom: 2px solid #eaeaea;
+    border-bottom: 2px solid #dadada;
     padding-bottom: 10px;
     margin-bottom: 35px;
 }
@@ -648,9 +648,9 @@
 }
 
 .websites-casestudy .step > .container > section {
-    background: #fbfbfb;
+    background: #fff;
     padding: 30px 50px;
-    border: solid 1px #d8d8d8;
+    border: solid 1px #c5c5c5;
     border-top: solid 2px rgba(128, 181, 223, 0.60);
 }
 
@@ -660,7 +660,7 @@
     font-size: 17px;
     text-transform: uppercase;
     letter-spacing: 1px;
-    color: #8a8a8a;
+    color: #808080;
     margin-top: 0;
     margin-bottom: 0;
     padding-bottom: 15px;
@@ -753,4 +753,48 @@
     width: 235px;
     margin-top: 20px;
     margin-left: 50px;
+}
+
+.websites-casestudy .browsers {
+    margin-bottom: 0;
+    margin-top: 5px;
+    width: 80%;
+}
+
+.websites-casestudy .browsers img {
+    width: 30px;
+}
+
+.websites-casestudy .interface-admin {
+    width: 100%;
+}
+
+/* ---------------------------------------------- */
+/* ---------------------------------------------- */
+
+.websites-logos {
+    text-align: center;
+}
+
+.websites-logos .container {
+    margin-top: 90px;
+    margin-bottom: 80px;
+}
+
+.websites-logos h1 {
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-family: ProximaRegular, serif;
+    font-size: 14px;
+    display: inline-block;
+    margin: 0 auto;
+    margin-bottom: 70px;
+    padding: 15px 60px;
+    border: 2px solid #484848;
+    color: #484848;
+}
+
+.websites-logos img {
+    width: 100%;
+    max-width: 200px;
 }

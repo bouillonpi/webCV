@@ -141,7 +141,10 @@ is_hidden = 0
                         {% if activeLocale == 'fr' %} Diplôme d'ingénieur logiciel
                         {% else %} Software Engineering Degree {% endif %}
                     </h1>
-                    <h2><i class="fa fa-map-marker"></i> EISTI - International School of Computer Science</h2>
+                    <h2><i class="fa fa-map-marker"></i>
+                        {% if activeLocale == 'fr' %} EISTI - École Internationale des Sciences du Traitement de l'Information
+                        {% else %} EISTI - International Engineering School of Computer Science {% endif %}
+                    </h2>
                     <h2><i class="fa fa-star"></i>
                         {% if activeLocale == 'fr' %} Classée N°1 des écoles d'ingénieurs en informatique 2017 -
                         {% else %} Ranked N°1 IT Engineering School 2017 in France - {% endif %}

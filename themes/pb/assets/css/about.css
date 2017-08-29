@@ -1,10 +1,11 @@
 .about-hero {
     position: relative;
-    background: url(../img/PB/PB03.jpg);
+    background: url(../img/PB/GC01.jpg);
     background-size: cover;
-    background-position: center;
+    background-position-x: center;
+    background-position-y: bottom;
     width:100%;
-    height:695px;
+    height:620px;
 }
 
 .about-hero > .container {
@@ -52,7 +53,7 @@
     font-size: 20px;
     font-family: SourceSansProRegular, serif;
     text-align: center;
-    color: #484848;
+    color: #404040;
     height: 60px;
     margin-top: -10px;
 }
@@ -384,6 +385,15 @@
     margin-right: 12px;
 }
 
+.about-detection .content-container h3 {
+    font-size: 14px;
+    font-family: ProximaRegular, serif;
+    color: #fff;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    margin-top: 40px;
+}
+
 .about-detection .content-container p {
     width: 90%;
     font-size: 15px;
@@ -396,7 +406,7 @@
 }
 
 .about-detection .content-container .row {
-    margin-top: 50px;
+    margin-top: 25px;
 }
 
 .about-detection .content-container .row .col {

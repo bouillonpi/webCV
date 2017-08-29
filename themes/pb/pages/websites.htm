@@ -397,8 +397,9 @@ is_hidden = 0
                     <div class="details">
                         <p>
                             {% if activeLocale == 'fr' %}
-                                Le site web réalisé pour Beyond Biarritz rentals est une invitation à la découverte du style de vie détendu de la côte Basque à travers une présentation
-                                détaillée de propriétés locatives haut de gamme.
+                                Le site web réalisé pour Beyond Biarritz rentals est une invitation à la découverte du style de vie
+                                détendu de la côte Basque à travers une présentation détaillée de propriétés locatives haut de gamme.
+                                Les visiteurs peuvent réserver une propriété et payer directement depuis le site.
                                 Beyond Biarritz a été fondé en 2003 par Julia Lloyd.
                                 Initialement spécialisée dans la vente de propriétés à Biarritz et sur la côte Basque, Julia
                                 a noué des liens solides avec ses clients et une équipe de bâtisseurs locaux,
@@ -408,6 +409,7 @@ is_hidden = 0
 
                             {% else %}
                                 The website is an invitation to discover the relaxed Basque coast lifestyle through a rental properties showcase.
+                                Customers can make a reservation for a property and pay on the website.
                                 Beyond Biarritz was founded in 2003 by Julia Lloyd.
                                 Whilst initially sourcing and selling properties in Biarritz and beyond,
                                 she built up trusted relationships not only with her clients but with a whole team of local builders,
@@ -442,6 +444,7 @@ is_hidden = 0
         <section class="step">
             <h1><i class="fa fa-magic"></i> Design <i class="fa fa-circle"></i></h1>
             <div class="container">
+
                 <h2><i class="fa fa-circle"></i>Mise en place de la Charte graphique</h2>
                 <section>
                     <p>
@@ -450,9 +453,9 @@ is_hidden = 0
                         Le but de la charte graphique est d'assurer une cohérence, une harmonisation dans tous les supports de communication de votre projet.
                         <br><br>
                         Le site Beyond Biarritz rentals est un reflet de la côte Basque et de son style de vie détendu.
-                        Dans le but de mettre en place une atmosphère de vacances, nous avons repris les couleurs chaleureuses du sable de plage et de l'océan azur.
+                        Dans le but de mettre en place une atmosphère de vacances, nous avons repris les couleurs chaleureuses du sable de plage et du bleu azur de l'océan.
                         L'association de ces deux couleurs avec le blanc est claire et harmonieuse.
-                        Nous avons également ajouté une couleur foncée principalement utilisée pour les textes, afin de les faire ressortir des couleurs claires.
+                        Nous avons également ajouté une couleur foncée principalement utilisée pour les textes, afin de les faire ressortir par rapport aux couleurs claires.
                     </p>
                     <div class="colors">
                         <div class="color">
@@ -504,11 +507,6 @@ is_hidden = 0
                     </p>
                 </section>
 
-                <h2><i class="fa fa-circle"></i> Développement du contenu texte & média</h2>
-                <section>
-
-                </section>
-
             </div>
         </section>
 
@@ -518,12 +516,22 @@ is_hidden = 0
 
                 <h2><i class="fa fa-circle"></i> Compatible avec tous les appareils</h2>
                 <section>
-
+                    <p>
+                        Le site Beyond Biarritz rentals s'adapte à tout type d'appareil pour une consultation maximum.
+                        <br>Le contenu du site se réorganise automatiquement en fonction du type d'appareil utilisé.
+                    </p>
                 </section>
 
                 <h2><i class="fa fa-circle"></i> Compatible avec tous les navigateurs</h2>
                 <section>
-
+                    <div class="row browsers">
+                        <div class="col l2 m4 s6"><img src="{{ 'assets/img/logos/chrome.png'| theme }}"></div>
+                        <div class="col l2 m4 s6"><img src="{{ 'assets/img/logos/firefox.png'| theme }}"></div>
+                        <div class="col l2 m4 s6"><img src="{{ 'assets/img/logos/safari.png'| theme }}"></div>
+                        <div class="col l2 m4 s6"><img src="{{ 'assets/img/logos/edge.png'| theme }}"></div>
+                        <div class="col l2 m4 s6"><img src="{{ 'assets/img/logos/explorer.png'| theme }}"></div>
+                        <div class="col l2 m4 s6"><img src="{{ 'assets/img/logos/opera.png'| theme }}"></div>
+                    </div>
                 </section>
 
             </div>
@@ -535,17 +543,81 @@ is_hidden = 0
 
                 <h2><i class="fa fa-circle"></i> Interface de suivi de trafic </h2>
                 <section>
-
+                    <p>
+                        L'espace administrateur du site Beyond Biarritz rentals est accessible depuis le site même.
+                        La page d'accueil de cet espace administrateur est composée d'une interface de suivi de trafic du site, comme affichée ci-contre.
+                        Cette interface permet aux administrateurs du site de consulter le trafic sur le site en tant réel grâce aux données récoltées par Google Analytics.
+                        Les données affichées offrent une meilleure compréhension du comportement des visiteurs sur le site.
+                    </p>
+                    <a href="{{ 'assets/img/Interface-Admin.png'| theme }}" data-lightbox="picture-set-interface-admin">
+                        <img class="interface-admin" src="{{ 'assets/img/Interface-Admin.png'| theme }}">
+                    </a>
                 </section>
 
                 <h2><i class="fa fa-circle"></i> Changement du contenu du site </h2>
                 <section>
-
+                    <p>
+                        Depuis l'espace administrateur, les gérants du site peuvent changer l'ensemble du contenu des pages.
+                        <br>Les administrateurs peuvent effectuer les tâches suivantes :
+                        <ul>
+                            <li><i class="fa fa-circle-o"></i>Ajouter-Modifier-Supprimer des propriétés</li>
+                            <li><i class="fa fa-circle-o"></i>Indiquer la disponibilité de chaque propriété</li>
+                            <li><i class="fa fa-circle-o"></i>Créer des tarifs saisonniers pour les locations</li>
+                            <li><i class="fa fa-circle-o"></i>Ajouter des témoignages de client</li>
+                        </ul>
+                    </p>
                 </section>
 
             </div>
         </section>
 
+    </div>
+</section>
+
+<!------------------------------------------------>
+
+<section class="websites-logos">
+    <div class="container">
+        <h1>Quelques logos réalisés</h1>
+        <div class="row">
+
+            <div class="col l4 m6 s12">
+                <a href="{{ 'assets/img/logos/AFE.jpg'| theme }}" data-lightbox="picture-set-logos">
+                    <img src="{{ 'assets/img/logos/AFE.jpg'| theme }}">
+                </a>
+            </div>
+
+            <div class="col l4 m6 s12">
+                <a href="{{ 'assets/img/logos/DZT.png'| theme }}" data-lightbox="picture-set-logos">
+                    <img src="{{ 'assets/img/logos/DZT.png'| theme }}">
+                </a>
+            </div>
+
+            <div class="col l4 m6 s12">
+                <a href="{{ 'assets/img/logos/bb01.jpg'| theme }}" data-lightbox="picture-set-logos">
+                    <img src="{{ 'assets/img/logos/bb01.jpg'| theme }}">
+                </a>
+            </div>
+
+            <div class="col l4 m6 s12">
+                <a href="{{ 'assets/img/logos/veistiaire.png'| theme }}" data-lightbox="picture-set-logos">
+                    <img src="{{ 'assets/img/logos/veistiaire.png'| theme }}">
+                </a>
+            </div>
+
+            <div class="col l4 m6 s12">
+                <a href="{{ 'assets/img/logos/gte.png'| theme }}" data-lightbox="picture-set-logos">
+                    <img src="{{ 'assets/img/logos/gte.png'| theme }}">
+                </a>
+            </div>
+
+            <div class="col l4 m6 s12">
+                <a href="{{ 'assets/img/logos/avance.jpg'| theme }}" data-lightbox="picture-set-logos">
+                    <img src="{{ 'assets/img/logos/avance.jpg'| theme }}">
+                </a>
+            </div>
+
+        </div>
     </div>
 </section>
 
