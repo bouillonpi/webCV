@@ -544,10 +544,10 @@
 }
 
 .websites-casestudy .intro .cover-picture {
-    background: url(../img/bbluxe/team.png);
+    background: url(../img/bbluxe/website.jpg);
     background-size: cover;
     background-position: center;
-    height: 530px;
+    height: 550px;
     border: 4px solid #dadada;
 }
 
@@ -767,6 +767,8 @@
 
 .websites-casestudy .interface-admin {
     width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 /* ---------------------------------------------- */
@@ -797,4 +799,6 @@
 .websites-logos img {
     width: 100%;
     max-width: 200px;
+    max-height: 184px;
+    margin-bottom: 20px;
 }
