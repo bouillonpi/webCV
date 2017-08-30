@@ -6,9 +6,17 @@ is_hidden = 0
 
 <section class="about-hero">
     <div class="container">
-        <h1>À Propos</h1>
+        <h1>
+            {% if activeLocale == 'fr' %} À Propos
+            {% else %} About me {% endif %}
+        </h1>
         <div class="separator"></div>
-        <h2><i class="fa fa-minus"></i>En dehors du travail<i class="fa fa-minus"></i></h2>
+        <h2>
+            <i class="fa fa-minus"></i>
+            {% if activeLocale == 'fr' %} En dehors du travail
+            {% else %} When I'm not working {% endif %}
+            <i class="fa fa-minus"></i>
+        </h2>
         <h3 id="typeWriteAbout-{{activeLocale}}"></h3>
         <div id="about-scroll" class="button-scroll">Let's go</div>
     </div>
