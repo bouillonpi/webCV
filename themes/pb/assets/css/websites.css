@@ -237,7 +237,7 @@
 }
 
 .websites-tabs .tab-content .cover-picture {
-    width: 100%;
+    width: 75%;
 }
 
 .websites-tabs .tab-content .border-picture {
@@ -333,18 +333,6 @@
 .websites-tabs .tab-content .adaptability p {
     padding-top: 20px;
     padding-bottom: 5px;
-}
-
-.websites-tabs .tab-content .adaptability .browsers {
-    width: 65%;
-    margin: 0 auto;
-    margin-bottom: 40px;
-}
-
-.websites-tabs .tab-content .adaptability .browsers img {
-    width: 35px;
-    height: 35px;
-    margin: 0 auto;
 }
 
 .websites-tabs .tab-content .logo-company {
@@ -780,7 +768,7 @@
 
 .websites-logos .container {
     margin-top: 90px;
-    margin-bottom: 95px;
+    margin-bottom: 85px;
 }
 
 .websites-logos h1 {
@@ -799,5 +787,5 @@
 .websites-logos img {
     width: 100%;
     max-width: 200px;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }

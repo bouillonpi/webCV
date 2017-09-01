@@ -14,7 +14,7 @@ is_hidden = 0
         <h2>
             <i class="fa fa-minus"></i>
             {% if activeLocale == 'fr' %} En dehors du travail
-            {% else %} When I'm not working {% endif %}
+            {% else %} When I'm not at work {% endif %}
             <i class="fa fa-minus"></i>
         </h2>
         <h3 id="typeWriteAbout-{{activeLocale}}"></h3>
@@ -36,38 +36,68 @@ is_hidden = 0
 
             <div class="col l4 m6 s12">
                 <i class="fa fa-hand-paper-o"></i>
-                <h1>Arts Martiaux</h1>
-                <p>Wing Chun Kung Fu (3 ans) et Karaté (2 ans) - Discipline et maîtrise de soi</p>
+                <h1>
+                    {% if activeLocale == 'fr' %} Arts Martiaux
+                    {% else %} Martial Arts {% endif %}
+                </h1>
+                <p>
+                    {% if activeLocale == 'fr' %} Wing Chun Kung Fu ({{ "now"|date('Y') - 2014 }} ans) et Karaté ({{ "now"|date('Y') - 2015 }} ans) - Discipline et maîtrise de soi
+                    {% else %}  Wing Chun Kung Fu ({{ "now"|date('Y') - 2014 }} years) and Karate ({{ "now"|date('Y') - 2015 }} years) - Discipline and self-control {% endif %}
+                </p>
             </div>
 
             <div class="col l4 m6 s12">
                 <i class="fa fa-gamepad"></i>
-                <h1>Jeux vidéos</h1>
-                <p>League of Legends (Gold 5 NA), Battlefield 1, Warcraft III, StarCraft II</p>
+                <h1>
+                    {% if activeLocale == 'fr' %} Jeux vidéos
+                    {% else %} Video Games {% endif %}
+                </h1>
+                <p>League of Legends (Gold 5 NA), Battlefield 1, PUBG, Warcraft III, Starcraft II</p>
             </div>
 
             <div class="col l4 m6 s12">
                 <i class="fa fa-plane"></i>
-                <h1>Aventure</h1>
-                <p>Roadtrip en Californie, éco-volontariat dans une ferme Irlandaise, Espagne</p>
+                <h1>
+                    {% if activeLocale == 'fr' %} Aventure
+                    {% else %} Adventure {% endif %}
+                </h1>
+                <p>
+                    {% if activeLocale == 'fr' %} Roadtrip en Californie, éco-volontariat dans une ferme Irlandaise, Espagne
+                    {% else %} Western US Roadtrip in 2017, Ecovolunteering in an Irish farm, Roadtrips in Spain {% endif %}
+                </p>
             </div>
 
             <div class="col l4 m6 s12">
                 <i class="fa fa-camera-retro"></i>
-                <h1>Audiovisuel</h1>
-                <p>Caméraman du streamer ZeratoR, co-fondateur association vidéo-montage</p>
+                <h1>
+                    {% if activeLocale == 'fr' %} Audiovisuel
+                    {% else %} Audiovisual {% endif %}
+                </h1>
+                <p>
+                    {% if activeLocale == 'fr' %} Caméraman du youtuber ZeratoR, co-fondateur association vidéo-montage
+                    {% else %} Cameraman of the French youtuber ZeratoR, cofounder of a video editing association {% endif %}
+                </p>
             </div>
 
             <div class="col l4 m6 s12">
                 <i class="fa fa-pencil"></i>
                 <h1>Design</h1>
-                <p>Réalisation de logos, affiches d'événements, dessin et webdesign</p>
+                <p>
+                    {% if activeLocale == 'fr' %} Réalisation de logos, affiches d'événements, dessin et webdesign
+                    {% else %} Designed company and association logos, event posters, business cards and banners {% endif %}
+                </p>
             </div>
 
             <div class="col l4 m6 s12">
                 <i class="fa fa-magnet"></i>
-                <h1>Détection</h1>
-                <p>Détection de métaux en France - Meilleure trouvaille : pièce datant de 1624</p>
+                <h1>
+                    {% if activeLocale == 'fr' %} Détection
+                    {% else %} Metal Detecting {% endif %}
+                </h1>
+                <p>
+                    {% if activeLocale == 'fr' %} Détection de métaux en France - Meilleure trouvaille : pièce datant de 1624
+                    {% else %} Metal Detecting in South-West France - Best finding: a bronze coin dated 1624 {% endif %}
+                </p>
             </div>
 
         </div>
@@ -83,7 +113,10 @@ is_hidden = 0
         <img src="{{ 'assets/img/onfocus/onfocus.png'| theme }}">
 
         <div class="block-title">
-            <h1>Association Vidéo-Photo-Montage</h1>
+            <h1>
+                {% if activeLocale == 'fr' %} Association Vidéo-Photo-Montage
+                {% else %} Video-Photo-Montage Association {% endif %}
+            </h1>
         </div>
 
         <div class="container-fluid">
@@ -93,19 +126,45 @@ is_hidden = 0
 
                 <div class="col l5 m12 s12">
                     <div class="content-container">
-                        <h2><i class="fa fa-user"></i> Cofondateur - Caméraman - Graphiste de l'association</h2>
-                        <h2><i class="fa fa-cog"></i> Investissement matériel audiovisuel : +5000€</h2>
-                        <h2><i class="fa fa-map-marker"></i>Équipe vidéo officielle du streamer <a href="http://zerator.com/" target="_blank">ZeratoR</a> </h2>
+                        <h2><i class="fa fa-user"></i>
+                            {% if activeLocale == 'fr' %} Cofondateur - Caméraman - Graphiste de l'association
+                            {% else %} Cofounder - Cameraman - Designer of the association {% endif %}
+                        </h2>
+                        <h2><i class="fa fa-cog"></i>
+                            {% if activeLocale == 'fr' %}  Investissement matériel audiovisuel : +5000€
+                            {% else %} Audiovisual equipment investment: +5000€ {% endif %}
+                        </h2>
+                        <h2><i class="fa fa-map-marker"></i>
+                            {% if activeLocale == 'fr' %} Équipe vidéo officielle du youtuber
+                            {% else %} Official video team of the youtuber {% endif %}
+                            <a href="http://zerator.com/" target="_blank">ZeratoR</a>
+                        </h2>
 
                         <ul class="details">
-                            <li><span>Équipe</span> <span>+10 membres</span></li>
-                            <li><span>Vidéos</span> <span>+30 réalisations</span></li>
-                            <li><span>Youtube</span> <span>+700 000 vues</span></li>
-                            <li><span>Caméra</span> <span>Black Magic Cinema</span></li>
+                            <li>
+                                <span>{% if activeLocale == 'fr' %} Équipe {% else %} Team {% endif %}</span>
+                                <span>+10 {% if activeLocale == 'fr' %} membres {% else %} members {% endif %}</span>
+                            </li>
+                            <li>
+                                <span>{% if activeLocale == 'fr' %} Vidéos {% else %} Videos {% endif %}</span>
+                                <span>+30 {% if activeLocale == 'fr' %} réalisations {% else %} projects {% endif %}</span>
+                            </li>
+                            <li>
+                                <span>Youtube</span>
+                                <span>+700 000 {% if activeLocale == 'fr' %} vues {% else %} views {% endif %}</span>
+                            </li>
+                            <li>
+                                <span>{% if activeLocale == 'fr' %} Caméra {% else %} Camera {% endif %}</span>
+                                <span>Black Magic Cinema</span>
+                            </li>
                         </ul>
 
                         <div class="actions">
-                            <a href="{{ 'assets/img/onfocus/of2.jpg'| theme }}" data-lightbox="picture-set-award" class="call-to-action media"><i class="fa fa-th"></i>Voir photos</a>
+                            <a href="{{ 'assets/img/onfocus/of2.jpg'| theme }}" data-lightbox="picture-set-award" class="call-to-action media">
+                                <i class="fa fa-th"></i>
+                                {% if activeLocale == 'fr' %} Voir photos
+                                {% else %} Pictures {% endif %}
+                            </a>
                             <a href="http://www.onfocus.fr" target="_blank" class="call-to-action"><i class="fa fa-globe"></i>www.onfocus.fr</a>
                         </div>
 
@@ -125,15 +184,25 @@ is_hidden = 0
     <div class="container">
 
         <div class="block-title">
-            <h1>Détection de métaux</h1>
+            <h1>
+                {% if activeLocale == 'fr' %} Détection de métaux
+                {% else %} Metal Detecting in France {% endif %}
+            </h1>
             <div class="custom-line hide-on-med-and-down"></div>
         </div>
 
         <div class="content-container">
 
-            <h2><i class="fa fa-map-marker"></i>Landes et Pyrénées Altantiques, France</h2>
-            <h2><i class="fa fa-cog"></i>Détecteur métaux Teknetics Gamma 6000</h2>
+            <h2><i class="fa fa-map-marker"></i>
+                {% if activeLocale == 'fr' %} Landes et Pyrénées Altantiques, France
+                {% else %} Landes and Pyrénées Altantiques, France {% endif %}
+            </h2>
+            <h2><i class="fa fa-cog"></i>
+                {% if activeLocale == 'fr' %} Détecteur métaux Teknetics Gamma 6000
+                {% else %} Metal detector Teknetics Gamma 6000 {% endif %}
+            </h2>
             <p>
+                {% if activeLocale == 'fr' %}
                 Ma passion pour la détection commence il y a {{ "now"|date('Y') - 2010 }} ans lorsque je découvre par hasard un vieux couteau
                 en creusant une tranchée avec mon père le long d'une vieille bâtisse landaise. Peu de temps après, je me procure un détecteur de métaux
                 et commence à arpenter les sentiers de la forêt des Landes. Bien que cette forêt soit jeune, son histoire n'en est pas moins riche.
@@ -147,8 +216,27 @@ is_hidden = 0
                 des monnaies de la Révolution, des bijoux en bronze ou en argent. Ma trouvaille la plus ancienne est un Double Tournois datant de 1624.
                 Il y a quelque chose d'extrêmement fort, une puissante émotion lorsque l'on déterre un objet ayant été perdu
                 il y a des centaines d'années par une personne d'une autre époque. C'est ce clin d'oeil du temps que je préfère dans la détection de métaux.
+                {% else %}
+                My passion for metal detecting began in South-West France {{ "now"|date('Y') - 2010 }} years ago. Renovating an old house with my father,
+                I uncovered by chance an old knife by digging along a wall of the property.
+                A few weeks later, I purchased a metal detector and started detecting in the Landes Forest.
+                Although this forest is young, it has a rich history.
+                A mere 200 years ago, Landes region was a wetland with non-workable areas.
+                Napoléon III fell in love with the Landes seaside and undertook the wetlands drain to revitalize the lands and stabilize the coastal dunes.
+                He achieved this by doing a massive maritime pine planting, the tree that has become the region's emblem.
+                This forest substantially changed the social and economic lifestyle of the region and introduced a very lucrative business: the resin extraction.
+                Also called pine-tapping, this activity is to tap a piece of zinc into the tree so the resin drains into a container.
+                When I was doing metal detecting in the Landes Forest, I uncovered hundreds of those ancient zinc stripes, silent witnesses of a bygone time.
+                Among my most interesting findings, I discovered Napoléon coins, buttons of Napoléon military, coins from the French Revolution,
+                bronze and silver jewels. My oldest finding is a bronze coin dated 1624.
+                There is a powerful feeling, an intense emotion when you uncover an object that has been lost hundreds of years ago by a person from a different time.
+                It is this glimpse of time that I am really looking for when I do metal detecting.
+                {% endif %}
             </p>
-            <h3>Mes dernières trouvailles</h3>
+            <h3>
+                {% if activeLocale == 'fr' %}  Mes dernières trouvailles
+                {% else %} My recent findings {% endif %}
+            </h3>
             <div class="row">
 
                 <div class="col l3 m4 s6">
