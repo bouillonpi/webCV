@@ -8,8 +8,18 @@ is_hidden = 0
     <section><img src="{{ 'assets/img/cameleon.png'| theme }}"></section>
     <h1>Caméléon Design</h1>
     <div class="separator"></div>
-    <h2>Conception de sites internet</h2>
-    <h3>Simple <i class="fa fa-circle"></i> Épuré  <i class="fa fa-circle"></i> Design </h3>
+    <h2>
+        {% if activeLocale == 'fr' %} Conception de sites internet
+        {% else %} Website design & development {% endif %}
+    </h2>
+    <h3>
+        Simple
+        <i class="fa fa-circle"></i>
+        {% if activeLocale == 'fr' %} Épuré
+        {% else %} Clean {% endif %}
+        <i class="fa fa-circle"></i>
+        Design
+    </h3>
 </section>
 
 <section class="websites-services">
@@ -18,15 +28,24 @@ is_hidden = 0
         <img src="{{ 'assets/img/logos/globe.png'| theme }}">
 
         <div class="block-title">
-            <h1>Création de sites web</h1>
+            <h1>
+                {% if activeLocale == 'fr' %} Création de sites web
+                {% else %} Website creation {% endif %}
+            </h1>
             <div class="custom-line"></div>
         </div>
 
         <div class="intro">
             <p>
+                {% if activeLocale == 'fr' %}
                 Depuis {{ "now"|date('Y') - 2015 }} ans, je place l'innovation au service des entreprises en réalisant
                 des sites internet dont le design s'ancre dans la tendance du web d'aujourd'hui. Je décompose la construction d'un
                 site en 6 parties, détaillées ci-contre.
+                {% else %}
+                For {{ "now"|date('Y') - 2015 }} years already, I have placed innovation at the forefront of companies development by
+                creating websites whose design is inspired by new Internet trends and concepts. I break down website
+                realisation in 6 parts, as detailed below.
+                {% endif %}
             </p>
         </div>
 
@@ -35,37 +54,67 @@ is_hidden = 0
             <div class="col l4 m6 s12" onclick="triggerTab('tab1')">
                 <i class="fa fa-magic"></i>
                 <h1>Design</h1>
-                <p>Construction du site, charte graphique, développement contenu, création logo</p>
+                <p>
+                    {% if activeLocale == 'fr' %} Construction du site, charte graphique, création logo, développement contenu
+                    {% else %} Website development, graphic charter, logo design, content optimization {% endif %}
+                </p>
             </div>
 
             <div class="col l4 m6 s12" onclick="triggerTab('tab2')">
                 <i class="fa fa-laptop"></i>
-                <h1>Adaptabilité</h1>
-                <p>Site internet responsive fonctionnel sur tous les types d'appareils et navigateurs</p>
+                <h1>
+                    {% if activeLocale == 'fr' %} Adaptabilité
+                    {% else %} Adaptability {% endif %}
+                </h1>
+                <p>
+                    {% if activeLocale == 'fr' %} Site internet responsive fonctionnel sur tous les types d'appareils et navigateurs
+                    {% else %} Responsive website adapting its display on any device and any browser {% endif %}
+                </p>
             </div>
 
             <div class="col l4 m6 s12" onclick="triggerTab('tab3')">
                 <i class="fa fa-hdd-o"></i>
-                <h1>Hébergement</h1>
-                <p>Nom de domaine, hébergement et base de données pris en compte et renouvelés</p>
+                <h1>
+                    {% if activeLocale == 'fr' %} Hébergement
+                    {% else %} Hosting {% endif %}
+                </h1>
+                <p>
+                    {% if activeLocale == 'fr' %} Nom de domaine, hébergement et base de données pris en compte et renouvelés
+                    {% else %} Management and annual renewal of domain name, website hosting and database {% endif %}
+                </p>
             </div>
 
             <div class="col l4 m6 s12" onclick="triggerTab('tab4')">
                 <i class="fa fa-wrench"></i>
                 <h1>Maintenance</h1>
-                <p>Maintenance du site internet et possibilité d'ajouter de nouvelles fonctionnalités</p>
+                <p>
+                    {% if activeLocale == 'fr' %} Maintenance du site internet et possibilité d'ajouter de nouvelles fonctionnalités
+                    {% else %} Website maintenance and possibility to add new features after the website creation {% endif %}
+                </p>
             </div>
 
             <div class="col l4 m6 s12" onclick="triggerTab('tab5')">
                 <i class="fa fa-line-chart"></i>
-                <h1>Référencement</h1>
-                <p>Optimisation SEO de l'architecture du site pour améliorer son référencement</p>
+                <h1>
+                    {% if activeLocale == 'fr' %} Référencement
+                    {% else %} SEO ready {% endif %}
+                </h1>
+                <p>
+                    {% if activeLocale == 'fr' %} Optimisation SEO de l'architecture du site pour améliorer son référencement
+                    {% else %} Search Engine Optimization of the website architecture to improve its search rank {% endif %}
+                </p>
             </div>
 
             <div class="col l4 m6 s12" onclick="triggerTab('tab6')">
                 <i class="fa fa-lock"></i>
-                <h1>Administration</h1>
-                <p>Suivi du trafic sur le site, modification du contenu via l'interface administrateur</p>
+                <h1>
+                    {% if activeLocale == 'fr' %} Administration
+                    {% else %} Management {% endif %}
+                </h1>
+                <p>
+                    {% if activeLocale == 'fr' %} Suivi du trafic sur le site, modification du contenu via l'interface administrateur
+                    {% else %} The backend allows administrators to check the traffic on the site and edit its content {% endif %}
+                </p>
             </div>
 
         </div>
@@ -109,9 +158,10 @@ is_hidden = 0
                                 </div>
                                 <div class="col l7 m12 s12">
                                     <p>
-                                        La mise en place d'une charte graphique constitue la première étape de la réalisation du design d'un site internet.
-                                        Il s'agit de définir ensemble des couleurs, polices et designs qui correspondent au mieux
-                                        à l'image que vous souhaitez véhiculer auprès des futurs visiteurs.
+                                        La charte graphique est un ensemble de règles qui vont définir comment et dans quelles conditions vous allez utiliser
+                                        vos éléments visuels. Ce document définit l'identité visuelle de votre projet et in fine, il est l'outil qui vous fera
+                                        exister par association dans l'esprit des gens. Le but de la charte graphique est d'assurer une cohérence,
+                                        une harmonisation dans tous les supports de communication de votre projet.
                                         <br><br>
                                          La réalisation du logo est plus évidente une fois la charte graphique mise en place.
                                         Dans le cas où vous auriez déja un logo, la charte graphique peut s'en inspirer en reprenant les couleurs ou le style de police.
@@ -125,8 +175,6 @@ is_hidden = 0
                                     </p>
                                 </div>
                             </div>
-
-
                         </div>
                     </div>
                 </div>
@@ -442,16 +490,12 @@ is_hidden = 0
         </section>
 
         <section class="step">
-            <h1><i class="fa fa-magic"></i> Design <i class="fa fa-circle"></i></h1>
+            <h1><i class="fa fa-magic"></i> Design du site <i class="fa fa-circle"></i></h1>
             <div class="container">
 
                 <h2><i class="fa fa-circle"></i>Mise en place de la Charte graphique</h2>
                 <section>
                     <p>
-                        La charte graphique est un ensemble de règles qui vont définir comment et dans quelles conditions vous allez utiliser vos éléments visuels.
-                        Ce document définit l'identité visuelle de votre projet et in fine, il est l'outil qui vous fera exister par association dans l'esprit des gens.
-                        Le but de la charte graphique est d'assurer une cohérence, une harmonisation dans tous les supports de communication de votre projet.
-                        <br><br>
                         Le site Beyond Biarritz rentals est un reflet de la côte Basque et de son style de vie détendu.
                         Dans le but de mettre en place une atmosphère de vacances, nous avons repris les couleurs chaleureuses du sable de plage et du bleu azur de l'océan.
                         L'association de ces deux couleurs avec le blanc est claire et harmonieuse.
@@ -470,6 +514,21 @@ is_hidden = 0
                             <div style="background: #103f45;"></div>
                             <span>Bleu marine foncé <br> Référence <span style="color: #103f45;">#103f45</span></span>
                         </div>
+                    </div>
+                    <div class="testimonial">
+                        <img src="{{ 'assets/img/bbluxe/julia.jpg'| theme }}">
+                        <div class="customer">
+                            <h1>Julia Lloyd</h1>
+                            <h2>Founder of Beyond Biarritz</h2>
+                        </div>
+                        <p>
+                            <i class="fa fa-angle-double-left" style="margin-right: 8px"></i>
+                            When the final design came through, I was absolutely delighted and happy to see that the site
+                            was exactly as I had envisaged it, even better!
+                            Since the website has been live, we have had numerous positive comments about the site, the colours, the photos,
+                            the layout and ease of navigation. People don’t just enquire now, they compliment the site too which is great.
+                            <i class="fa fa-angle-double-right" style="margin-left: 8px"></i>
+                        </p>
                     </div>
                 </section>
 
@@ -514,8 +573,22 @@ is_hidden = 0
                         J'ai choisi un contour foncé et épais pour un rendu professionnel tout en retravaillant le logo qui vient se superposer à cette bordure.
                         L'image de fond est une photo de la côte de San Sebastian, prise par le photographe de l'entreprise.
                     </p>
+                    <div class="testimonial">
+                        <img src="{{ 'assets/img/bbluxe/julia.jpg'| theme }}">
+                        <div class="customer">
+                            <h1>Julia Lloyd</h1>
+                            <h2>Founder of Beyond Biarritz</h2>
+                        </div>
+                        <p>
+                            <i class="fa fa-angle-double-left" style="margin-right: 8px"></i>
+                            I was so pleased with Pierre-Baptiste's ideas that I asked him to develop a new branding for
+                            the website and also a business card design, all of which I now use and am very pleased with.
+                            Once I had given him the pointers he came back to me with options using my ideas but also bringing in his own.
+                            <i class="fa fa-angle-double-right" style="margin-left: 8px"></i>
+                        </p>
+                    </div>
                     <a href="{{ 'assets/img/bbluxe/businesscards.jpg'| theme }}" data-lightbox="picture-set-cards">
-                        <img src="{{ 'assets/img/bbluxe/businesscards.jpg'| theme }}" style="width: 100%; margin-top: 10px; margin-bottom: 10px;">
+                        <img src="{{ 'assets/img/bbluxe/businesscards.jpg'| theme }}" style="width: 100%; margin-top: 10px; margin-bottom: 12px;">
                     </a>
                 </section>
 
@@ -553,7 +626,7 @@ is_hidden = 0
         </section>
 
         <section class="step">
-            <h1><i class="fa fa-lock"></i> Administration <i class="fa fa-circle"></i></h1>
+            <h1><i class="fa fa-lock"></i> Espace Administrateur <i class="fa fa-circle"></i></h1>
             <div class="container">
 
                 <h2><i class="fa fa-circle"></i> Interface de suivi de trafic </h2>
@@ -581,11 +654,75 @@ is_hidden = 0
                             <li><i class="fa fa-circle-o"></i>Ajouter des témoignages de client</li>
                         </ul>
                     </p>
+                    <div class="testimonial">
+                        <img src="{{ 'assets/img/bbluxe/julia.jpg'| theme }}">
+                        <div class="customer">
+                            <h1>Julia Lloyd</h1>
+                            <h2>Founder of Beyond Biarritz</h2>
+                        </div>
+                        <p>
+                            <i class="fa fa-angle-double-left" style="margin-right: 8px"></i>
+                            Equally important was the back office and the ease with which my colleague could manage the site.
+                            Pierre-Baptiste made this work like clockwork and even now we can contact him for any minor
+                            changes and he replies promptly and with the same enthusiasm.
+                            <i class="fa fa-angle-double-right" style="margin-left: 8px"></i>
+                        </p>
+                    </div>
                 </section>
 
             </div>
         </section>
 
+    </div>
+</section>
+
+<!------------------------------------------------>
+
+<section class="websites-testimonials">
+    <div class="container">
+        <h1>Ils m'ont fait confiance</h1>
+        <div class="testimonial">
+            <img src="{{ 'assets/img/bbluxe/julia.jpg'| theme }}">
+            <h1>Julia Lloyd</h1>
+            <h2>Founder of Beyond Biarritz</h2>
+            <p>
+                With the expansion of one of the four services that Beyond Biarritz offers,
+                we felt the need to develop a separate website for the holiday rentals section.
+                I was particularly keen to give a fresher and more modern feel to the new site but maintain a
+                link with the current site. With this in mind I felt a young, enthusiastic developer would be best
+                and through contacts, came across Pierre-Baptiste. Well I can genuinely say that I never looked back!
+                <br>
+                From our first meeting on Skype, PB immediately grasped what I was looking for and I instantly felt
+                that we were on the same wavelength in terms of style, look and general approach.
+                This in itself instilled confidence and his knowledge and insight really inspired me to go ahead and create the website.
+                <br>
+                Once I had given him the pointers he came back to me with options using my ideas but also bringing in his own.
+                <br>
+                I particularly loved his enthusiasm for the project and his speedy reactions to every email.
+                He looked at every aspect in a positive way and I actually really looked forward to getting his emails!
+                Nothing was too much trouble and he was always available to make changes or offer alternatives.
+                <br>
+                I was so pleased with his ideas that I asked him to develop a new branding for the website and also a business card design,
+                all of which I now use and am very pleased with.
+                I am painful when it comes to attention to detail yet PB always made every modification without hesitation
+                and always with enthusiasm. I felt he was as motivated as I was to get the project complete.
+                Over the period of construction, I think we only had two Skype meetings. He had got to grips so quickly that we only
+                needed to email information back and forth.
+                <br>
+                When the final design came through, I was absolutely delighted and happy to see that the site was exactly
+                as I had envisaged it, even better!
+                Equally important was the back office and the ease with which my colleague could manage the site.
+                PB made this work like clockwork and even now we can contact him for any minor hiccups and he replies
+                promptly and with the same enthusiasm.
+                Since the website has been live, we have had numerous positive comments about the site, the colours, the photos,
+                the layout and ease of navigation. People don’t just enquire now, they compliment the site too which is great.
+                <br>
+                PB is very easy to work with, offers a youthful and enthusiastic approach which is reflected
+                in the style that he offers and clearly understands what you want. He is one of the few ‘geeks’
+                that actually talks to you in a way that you can understand! I would thoroughly recommend him for
+                any media design work.
+            </p>
+        </div>
     </div>
 </section>
 
