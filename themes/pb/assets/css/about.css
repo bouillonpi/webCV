@@ -40,12 +40,12 @@
 }
 
 .about-hero h2 i:first-of-type {
-    color: rgba(255, 255, 255, 0.27);
+    color: rgba(255, 255, 255, 0.5);
     margin-right: 20px;
 }
 
 .about-hero h2 i:last-of-type {
-    color: rgba(255, 255, 255, 0.27);
+    color: rgba(255, 255, 255, 0.5);
     margin-left: 20px;
 }
 

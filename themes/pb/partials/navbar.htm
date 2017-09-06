@@ -33,12 +33,26 @@
         <ul class="right hide-on-med-and-down">
 
             <li class="language-picker">
-                {% if activeLocale == 'fr' %}
-                    <a href="#" data-request="onSwitchLocale" data-request-data="locale: 'en'"><img src="{{ 'assets/img/flags/FR.png'|theme }}"></a>
-                {% endif %}
-                {% if activeLocale == 'en' %}
-                    <a href="#" data-request="onSwitchLocale" data-request-data="locale: 'fr'"><img src="{{ 'assets/img/flags/US.png'|theme }}"></a>
-                {% endif %}
+                <section>
+                    {% if activeLocale == 'fr' %}
+                        <a href="#"
+                           class="tooltipped"
+                           data-request="onSwitchLocale"
+                           data-request-data="locale: 'en'"
+                           data-tooltip="<div class='language-tooltip'>Change language to English</div>">
+                            <img src="{{ 'assets/img/flags/FR.png'|theme }}">
+                        </a>
+                    {% endif %}
+                    {% if activeLocale == 'en' %}
+                        <a href="#"
+                           class="tooltipped"
+                           data-request="onSwitchLocale"
+                           data-request-data="locale: 'fr'"
+                           data-tooltip="<div class='language-tooltip'>Changer la langue en Français</div>">
+                            <img src="{{ 'assets/img/flags/US.png'|theme }}">
+                        </a>
+                    {% endif %}
+                </section>
             </li>
 
             <li class="contact-button"><a href="#contact-modal">Contact</a></li>
@@ -49,12 +63,14 @@
         <ul class="side-nav" id="mobile-demo">
 
             <li class="language-picker">
-                {% if activeLocale == 'fr' %}
-                <a href="#" data-request="onSwitchLocale" data-request-data="locale: 'en'"><img src="{{ 'assets/img/flags/FR.png'|theme }}"></a>
-                {% endif %}
-                {% if activeLocale == 'en' %}
-                <a href="#" data-request="onSwitchLocale" data-request-data="locale: 'fr'"><img src="{{ 'assets/img/flags/US.png'|theme }}"></a>
-                {% endif %}
+                <section>
+                    {% if activeLocale == 'fr' %}
+                    <a href="#" data-request="onSwitchLocale" data-request-data="locale: 'en'"><img src="{{ 'assets/img/flags/FR.png'|theme }}"></a>
+                    {% endif %}
+                    {% if activeLocale == 'en' %}
+                    <a href="#" data-request="onSwitchLocale" data-request-data="locale: 'fr'"><img src="{{ 'assets/img/flags/US.png'|theme }}"></a>
+                    {% endif %}
+                </section>
             </li>
 
             <li {% if this.page.id == 'home' %}class="active"{% endif %}>

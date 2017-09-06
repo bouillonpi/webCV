@@ -6,6 +6,14 @@ $( document ).ready(function(){
 
     $('ul.tabs').tabs();
 
+    $('.tooltipped').tooltip({
+        delay: 200,
+        position: 'bottom',
+        html: true
+    });
+
+    $('.collapsible').collapsible();
+
 });
 
 $("#home-scroll").click(function() {
