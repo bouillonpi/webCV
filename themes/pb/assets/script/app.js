@@ -7,7 +7,7 @@ $( document ).ready(function(){
     $('ul.tabs').tabs();
 
     $('.tooltipped').tooltip({
-        delay: 200,
+        delay: 50,
         position: 'bottom',
         html: true
     });
