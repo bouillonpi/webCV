@@ -215,8 +215,14 @@ is_hidden = 0
 
 <section class="websites-casestudy">
     <div class="container">
-        <h1>- Étude de cas -</h1>
-        <h2>Réalisation du site <br> Beyond Biarritz</h2>
+        <h1>
+            {% if activeLocale == 'fr' %} - Étude de cas -
+            {% else %} - Case Study - {% endif %}
+        </h1>
+        <h2>
+            {% if activeLocale == 'fr' %} Réalisation du site <br> Beyond Biarritz
+            {% else %} Production of the website <br> Beyond Biarritz {% endif %}
+        </h2>
 
         <section class="intro">
             <div class="row">
@@ -249,20 +255,24 @@ is_hidden = 0
                         </p>
                         <ul>
                             <li>
-                                <span><i class="fa fa-clock-o"></i>Réalisation</span>
-                                <span>4 mois</span>
+                                <span><i class="fa fa-clock-o"></i>{% if activeLocale == 'fr' %} Réalisation {% else %} Production {% endif %}</span>
+                                <span>{% if activeLocale == 'fr' %} 4 mois {% else %} 4 months {% endif %}</span>
                             </li>
                             <li>
-                                <span><i class="fa fa-bookmark-o"></i>Activité</span>
-                                <span>Location propriétés de luxe</span>
+                                <span><i class="fa fa-bookmark-o"></i>{% if activeLocale == 'fr' %} Activité {% else %} Company {% endif %}</span>
+                                <span>{% if activeLocale == 'fr' %} Location propriétés de luxe {% else %} Quality rentals in Basque coast {% endif %}</span>
                             </li>
                             <li>
-                                <span><i class="fa fa-laptop"></i>Lien du site</span>
+                                <span><i class="fa fa-laptop"></i>{% if activeLocale == 'fr' %} Lien du site {% else %} Website Link {% endif %}</span>
                                 <span>biarritzdreamrentals.com</span>
                             </li>
                         </ul>
                         <a href="https://biarritzdreamrentals.com" target="_blank">
-                            <div class="button-site"><i class="fa fa-globe"></i> Visiter le site</div>
+                            <div class="button-site">
+                                <i class="fa fa-globe"></i>
+                                {% if activeLocale == 'fr' %} Visiter le site
+                                {% else %} Discover the website {% endif %}
+                            </div>
                         </a>
                     </div>
                 </div>
@@ -270,56 +280,104 @@ is_hidden = 0
         </section>
 
         <section class="step">
-            <h1><i class="fa fa-magic"></i> Design du site <i class="fa fa-circle"></i></h1>
+            <h1>
+                <i class="fa fa-magic"></i>
+                {% if activeLocale == 'fr' %} Design du site
+                {% else %} Design of the website {% endif %}
+                <i class="fa fa-circle"></i>
+            </h1>
             <div class="container">
 
-                <h2><i class="fa fa-circle"></i>Mise en place de la Charte graphique</h2>
+                <h2>
+                    <i class="fa fa-circle"></i>
+                    {% if activeLocale == 'fr' %} Mise en place de la Charte graphique
+                    {% else %} Setting up the graphic charter {% endif %}
+                </h2>
                 <section>
                     <p>
+                        {% if activeLocale == 'fr' %}
                         Le site Beyond Biarritz rentals est un reflet de la côte Basque et de son style de vie détendu.
                         Dans le but de mettre en place une atmosphère de vacances, nous avons repris les couleurs chaleureuses du sable de plage et du bleu azur de l'océan.
                         L'association de ces deux couleurs avec le blanc est claire et harmonieuse.
                         Nous avons également ajouté une couleur foncée principalement utilisée pour les textes, afin de les faire ressortir par rapport aux couleurs claires.
+                        {% else %}
+                        Beyond Biarritz rentals website is a reflection of the Basque coast and its relaxed lifestyle.
+                        In order to convey a holiday atmosphere, we used warms colors of beach sand and ocean bleu azur.
+                        This combination of colors with white is bright and harmonious.
+                        Moreover, we added a dark color mostly used for fonts to make it stand out from bright colors.
+                        {% endif %}
                     </p>
                     <div class="colors">
                         <div class="color">
                             <div style="background: #4cafac;"></div>
-                            <span>Bleu océan azur <br> Référence <span style="color: #4cafac;">#4cafac</span></span>
+                            <span>
+                                {% if activeLocale == 'fr' %} Bleu océan azur <br> Référence
+                                {% else %} Ocean bleu azur <br> Reference {% endif %}
+                                <span style="color: #4cafac;">#4cafac</span>
+                            </span>
                         </div>
                         <div class="color">
                             <div style="background: #efd466;"></div>
-                            <span>Jaune sable de plage <br> Référence <span style="color: #efd466;">#efd466</span></span>
+                            <span>
+                                {% if activeLocale == 'fr' %} Jaune sable de plage <br> Référence
+                                {% else %} Beach sand yellow <br> Reference {% endif %}
+                                <span style="color: #efd466;">#efd466</span></span>
                         </div>
                         <div class="color">
                             <div style="background: #103f45;"></div>
-                            <span>Bleu marine foncé <br> Référence <span style="color: #103f45;">#103f45</span></span>
+                            <span>
+                                {% if activeLocale == 'fr' %} Bleu marine foncé <br> Référence
+                                {% else %} Dark navy blue <br> Reference {% endif %}
+                                <span style="color: #103f45;">#103f45</span></span>
                         </div>
                     </div>
                     <div class="testimonial">
                         <img src="{{ 'assets/img/bbluxe/julia.jpg'| theme }}">
                         <div class="customer">
                             <h1>Julia Lloyd</h1>
-                            <h2>Founder of Beyond Biarritz</h2>
+                            <h2>
+                                {% if activeLocale == 'fr' %} Fondatrice de Beyond Biarritz
+                                {% else %} Founder of Beyond Biarritz {% endif %}
+                            </h2>
                         </div>
                         <p>
                             <i class="fa fa-angle-double-left" style="margin-right: 8px"></i>
+                            {% if activeLocale == 'fr' %}
+                            Lorsque la version finale du design est arrivée, j'étais ravie de voir que le site ressemblait exactement
+                            à la manière dont je l'avais imaginé, et même encore mieux !
+                            Depuis que le site est en ligne, nous avons reçu de nombreux retours positifs au sujet du design, des couleurs, des photos,
+                            du thème et de la facilité d'utilisation. Les clients ne viennent pas simplement pour se renseigner, ils complimentent également
+                            notre site ce qui est très satisfaisant.
+                            {% else %}
                             When the final design came through, I was absolutely delighted and happy to see that the site
                             was exactly as I had envisaged it, even better!
                             Since the website has been live, we have had numerous positive comments about the site, the colours, the photos,
                             the layout and ease of navigation. People don’t just enquire now, they compliment the site too which is great.
+                            {% endif %}
                             <i class="fa fa-angle-double-right" style="margin-left: 8px"></i>
                         </p>
                     </div>
                 </section>
 
-                <h2><i class="fa fa-circle"></i> Création du logo</h2>
+                <h2>
+                    <i class="fa fa-circle"></i>
+                    {% if activeLocale == 'fr' %} Création du logo
+                    {% else %} Logo creation {% endif %}
+                </h2>
                 <section>
                     <p>
-                        Le logo est la clef de voûte de l'identité graphique de tout projet.
+                        {% if activeLocale == 'fr' %}
+                        Le logo est la clef de voûte de l'identité visuelle de tout projet.
                         Travaillant avec des artisans et professionnels locaux,
                         l'entreprise Beyond Biarritz rentals souhaitait réaliser un logo rappelant la culture Basque.
                         J'ai créer plusieurs versions d'un logo reprenant le motif du lingue traditionnel Basque, élément culturel caractéristique de cette région.
                         Les différents modèles de logo reprennent les couleurs de la charte graphique et ont permis d'affiner la version finale, exposée ci-contre.
+                        {% else %}
+                        The logo is the keystone of any project's visual identity.
+                        Working with local artisans, Beyond Biarritz rentals wanted a logo whose design would reflect the Basque culture.
+                        I designed several versions of a logo using the traditional pattern of Basque clothes, characteristic cultural feature of this region.
+                        The various logo models also use the graphic charter colors. The final design of the logo is displayed below.
+                        {% endif %}
                     </p>
                     <div class="logowork">
                         <a href="{{ 'assets/img/bbluxe/logowork.jpg'| theme }}" data-lightbox="picture-set-logowork">
@@ -331,39 +389,93 @@ is_hidden = 0
                     </div>
                 </section>
 
-                <h2><i class="fa fa-circle"></i> Construction des pages du site</h2>
+                <h2>
+                    <i class="fa fa-circle"></i>
+                    {% if activeLocale == 'fr' %} Construction des pages du site
+                    {% else %} Building website pages {% endif %}
+                </h2>
                 <section>
                     <p>
-                        Le site Beyond Biarritz rentals s'articule autour de 6 pages réalisées :
+                        {% if activeLocale == 'fr' %} Le site Beyond Biarritz rentals s'articule autour de 6 pages réalisées :
+                        {% else %} Beyond Biarritz rentals is built around 6 designed pages: {% endif %}
                         <ul>
-                            <li><i class="fa fa-circle-o"></i><a href="https://biarritzdreamrentals.com" target="_blank">Home</a> - introduction aux services proposés par l'entreprise</li>
-                            <li><i class="fa fa-circle-o"></i><a href="https://biarritzdreamrentals.com/properties" target="_blank">Properties</a> - liste des villas et appartements locatifs</li>
-                            <li><i class="fa fa-circle-o"></i><a href="https://biarritzdreamrentals.com/properties/villa-des-cretes" target="_blank">Property</a> - description d'une propriété sélectionnée</li>
-                            <li><i class="fa fa-circle-o"></i><a href="https://biarritzdreamrentals.com/properties/villa-des-cretes/book" target="_blank">Reservation</a> - réserver une propriété sélectionnée et payer</li>
-                            <li><i class="fa fa-circle-o"></i><a href="https://biarritzdreamrentals.com/aboutus" target="_blank">About Us</a> - informations sur l'histoire de l'entreprise et son équipe</li>
-                            <li><i class="fa fa-circle-o"></i><a href="https://biarritzdreamrentals.com/contact" target="_blank">Contact</a> - contacter l'entreprise pour plus d'informations</li>
+                            <li>
+                                <i class="fa fa-circle-o"></i>
+                                <a href="https://biarritzdreamrentals.com" target="_blank">Home</a>
+                                {% if activeLocale == 'fr' %}- introduction aux services proposés par l'entreprise
+                                {% else %}- introduces services that the company offers {% endif %}
+                            </li>
+                            <li>
+                                <i class="fa fa-circle-o"></i>
+                                <a href="https://biarritzdreamrentals.com/properties" target="_blank">Properties</a>
+                                {% if activeLocale == 'fr' %}- liste des villas et appartements locatifs
+                                {% else %}- list of rental villas and apartments {% endif %}
+                            </li>
+                            <li>
+                                <i class="fa fa-circle-o"></i>
+                                <a href="https://biarritzdreamrentals.com/properties/villa-des-cretes" target="_blank">Property</a>
+                                {% if activeLocale == 'fr' %}- description d'une propriété sélectionnée
+                                {% else %}- details about a selected property {% endif %}
+                            </li>
+                            <li>
+                                <i class="fa fa-circle-o"></i>
+                                <a href="https://biarritzdreamrentals.com/properties/villa-des-cretes/book" target="_blank">Reservation</a>
+                                {% if activeLocale == 'fr' %}- réserver une propriété sélectionnée et payer
+                                {% else %}- book a selected property and pay {% endif %}
+                            </li>
+                            <li><i class="fa fa-circle-o"></i>
+                                <a href="https://biarritzdreamrentals.com/aboutus" target="_blank">About Us</a>
+                                {% if activeLocale == 'fr' %}- informations sur l'histoire de l'entreprise et son équipe
+                                {% else %}- learn more about the company and its team {% endif %}
+                            </li>
+                            <li>
+                                <i class="fa fa-circle-o"></i>
+                                <a href="https://biarritzdreamrentals.com/contact" target="_blank">Contact</a>
+                                {% if activeLocale == 'fr' %}- contacter l'entreprise pour plus d'informations
+                                {% else %}- contact the company for more information {% endif %}
+                            </li>
                         </ul>
                     </p>
                 </section>
 
-                <h2><i class="fa fa-circle"></i> Réalisation de cartes de visite</h2>
+                <h2>
+                    <i class="fa fa-circle"></i>
+                    {% if activeLocale == 'fr' %} Réalisation de cartes de visite
+                    {% else %} Business card realization {% endif %}
+                </h2>
                 <section>
                     <p>
+                        {% if activeLocale == 'fr' %}
                         Beyond Biarritz rentals m'a également confié la réalisation de ses cartes de visites.
                         J'ai choisi un contour foncé et épais pour un rendu professionnel tout en retravaillant le logo qui vient se superposer à cette bordure.
                         L'image de fond est une photo de la côte de San Sebastian, prise par le photographe de l'entreprise.
+                        {% else %}
+                        Beyond Biarritz rentals also entrusted me with the realization of the company business cards.
+                        I chose a thick dark outline for a professional-looking card. I reworked the logo in order to come over the outline.
+                        The background picture was shot on San Sebastian coast by the company photograph.
+                        {% endif %}
                     </p>
                     <div class="testimonial">
                         <img src="{{ 'assets/img/bbluxe/julia.jpg'| theme }}">
                         <div class="customer">
                             <h1>Julia Lloyd</h1>
-                            <h2>Founder of Beyond Biarritz</h2>
+                            <h2>
+                                {% if activeLocale == 'fr' %} Fondatrice de Beyond Biarritz
+                                {% else %} Founder of Beyond Biarritz {% endif %}
+                            </h2>
                         </div>
                         <p>
                             <i class="fa fa-angle-double-left" style="margin-right: 8px"></i>
+                            {% if activeLocale == 'fr' %}
+                            J'étais si satisfaite des idées de Pierre-Baptiste que je lui ai demandé de développer un nouveau design pour le site
+                            ainsi que nos cartes de visite. Nous utilisons à présent ces designs et en sommes très contents.
+                            Nous lui avons fourni des indications sur le style que nous envisagions puis il est revenu vers nous avec plusieurs options
+                            utilisant à la fois nos idées et les siennes.
+                            {% else %}
                             I was so pleased with Pierre-Baptiste's ideas that I asked him to develop a new branding for
                             the website and also a business card design, all of which I now use and am very pleased with.
                             Once I had given him the pointers he came back to me with options using my ideas but also bringing in his own.
+                            {% endif %}
                             <i class="fa fa-angle-double-right" style="margin-left: 8px"></i>
                         </p>
                     </div>
@@ -376,21 +488,39 @@ is_hidden = 0
         </section>
 
         <section class="step">
-            <h1><i class="fa fa-laptop"></i> Adaptabilité <i class="fa fa-circle"></i></h1>
+            <h1>
+                <i class="fa fa-laptop"></i>
+                {% if activeLocale == 'fr' %} Adaptabilité
+                {% else %} Cross-platform Adaptability {% endif %}
+                <i class="fa fa-circle"></i>
+            </h1>
             <div class="container">
 
-                <h2><i class="fa fa-circle"></i> Compatible avec tous les appareils</h2>
+                <h2>
+                    <i class="fa fa-circle"></i>
+                    {% if activeLocale == 'fr' %} Compatible avec tous les appareils
+                    {% else %} Responsive Design {% endif %}
+                </h2>
                 <section>
                     <p>
+                        {% if activeLocale == 'fr' %}
                         Le site Beyond Biarritz rentals s'adapte à tout type d'appareil pour une consultation maximum.
-                        <br>Le contenu du site se réorganise automatiquement en fonction du type d'appareil utilisé.
+                        <br class="hide-on-small-and-down">Le contenu du site se réorganise automatiquement en fonction du type d'appareil utilisé.
+                        {% else %}
+                        Beyond Biarritz rentals website is responsive to any type of devices, from the desktop to the mobile.
+                        <br class="hide-on-small-and-down"> The website content reorganize itself automatically to fit the device type.
+                        {% endif %}
                     </p>
                     <a href="{{ 'assets/img/bbluxe/responsive.jpg'| theme }}" data-lightbox="picture-set-responsive">
                         <img src="{{ 'assets/img/bbluxe/responsive.jpg'| theme }}" style="width: 100%; margin-top: 10px; margin-bottom: 10px;">
                     </a>
                 </section>
 
-                <h2><i class="fa fa-circle"></i> Compatible avec tous les navigateurs</h2>
+                <h2>
+                    <i class="fa fa-circle"></i>
+                    {% if activeLocale == 'fr' %} Compatible avec tous les navigateurs
+                    {% else %} Cross-browser compatibility {% endif %}
+                </h2>
                 <section>
                     <div class="row browsers">
                         <div class="col l2 m4 s6"><img src="{{ 'assets/img/logos/chrome.png'| theme }}"></div>

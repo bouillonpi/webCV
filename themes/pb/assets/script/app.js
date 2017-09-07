@@ -12,8 +12,6 @@ $( document ).ready(function(){
         html: true
     });
 
-    $('.collapsible').collapsible();
-
 });
 
 $("#home-scroll").click(function() {
@@ -109,10 +107,3 @@ $('#typeWriteAbout-en').typeIt({
         'I like to do metal detecting in France <i class="fa fa-magnet"></i>'
     ]
 });
-
-function triggerTab(tab_id) {
-    $('ul.tabs').tabs('select_tab', tab_id);
-    $('html, body').animate({
-        scrollTop: $('#websites-tabs').offset().top
-    }, 700);
-}
