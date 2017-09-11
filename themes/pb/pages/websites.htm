@@ -10,7 +10,7 @@ is_hidden = 0
     <div class="separator"></div>
     <h2>
         {% if activeLocale == 'fr' %} Conception de sites internet
-        {% else %} Website design & development {% endif %}
+        {% else %} Website development & design {% endif %}
     </h2>
     <h3>
         Simple
@@ -109,7 +109,7 @@ is_hidden = 0
                 <i class="fa fa-lock"></i>
                 <h1>
                     {% if activeLocale == 'fr' %} Administration
-                    {% else %} Management {% endif %}
+                    {% else %} Back office {% endif %}
                 </h1>
                 <p>
                     {% if activeLocale == 'fr' %} Suivi du trafic sur le site, modification du contenu via l'interface administrateur
@@ -142,8 +142,8 @@ is_hidden = 0
                             <div class="mask-content">
                                 <h1>Beyond Biarritz</h1>
                                 <p>
-                                    {% if activeLocale == 'fr' %} Location de propriétés de luxe sur la côte basque
-                                    {% else %} Quality rentals in Biarritz and the Basque coast {% endif %}
+                                    {% if activeLocale == 'fr' %} Location de propriétés de vacances sur la côte basque
+                                    {% else %} Holiday rentals in Biarritz and the Basque coast {% endif %}
                                 </p>
                                 <a href="https://biarritzdreamrentals.com/" target="_blank">
                                     {% if activeLocale == 'fr' %} Visiter {% else %} Discover {% endif %}
@@ -260,7 +260,7 @@ is_hidden = 0
                             </li>
                             <li>
                                 <span><i class="fa fa-bookmark-o"></i>{% if activeLocale == 'fr' %} Activité {% else %} Company {% endif %}</span>
-                                <span>{% if activeLocale == 'fr' %} Location propriétés de luxe {% else %} Quality rentals in Basque coast {% endif %}</span>
+                                <span>{% if activeLocale == 'fr' %} Location propriétés de vacances {% else %} Holiday rentals in Basque coast {% endif %}</span>
                             </li>
                             <li>
                                 <span><i class="fa fa-laptop"></i>{% if activeLocale == 'fr' %} Lien du site {% else %} Website Link {% endif %}</span>
@@ -536,45 +536,94 @@ is_hidden = 0
         </section>
 
         <section class="step">
-            <h1><i class="fa fa-lock"></i> Espace Administrateur <i class="fa fa-circle"></i></h1>
+            <h1>
+                <i class="fa fa-lock"></i>
+                {% if activeLocale == 'fr' %} Espace Administrateur
+                {% else %} Admin Back Office {% endif %}
+                <i class="fa fa-circle"></i>
+            </h1>
             <div class="container">
 
-                <h2><i class="fa fa-circle"></i> Interface de suivi de trafic </h2>
+                <h2>
+                    <i class="fa fa-circle"></i>
+                    {% if activeLocale == 'fr' %} Interface de suivi de trafic
+                    {% else %} Traffic-tracking Interface {% endif %}
+                </h2>
                 <section>
                     <p>
+                        {% if activeLocale == 'fr' %}
                         L'espace administrateur du site Beyond Biarritz rentals est accessible depuis le site même.
                         La page d'accueil de cet espace administrateur est composée d'une interface de suivi de trafic du site, comme affichée ci-contre.
                         Cette interface permet aux administrateurs du site de consulter le trafic sur le site en tant réel grâce aux données récoltées par Google Analytics.
                         Les données affichées offrent une meilleure compréhension du comportement des visiteurs sur le site.
+                        {% else %}
+                        The back office of Beyond Biarritz rentals website is accessible from the website itself.
+                        The dashboard of this back office displays a traffic-tracking interface as shown below.
+                        This interface allows back office users to understand the behavior of users on the website thanks to data from Google Analytics.
+                        {% endif %}
                     </p>
                     <a href="{{ 'assets/img/Interface-Admin.png'| theme }}" data-lightbox="picture-set-interface-admin">
                         <img class="interface-admin" src="{{ 'assets/img/Interface-Admin.png'| theme }}">
                     </a>
                 </section>
 
-                <h2><i class="fa fa-circle"></i> Changement du contenu du site </h2>
+                <h2>
+                    <i class="fa fa-circle"></i>
+                    {% if activeLocale == 'fr' %} Changement du contenu du site
+                    {% else %} Managing the website content {% endif %}
+                </h2>
                 <section>
                     <p>
+                        {% if activeLocale == 'fr' %}
                         Depuis l'espace administrateur, les gérants du site peuvent changer l'ensemble du contenu des pages.
-                        <br>Les administrateurs peuvent effectuer les tâches suivantes :
+                        <br class="hide-on-small-and-down">Les administrateurs peuvent effectuer les tâches suivantes :
+                        {% else %}
+                        From the back office, administrators can manage and update easily all the website content.
+                        <br class="hide-on-small-and-down"> The administrators can perform the following tasks:
+                        {% endif %}
                         <ul>
-                            <li><i class="fa fa-circle-o"></i>Ajouter-Modifier-Supprimer des propriétés</li>
-                            <li><i class="fa fa-circle-o"></i>Indiquer la disponibilité de chaque propriété</li>
-                            <li><i class="fa fa-circle-o"></i>Créer des tarifs saisonniers pour les locations</li>
-                            <li><i class="fa fa-circle-o"></i>Ajouter des témoignages de client</li>
+                            <li>
+                                <i class="fa fa-circle-o"></i>
+                                {% if activeLocale == 'fr' %} Ajouter-Modifier-Supprimer des propriétés
+                                {% else %} Create-Update-Remove existing rentals {% endif %}
+                            </li>
+                            <li>
+                                <i class="fa fa-circle-o"></i>
+                                {% if activeLocale == 'fr' %} Indiquer la disponibilité de chaque propriété
+                                {% else %} Manage the availability of every property {% endif %}
+                            </li>
+                            <li>
+                                <i class="fa fa-circle-o"></i>
+                                {% if activeLocale == 'fr' %} Créer des tarifs saisonniers pour les locations
+                                {% else %} Set up custom rates for different properties {% endif %}
+                            </li>
+                            <li>
+                                <i class="fa fa-circle-o"></i>
+                                {% if activeLocale == 'fr' %} Ajouter des témoignages de client
+                                {% else %} Add customers testimonials {% endif %}
+                            </li>
                         </ul>
                     </p>
                     <div class="testimonial">
                         <img src="{{ 'assets/img/bbluxe/julia.jpg'| theme }}">
                         <div class="customer">
                             <h1>Julia Lloyd</h1>
-                            <h2>Founder of Beyond Biarritz</h2>
+                            <h2>
+                                {% if activeLocale == 'fr' %} Fondatrice de Beyond Biarritz
+                                {% else %} Founder of Beyond Biarritz {% endif %}
+                            </h2>
                         </div>
                         <p>
                             <i class="fa fa-angle-double-left" style="margin-right: 8px"></i>
+                            {% if activeLocale == 'fr' %}
+                            L'interface administrateur est très importante dans la mesure où ma collègue doit gérer le contenu du site fréquemment.
+                            Pierre-Baptiste a réalisé une interface performante et intuitive avec une précision d'horlogier. Nous pouvons également
+                            le contacter à tout moment pour effectuer des changements - il répond rapidement toujours avec le même enthousiasme.
+                            {% else %}
                             Equally important was the back office and the ease with which my colleague could manage the site.
                             Pierre-Baptiste made this work like clockwork and even now we can contact him for any minor
                             changes and he replies promptly and with the same enthusiasm.
+                            {% endif %}
                             <i class="fa fa-angle-double-right" style="margin-left: 8px"></i>
                         </p>
                     </div>
@@ -590,12 +639,54 @@ is_hidden = 0
 
 <section class="websites-testimonials">
     <div class="container">
-        <h1>Ils m'ont fait confiance</h1>
+        <h1>
+            {% if activeLocale == 'fr' %} Ils m'ont fait confiance
+            {% else %} They trusted me {% endif %}
+        </h1>
         <div class="testimonial">
             <img src="{{ 'assets/img/bbluxe/julia.jpg'| theme }}">
             <h1>Julia Lloyd</h1>
-            <h2>Founder of Beyond Biarritz</h2>
+            <h2>
+                {% if activeLocale == 'fr' %} Fondatrice de Beyond Biarritz
+                {% else %} Founder of Beyond Biarritz {% endif %}
+            </h2>
             <p>
+                {% if activeLocale == 'fr' %}
+                Avec le développement de notre service de location de propriétés de vacances sur la côte Basque, nous avons ressenti le besoin
+                de développer un site internet indépendant.
+                J'étais très enthousiate à l'idée de développer un design moderne et épuré pour le nouveau site tout en
+                maintenant un lien avec le site actuel de l'entreprise Beyond Biarritz. Dans cette optique, j'ai pensé qu'un jeune développeur
+                ouvert d'esprit serait idéal pour travailler sur cette réalisation. En cherchant parmi mes contacts, on m'a recommandé Pierre-Baptiste.
+                Aujourd'hui je peux sincèrement dire que je n'ai jamais regretté d'avoir choisi ses services !
+                <br>
+                Depuis notre première rencontre sur Skype, PB a très vite compris ce que je cherchais et j'ai immédiatement senti
+                que nous étions sur la même longueur d'onde en terme de design, de style et d'approche du projet.
+                Sa connaissance et sa perspicacité m'ont inspiré confiance tout en me donnant envie d'aller de l'avant dans la création du site.
+                <br>
+                J'ai tout particulièrement apprécié l'enthousiasme de PB pour le projet et ses réponses rapides et détaillées à mes emails.
+                Il a considéré l'ensemble des aspects du projet avec positivité et j'attendais chacun de ses emails avec impatience !
+                Tout semblait clair et réalisable, il était toujours disponible pour effectuer des changements ou proposer de nouvelles alternatives.
+                <br>
+                J'étais si satisfaite des idées de PB que je lui ai demandé de développer un nouveau design pour le site
+                ainsi que nos cartes de visite. Nous utilisons à présent ces designs et en sommes très contents.
+                Nous lui avons fourni des indications sur le style que nous envisagions puis il est revenu vers nous avec plusieurs options
+                utilisant à la fois nos idées et les siennes.
+                <br>
+                Lorsque la version finale du design est arrivée, j'étais ravie de voir que le site ressemblait exactement
+                à la manière dont je l'avais imaginé, et même encore mieux !
+                Depuis que le site est en ligne, nous avons reçu de nombreux retours positifs au sujet du design, des couleurs, des photos,
+                du thème et de la facilité d'utilisation. Les clients ne viennent pas simplement pour se renseigner, ils complimentent également
+                notre site ce qui est très satisfaisant.
+                <br>
+                L'interface administrateur est très importante dans la mesure où ma collègue doit gérer le contenu du site fréquemment.
+                PB a réalisé une interface performante et intuitive avec une précision d'horlogier. Nous pouvons également
+                le contacter à tout moment pour effectuer des changements - il répond rapidement toujours avec le même enthousiasme.
+                <br>
+                Il est très agréable de travailler avec PB: il offre une approche jeune et enthousiaste qui se reflète dans son style de développement.
+                Il est l'un des rares 'geeks' qui vous parlent de manière à ce que vous les compreniez!
+                Je recommande vivement ses services pour tout type de design.
+
+                {% else %}
                 With the expansion of one of the four services that Beyond Biarritz offers,
                 we felt the need to develop a separate website for the holiday rentals section.
                 I was particularly keen to give a fresher and more modern feel to the new site but maintain a
@@ -613,19 +704,18 @@ is_hidden = 0
                 I was so pleased with his ideas that I asked him to develop a new branding for the website and also a business card design,
                 all of which I now use and am very pleased with.
                 When the final design came through, I was absolutely delighted and happy to see that the site was exactly
-                as I had envisaged it, even better!
+                as I had envisaged it, even better! Since the website has been live, we have had numerous positive comments about the site,
+                the colours, the photos, the layout and ease of navigation. People don’t just enquire now, they compliment the site too which is great.
                 <br>
                 Equally important was the back office and the ease with which my colleague could manage the site.
                 PB made this work like clockwork and even now we can contact him for any minor changes and he replies
                 promptly and with the same enthusiasm.
                 <br>
-                Since the website has been live, we have had numerous positive comments about the site, the colours, the photos,
-                the layout and ease of navigation. People don’t just enquire now, they compliment the site too which is great.
-                <br>
                 PB is very easy to work with, offers a youthful and enthusiastic approach which is reflected
                 in the style that he offers and clearly understands what you want. He is one of the few ‘geeks’
                 that actually talks to you in a way that you can understand! I would thoroughly recommend him for
                 any media design work.
+                {% endif %}
             </p>
         </div>
     </div>
@@ -635,7 +725,10 @@ is_hidden = 0
 
 <section class="websites-logos">
     <div class="container">
-        <h1>Quelques logos réalisés</h1>
+        <h1>
+            {% if activeLocale == 'fr' %} Quelques logos réalisés
+            {% else %} Logos I designed {% endif %}
+        </h1>
         <div class="row">
 
             <div class="col l4 m6 s12">

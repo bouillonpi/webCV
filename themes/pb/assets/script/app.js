@@ -12,6 +12,10 @@ $( document ).ready(function(){
         html: true
     });
 
+    $('.scrollspy').scrollSpy({
+        scrollOffset: 0
+    });
+
 });
 
 $("#home-scroll").click(function() {

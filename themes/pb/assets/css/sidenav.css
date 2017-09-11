@@ -1,0 +1,88 @@
+.sidenav {
+    top: 50%;
+    margin-top: -116px;
+    position: fixed;
+    right:-115px;
+    background: #565656;
+    z-index: 100;
+    border-right: 10px solid #80b5df;
+    border-bottom-left-radius: 3px;
+    border-top-left-radius: 3px;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.sidenav:hover {
+    right:0px;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.sidenav ul {
+    margin: 0;
+}
+
+.sidenav ul li a {
+    cursor: pointer;
+    display: block;
+    padding: 5px 20px;
+    padding-right: 35px;
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -ms-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    transition: all 0.2s;
+}
+
+.sidenav ul .active {
+    background: #80b5df;
+}
+
+.sidenav ul .active i {
+     color: #fff;
+ }
+
+.sidenav ul .active span {
+    color: #484848;
+}
+
+.sidenav ul li:first-of-type {
+    margin-top: 20px;
+}
+
+.sidenav ul li:last-of-type {
+    margin-bottom: 20px;
+}
+
+.sidenav ul li:hover {
+    background: gray;
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -ms-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    transition: all 0.2s;
+}
+
+.sidenav ul li:hover span {
+    color: #484848;
+}
+
+.sidenav ul li i {
+    color: #fff;
+    width: 25px;
+    margin-right: 22px;
+    text-align: center;
+    font-size: 16px;
+}
+
+.sidenav ul li span {
+    font-size: 14px;
+    font-family: SourceSansProRegular, serif;
+    color: #9e9e9e;
+}
