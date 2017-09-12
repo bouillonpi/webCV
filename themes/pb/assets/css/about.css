@@ -427,11 +427,12 @@
 }
 
 .about-roadtrip > .container {
+    width: 90%;
     padding-top: 80px;
     padding-bottom: 80px;
 }
 
-.about-roadtrip h1 {
+.about-roadtrip > .container > h1 {
     text-transform: uppercase;
     letter-spacing: 5px;
     font-family: ProximaRegular, serif;
@@ -444,5 +445,48 @@
     color: #484848;
 }
 
+.about-roadtrip .roadtrip-map {
+    height: 650px;
+}
+
 /* ---------------------------------------------- */
 /* ---------------------------------------------- */
+
+.roadtrip-popup {
+    padding: 15px 15px;
+    max-width: 350px;
+}
+
+.roadtrip-popup > h1 {
+    font-family: ProximaBold, serif;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #484848;
+    margin: 0;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #80b5df;
+}
+
+.roadtrip-popup > h1 > span {
+    color: gray;
+    font-size: 12px;
+    margin-right: 10px;
+}
+
+.roadtrip-popup > p {
+    font-family: SourceSansProRegular, serif;
+}
+
+.roadtrip-popup .row {
+    margin: 0;
+    margin-top: 20px;
+}
+
+.roadtrip-popup img {
+    width: 100%;
+}
+
+.roadtrip-popup .not-displayed {
+    display: none;
+}

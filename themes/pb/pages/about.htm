@@ -4,6 +4,14 @@ layout = "standard"
 is_hidden = 0
 ==
 
+<script>
+    var activeLocale = "{{activeLocale}}";
+</script>
+<script src="{{ 'assets/script/roadtrip.js' |theme }}"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDKHYdkvjUeSFl7VQqI8vioY_xTfJg_FhQ&callback=initMapRoadtrip" async defer></script>
+
+<!------------------------------------------------>
+
 <section class="about-hero">
     <div class="container">
         <h1>
@@ -299,6 +307,8 @@ is_hidden = 0
             {% if activeLocale == 'fr' %} Roadtrip dans l'Ouest Américain
             {% else %} Western US Roadtrip {% endif %}
         </h1>
+
+        <div id="roadtrip-map" class="roadtrip-map"></div>
 
     </div>
 
