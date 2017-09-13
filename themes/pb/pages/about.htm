@@ -308,7 +308,84 @@ is_hidden = 0
             {% else %} Western US Roadtrip {% endif %}
         </h1>
 
-        <div id="roadtrip-map" class="roadtrip-map"></div>
+        <p>
+            {% if activeLocale == 'fr' %}
+            Au cours de l'été 2017, j'ai effectué un roadtrip dans l'Ouest Américain avec
+            <a href="https://www.linkedin.com/in/alixia-aprelon-a6879783/" target="_blank">Alixia Aprelon</a>.
+            Pendant deux semaines, nous avons fait plus de 4000km avec une Jeep Renegade - le chemin parcouru est indiqué en bleu sur la carte.
+            Pour voir les photos et détails des étapes du roadtrip, cliquez sur les
+            marqueurs rouges numérotés. Pour passer facilement d'une étape à une autre, utilisez les flèches latérales.
+            {% else %}
+            During the summer of 2017 I took a roadtrip in Western US with
+            <a href="https://www.linkedin.com/in/alixia-aprelon-a6879783/" target="_blank">Alixia Aprelon</a>.
+            For two weeks, we drove 4000km with a Jeep Renegade - the path taken appears in blue on the map.
+            To see the pictures and details of each step of the roadtrip, click the red numbered markers.
+            To easily pass from one step to another, use the side arrows.
+            {% endif %}
+        </p>
+
+        <div class="roadtrip-map-container">
+            <div id="prev-step"><i class="fa fa-chevron-left"></i></div>
+            <div id="next-step"><i class="fa fa-chevron-right"></i></div>
+            <div id="roadtrip-map" class="roadtrip-map"></div>
+            <a class="call-to-action" href="themes/pb/assets/img/roadtrip/IMG_7369.jpg" data-lightbox="roadtrip-pictures">
+                <i class="fa fa-camera-retro"></i>
+                {% if activeLocale == 'fr' %} Voir toutes les photos
+                {% else %} See all pictures {% endif %}
+            </a>
+        </div>
+
+        <a class="not-displayed" href="themes/pb/assets/img/roadtrip/IMG_7335.jpg" data-lightbox="roadtrip-pictures"></a>
+        <a class="not-displayed" href="themes/pb/assets/img/roadtrip/IMG_4248.jpg" data-lightbox="roadtrip-pictures"></a>
+        <a class="not-displayed" href="themes/pb/assets/img/roadtrip/IMG_4190.jpg" data-lightbox="roadtrip-pictures"></a>
+        <a class="not-displayed" href="themes/pb/assets/img/roadtrip/IMG_7383.jpg" data-lightbox="roadtrip-pictures"></a>
+        <a class="not-displayed" href="themes/pb/assets/img/roadtrip/IMG_4260.jpg" data-lightbox="roadtrip-pictures"></a>
+        <a class="not-displayed" href="themes/pb/assets/img/PB/GC01.jpg" data-lightbox="roadtrip-pictures"></a>
+        <a class="not-displayed" href="themes/pb/assets/img/roadtrip/IMG_4527.jpg" data-lightbox="roadtrip-pictures"></a>
+        <a class="not-displayed" href="themes/pb/assets/img/roadtrip/IMG_4483.jpg" data-lightbox="roadtrip-pictures"></a>
+        <a class="not-displayed" href="themes/pb/assets/img/roadtrip/IMG_7459.jpg" data-lightbox="roadtrip-pictures"></a>
+        <a class="not-displayed" href="themes/pb/assets/img/roadtrip/IMG_4370.jpg" data-lightbox="roadtrip-pictures"></a>
+        <a class="not-displayed" href="themes/pb/assets/img/roadtrip/IMG_4509.jpg" data-lightbox="roadtrip-pictures"></a>
+        <a class="not-displayed" href="themes/pb/assets/img/roadtrip/IMG_4607.jpg" data-lightbox="roadtrip-pictures"></a>
+        <a class="not-displayed" href="themes/pb/assets/img/roadtrip/IMG_4621.jpg" data-lightbox="roadtrip-pictures"></a>
+        <a class="not-displayed" href="themes/pb/assets/img/roadtrip/IMG_4557.jpg" data-lightbox="roadtrip-pictures"></a>
+        <a class="not-displayed" href="themes/pb/assets/img/roadtrip/IMG_4533.jpg" data-lightbox="roadtrip-pictures"></a>
+        <a class="not-displayed" href="themes/pb/assets/img/roadtrip/IMG_4711.jpg" data-lightbox="roadtrip-pictures"></a>
+        <a class="not-displayed" href="themes/pb/assets/img/roadtrip/IMG_4721.jpg" data-lightbox="roadtrip-pictures"></a>
+        <a class="not-displayed" href="themes/pb/assets/img/roadtrip/IMG_4801.jpg" data-lightbox="roadtrip-pictures"></a>
+        <a class="not-displayed" href="themes/pb/assets/img/roadtrip/IMG_4742.jpg" data-lightbox="roadtrip-pictures"></a>
+        <a class="not-displayed" href="themes/pb/assets/img/roadtrip/IMG_4736.jpg" data-lightbox="roadtrip-pictures"></a>
+        <a class="not-displayed" href="themes/pb/assets/img/roadtrip/IMG_4698.jpg" data-lightbox="roadtrip-pictures"></a>
+        <a class="not-displayed" href="themes/pb/assets/img/roadtrip/IMG_4898.jpg" data-lightbox="roadtrip-pictures"></a>
+        <a class="not-displayed" href="themes/pb/assets/img/roadtrip/IMG_4849.jpg" data-lightbox="roadtrip-pictures"></a>
+        <a class="not-displayed" href="themes/pb/assets/img/roadtrip/IMG_4860.jpg" data-lightbox="roadtrip-pictures"></a>
+        <a class="not-displayed" href="themes/pb/assets/img/roadtrip/IMG_5024.jpg" data-lightbox="roadtrip-pictures"></a>
+        <a class="not-displayed" href="themes/pb/assets/img/roadtrip/IMG_4920.jpg" data-lightbox="roadtrip-pictures"></a>
+        <a class="not-displayed" href="themes/pb/assets/img/roadtrip/IMG_4933.jpg" data-lightbox="roadtrip-pictures"></a>
+        <a class="not-displayed" href="themes/pb/assets/img/roadtrip/IMG_4943.jpg" data-lightbox="roadtrip-pictures"></a>
+        <a class="not-displayed" href="themes/pb/assets/img/roadtrip/IMG_4978.jpg" data-lightbox="roadtrip-pictures"></a>
+        <a class="not-displayed" href="themes/pb/assets/img/roadtrip/IMG_5056.jpg" data-lightbox="roadtrip-pictures"></a>
+        <a class="not-displayed" href="themes/pb/assets/img/roadtrip/IMG_5034.jpg" data-lightbox="roadtrip-pictures"></a>
+        <a class="not-displayed" href="themes/pb/assets/img/roadtrip/IMG_5074.jpg" data-lightbox="roadtrip-pictures"></a>
+        <a class="not-displayed" href="themes/pb/assets/img/roadtrip/IMG_5110.jpg" data-lightbox="roadtrip-pictures"></a>
+        <a class="not-displayed" href="themes/pb/assets/img/roadtrip/IMG_5197.jpg" data-lightbox="roadtrip-pictures"></a>
+        <a class="not-displayed" href="themes/pb/assets/img/roadtrip/IMG_5210.jpg" data-lightbox="roadtrip-pictures"></a>
+        <a class="not-displayed" href="themes/pb/assets/img/roadtrip/IMG_5228.jpg" data-lightbox="roadtrip-pictures"></a>
+        <a class="not-displayed" href="themes/pb/assets/img/roadtrip/SFO01.jpg" data-lightbox="roadtrip-pictures"></a>
+        <a class="not-displayed" href="themes/pb/assets/img/roadtrip/SFO02.jpg" data-lightbox="roadtrip-pictures"></a>
+        <a class="not-displayed" href="themes/pb/assets/img/roadtrip/SFO03.jpg" data-lightbox="roadtrip-pictures"></a>
+        <a class="not-displayed" href="themes/pb/assets/img/roadtrip/IMG_5315.jpg" data-lightbox="roadtrip-pictures"></a>
+        <a class="not-displayed" href="themes/pb/assets/img/roadtrip/BS01.jpg" data-lightbox="roadtrip-pictures"></a>
+        <a class="not-displayed" href="themes/pb/assets/img/roadtrip/BS02.jpg" data-lightbox="roadtrip-pictures"></a>
+        <a class="not-displayed" href="themes/pb/assets/img/roadtrip/IMG_3936.jpg" data-lightbox="roadtrip-pictures"></a>
+        <a class="not-displayed" href="themes/pb/assets/img/roadtrip/LA01.jpg" data-lightbox="roadtrip-pictures"></a>
+        <a class="not-displayed" href="themes/pb/assets/img/roadtrip/LA02.jpg" data-lightbox="roadtrip-pictures"></a>
+        <a class="not-displayed" href="themes/pb/assets/img/roadtrip/IMG_3964.jpg" data-lightbox="roadtrip-pictures"></a>
+        <a class="not-displayed" href="themes/pb/assets/img/roadtrip/LA04.jpg" data-lightbox="roadtrip-pictures"></a>
+        <a class="not-displayed" href="themes/pb/assets/img/roadtrip/LA03.jpg" data-lightbox="roadtrip-pictures"></a>
+        <a class="not-displayed" href="themes/pb/assets/img/roadtrip/IMG_3906.jpg" data-lightbox="roadtrip-pictures"></a>
+        <a class="not-displayed" href="themes/pb/assets/img/roadtrip/IMG_3939.jpg" data-lightbox="roadtrip-pictures"></a>
+        <a class="not-displayed" href="themes/pb/assets/img/roadtrip/IMG_3974.jpg" data-lightbox="roadtrip-pictures"></a>
 
     </div>
 

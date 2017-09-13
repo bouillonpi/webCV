@@ -105,6 +105,11 @@
         font-size: 25px;
         margin-top: 45px;
     }
+
+    .about-roadtrip > .container > p {
+        width: 90%;
+    }
+
 }
 
 

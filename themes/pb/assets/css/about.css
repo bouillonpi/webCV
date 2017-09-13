@@ -431,8 +431,8 @@
 .about-roadtrip > .container {
     width: 90%;
     max-width: inherit;
-    padding-top: 80px;
-    padding-bottom: 80px;
+    padding-top: 90px;
+    padding-bottom: 100px;
 }
 
 .about-roadtrip > .container > h1 {
@@ -442,15 +442,99 @@
     font-size: 14px;
     display: inline-block;
     margin: 0 auto;
-    margin-bottom: 70px;
+    margin-bottom: 50px;
     padding: 15px 60px;
     border: 2px solid #484848;
     color: #484848;
 }
 
+.about-roadtrip > .container > p {
+    width: 55%;
+    margin: 0 auto;
+    text-align: center;
+    font-family: SourceSansProRegular;
+    font-size: 14px;
+    color: #484848;
+    margin-bottom: 40px;
+}
+
+.about-roadtrip .roadtrip-map-container {
+    position: relative;
+}
+
 .about-roadtrip .roadtrip-map {
     height: 700px;
     border: 5px solid #e2e2e2;
+    z-index: 0;
+}
+
+.about-roadtrip #prev-step {
+    position: absolute;
+    z-index: 1;
+    top:50%;
+    margin-top: -43px;
+    left: 0;
+    padding: 25px;
+    padding-left: 20px;
+    background: #484848;
+    color: #fff;
+    font-size: 25px;
+    cursor: pointer;
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -ms-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    transition: all 0.2s;
+}
+
+.about-roadtrip #next-step {
+    position: absolute;
+    z-index: 1;
+    top:50%;
+    margin-top: -43px;
+    right: 0;
+    padding: 25px;
+    padding-right: 20px;
+    background: #484848;
+    color: #fff;
+    font-size: 25px;
+    cursor: pointer;
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -ms-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    transition: all 0.2s;
+}
+
+.about-roadtrip #prev-step:hover,
+.about-roadtrip #next-step:hover {
+    background: #616161;
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -ms-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    transition: all 0.2s;
+}
+
+.about-roadtrip .roadtrip-map-container > .call-to-action {
+    border-radius: 2px;
+    border: 1px solid #e6e6e6;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    padding: 10px 20px;
+    background: #fff;
+    color: #676767;
+    font-family: SourceSansProRegular, serif;
+    font-size: 14px;
+}
+
+.about-roadtrip .roadtrip-map-container > .call-to-action:hover {
+    color: #484848;
+}
+
+.about-roadtrip .roadtrip-map-container > .call-to-action > i {
+    margin-right: 10px;
 }
 
 /* ---------------------------------------------- */

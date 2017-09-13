@@ -1,5 +1,11 @@
 function initMapRoadtrip() {
 
+    var infowindows = [];
+    var markers = [];
+
+    var currentIW;
+    var currentM;
+
     var pointA = {lat: 36.169, lng: -115.139}; // Las Vegas
     var pointB = {lat: 36.057, lng: -112.136}; // Grand Canyon
     var pointC = {lat: 36.879, lng: -111.510}; // Lake Powell
@@ -25,7 +31,7 @@ function initMapRoadtrip() {
 
     var map = new google.maps.Map(document.getElementById('roadtrip-map'), {
         zoom: 6,
-        center: {lat: 36.800, lng: -117.572},
+        center: {lat: 37.150, lng: -117.572},
         mapTypeId: 'terrain',
         scrollwheel: false,
         streetViewControl: false,
@@ -69,6 +75,7 @@ function initMapRoadtrip() {
         label: "1",
         map: map
     });
+    markers.push(markerA);
     if (activeLocale === 'fr') {
         infowindowText = "Première étape du roadtrip ! Nous avons atteri à Las Vegas et visité la ville pendant deux jours. " +
             "Par la suite nous avons acheté une tente et loué une Jeep pour deux semaines. Direction Grand Canyon !"
@@ -82,21 +89,20 @@ function initMapRoadtrip() {
                 '<h1> <span>'+ infowindowStep +' #1</span> Las Vegas</h1>' +
                 '<p>' + infowindowText + '</p>' +
                 '<div class="row">' +
-                    '<div class="col l4"><a href="themes/pb/assets/img/roadtrip/IMG_7369.jpg" data-lightbox="step1"><img src="themes/pb/assets/img/roadtrip/IMG_7369.jpg"></a></div>' +
-                    '<div class="col l4"><a href="themes/pb/assets/img/roadtrip/IMG_7335.jpg" data-lightbox="step1"><img src="themes/pb/assets/img/roadtrip/IMG_7335.jpg"></a></div>' +
-                    '<div class="col l4"><a href="themes/pb/assets/img/roadtrip/IMG_4248.jpg" data-lightbox="step1"><img src="themes/pb/assets/img/roadtrip/IMG_4248.jpg"></a></div>' +
+                    '<div class="col l4 m4 s4"><a href="themes/pb/assets/img/roadtrip/IMG_7369.jpg" data-lightbox="step1"><img src="themes/pb/assets/img/roadtrip/IMG_7369.jpg"></a></div>' +
+                    '<div class="col l4 m4 s4"><a href="themes/pb/assets/img/roadtrip/IMG_7335.jpg" data-lightbox="step1"><img src="themes/pb/assets/img/roadtrip/IMG_7335.jpg"></a></div>' +
+                    '<div class="col l4 m4 s4"><a href="themes/pb/assets/img/roadtrip/IMG_4248.jpg" data-lightbox="step1"><img src="themes/pb/assets/img/roadtrip/IMG_4248.jpg"></a></div>' +
                     '<a class="not-displayed" href="themes/pb/assets/img/roadtrip/IMG_4190.jpg" data-lightbox="step1"></a>' +
                     '<a class="not-displayed" href="themes/pb/assets/img/roadtrip/IMG_7383.jpg" data-lightbox="step1"></a>' +
                     '<a class="not-displayed" href="themes/pb/assets/img/roadtrip/IMG_4260.jpg" data-lightbox="step1"></a>' +
                 '</div>' +
             '</div>'
     });
+    infowindows.push(infowindowA);
     markerA.addListener('click', function() {
         infowindowA.open(map, markerA);
-        infowindowB.close(); infowindowC.close();
-        infowindowD.close(); infowindowE.close();
-        infowindowF.close(); infowindowG.close();
-        infowindowH.close(); infowindowI.close();
+        currentM = markerA;
+        closeOtherIW(infowindowA, infowindows);
     });
 
     /* ---------------------------------------------- */
@@ -107,6 +113,7 @@ function initMapRoadtrip() {
         label: "2",
         map: map
     });
+    markers.push(markerB);
     if (activeLocale === 'fr') {
         infowindowText = "L'aventure commence ! Incroyable levé de soleil sur la façade Sud du Grand Canyon, quelques photos risquées et un paysage à couper le souffle."
     } else {
@@ -118,21 +125,20 @@ function initMapRoadtrip() {
             '<h1> <span>'+ infowindowStep +' #2</span> Grand Canyon</h1>' +
             '<p>' + infowindowText + '</p>' +
             '<div class="row">' +
-                '<div class="col l4"><a href="themes/pb/assets/img/PB/GC01.jpg" data-lightbox="step2"><img src="themes/pb/assets/img/PB/GC01.jpg"></a></div>' +
-                '<div class="col l4"><a href="themes/pb/assets/img/roadtrip/IMG_4527.jpg" data-lightbox="step2"><img src="themes/pb/assets/img/roadtrip/IMG_4527.jpg"></a></div>' +
-                '<div class="col l4"><a href="themes/pb/assets/img/roadtrip/IMG_4483.jpg" data-lightbox="step2"><img src="themes/pb/assets/img/roadtrip/IMG_4483.jpg"></a></div>' +
+                '<div class="col l4 m4 s4"><a href="themes/pb/assets/img/PB/GC01.jpg" data-lightbox="step2"><img src="themes/pb/assets/img/PB/GC01.jpg"></a></div>' +
+                '<div class="col l4 m4 s4"><a href="themes/pb/assets/img/roadtrip/IMG_4527.jpg" data-lightbox="step2"><img src="themes/pb/assets/img/roadtrip/IMG_4527.jpg"></a></div>' +
+                '<div class="col l4 m4 s4"><a href="themes/pb/assets/img/roadtrip/IMG_4483.jpg" data-lightbox="step2"><img src="themes/pb/assets/img/roadtrip/IMG_4483.jpg"></a></div>' +
                 '<a class="not-displayed" href="themes/pb/assets/img/roadtrip/IMG_7459.jpg" data-lightbox="step2"></a>' +
                 '<a class="not-displayed" href="themes/pb/assets/img/roadtrip/IMG_4370.jpg" data-lightbox="step2"></a>' +
                 '<a class="not-displayed" href="themes/pb/assets/img/roadtrip/IMG_4509.jpg" data-lightbox="step2"></a>' +
             '</div>' +
         '</div>'
     });
+    infowindows.push(infowindowB);
     markerB.addListener('click', function() {
         infowindowB.open(map, markerB);
-        infowindowA.close(); infowindowC.close();
-        infowindowD.close(); infowindowE.close();
-        infowindowF.close(); infowindowG.close();
-        infowindowH.close(); infowindowI.close();
+        currentM = markerB;
+        closeOtherIW(infowindowB, infowindows);
     });
 
     /* ---------------------------------------------- */
@@ -143,6 +149,7 @@ function initMapRoadtrip() {
         label: "3",
         map: map
     });
+    markers.push(markerC);
     if (activeLocale === 'fr') {
         infowindowText = "Nous avons fait une halte à Horseshoe Bend, un canyon gigantesque creusé par la rivière Colorado. Là non plus, pas de barrières, juste le vide !"
     } else {
@@ -154,19 +161,18 @@ function initMapRoadtrip() {
             '<h1> <span>'+ infowindowStep +' #3</span> Lake Powell</h1>' +
             '<p>' + infowindowText + '</p>' +
             '<div class="row">' +
-                '<div class="col l4"><a href="themes/pb/assets/img/roadtrip/IMG_4607.jpg" data-lightbox="step3"><img src="themes/pb/assets/img/roadtrip/IMG_4607.jpg"></a></div>' +
-                '<div class="col l4"><a href="themes/pb/assets/img/roadtrip/IMG_4621.jpg" data-lightbox="step3"><img src="themes/pb/assets/img/roadtrip/IMG_4621.jpg"></a></div>' +
-                '<div class="col l4"><a href="themes/pb/assets/img/roadtrip/IMG_4557.jpg" data-lightbox="step3"><img src="themes/pb/assets/img/roadtrip/IMG_4557.jpg"></a></div>' +
+                '<div class="col l4 m4 s4"><a href="themes/pb/assets/img/roadtrip/IMG_4607.jpg" data-lightbox="step3"><img src="themes/pb/assets/img/roadtrip/IMG_4607.jpg"></a></div>' +
+                '<div class="col l4 m4 s4"><a href="themes/pb/assets/img/roadtrip/IMG_4621.jpg" data-lightbox="step3"><img src="themes/pb/assets/img/roadtrip/IMG_4621.jpg"></a></div>' +
+                '<div class="col l4 m4 s4"><a href="themes/pb/assets/img/roadtrip/IMG_4557.jpg" data-lightbox="step3"><img src="themes/pb/assets/img/roadtrip/IMG_4557.jpg"></a></div>' +
                 '<a class="not-displayed" href="themes/pb/assets/img/roadtrip/IMG_4533.jpg" data-lightbox="step3"></a>' +
             '</div>' +
         '</div>'
     });
+    infowindows.push(infowindowC);
     markerC.addListener('click', function() {
         infowindowC.open(map, markerC);
-        infowindowA.close(); infowindowB.close();
-        infowindowD.close(); infowindowE.close();
-        infowindowF.close(); infowindowG.close();
-        infowindowH.close(); infowindowI.close();
+        currentM = markerC;
+        closeOtherIW(infowindowC, infowindows);
     });
 
     /* ---------------------------------------------- */
@@ -177,6 +183,7 @@ function initMapRoadtrip() {
         label: "4",
         map: map
     });
+    markers.push(markerD);
     if (activeLocale === 'fr') {
         infowindowText = "Le parc que nous avons le plus apprécié. Les formations rocheuses de Bryce Canyon font penser à l'architecture gothique des cathédrales. " +
             "Nous avons campé deux nuits dans le parc qui offre des randonnées incroyables."
@@ -190,9 +197,9 @@ function initMapRoadtrip() {
             '<h1> <span>'+ infowindowStep +' #4</span> Bryce Canyon</h1>' +
             '<p>' + infowindowText + '</p>' +
             '<div class="row">' +
-                '<div class="col l4"><a href="themes/pb/assets/img/roadtrip/IMG_4711.jpg" data-lightbox="step4"><img src="themes/pb/assets/img/roadtrip/IMG_4711.jpg"></a></div>' +
-                '<div class="col l4"><a href="themes/pb/assets/img/roadtrip/IMG_4721.jpg" data-lightbox="step4"><img src="themes/pb/assets/img/roadtrip/IMG_4721.jpg"></a></div>' +
-                '<div class="col l4"><a href="themes/pb/assets/img/roadtrip/IMG_4801.jpg" data-lightbox="step4"><img src="themes/pb/assets/img/roadtrip/IMG_4801.jpg"></a></div>' +
+                '<div class="col l4 m4 s4"><a href="themes/pb/assets/img/roadtrip/IMG_4711.jpg" data-lightbox="step4"><img src="themes/pb/assets/img/roadtrip/IMG_4711.jpg"></a></div>' +
+                '<div class="col l4 m4 s4"><a href="themes/pb/assets/img/roadtrip/IMG_4721.jpg" data-lightbox="step4"><img src="themes/pb/assets/img/roadtrip/IMG_4721.jpg"></a></div>' +
+                '<div class="col l4 m4 s4"><a href="themes/pb/assets/img/roadtrip/IMG_4801.jpg" data-lightbox="step4"><img src="themes/pb/assets/img/roadtrip/IMG_4801.jpg"></a></div>' +
                 '<a class="not-displayed" href="themes/pb/assets/img/roadtrip/IMG_4742.jpg" data-lightbox="step4"></a>' +
                 '<a class="not-displayed" href="themes/pb/assets/img/roadtrip/IMG_4736.jpg" data-lightbox="step4"></a>' +
                 '<a class="not-displayed" href="themes/pb/assets/img/roadtrip/IMG_4698.jpg" data-lightbox="step4"></a>' +
@@ -202,12 +209,11 @@ function initMapRoadtrip() {
             '</div>' +
         '</div>'
     });
+    infowindows.push(infowindowD);
     markerD.addListener('click', function() {
         infowindowD.open(map, markerD);
-        infowindowA.close(); infowindowB.close();
-        infowindowC.close(); infowindowE.close();
-        infowindowF.close(); infowindowG.close();
-        infowindowH.close(); infowindowI.close();
+        currentM = markerD;
+        closeOtherIW(infowindowD, infowindows);
     });
 
     /* ---------------------------------------------- */
@@ -218,6 +224,7 @@ function initMapRoadtrip() {
         label: "5",
         map: map
     });
+    markers.push(markerE);
     if (activeLocale === 'fr') {
         infowindowText = "Levé 7h00 du matin, température 40°C. Bienvenue à la Vallée de la Mort ! Des paysages lunaires magnifiques dans l'endroit le plus chaud sur Terre. " +
             "Un record de température de 57°C en 1913 et 50°C quand nous y étions."
@@ -231,9 +238,9 @@ function initMapRoadtrip() {
             '<h1> <span>'+ infowindowStep +' #5</span> Death Valley</h1>' +
             '<p>' + infowindowText + '</p>' +
             '<div class="row">' +
-                '<div class="col l4"><a href="themes/pb/assets/img/roadtrip/IMG_5024.jpg" data-lightbox="step5"><img src="themes/pb/assets/img/roadtrip/IMG_5024.jpg"></a></div>' +
-                '<div class="col l4"><a href="themes/pb/assets/img/roadtrip/IMG_4920.jpg" data-lightbox="step5"><img src="themes/pb/assets/img/roadtrip/IMG_4920.jpg"></a></div>' +
-                '<div class="col l4"><a href="themes/pb/assets/img/roadtrip/IMG_4933.jpg" data-lightbox="step5"><img src="themes/pb/assets/img/roadtrip/IMG_4933.jpg"></a></div>' +
+                '<div class="col l4 m4 s4"><a href="themes/pb/assets/img/roadtrip/IMG_5024.jpg" data-lightbox="step5"><img src="themes/pb/assets/img/roadtrip/IMG_5024.jpg"></a></div>' +
+                '<div class="col l4 m4 s4"><a href="themes/pb/assets/img/roadtrip/IMG_4920.jpg" data-lightbox="step5"><img src="themes/pb/assets/img/roadtrip/IMG_4920.jpg"></a></div>' +
+                '<div class="col l4 m4 s4"><a href="themes/pb/assets/img/roadtrip/IMG_4933.jpg" data-lightbox="step5"><img src="themes/pb/assets/img/roadtrip/IMG_4933.jpg"></a></div>' +
                 '<a class="not-displayed" href="themes/pb/assets/img/roadtrip/IMG_4943.jpg" data-lightbox="step5"></a>' +
                 '<a class="not-displayed" href="themes/pb/assets/img/roadtrip/IMG_4978.jpg" data-lightbox="step5"></a>' +
                 '<a class="not-displayed" href="themes/pb/assets/img/roadtrip/IMG_5056.jpg" data-lightbox="step5"></a>' +
@@ -241,12 +248,11 @@ function initMapRoadtrip() {
             '</div>' +
         '</div>'
     });
+    infowindows.push(infowindowE);
     markerE.addListener('click', function() {
         infowindowE.open(map, markerE);
-        infowindowA.close(); infowindowB.close();
-        infowindowC.close(); infowindowD.close();
-        infowindowF.close(); infowindowG.close();
-        infowindowH.close(); infowindowI.close();
+        currentM = markerE;
+        closeOtherIW(infowindowE, infowindows);
     });
 
     /* ---------------------------------------------- */
@@ -257,6 +263,7 @@ function initMapRoadtrip() {
         label: "6",
         map: map
     });
+    markers.push(markerF);
     if (activeLocale === 'fr') {
         infowindowText = "Nous avons campé deux jours dans cet agréable parc national de Californie. À défaut d'avoir croisé un ours, nous avons pu voir des " +
             "sequoias géants et des montages polies par le mouvement des anciens glaciers."
@@ -270,20 +277,19 @@ function initMapRoadtrip() {
             '<h1> <span>'+ infowindowStep +' #6</span> Yosemite Park</h1>' +
             '<p>' + infowindowText + '</p>' +
             '<div class="row">' +
-                '<div class="col l4"><a href="themes/pb/assets/img/roadtrip/IMG_5074.jpg" data-lightbox="step6"><img src="themes/pb/assets/img/roadtrip/IMG_5074.jpg"></a></div>' +
-                '<div class="col l4"><a href="themes/pb/assets/img/roadtrip/IMG_5110.jpg" data-lightbox="step6"><img src="themes/pb/assets/img/roadtrip/IMG_5110.jpg"></a></div>' +
-                '<div class="col l4"><a href="themes/pb/assets/img/roadtrip/IMG_5197.jpg" data-lightbox="step6"><img src="themes/pb/assets/img/roadtrip/IMG_5197.jpg"></a></div>' +
+                '<div class="col l4 m4 s4"><a href="themes/pb/assets/img/roadtrip/IMG_5074.jpg" data-lightbox="step6"><img src="themes/pb/assets/img/roadtrip/IMG_5074.jpg"></a></div>' +
+                '<div class="col l4 m4 s4"><a href="themes/pb/assets/img/roadtrip/IMG_5110.jpg" data-lightbox="step6"><img src="themes/pb/assets/img/roadtrip/IMG_5110.jpg"></a></div>' +
+                '<div class="col l4 m4 s4"><a href="themes/pb/assets/img/roadtrip/IMG_5197.jpg" data-lightbox="step6"><img src="themes/pb/assets/img/roadtrip/IMG_5197.jpg"></a></div>' +
                 '<a class="not-displayed" href="themes/pb/assets/img/roadtrip/IMG_5210.jpg" data-lightbox="step6"></a>' +
                 '<a class="not-displayed" href="themes/pb/assets/img/roadtrip/IMG_5228.jpg" data-lightbox="step6"></a>' +
             '</div>' +
         '</div>'
     });
+    infowindows.push(infowindowF);
     markerF.addListener('click', function() {
         infowindowF.open(map, markerF);
-        infowindowA.close(); infowindowB.close();
-        infowindowC.close(); infowindowD.close();
-        infowindowE.close(); infowindowG.close();
-        infowindowH.close(); infowindowI.close();
+        currentM = markerF;
+        closeOtherIW(infowindowF, infowindows);
     });
 
     /* ---------------------------------------------- */
@@ -294,6 +300,7 @@ function initMapRoadtrip() {
         label: "7",
         map: map
     });
+    markers.push(markerG);
     if (activeLocale === 'fr') {
         infowindowText = "De retour en ville ! On ne remerciera jamais assez la conduite automatique dans cette ville faite de côtes et de pentes. " +
             "Le Golden Gate Bridge était impressionnant, tout comme l'amas de phoques au Pier 39."
@@ -307,18 +314,17 @@ function initMapRoadtrip() {
             '<h1> <span>'+ infowindowStep +' #7</span> San Francisco</h1>' +
             '<p>' + infowindowText + '</p>' +
             '<div class="row">' +
-                '<div class="col l4"><a href="themes/pb/assets/img/roadtrip/SFO01.jpg" data-lightbox="step7"><img src="themes/pb/assets/img/roadtrip/SFO01.jpg"></a></div>' +
-                '<div class="col l4"><a href="themes/pb/assets/img/roadtrip/SFO02.jpg" data-lightbox="step7"><img src="themes/pb/assets/img/roadtrip/SFO02.jpg"></a></div>' +
-                '<div class="col l4"><a href="themes/pb/assets/img/roadtrip/SFO03.jpg" data-lightbox="step7"><img src="themes/pb/assets/img/roadtrip/SFO03.jpg"></a></div>' +
+                '<div class="col l4 m4 s4"><a href="themes/pb/assets/img/roadtrip/SFO01.jpg" data-lightbox="step7"><img src="themes/pb/assets/img/roadtrip/SFO01.jpg"></a></div>' +
+                '<div class="col l4 m4 s4"><a href="themes/pb/assets/img/roadtrip/SFO02.jpg" data-lightbox="step7"><img src="themes/pb/assets/img/roadtrip/SFO02.jpg"></a></div>' +
+                '<div class="col l4 m4 s4"><a href="themes/pb/assets/img/roadtrip/SFO03.jpg" data-lightbox="step7"><img src="themes/pb/assets/img/roadtrip/SFO03.jpg"></a></div>' +
             '</div>' +
         '</div>'
     });
+    infowindows.push(infowindowG);
     markerG.addListener('click', function() {
         infowindowG.open(map, markerG);
-        infowindowA.close(); infowindowB.close();
-        infowindowC.close(); infowindowD.close();
-        infowindowE.close(); infowindowF.close();
-        infowindowH.close(); infowindowI.close();
+        currentM = markerG;
+        closeOtherIW(infowindowG, infowindows);
     });
 
     /* ---------------------------------------------- */
@@ -329,6 +335,7 @@ function initMapRoadtrip() {
         label: "8",
         map: map
     });
+    markers.push(markerH);
     if (activeLocale === 'fr') {
         infowindowText = "Nous avons longé la côte Pacifique jusqu'à Big Sur, une vue grandiose sur le littoral sauvage de Californie."
     } else {
@@ -340,18 +347,17 @@ function initMapRoadtrip() {
             '<h1> <span>'+ infowindowStep +' #8</span> Big Sur</h1>' +
             '<p>' + infowindowText + '</p>' +
             '<div class="row">' +
-                '<div class="col l4"><a href="themes/pb/assets/img/roadtrip/IMG_5315.jpg" data-lightbox="step8"><img src="themes/pb/assets/img/roadtrip/IMG_5315.jpg"></a></div>' +
-                '<div class="col l4"><a href="themes/pb/assets/img/roadtrip/BS01.jpg" data-lightbox="step8"><img src="themes/pb/assets/img/roadtrip/BS01.jpg"></a></div>' +
-                '<div class="col l4"><a href="themes/pb/assets/img/roadtrip/BS02.jpg" data-lightbox="step8"><img src="themes/pb/assets/img/roadtrip/BS02.jpg"></a></div>' +
+                '<div class="col l4 m4 s4"><a href="themes/pb/assets/img/roadtrip/IMG_5315.jpg" data-lightbox="step8"><img src="themes/pb/assets/img/roadtrip/IMG_5315.jpg"></a></div>' +
+                '<div class="col l4 m4 s4"><a href="themes/pb/assets/img/roadtrip/BS01.jpg" data-lightbox="step8"><img src="themes/pb/assets/img/roadtrip/BS01.jpg"></a></div>' +
+                '<div class="col l4 m4 s4"><a href="themes/pb/assets/img/roadtrip/BS02.jpg" data-lightbox="step8"><img src="themes/pb/assets/img/roadtrip/BS02.jpg"></a></div>' +
             '</div>' +
         '</div>'
     });
+    infowindows.push(infowindowH);
     markerH.addListener('click', function() {
         infowindowH.open(map, markerH);
-        infowindowA.close(); infowindowB.close();
-        infowindowC.close(); infowindowD.close();
-        infowindowE.close(); infowindowF.close();
-        infowindowG.close(); infowindowI.close();
+        currentM = markerH;
+        closeOtherIW(infowindowH, infowindows);
     });
 
     /* ---------------------------------------------- */
@@ -362,10 +368,13 @@ function initMapRoadtrip() {
         label: "9",
         map: map
     });
+    markers.push(markerI);
     if (activeLocale === 'fr') {
-        infowindowText = "Test étape de l\'aventure ! Atterir à Las Vegas, découvrir la ville pendant deux jours, louer une voiture pour le roadtrip et conduire jusqu\'au Grand Canyon !"
+        infowindowText = "Dernière étape du roadtrip : Los Angeles, Hollywood, Santa Monica et une nuit à l'original Hotel California ! " +
+            "Le parc Universal Studios Hollywood était top. Fin du voyage, retour à Boston :) "
     } else {
-        infowindowText = "Test étape de l\'aventure ! Atterir à Las Vegas, découvrir la ville pendant deux jours, louer une voiture pour le roadtrip et conduire jusqu\'au Grand Canyon !"
+        infowindowText = "Final step of the roadtrip: Los Angeles, Hollywood, Santa Monica and one night at the original Hotel California! " +
+            "Universal Studios Hollywood park was great. End of the trip, back to Boston :) "
     }
     infowindowI = new google.maps.InfoWindow({
         content:
@@ -373,9 +382,9 @@ function initMapRoadtrip() {
             '<h1> <span>'+ infowindowStep +' #9</span> Los Angeles</h1>' +
             '<p>' + infowindowText + '</p>' +
             '<div class="row">' +
-                '<div class="col l4"><a href="themes/pb/assets/img/roadtrip/IMG_3936.jpg" data-lightbox="step9"><img src="themes/pb/assets/img/roadtrip/IMG_3936.jpg"></a></div>' +
-                '<div class="col l4"><a href="themes/pb/assets/img/roadtrip/LA01.jpg" data-lightbox="step9"><img src="themes/pb/assets/img/roadtrip/LA01.jpg"></a></div>' +
-                '<div class="col l4"><a href="themes/pb/assets/img/roadtrip/LA02.jpg" data-lightbox="step9"><img src="themes/pb/assets/img/roadtrip/LA02.jpg"></a></div>' +
+                '<div class="col l4 m4 s4"><a href="themes/pb/assets/img/roadtrip/IMG_3936.jpg" data-lightbox="step9"><img src="themes/pb/assets/img/roadtrip/IMG_3936.jpg"></a></div>' +
+                '<div class="col l4 m4 s4"><a href="themes/pb/assets/img/roadtrip/LA01.jpg" data-lightbox="step9"><img src="themes/pb/assets/img/roadtrip/LA01.jpg"></a></div>' +
+                '<div class="col l4 m4 s4"><a href="themes/pb/assets/img/roadtrip/LA02.jpg" data-lightbox="step9"><img src="themes/pb/assets/img/roadtrip/LA02.jpg"></a></div>' +
                 '<a class="not-displayed" href="themes/pb/assets/img/roadtrip/IMG_3964.jpg" data-lightbox="step9"></a>' +
                 '<a class="not-displayed" href="themes/pb/assets/img/roadtrip/LA04.jpg" data-lightbox="step9"></a>' +
                 '<a class="not-displayed" href="themes/pb/assets/img/roadtrip/LA03.jpg" data-lightbox="step9"></a>' +
@@ -385,17 +394,54 @@ function initMapRoadtrip() {
             '</div>' +
         '</div>'
     });
+    infowindows.push(infowindowI);
     markerI.addListener('click', function() {
         infowindowI.open(map, markerI);
-        infowindowA.close(); infowindowB.close();
-        infowindowC.close(); infowindowD.close();
-        infowindowE.close(); infowindowF.close();
-        infowindowG.close(); infowindowH.close();
+        currentM = markerI;
+        closeOtherIW(infowindowI, infowindows);
     });
 
     /* ---------------------------------------------- */
 
     // Open first step of roadtrip
     infowindowA.open(map, markerA);
+    currentIW = infowindowA;
+    currentM = markerA;
+
+    // Open the next step of the roadtrip
+    document.getElementById("next-step").addEventListener('click', function() {
+        var currentIndex = markers.indexOf(currentM);
+        var nextIndex = currentIndex + 1;
+        if (nextIndex > markers.length - 1) {
+            nextIndex = 0;
+        }
+        closeOtherIW(infowindows[nextIndex], infowindows);
+        infowindows[nextIndex].open(map, markers[nextIndex]);
+        currentM = markers[nextIndex];
+    });
+
+    // Open the previous step of the roadtrip
+    document.getElementById("prev-step").addEventListener('click', function() {
+        var currentIndex = markers.indexOf(currentM);
+        var prevIndex = currentIndex - 1;
+        if (prevIndex <= 0) {
+            prevIndex = markers.length - 1;
+        }
+        closeOtherIW(infowindows[prevIndex], infowindows);
+        infowindows[prevIndex].open(map, markers[prevIndex]);
+        currentM = markers[prevIndex];
+    });
 
 }
+
+// Close all open infowindows except openIW
+function closeOtherIW(openIW, infowindows) {
+    for (var i = 0; i < infowindows.length; i++) {
+        if (openIW !== infowindows[i]) {
+            infowindows[i].close();
+        }
+    }
+}
+
+
+
