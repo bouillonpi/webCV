@@ -1,6 +1,6 @@
 .sidenav {
     top: 50%;
-    margin-top: -116px;
+    margin-top: -146px;
     position: fixed;
     right:-115px;
     background: #565656;
@@ -31,7 +31,7 @@
 .sidenav ul li a {
     cursor: pointer;
     display: block;
-    padding: 5px 20px;
+    padding: 10px 20px;
     padding-right: 35px;
     -webkit-transition: all 0.2s;
     -moz-transition: all 0.2s;

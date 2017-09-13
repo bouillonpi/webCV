@@ -5,7 +5,8 @@
             <a href="#home-intro">
                 <i class="fa fa-key"></i>
                 <span>
-                    Key Info
+                    {% if activeLocale == 'fr' %} Info Clé
+                    {% else %} Key Info {% endif %}
                 </span>
             </a>
         </li>
@@ -14,7 +15,8 @@
             <a href="#home-education">
                 <i class="fa fa-graduation-cap"></i>
                 <span>
-                    Education
+                    {% if activeLocale == 'fr' %} Diplôme
+                    {% else %} Education {% endif %}
                 </span>
             </a>
         </li>
@@ -23,7 +25,8 @@
             <a href="#home-timeline">
                 <i class="fa fa-briefcase"></i>
                 <span>
-                    Experience
+                    {% if activeLocale == 'fr' %} Expérience
+                    {% else %} Experience {% endif %}
                 </span>
             </a>
         </li>
@@ -32,7 +35,8 @@
             <a href="#home-award">
                 <i class="fa fa-trophy"></i>
                 <span>
-                    Awards
+                    {% if activeLocale == 'fr' %} Concours
+                    {% else %} Awards {% endif %}
                 </span>
             </a>
         </li>
@@ -50,7 +54,8 @@
             <a href="#home-international">
                 <i class="fa fa-globe"></i>
                 <span>
-                    Languages
+                    {% if activeLocale == 'fr' %} Langues
+                    {% else %} Languages {% endif %}
                 </span>
             </a>
         </li>
