@@ -150,9 +150,10 @@
 .home-intro .block-title .custom-line {
     position: relative;
     width: 80%;
+    height: 2px;
     margin: 0 auto;
-    margin-top: -1px;
-    border: 1px solid #dcdcdc;
+    margin-top: -2px;
+    background: #dcdcdc;
 }
 
 .home-intro .key-info {
@@ -363,13 +364,6 @@
     z-index: 1;
 }
 
-.home-award .block-title .custom-line {
-    position: relative;
-    width: 70%;
-    margin: 0 auto;
-    border: 1px solid #cacaca;
-}
-
 .home-award .container-fluid {
     text-align: center;
     margin-top: 50px;
@@ -528,13 +522,6 @@
     color: #484848;
 }
 
-.home-technology .block-title .custom-line {
-    position: relative;
-    width: 70%;
-    margin: 0 auto;
-    border: 1px solid #484848;
-}
-
 .home-technology .technologies {
     padding-top: 80px;
 }
@@ -628,13 +615,6 @@
     background: #fff;
     color: #484848;
     z-index: 1;
-}
-
-.home-international .block-title .custom-line {
-    position: relative;
-    width: 70%;
-    margin: 0 auto;
-    border: 1px solid #fff;
 }
 
 .home-international .langues {

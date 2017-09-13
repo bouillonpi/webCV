@@ -128,9 +128,10 @@
 .about-intro .block-title .custom-line {
     position: relative;
     width: 65%;
+    height: 2px;
     margin: 0 auto;
-    margin-top: -1px;
-    border: 1px solid #dcdcdc;
+    margin-top: -2px;
+    background: #dcdcdc;
 }
 
 .about-intro .col {
@@ -364,9 +365,10 @@
 .about-detection .block-title .custom-line {
     position: relative;
     width: 65%;
+    height: 2px;
     margin: 0 auto;
-    margin-top: -1px;
-    border: 1px solid #dcdcdc;
+    margin-top: -2px;
+    background: #dcdcdc;
 }
 
 .about-detection .content-container {
@@ -428,6 +430,7 @@
 
 .about-roadtrip > .container {
     width: 90%;
+    max-width: inherit;
     padding-top: 80px;
     padding-bottom: 80px;
 }
@@ -435,7 +438,7 @@
 .about-roadtrip > .container > h1 {
     text-transform: uppercase;
     letter-spacing: 5px;
-    font-family: ProximaRegular, serif;
+    font-family: ProximaBold, serif;
     font-size: 14px;
     display: inline-block;
     margin: 0 auto;
@@ -446,7 +449,8 @@
 }
 
 .about-roadtrip .roadtrip-map {
-    height: 650px;
+    height: 700px;
+    border: 5px solid #e2e2e2;
 }
 
 /* ---------------------------------------------- */

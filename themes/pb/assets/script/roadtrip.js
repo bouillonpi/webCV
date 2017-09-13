@@ -82,10 +82,12 @@ function initMapRoadtrip() {
                 '<h1> <span>'+ infowindowStep +' #1</span> Las Vegas</h1>' +
                 '<p>' + infowindowText + '</p>' +
                 '<div class="row">' +
-                    '<div class="col l4"><a href="themes/pb/assets/img/webdesign.jpg" data-lightbox="step1"><img src="themes/pb/assets/img/webdesign.jpg"></a></div>' +
-                    '<div class="col l4"><a href="themes/pb/assets/img/EISTI.jpg" data-lightbox="step1"><img src="themes/pb/assets/img/EISTI.jpg"></a></div>' +
-                    '<div class="col l4"><a href="themes/pb/assets/img/NYC01.jpg" data-lightbox="step1"><img src="themes/pb/assets/img/NYC01.jpg"></a></div>' +
-                    '<a class="not-displayed" href="themes/pb/assets/img/Interface-Admin.png" data-lightbox="step1"></a>' +
+                    '<div class="col l4"><a href="themes/pb/assets/img/roadtrip/IMG_7369.jpg" data-lightbox="step1"><img src="themes/pb/assets/img/roadtrip/IMG_7369.jpg"></a></div>' +
+                    '<div class="col l4"><a href="themes/pb/assets/img/roadtrip/IMG_7335.jpg" data-lightbox="step1"><img src="themes/pb/assets/img/roadtrip/IMG_7335.jpg"></a></div>' +
+                    '<div class="col l4"><a href="themes/pb/assets/img/roadtrip/IMG_4248.jpg" data-lightbox="step1"><img src="themes/pb/assets/img/roadtrip/IMG_4248.jpg"></a></div>' +
+                    '<a class="not-displayed" href="themes/pb/assets/img/roadtrip/IMG_4190.jpg" data-lightbox="step1"></a>' +
+                    '<a class="not-displayed" href="themes/pb/assets/img/roadtrip/IMG_7383.jpg" data-lightbox="step1"></a>' +
+                    '<a class="not-displayed" href="themes/pb/assets/img/roadtrip/IMG_4260.jpg" data-lightbox="step1"></a>' +
                 '</div>' +
             '</div>'
     });
@@ -116,10 +118,12 @@ function initMapRoadtrip() {
             '<h1> <span>'+ infowindowStep +' #2</span> Grand Canyon</h1>' +
             '<p>' + infowindowText + '</p>' +
             '<div class="row">' +
-                '<div class="col l4"><a href="themes/pb/assets/img/webdesign.jpg" data-lightbox="step2"><img src="themes/pb/assets/img/webdesign.jpg"></a></div>' +
-                '<div class="col l4"><a href="themes/pb/assets/img/EISTI.jpg" data-lightbox="step2"><img src="themes/pb/assets/img/EISTI.jpg"></a></div>' +
-                '<div class="col l4"><a href="themes/pb/assets/img/NYC01.jpg" data-lightbox="step2"><img src="themes/pb/assets/img/NYC01.jpg"></a></div>' +
-                '<a class="not-displayed" href="themes/pb/assets/img/Interface-Admin.png" data-lightbox="step2"></a>' +
+                '<div class="col l4"><a href="themes/pb/assets/img/PB/GC01.jpg" data-lightbox="step2"><img src="themes/pb/assets/img/PB/GC01.jpg"></a></div>' +
+                '<div class="col l4"><a href="themes/pb/assets/img/roadtrip/IMG_4527.jpg" data-lightbox="step2"><img src="themes/pb/assets/img/roadtrip/IMG_4527.jpg"></a></div>' +
+                '<div class="col l4"><a href="themes/pb/assets/img/roadtrip/IMG_4483.jpg" data-lightbox="step2"><img src="themes/pb/assets/img/roadtrip/IMG_4483.jpg"></a></div>' +
+                '<a class="not-displayed" href="themes/pb/assets/img/roadtrip/IMG_7459.jpg" data-lightbox="step2"></a>' +
+                '<a class="not-displayed" href="themes/pb/assets/img/roadtrip/IMG_4370.jpg" data-lightbox="step2"></a>' +
+                '<a class="not-displayed" href="themes/pb/assets/img/roadtrip/IMG_4509.jpg" data-lightbox="step2"></a>' +
             '</div>' +
         '</div>'
     });
@@ -150,10 +154,10 @@ function initMapRoadtrip() {
             '<h1> <span>'+ infowindowStep +' #3</span> Lake Powell</h1>' +
             '<p>' + infowindowText + '</p>' +
             '<div class="row">' +
-                '<div class="col l4"><a href="themes/pb/assets/img/webdesign.jpg" data-lightbox="step3"><img src="themes/pb/assets/img/webdesign.jpg"></a></div>' +
-                '<div class="col l4"><a href="themes/pb/assets/img/EISTI.jpg" data-lightbox="step3"><img src="themes/pb/assets/img/EISTI.jpg"></a></div>' +
-                '<div class="col l4"><a href="themes/pb/assets/img/NYC01.jpg" data-lightbox="step3"><img src="themes/pb/assets/img/NYC01.jpg"></a></div>' +
-                '<a class="not-displayed" href="themes/pb/assets/img/Interface-Admin.png" data-lightbox="step3"></a>' +
+                '<div class="col l4"><a href="themes/pb/assets/img/roadtrip/IMG_4607.jpg" data-lightbox="step3"><img src="themes/pb/assets/img/roadtrip/IMG_4607.jpg"></a></div>' +
+                '<div class="col l4"><a href="themes/pb/assets/img/roadtrip/IMG_4621.jpg" data-lightbox="step3"><img src="themes/pb/assets/img/roadtrip/IMG_4621.jpg"></a></div>' +
+                '<div class="col l4"><a href="themes/pb/assets/img/roadtrip/IMG_4557.jpg" data-lightbox="step3"><img src="themes/pb/assets/img/roadtrip/IMG_4557.jpg"></a></div>' +
+                '<a class="not-displayed" href="themes/pb/assets/img/roadtrip/IMG_4533.jpg" data-lightbox="step3"></a>' +
             '</div>' +
         '</div>'
     });
@@ -174,8 +178,8 @@ function initMapRoadtrip() {
         map: map
     });
     if (activeLocale === 'fr') {
-        infowindowText = "L\'endroit que nous avons le plus apprécié. Les formations rocheuses de Bryce Canyon font penser à l'architecture gothique des cathédrales. " +
-            "Nous avons campé deux nuits dans le parc qui offre également des randonnées incroyables."
+        infowindowText = "Le parc que nous avons le plus apprécié. Les formations rocheuses de Bryce Canyon font penser à l'architecture gothique des cathédrales. " +
+            "Nous avons campé deux nuits dans le parc qui offre des randonnées incroyables."
     } else {
         infowindowText = "Definitely our favorite stop. The rock formations of Bryce Canyon reminded us of the Gothic architecture of European cathedrals. " +
             "We camped two nights in the park which also offers amazing hikes."
@@ -186,10 +190,15 @@ function initMapRoadtrip() {
             '<h1> <span>'+ infowindowStep +' #4</span> Bryce Canyon</h1>' +
             '<p>' + infowindowText + '</p>' +
             '<div class="row">' +
-                '<div class="col l4"><a href="themes/pb/assets/img/webdesign.jpg" data-lightbox="step4"><img src="themes/pb/assets/img/webdesign.jpg"></a></div>' +
-                '<div class="col l4"><a href="themes/pb/assets/img/EISTI.jpg" data-lightbox="step4"><img src="themes/pb/assets/img/EISTI.jpg"></a></div>' +
-                '<div class="col l4"><a href="themes/pb/assets/img/NYC01.jpg" data-lightbox="step4"><img src="themes/pb/assets/img/NYC01.jpg"></a></div>' +
-                '<a class="not-displayed" href="themes/pb/assets/img/Interface-Admin.png" data-lightbox="step4"></a>' +
+                '<div class="col l4"><a href="themes/pb/assets/img/roadtrip/IMG_4711.jpg" data-lightbox="step4"><img src="themes/pb/assets/img/roadtrip/IMG_4711.jpg"></a></div>' +
+                '<div class="col l4"><a href="themes/pb/assets/img/roadtrip/IMG_4721.jpg" data-lightbox="step4"><img src="themes/pb/assets/img/roadtrip/IMG_4721.jpg"></a></div>' +
+                '<div class="col l4"><a href="themes/pb/assets/img/roadtrip/IMG_4801.jpg" data-lightbox="step4"><img src="themes/pb/assets/img/roadtrip/IMG_4801.jpg"></a></div>' +
+                '<a class="not-displayed" href="themes/pb/assets/img/roadtrip/IMG_4742.jpg" data-lightbox="step4"></a>' +
+                '<a class="not-displayed" href="themes/pb/assets/img/roadtrip/IMG_4736.jpg" data-lightbox="step4"></a>' +
+                '<a class="not-displayed" href="themes/pb/assets/img/roadtrip/IMG_4698.jpg" data-lightbox="step4"></a>' +
+                '<a class="not-displayed" href="themes/pb/assets/img/roadtrip/IMG_4898.jpg" data-lightbox="step4"></a>' +
+                '<a class="not-displayed" href="themes/pb/assets/img/roadtrip/IMG_4849.jpg" data-lightbox="step4"></a>' +
+                '<a class="not-displayed" href="themes/pb/assets/img/roadtrip/IMG_4860.jpg" data-lightbox="step4"></a>' +
             '</div>' +
         '</div>'
     });
@@ -210,7 +219,7 @@ function initMapRoadtrip() {
         map: map
     });
     if (activeLocale === 'fr') {
-        infowindowText = "Levé 7h00 du matin : 40°C. Bienvenue à la Vallée de la Mort ! Des paysages lunaires magnifiques dans l'endroit le plus chaud sur Terre. " +
+        infowindowText = "Levé 7h00 du matin, température 40°C. Bienvenue à la Vallée de la Mort ! Des paysages lunaires magnifiques dans l'endroit le plus chaud sur Terre. " +
             "Un record de température de 57°C en 1913 et 50°C quand nous y étions."
     } else {
         infowindowText = "We woke up at 7:00am: 40°C. Welcome to the Death Valley! Wonderful lunar landscapes in the hottest place on Earth. " +
@@ -222,10 +231,13 @@ function initMapRoadtrip() {
             '<h1> <span>'+ infowindowStep +' #5</span> Death Valley</h1>' +
             '<p>' + infowindowText + '</p>' +
             '<div class="row">' +
-                '<div class="col l4"><a href="themes/pb/assets/img/webdesign.jpg" data-lightbox="step5"><img src="themes/pb/assets/img/webdesign.jpg"></a></div>' +
-                '<div class="col l4"><a href="themes/pb/assets/img/EISTI.jpg" data-lightbox="step5"><img src="themes/pb/assets/img/EISTI.jpg"></a></div>' +
-                '<div class="col l4"><a href="themes/pb/assets/img/NYC01.jpg" data-lightbox="step5"><img src="themes/pb/assets/img/NYC01.jpg"></a></div>' +
-                '<a class="not-displayed" href="themes/pb/assets/img/Interface-Admin.png" data-lightbox="step5"></a>' +
+                '<div class="col l4"><a href="themes/pb/assets/img/roadtrip/IMG_5024.jpg" data-lightbox="step5"><img src="themes/pb/assets/img/roadtrip/IMG_5024.jpg"></a></div>' +
+                '<div class="col l4"><a href="themes/pb/assets/img/roadtrip/IMG_4920.jpg" data-lightbox="step5"><img src="themes/pb/assets/img/roadtrip/IMG_4920.jpg"></a></div>' +
+                '<div class="col l4"><a href="themes/pb/assets/img/roadtrip/IMG_4933.jpg" data-lightbox="step5"><img src="themes/pb/assets/img/roadtrip/IMG_4933.jpg"></a></div>' +
+                '<a class="not-displayed" href="themes/pb/assets/img/roadtrip/IMG_4943.jpg" data-lightbox="step5"></a>' +
+                '<a class="not-displayed" href="themes/pb/assets/img/roadtrip/IMG_4978.jpg" data-lightbox="step5"></a>' +
+                '<a class="not-displayed" href="themes/pb/assets/img/roadtrip/IMG_5056.jpg" data-lightbox="step5"></a>' +
+                '<a class="not-displayed" href="themes/pb/assets/img/roadtrip/IMG_5034.jpg" data-lightbox="step5"></a>' +
             '</div>' +
         '</div>'
     });
@@ -258,10 +270,11 @@ function initMapRoadtrip() {
             '<h1> <span>'+ infowindowStep +' #6</span> Yosemite Park</h1>' +
             '<p>' + infowindowText + '</p>' +
             '<div class="row">' +
-                '<div class="col l4"><a href="themes/pb/assets/img/webdesign.jpg" data-lightbox="step6"><img src="themes/pb/assets/img/webdesign.jpg"></a></div>' +
-                '<div class="col l4"><a href="themes/pb/assets/img/EISTI.jpg" data-lightbox="step6"><img src="themes/pb/assets/img/EISTI.jpg"></a></div>' +
-                '<div class="col l4"><a href="themes/pb/assets/img/NYC01.jpg" data-lightbox="step6"><img src="themes/pb/assets/img/NYC01.jpg"></a></div>' +
-                '<a class="not-displayed" href="themes/pb/assets/img/Interface-Admin.png" data-lightbox="step6"></a>' +
+                '<div class="col l4"><a href="themes/pb/assets/img/roadtrip/IMG_5074.jpg" data-lightbox="step6"><img src="themes/pb/assets/img/roadtrip/IMG_5074.jpg"></a></div>' +
+                '<div class="col l4"><a href="themes/pb/assets/img/roadtrip/IMG_5110.jpg" data-lightbox="step6"><img src="themes/pb/assets/img/roadtrip/IMG_5110.jpg"></a></div>' +
+                '<div class="col l4"><a href="themes/pb/assets/img/roadtrip/IMG_5197.jpg" data-lightbox="step6"><img src="themes/pb/assets/img/roadtrip/IMG_5197.jpg"></a></div>' +
+                '<a class="not-displayed" href="themes/pb/assets/img/roadtrip/IMG_5210.jpg" data-lightbox="step6"></a>' +
+                '<a class="not-displayed" href="themes/pb/assets/img/roadtrip/IMG_5228.jpg" data-lightbox="step6"></a>' +
             '</div>' +
         '</div>'
     });
@@ -283,7 +296,7 @@ function initMapRoadtrip() {
     });
     if (activeLocale === 'fr') {
         infowindowText = "De retour en ville ! On ne remerciera jamais assez la conduite automatique dans cette ville faite de côtes et de pentes. " +
-            "Le Golden Gate Bridge de San Francisco était impressionnant."
+            "Le Golden Gate Bridge était impressionnant, tout comme l'amas de phoques au Pier 39."
     } else {
         infowindowText = "The return to the civilisation! We couldn't thank the automatic transmission enough in this sloping streets city. " +
             "The Golden Gate Bridge was really impressive."
@@ -294,10 +307,9 @@ function initMapRoadtrip() {
             '<h1> <span>'+ infowindowStep +' #7</span> San Francisco</h1>' +
             '<p>' + infowindowText + '</p>' +
             '<div class="row">' +
-                '<div class="col l4"><a href="themes/pb/assets/img/webdesign.jpg" data-lightbox="step7"><img src="themes/pb/assets/img/webdesign.jpg"></a></div>' +
-                '<div class="col l4"><a href="themes/pb/assets/img/EISTI.jpg" data-lightbox="step7"><img src="themes/pb/assets/img/EISTI.jpg"></a></div>' +
-                '<div class="col l4"><a href="themes/pb/assets/img/NYC01.jpg" data-lightbox="step7"><img src="themes/pb/assets/img/NYC01.jpg"></a></div>' +
-                '<a class="not-displayed" href="themes/pb/assets/img/Interface-Admin.png" data-lightbox="step7"></a>' +
+                '<div class="col l4"><a href="themes/pb/assets/img/roadtrip/SFO01.jpg" data-lightbox="step7"><img src="themes/pb/assets/img/roadtrip/SFO01.jpg"></a></div>' +
+                '<div class="col l4"><a href="themes/pb/assets/img/roadtrip/SFO02.jpg" data-lightbox="step7"><img src="themes/pb/assets/img/roadtrip/SFO02.jpg"></a></div>' +
+                '<div class="col l4"><a href="themes/pb/assets/img/roadtrip/SFO03.jpg" data-lightbox="step7"><img src="themes/pb/assets/img/roadtrip/SFO03.jpg"></a></div>' +
             '</div>' +
         '</div>'
     });
@@ -328,10 +340,9 @@ function initMapRoadtrip() {
             '<h1> <span>'+ infowindowStep +' #8</span> Big Sur</h1>' +
             '<p>' + infowindowText + '</p>' +
             '<div class="row">' +
-                '<div class="col l4"><a href="themes/pb/assets/img/webdesign.jpg" data-lightbox="step8"><img src="themes/pb/assets/img/webdesign.jpg"></a></div>' +
-                '<div class="col l4"><a href="themes/pb/assets/img/EISTI.jpg" data-lightbox="step8"><img src="themes/pb/assets/img/EISTI.jpg"></a></div>' +
-                '<div class="col l4"><a href="themes/pb/assets/img/NYC01.jpg" data-lightbox="step8"><img src="themes/pb/assets/img/NYC01.jpg"></a></div>' +
-                '<a class="not-displayed" href="themes/pb/assets/img/Interface-Admin.png" data-lightbox="step8"></a>' +
+                '<div class="col l4"><a href="themes/pb/assets/img/roadtrip/IMG_5315.jpg" data-lightbox="step8"><img src="themes/pb/assets/img/roadtrip/IMG_5315.jpg"></a></div>' +
+                '<div class="col l4"><a href="themes/pb/assets/img/roadtrip/BS01.jpg" data-lightbox="step8"><img src="themes/pb/assets/img/roadtrip/BS01.jpg"></a></div>' +
+                '<div class="col l4"><a href="themes/pb/assets/img/roadtrip/BS02.jpg" data-lightbox="step8"><img src="themes/pb/assets/img/roadtrip/BS02.jpg"></a></div>' +
             '</div>' +
         '</div>'
     });
@@ -362,10 +373,15 @@ function initMapRoadtrip() {
             '<h1> <span>'+ infowindowStep +' #9</span> Los Angeles</h1>' +
             '<p>' + infowindowText + '</p>' +
             '<div class="row">' +
-                '<div class="col l4"><a href="themes/pb/assets/img/webdesign.jpg" data-lightbox="step9"><img src="themes/pb/assets/img/webdesign.jpg"></a></div>' +
-                '<div class="col l4"><a href="themes/pb/assets/img/EISTI.jpg" data-lightbox="step9"><img src="themes/pb/assets/img/EISTI.jpg"></a></div>' +
-                '<div class="col l4"><a href="themes/pb/assets/img/NYC01.jpg" data-lightbox="step9"><img src="themes/pb/assets/img/NYC01.jpg"></a></div>' +
-                '<a class="not-displayed" href="themes/pb/assets/img/Interface-Admin.png" data-lightbox="step9"></a>' +
+                '<div class="col l4"><a href="themes/pb/assets/img/roadtrip/IMG_3936.jpg" data-lightbox="step9"><img src="themes/pb/assets/img/roadtrip/IMG_3936.jpg"></a></div>' +
+                '<div class="col l4"><a href="themes/pb/assets/img/roadtrip/LA01.jpg" data-lightbox="step9"><img src="themes/pb/assets/img/roadtrip/LA01.jpg"></a></div>' +
+                '<div class="col l4"><a href="themes/pb/assets/img/roadtrip/LA02.jpg" data-lightbox="step9"><img src="themes/pb/assets/img/roadtrip/LA02.jpg"></a></div>' +
+                '<a class="not-displayed" href="themes/pb/assets/img/roadtrip/IMG_3964.jpg" data-lightbox="step9"></a>' +
+                '<a class="not-displayed" href="themes/pb/assets/img/roadtrip/LA04.jpg" data-lightbox="step9"></a>' +
+                '<a class="not-displayed" href="themes/pb/assets/img/roadtrip/LA03.jpg" data-lightbox="step9"></a>' +
+                '<a class="not-displayed" href="themes/pb/assets/img/roadtrip/IMG_3906.jpg" data-lightbox="step9"></a>' +
+                '<a class="not-displayed" href="themes/pb/assets/img/roadtrip/IMG_3939.jpg" data-lightbox="step9"></a>' +
+                '<a class="not-displayed" href="themes/pb/assets/img/roadtrip/IMG_3974.jpg" data-lightbox="step9"></a>' +
             '</div>' +
         '</div>'
     });
