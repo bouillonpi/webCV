@@ -458,6 +458,10 @@
     margin-bottom: 40px;
 }
 
+.about-roadtrip > .container > p > a {
+    color: #8cbce2;
+}
+
 .about-roadtrip .roadtrip-map-container {
     position: relative;
 }

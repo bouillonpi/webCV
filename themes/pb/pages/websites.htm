@@ -6,7 +6,7 @@ is_hidden = 0
 
 <section class="websites-hero">
     <section><img src="{{ 'assets/img/cameleon.png'| theme }}"></section>
-    <h1>Caméléon Design</h1>
+    <h1>Caméléon <br class="hide-on-med-and-up"> Design</h1>
     <div class="separator"></div>
     <h2>
         {% if activeLocale == 'fr' %} Conception de sites internet
@@ -22,6 +22,8 @@ is_hidden = 0
     </h3>
 </section>
 
+<!------------------------------------------------>
+
 <section class="websites-services">
     <div class="container">
 
@@ -29,7 +31,7 @@ is_hidden = 0
 
         <div class="block-title">
             <h1>
-                {% if activeLocale == 'fr' %} Création de sites web
+                {% if activeLocale == 'fr' %} Création de <br class="hide-on-med-and-up"> sites web
                 {% else %} Website creation {% endif %}
             </h1>
             <div class="custom-line"></div>
@@ -51,7 +53,7 @@ is_hidden = 0
 
         <div class="services row">
 
-            <div class="col l4 m6 s12" onclick="triggerTab('tab1')">
+            <div class="col l4 m6 s6" onclick="triggerTab('tab1')">
                 <i class="fa fa-magic"></i>
                 <h1>Design</h1>
                 <p>
@@ -60,7 +62,7 @@ is_hidden = 0
                 </p>
             </div>
 
-            <div class="col l4 m6 s12" onclick="triggerTab('tab2')">
+            <div class="col l4 m6 s6" onclick="triggerTab('tab2')">
                 <i class="fa fa-laptop"></i>
                 <h1>
                     {% if activeLocale == 'fr' %} Adaptabilité
@@ -72,19 +74,19 @@ is_hidden = 0
                 </p>
             </div>
 
-            <div class="col l4 m6 s12" onclick="triggerTab('tab3')">
+            <div class="col l4 m6 s6" onclick="triggerTab('tab3')">
                 <i class="fa fa-hdd-o"></i>
                 <h1>
                     {% if activeLocale == 'fr' %} Hébergement
                     {% else %} Hosting {% endif %}
                 </h1>
                 <p>
-                    {% if activeLocale == 'fr' %} Nom de domaine, hébergement et base de données pris en compte et renouvelés
+                    {% if activeLocale == 'fr' %} Nom de domaine, hébergement et base de données gérés et renouvelés
                     {% else %} Management and annual renewal of domain name, website hosting and database {% endif %}
                 </p>
             </div>
 
-            <div class="col l4 m6 s12" onclick="triggerTab('tab4')">
+            <div class="col l4 m6 s6" onclick="triggerTab('tab4')">
                 <i class="fa fa-wrench"></i>
                 <h1>Maintenance</h1>
                 <p>
@@ -93,7 +95,7 @@ is_hidden = 0
                 </p>
             </div>
 
-            <div class="col l4 m6 s12" onclick="triggerTab('tab5')">
+            <div class="col l4 m6 s6" onclick="triggerTab('tab5')">
                 <i class="fa fa-line-chart"></i>
                 <h1>
                     {% if activeLocale == 'fr' %} Référencement
@@ -105,7 +107,7 @@ is_hidden = 0
                 </p>
             </div>
 
-            <div class="col l4 m6 s12" onclick="triggerTab('tab6')">
+            <div class="col l4 m6 s6" onclick="triggerTab('tab6')">
                 <i class="fa fa-lock"></i>
                 <h1>
                     {% if activeLocale == 'fr' %} Administration
@@ -220,8 +222,8 @@ is_hidden = 0
             {% else %} - Case Study - {% endif %}
         </h1>
         <h2>
-            {% if activeLocale == 'fr' %} Réalisation du site <br> Beyond Biarritz
-            {% else %} Production of the website <br> Beyond Biarritz {% endif %}
+            {% if activeLocale == 'fr' %} Réalisation du site <br class="hide-on-small-and-down"> Beyond Biarritz
+            {% else %} Production of the website <br class="hide-on-small-and-down"> Beyond Biarritz {% endif %}
         </h2>
 
         <section class="intro">
@@ -683,7 +685,7 @@ is_hidden = 0
                 le contacter à tout moment pour effectuer des changements - il répond rapidement toujours avec le même enthousiasme.
                 <br>
                 Il est très agréable de travailler avec PB : il offre une approche jeune et enthousiaste qui se reflète dans son style de développement.
-                Il est l'un des rares 'geeks' qui vous parlent de manière à ce que vous les compreniez!
+                Il est l'un des rares 'geeks' qui vous parlent de manière à ce que vous les compreniez !
                 Je recommande vivement ses services pour tout type de design.
 
                 {% else %}
@@ -731,55 +733,55 @@ is_hidden = 0
         </h1>
         <div class="row">
 
-            <div class="col l4 m6 s12">
+            <div class="col l4 m6 s6">
                 <a href="{{ 'assets/img/logos/AFE.jpg'| theme }}" data-lightbox="picture-set-logos">
                     <img src="{{ 'assets/img/logos/AFE.jpg'| theme }}">
                 </a>
             </div>
 
-            <div class="col l4 m6 s12">
+            <div class="col l4 m6 s6">
                 <a href="{{ 'assets/img/logos/DZT.png'| theme }}" data-lightbox="picture-set-logos">
                     <img src="{{ 'assets/img/logos/DZT.png'| theme }}">
                 </a>
             </div>
 
-            <div class="col l4 m6 s12">
+            <div class="col l4 m6 s6">
                 <a href="{{ 'assets/img/logos/bb01.jpg'| theme }}" data-lightbox="picture-set-logos">
                     <img src="{{ 'assets/img/logos/bb01.jpg'| theme }}">
                 </a>
             </div>
 
-            <div class="col l4 m6 s12">
+            <div class="col l4 m6 s6">
                 <a href="{{ 'assets/img/logos/veistiaire.png'| theme }}" data-lightbox="picture-set-logos">
                     <img src="{{ 'assets/img/logos/veistiaire.png'| theme }}">
                 </a>
             </div>
 
-            <div class="col l4 m6 s12">
+            <div class="col l4 m6 s6">
                 <a href="{{ 'assets/img/logos/gte.png'| theme }}" data-lightbox="picture-set-logos">
                     <img src="{{ 'assets/img/logos/gte.png'| theme }}">
                 </a>
             </div>
 
-            <div class="col l4 m6 s12">
+            <div class="col l4 m6 s6">
                 <a href="{{ 'assets/img/logos/avance.jpg'| theme }}" data-lightbox="picture-set-logos">
                     <img src="{{ 'assets/img/logos/avance.jpg'| theme }}">
                 </a>
             </div>
 
-            <div class="col l4 m6 s12">
+            <div class="col l4 m6 s6">
                 <a href="{{ 'assets/img/logos/powerspike.png'| theme }}" data-lightbox="picture-set-logos">
                     <img src="{{ 'assets/img/logos/powerspike.png'| theme }}">
                 </a>
             </div>
 
-            <div class="col l4 m6 s12">
+            <div class="col l4 m6 s6">
                 <a href="{{ 'assets/img/logos/cameleon.png'| theme }}" data-lightbox="picture-set-logos">
                     <img src="{{ 'assets/img/logos/cameleon.png'| theme }}">
                 </a>
             </div>
 
-            <div class="col l4 m6 s12">
+            <div class="col l4 m6 s6 hide-on-med-and-down">
                 <a href="{{ 'assets/img/logos/unclesam.png'| theme }}" data-lightbox="picture-set-logos">
                     <img src="{{ 'assets/img/logos/unclesam.png'| theme }}">
                 </a>

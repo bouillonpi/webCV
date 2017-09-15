@@ -608,10 +608,9 @@
     letter-spacing: 5px;
     font-family: ProximaBold, serif;
     font-size: 14px;
-    width: 370px;
+    display: inline-block;
     margin: 0 auto;
-    margin-bottom: -2px;
-    padding: 15px;
+    padding: 15px 95px;
     background: #fff;
     color: #484848;
     z-index: 1;
