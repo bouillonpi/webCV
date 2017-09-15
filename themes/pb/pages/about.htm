@@ -20,10 +20,10 @@ is_hidden = 0
         </h1>
         <div class="separator"></div>
         <h2>
-            <i class="fa fa-minus"></i>
+            <i class="fa fa-minus hide-on-small-and-down"></i>
             {% if activeLocale == 'fr' %} En dehors du travail
             {% else %} When I'm not at work {% endif %}
-            <i class="fa fa-minus"></i>
+            <i class="fa fa-minus hide-on-small-and-down"></i>
         </h2>
         <h3 id="typeWriteAbout-{{activeLocale}}"></h3>
         <div id="about-scroll" class="button-scroll">Let's go</div>
@@ -42,10 +42,10 @@ is_hidden = 0
 
         <div class="hobbies row">
 
-            <div class="col l4 m6 s12">
+            <div class="col l4 m6 s6">
                 <i class="fa fa-hand-paper-o"></i>
                 <h1>
-                    {% if activeLocale == 'fr' %} Arts Martiaux
+                    {% if activeLocale == 'fr' %} Arts <br class="hide-on-med-and-up"> Martiaux
                     {% else %} Martial Arts {% endif %}
                 </h1>
                 <p>
@@ -54,16 +54,16 @@ is_hidden = 0
                 </p>
             </div>
 
-            <div class="col l4 m6 s12">
+            <div class="col l4 m6 s6">
                 <i class="fa fa-gamepad"></i>
                 <h1>
-                    {% if activeLocale == 'fr' %} Jeux vidéos
+                    {% if activeLocale == 'fr' %} Jeux <br class="hide-on-med-and-up"> vidéos
                     {% else %} Video Games {% endif %}
                 </h1>
                 <p>League of Legends (Gold 5 NA), Battlefield 1, PUBG, Warcraft III, Starcraft II</p>
             </div>
 
-            <div class="col l4 m6 s12">
+            <div class="col l4 m6 s6">
                 <i class="fa fa-plane"></i>
                 <h1>
                     {% if activeLocale == 'fr' %} Aventure
@@ -75,7 +75,7 @@ is_hidden = 0
                 </p>
             </div>
 
-            <div class="col l4 m6 s12">
+            <div class="col l4 m6 s6">
                 <i class="fa fa-camera-retro"></i>
                 <h1>
                     {% if activeLocale == 'fr' %} Audiovisuel
@@ -87,7 +87,7 @@ is_hidden = 0
                 </p>
             </div>
 
-            <div class="col l4 m6 s12">
+            <div class="col l4 m6 s6">
                 <i class="fa fa-pencil"></i>
                 <h1>Design</h1>
                 <p>
@@ -96,7 +96,7 @@ is_hidden = 0
                 </p>
             </div>
 
-            <div class="col l4 m6 s12">
+            <div class="col l4 m6 s6">
                 <i class="fa fa-magnet"></i>
                 <h1>
                     {% if activeLocale == 'fr' %} Détection
@@ -194,7 +194,7 @@ is_hidden = 0
         <div class="block-title">
             <h1>
                 {% if activeLocale == 'fr' %} Détection de métaux
-                {% else %} Metal Detecting in France {% endif %}
+                {% else %} Metal Detecting <br class="hide-on-med-and-up"> in France {% endif %}
             </h1>
             <div class="custom-line hide-on-med-and-down"></div>
         </div>
@@ -304,20 +304,18 @@ is_hidden = 0
     <div class="container">
 
         <h1>
-            {% if activeLocale == 'fr' %} Roadtrip dans l'Ouest Américain
+            {% if activeLocale == 'fr' %} Roadtrip dans <br class="hide-on-med-and-up"> l'Ouest Américain
             {% else %} Western US Roadtrip {% endif %}
         </h1>
 
         <p>
             {% if activeLocale == 'fr' %}
-            Au cours de l'été 2017, j'ai effectué un roadtrip dans l'Ouest Américain avec
-            <a href="https://www.linkedin.com/in/alixia-aprelon-a6879783/" target="_blank">Alixia Aprelon</a>.
+            Au cours de l'été 2017, j'ai effectué un roadtrip dans l'Ouest Américain.
             Pendant deux semaines, nous avons fait plus de 4000km avec une Jeep Renegade - le chemin parcouru est indiqué en bleu sur la carte.
             Pour voir les photos et détails des étapes du roadtrip, cliquez sur les
             marqueurs rouges numérotés. Pour passer facilement d'une étape à une autre, utilisez les flèches latérales.
             {% else %}
-            During the summer of 2017 I took a roadtrip in Western US with
-            <a href="https://www.linkedin.com/in/alixia-aprelon-a6879783/" target="_blank">Alixia Aprelon</a>.
+            During the summer of 2017 I took a roadtrip in Western US.
             For two weeks, we drove 4000km with a Jeep Renegade - the path taken appears in blue on the map.
             To see the pictures and details of each step of the roadtrip, click the red numbered markers.
             To easily pass from one step to another, use the side arrows.

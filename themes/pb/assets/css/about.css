@@ -198,11 +198,9 @@
     font-size: 14px;
     display: inline-block;
     margin: 0 auto;
-    margin-bottom: -1px;
     padding: 15px 60px;
     background: #484848;
     color: #fff;
-    z-index: 1;
 }
 
 .about-onfocus .container-fluid {

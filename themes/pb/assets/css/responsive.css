@@ -5,6 +5,13 @@
 
 @media screen and (max-width: 600px) {
 
+    .modal {
+        top: 0!important;
+        bottom: 0;
+        height: 80%;
+        width: 90%;
+    }
+
     .home-hero .call-to-action {
         width: 90%;
         margin: 0 auto;
@@ -43,20 +50,64 @@
         padding-bottom: 65px;
     }
 
-    .modal {
-        top: 0!important;
-        bottom: 0;
-        height: 80%;
-        width: 90%;
+    .home-intro .block-title h1 {
+        padding: 15px 35px;
     }
 
-    .about-detection .content-container p {
-        width: 85%;
-        columns: 1;
+    .home-intro > .container > img {
+        margin: 0 auto;
+        margin-top: 50px;
+    }
+
+    .home-intro .key-info .col p {
+        width: 100%;
+        font-size: 13px;
+    }
+
+    .home-intro .key-info {
+        margin-top: 30px;
+        margin-bottom: 40px;
+    }
+
+    .home-education > .container {
+        width: 85%!important;
+    }
+
+    .home-education h1 {
+        padding: 15px 30px;
+    }
+
+    .home-education > .container > .row {
+        padding-top: 55px;
+        padding-bottom: 50px;
+    }
+
+    .home-education h2 {
+        font-size: 14px;
+    }
+
+    .home-education .cursus li {
+        font-size: 13px;
     }
 
     .home-timeline > .block-title > h1 {
-        padding: 15px 25px;
+        padding: 15px 35px;
+    }
+
+    .home-timeline > .block-title {
+        padding-top: 35px;
+    }
+
+    #cd-timeline {
+        padding-bottom: 85px;
+    }
+
+    .home-timeline > #cd-timeline {
+        width: 95%;
+    }
+
+    .cd-timeline-block:first-child {
+        margin-top: 50px;
     }
 
     .cd-timeline-content h2 {
@@ -76,6 +127,66 @@
         margin-bottom: 5px;
     }
 
+    .home-award .block-title h1 {
+        padding: 15px 35px;
+    }
+
+    .home-award > .container > img {
+        margin-top: 55px;
+    }
+
+    .home-award .container-fluid {
+        margin-top: 30px;
+        padding-bottom: 50px;
+    }
+
+    .home-award h2 {
+        font-size: 14px;
+    }
+
+    .home-award .details {
+        margin-top: 30px;
+    }
+
+    .home-award .details li {
+        font-size: 13px;
+    }
+
+    .home-award .details li span:first-of-type {
+        width: 85px;
+    }
+
+    .home-award .actions {
+        padding-top: 5px;
+        padding-bottom: 25px;
+    }
+
+    .home-technology > .container {
+        width: 90%;
+        padding-top: 65px;
+        padding-bottom: 40px;
+    }
+
+    .home-technology .technologies {
+        padding-top: 50px;
+    }
+
+    .home-technology .details {
+        width: 100%;
+    }
+
+    .home-technology .technology ul {
+        width: 100%;
+    }
+
+    .home-technology .technology li {
+        padding-left: 20px;
+    }
+
+    .home-technology .technology p {
+        font-size: 13px;
+    }
+
     .property-map-info {
         padding: 5px 50px!important;
         padding-bottom: 11px!important;
@@ -85,12 +196,16 @@
     }
 
     .home-international > .container {
-        padding-top: 90px;
-        padding-bottom: 25px;
+        padding-top: 80px;
+        padding-bottom: 15px;
+    }
+
+    .home-international .block-title h1 {
+        padding: 15px 35px;
     }
 
     .home-international .langues {
-        margin-top: 60px;
+        margin-top: 45px;
     }
 
     .home-cool #typeWriteHome-fr,
@@ -98,18 +213,23 @@
         width: 75%;
         margin: 0 auto;
         margin-top: 12px;
+        height: 60px;
     }
 
     .contact-form .form-groups {
         width: 95%!important;
     }
 
+    .websites-hero {
+        height: 600px;
+    }
+
     .websites-hero > section {
-        padding-top: 140px;
+        padding-top: 135px;
     }
 
     .websites-hero > h1 {
-        font-size: 35px;
+        font-size: 30px;
     }
 
     .websites-hero > h2,
@@ -198,7 +318,151 @@
 
     .websites-testimonials .container {
         padding-top: 70px;
-        padding-bottom: 60px;
+        padding-bottom: 50px;
+    }
+
+    .websites-logos .container {
+        margin-top: 70px;
+        margin-bottom: 50px;
+    }
+
+    .websites-logos h1 {
+        margin-bottom: 40px;
+    }
+
+    .page-contact > .container {
+        padding-top: 70px!important;
+        padding-bottom: 50px!important;
+    }
+
+    .about-hero {
+        height: 550px;
+        background-position-x: left;
+    }
+
+    .about-hero h1 {
+        color: #484848;
+        padding-top: 120px;
+        font-size: 25px;
+    }
+
+    .about-hero .separator {
+        border-bottom: 2px solid rgb(208, 208, 208);
+    }
+
+    .about-hero h2 {
+        font-size: 14px;
+    }
+
+    .about-hero h3 {
+        font-size: 16px;
+        margin-top: 0;
+    }
+
+    .about-hero .button-scroll {
+        margin-top: 20px;
+    }
+
+    .about-intro .hobbies .col p {
+        width: 100%;
+        font-size: 13px;
+    }
+
+    .about-intro > .container {
+        padding-top: 65px;
+        padding-bottom: 55px;
+    }
+
+    .about-intro > .container > .hobbies {
+        margin-top: 25px;
+    }
+
+    .about-onfocus .container-fluid {
+        padding-bottom: 50px;
+    }
+
+    .about-onfocus > .container > img {
+        margin-top: 55px;
+        width: 90%;
+    }
+
+    .about-onfocus .block-title h1 {
+        padding: 15px 20px;
+        font-size: 13px;
+    }
+
+    .about-onfocus h2:first-of-type {
+        margin-top: 30px;
+    }
+
+    .about-onfocus h2 {
+        font-size: 14px;
+    }
+
+    .about-onfocus .details li span:first-of-type {
+        width: 60px;
+    }
+
+    .about-onfocus .actions {
+        padding-top: 10px;
+        padding-bottom: 20px;
+    }
+
+    .about-detection .block-title h1 {
+        padding: 15px 30px;
+    }
+
+    .about-detection > .container {
+        padding-top: 70px;
+        padding-bottom: 35px;
+    }
+
+    .about-detection .content-container {
+        padding-top: 30px;
+    }
+
+    .about-detection .content-container h2 {
+        font-size: 14px;
+    }
+
+    .about-detection .content-container p {
+        width: 95%;
+        columns: 1;
+        font-size: 13px;
+    }
+
+    .about-detection .content-container h3 {
+        font-size: 13px;
+        margin-top: 45px;
+    }
+
+    .about-detection .content-container .row .col {
+        margin-bottom: 15px;
+    }
+
+    .about-roadtrip > .container {
+        width: 100%;
+        padding-top: 65px;
+        padding-bottom: 80px;
+    }
+
+    .about-roadtrip > .container > h1 {
+        margin-bottom: 30px;
+        padding: 15px 30px;
+    }
+
+    .about-roadtrip > .container > p {
+        margin-bottom: 30px;
+    }
+
+    .about-roadtrip #next-step {
+        padding: 10px;
+        padding-right: 6px;
+    }
+
+    .about-roadtrip #prev-step {
+        padding: 10px;
+        padding-left: 6px;
     }
 
 }
