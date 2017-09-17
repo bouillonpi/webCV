@@ -231,7 +231,10 @@ is_hidden = 0
                 </ul>
 
                 <div class="actions">
-                    <a href="{{ 'assets/img/OT/WF01.jpg'| theme }}" data-lightbox="picture-set-1" class="call-to-action media">
+                    <a href="{{ 'assets/img/OT/WF02.jpg'| theme }}"
+                       data-title="{% if activeLocale == 'fr' %} The Watch Factory - Bureaux de Oberthur Technologies Boston {% else %} The Watch Factory - Oberthur Technologies Boston office {% endif %}"
+                       data-lightbox="picture-set-1"
+                       class="call-to-action media">
                         <i class="fa fa-th"></i>
                         {% if activeLocale == 'fr' %} Voir photos {% else %} Pictures {% endif %}
                     </a>
@@ -242,7 +245,14 @@ is_hidden = 0
                 </div>
 
                 <a class="experience-picture"
-                   href="{{ 'assets/img/NYC01.jpg'| theme }}"
+                   href="{{ 'assets/img/roadtrip/IMG_4248.jpg'| theme }}"
+                   data-title="{% if activeLocale == 'fr' %} Roadtrip de deux semaines dans l'Ouest Américain {% else %} Two-week roadtrip in Western US {% endif %}"
+                   data-lightbox="picture-set-1">
+                </a>
+
+                <a class="experience-picture"
+                   href="{{ 'assets/img/PB/GC01.jpg'| theme }}"
+                   data-title="Grand Canyon - Arizona"
                    data-lightbox="picture-set-1">
                 </a>
 
@@ -304,7 +314,10 @@ is_hidden = 0
                 </ul>
 
                 <div class="actions">
-                    <a href="{{ 'assets/img/flags/FR.png'| theme }}" data-lightbox="picture-set-2" class="call-to-action media">
+                    <a href="{{ 'assets/img/OT/WF01.jpg'| theme }}"
+                       data-title="{% if activeLocale == 'fr' %} Bureaux de Oberthur Technologies Boston {% else %} Oberthur Technologies Boston office {% endif %}"
+                       data-lightbox="picture-set-2"
+                       class="call-to-action media">
                         <i class="fa fa-th"></i>
                         {% if activeLocale == 'fr' %} Voir photos {% else %} Pictures {% endif %}
                     </a>
@@ -315,7 +328,20 @@ is_hidden = 0
                 </div>
 
                 <a class="experience-picture"
-                   href="{{ 'assets/img/OT.png'| theme }}"
+                   href="{{ 'assets/img/NYC01.jpg'| theme }}"
+                   data-title="{% if activeLocale == 'fr' %} Vue de Manhattan depuis la Statue de la Liberté {% else %} Manhattan view from the Statue of Liberty {% endif %}"
+                   data-lightbox="picture-set-2">
+                </a>
+
+                <a class="experience-picture"
+                   href="{{ 'assets/img/OT/NYC02.jpg'| theme }}"
+                   data-title="{% if activeLocale == 'fr' %} Coucher de soleil à New York City {% else %} Sunset view at NYC {% endif %}"
+                   data-lightbox="picture-set-2">
+                </a>
+
+                <a class="experience-picture"
+                   href="{{ 'assets/img/OT/NYC01.jpg'| theme }}"
+                   data-title="{% if activeLocale == 'fr' %} Manhattan depuis l'Empire State Building {% else %} Manhattan from the Empire State Building {% endif %}"
                    data-lightbox="picture-set-2">
                 </a>
 
@@ -394,7 +420,10 @@ is_hidden = 0
                 </ul>
 
                 <div class="actions">
-                    <a href="{{ 'assets/img/webdesign.jpg'| theme }}" data-lightbox="picture-set-3" class="call-to-action media">
+                    <a href="{{ 'assets/img/webdesign.jpg'| theme }}"
+                       data-title="{% if activeLocale == 'fr' %} Création de sites internet au design épuré {% else %} Design of clean websites {% endif %}"
+                       data-lightbox="picture-set-3"
+                       class="call-to-action media">
                         <i class="fa fa-th"></i>
                         {% if activeLocale == 'fr' %} Voir photos {% else %} Pictures {% endif %}
                     </a>
@@ -406,8 +435,14 @@ is_hidden = 0
 
                 <a class="experience-picture"
                    href="{{ 'assets/img/bbluxe/responsive.jpg'| theme }}"
-                   data-lightbox="picture-set-3"
-                   data-title="Test 6">
+                   data-title="{% if activeLocale == 'fr' %} Exemple de site réalisé pour l'entreprise Beyond Biarritz {% else %} Website designed for the company Beyond Biarritz {% endif %}"
+                   data-lightbox="picture-set-3">
+                </a>
+
+                <a class="experience-picture"
+                   href="{{ 'assets/img/bbluxe/businesscards.jpg'| theme }}"
+                   data-title="{% if activeLocale == 'fr' %} Réalisation de cartes de visites pour Beyond Biarritz {% else %} Business cards design for Beyond Biarritz {% endif %}"
+                   data-lightbox="picture-set-3">
                 </a>
 
                 <span class="cd-date">2015</span>
@@ -484,7 +519,10 @@ is_hidden = 0
                 </ul>
 
                 <div class="actions">
-                    <a href="{{ 'assets/img/NYC01.jpg'| theme }}" data-lightbox="picture-set-4" class="call-to-action media">
+                    <a href="{{ 'assets/img/OT/SS01.jpg'| theme }}"
+                       data-title="{% if activeLocale == 'fr' %} Technopole Hélioparc - Bureaux de Sopra Steria Pau {% else %} Technopole Hélioparc - Sopra Steria Pau office {% endif %}"
+                       data-lightbox="picture-set-4"
+                       class="call-to-action media">
                         <i class="fa fa-th"></i>
                         {% if activeLocale == 'fr' %} Voir photos {% else %} Pictures {% endif %}
                     </a>
@@ -493,11 +531,6 @@ is_hidden = 0
                         {% if activeLocale == 'fr' %} Site SopraSteria {% else %} SopraSteria Website {% endif %}
                     </a>
                 </div>
-
-                <a class="experience-picture"
-                   href="{{ 'assets/img/EISTI.jpg'| theme }}"
-                   data-lightbox="picture-set-4">
-                </a>
 
                 <span class="cd-date">2015</span>
             </div>
@@ -565,7 +598,10 @@ is_hidden = 0
                             </ul>
 
                             <div class="actions">
-                                <a href="{{ 'assets/img/IPB/IPB02.jpg'| theme }}" data-lightbox="picture-set-award" class="call-to-action media">
+                                <a href="{{ 'assets/img/IPB/IPB02.jpg'| theme }}"
+                                   data-title="{% if activeLocale == 'fr' %} Victoire à la première manche du concours {% else %} Winner of the first round of the competition {% endif %}"
+                                   data-lightbox="picture-set-award"
+                                   class="call-to-action media">
                                     <i class="fa fa-th"></i>
                                     {% if activeLocale == 'fr' %} Voir photos {% else %} Pictures {% endif %}
                                 </a>
@@ -577,18 +613,22 @@ is_hidden = 0
 
                             <a class="experience-picture"
                                href="{{ 'assets/img/IPB/IPB01.jpg'| theme }}"
+                               data-title="{% if activeLocale == 'fr' %} Victoire à la seconde et dernière manche du concours {% else %} Winner of the second and last round of the competition {% endif %}"
                                data-lightbox="picture-set-award">
                             </a>
                             <a class="experience-picture"
                                href="{{ 'assets/img/IPB/IPB03.jpg'| theme }}"
+                               data-title="{% if activeLocale == 'fr' %} Présentation professionnelle devant le jury Microsoft {% else %} Professional presentation before the Microsoft jury {% endif %}"
                                data-lightbox="picture-set-award">
                             </a>
                             <a class="experience-picture"
                                href="{{ 'assets/img/IPB/IPB04.jpg'| theme }}"
+                               data-title="{% if activeLocale == 'fr' %} Remise de la récompense : un chèque de 8000€ {% else %} Cash prize reward: 8000€ {% endif %}"
                                data-lightbox="picture-set-award">
                             </a>
                             <a class="experience-picture"
                                href="{{ 'assets/img/IPB/campus-microsoft.jpg'| theme }}"
+                               data-title="{% if activeLocale == 'fr' %} Siège Microsoft France, Issy-les-Moulineaux {% else %} Microsoft France Headquarters, Paris {% endif %}"
                                data-lightbox="picture-set-award">
                             </a>
 
