@@ -82,19 +82,19 @@ function initMapRoadtrip() {
             "Thereafter we bought a tent and rented a Jeep for two weeks. To the Grand Canyon!"
     }
     infowindowA = new google.maps.InfoWindow({
-            content:
-            '<div class="roadtrip-popup">' +
-                '<h1> <span>'+ infowindowStep +' #1</span> Las Vegas</h1>' +
-                '<p>' + infowindowText + '</p>' +
-                '<div class="row">' +
-                    '<div class="col l4 m4 s4"><a href="themes/pb/assets/img/roadtrip/IMG_7369.jpg" data-lightbox="step1"><img src="themes/pb/assets/img/roadtrip/IMG_7369.jpg"></a></div>' +
-                    '<div class="col l4 m4 s4"><a href="themes/pb/assets/img/roadtrip/IMG_7335.jpg" data-lightbox="step1"><img src="themes/pb/assets/img/roadtrip/IMG_7335.jpg"></a></div>' +
-                    '<div class="col l4 m4 s4"><a href="themes/pb/assets/img/roadtrip/IMG_4248.jpg" data-lightbox="step1"><img src="themes/pb/assets/img/roadtrip/IMG_4248.jpg"></a></div>' +
-                    '<a class="not-displayed" href="themes/pb/assets/img/roadtrip/IMG_4190.jpg" data-lightbox="step1"></a>' +
-                    '<a class="not-displayed" href="themes/pb/assets/img/roadtrip/IMG_7383.jpg" data-lightbox="step1"></a>' +
-                    '<a class="not-displayed" href="themes/pb/assets/img/roadtrip/IMG_4260.jpg" data-lightbox="step1"></a>' +
-                '</div>' +
-            '</div>'
+        content:
+        '<div class="roadtrip-popup">' +
+        '<h1> <span>'+ infowindowStep +' #1</span> Las Vegas</h1>' +
+        '<p>' + infowindowText + '</p>' +
+        '<div class="row">' +
+        '<div class="col l4 m4 s4"><a href="themes/pb/assets/img/roadtrip/IMG7369.jpg" data-lightbox="step1"><img src="themes/pb/assets/img/roadtrip/IMG7369.jpg"></a></div>' +
+        '<div class="col l4 m4 s4"><a href="themes/pb/assets/img/roadtrip/IMG7335.jpg" data-lightbox="step1"><img src="themes/pb/assets/img/roadtrip/IMG7335.jpg"></a></div>' +
+        '<div class="col l4 m4 s4"><a href="themes/pb/assets/img/roadtrip/IMG4248.jpg" data-lightbox="step1"><img src="themes/pb/assets/img/roadtrip/IMG4248.jpg"></a></div>' +
+        '<a class="not-displayed" href="themes/pb/assets/img/roadtrip/IMG4190.jpg" data-lightbox="step1"></a>' +
+        '<a class="not-displayed" href="themes/pb/assets/img/roadtrip/IMG7383.jpg" data-lightbox="step1"></a>' +
+        '<a class="not-displayed" href="themes/pb/assets/img/roadtrip/IMG4260.jpg" data-lightbox="step1"></a>' +
+        '</div>' +
+        '</div>'
     });
     infowindows.push(infowindowA);
     markerA.addListener('click', function() {
@@ -120,16 +120,16 @@ function initMapRoadtrip() {
     infowindowB = new google.maps.InfoWindow({
         content:
         '<div class="roadtrip-popup">' +
-            '<h1> <span>'+ infowindowStep +' #2</span> Grand Canyon</h1>' +
-            '<p>' + infowindowText + '</p>' +
-            '<div class="row">' +
-                '<div class="col l4 m4 s4"><a href="themes/pb/assets/img/PB/GC01.jpg" data-lightbox="step2"><img src="themes/pb/assets/img/PB/GC01.jpg"></a></div>' +
-                '<div class="col l4 m4 s4"><a href="themes/pb/assets/img/roadtrip/IMG_4527.jpg" data-lightbox="step2"><img src="themes/pb/assets/img/roadtrip/IMG_4527.jpg"></a></div>' +
-                '<div class="col l4 m4 s4"><a href="themes/pb/assets/img/roadtrip/IMG_4483.jpg" data-lightbox="step2"><img src="themes/pb/assets/img/roadtrip/IMG_4483.jpg"></a></div>' +
-                '<a class="not-displayed" href="themes/pb/assets/img/roadtrip/IMG_7459.jpg" data-lightbox="step2"></a>' +
-                '<a class="not-displayed" href="themes/pb/assets/img/roadtrip/IMG_4370.jpg" data-lightbox="step2"></a>' +
-                '<a class="not-displayed" href="themes/pb/assets/img/roadtrip/IMG_4509.jpg" data-lightbox="step2"></a>' +
-            '</div>' +
+        '<h1> <span>'+ infowindowStep +' #2</span> Grand Canyon</h1>' +
+        '<p>' + infowindowText + '</p>' +
+        '<div class="row">' +
+        '<div class="col l4 m4 s4"><a href="themes/pb/assets/img/PB/GC01.jpg" data-lightbox="step2"><img src="themes/pb/assets/img/PB/GC01.jpg"></a></div>' +
+        '<div class="col l4 m4 s4"><a href="themes/pb/assets/img/roadtrip/IMG4527.jpg" data-lightbox="step2"><img src="themes/pb/assets/img/roadtrip/IMG4527.jpg"></a></div>' +
+        '<div class="col l4 m4 s4"><a href="themes/pb/assets/img/roadtrip/IMG4483.jpg" data-lightbox="step2"><img src="themes/pb/assets/img/roadtrip/IMG4483.jpg"></a></div>' +
+        '<a class="not-displayed" href="themes/pb/assets/img/roadtrip/IMG7459.jpg" data-lightbox="step2"></a>' +
+        '<a class="not-displayed" href="themes/pb/assets/img/roadtrip/IMG4370.jpg" data-lightbox="step2"></a>' +
+        '<a class="not-displayed" href="themes/pb/assets/img/roadtrip/IMG4509.jpg" data-lightbox="step2"></a>' +
+        '</div>' +
         '</div>'
     });
     infowindows.push(infowindowB);
@@ -156,14 +156,14 @@ function initMapRoadtrip() {
     infowindowC = new google.maps.InfoWindow({
         content:
         '<div class="roadtrip-popup">' +
-            '<h1> <span>'+ infowindowStep +' #3</span> Lake Powell</h1>' +
-            '<p>' + infowindowText + '</p>' +
-            '<div class="row">' +
-                '<div class="col l4 m4 s4"><a href="themes/pb/assets/img/roadtrip/IMG_4607.jpg" data-lightbox="step3"><img src="themes/pb/assets/img/roadtrip/IMG_4607.jpg"></a></div>' +
-                '<div class="col l4 m4 s4"><a href="themes/pb/assets/img/roadtrip/IMG_4621.jpg" data-lightbox="step3"><img src="themes/pb/assets/img/roadtrip/IMG_4621.jpg"></a></div>' +
-                '<div class="col l4 m4 s4"><a href="themes/pb/assets/img/roadtrip/IMG_4557.jpg" data-lightbox="step3"><img src="themes/pb/assets/img/roadtrip/IMG_4557.jpg"></a></div>' +
-                '<a class="not-displayed" href="themes/pb/assets/img/roadtrip/IMG_4533.jpg" data-lightbox="step3"></a>' +
-            '</div>' +
+        '<h1> <span>'+ infowindowStep +' #3</span> Lake Powell</h1>' +
+        '<p>' + infowindowText + '</p>' +
+        '<div class="row">' +
+        '<div class="col l4 m4 s4"><a href="themes/pb/assets/img/roadtrip/IMG4607.jpg" data-lightbox="step3"><img src="themes/pb/assets/img/roadtrip/IMG4607.jpg"></a></div>' +
+        '<div class="col l4 m4 s4"><a href="themes/pb/assets/img/roadtrip/IMG4621.jpg" data-lightbox="step3"><img src="themes/pb/assets/img/roadtrip/IMG4621.jpg"></a></div>' +
+        '<div class="col l4 m4 s4"><a href="themes/pb/assets/img/roadtrip/IMG4557.jpg" data-lightbox="step3"><img src="themes/pb/assets/img/roadtrip/IMG4557.jpg"></a></div>' +
+        '<a class="not-displayed" href="themes/pb/assets/img/roadtrip/IMG4533.jpg" data-lightbox="step3"></a>' +
+        '</div>' +
         '</div>'
     });
     infowindows.push(infowindowC);
@@ -192,19 +192,19 @@ function initMapRoadtrip() {
     infowindowD = new google.maps.InfoWindow({
         content:
         '<div class="roadtrip-popup">' +
-            '<h1> <span>'+ infowindowStep +' #4</span> Bryce Canyon</h1>' +
-            '<p>' + infowindowText + '</p>' +
-            '<div class="row">' +
-                '<div class="col l4 m4 s4"><a href="themes/pb/assets/img/roadtrip/IMG_4711.jpg" data-lightbox="step4"><img src="themes/pb/assets/img/roadtrip/IMG_4711.jpg"></a></div>' +
-                '<div class="col l4 m4 s4"><a href="themes/pb/assets/img/roadtrip/IMG_4721.jpg" data-lightbox="step4"><img src="themes/pb/assets/img/roadtrip/IMG_4721.jpg"></a></div>' +
-                '<div class="col l4 m4 s4"><a href="themes/pb/assets/img/roadtrip/IMG_4801.jpg" data-lightbox="step4"><img src="themes/pb/assets/img/roadtrip/IMG_4801.jpg"></a></div>' +
-                '<a class="not-displayed" href="themes/pb/assets/img/roadtrip/IMG_4742.jpg" data-lightbox="step4"></a>' +
-                '<a class="not-displayed" href="themes/pb/assets/img/roadtrip/IMG_4736.jpg" data-lightbox="step4"></a>' +
-                '<a class="not-displayed" href="themes/pb/assets/img/roadtrip/IMG_4698.jpg" data-lightbox="step4"></a>' +
-                '<a class="not-displayed" href="themes/pb/assets/img/roadtrip/IMG_4898.jpg" data-lightbox="step4"></a>' +
-                '<a class="not-displayed" href="themes/pb/assets/img/roadtrip/IMG_4849.jpg" data-lightbox="step4"></a>' +
-                '<a class="not-displayed" href="themes/pb/assets/img/roadtrip/IMG_4860.jpg" data-lightbox="step4"></a>' +
-            '</div>' +
+        '<h1> <span>'+ infowindowStep +' #4</span> Bryce Canyon</h1>' +
+        '<p>' + infowindowText + '</p>' +
+        '<div class="row">' +
+        '<div class="col l4 m4 s4"><a href="themes/pb/assets/img/roadtrip/IMG4711.jpg" data-lightbox="step4"><img src="themes/pb/assets/img/roadtrip/IMG4711.jpg"></a></div>' +
+        '<div class="col l4 m4 s4"><a href="themes/pb/assets/img/roadtrip/IMG4721.jpg" data-lightbox="step4"><img src="themes/pb/assets/img/roadtrip/IMG4721.jpg"></a></div>' +
+        '<div class="col l4 m4 s4"><a href="themes/pb/assets/img/roadtrip/IMG4801.jpg" data-lightbox="step4"><img src="themes/pb/assets/img/roadtrip/IMG4801.jpg"></a></div>' +
+        '<a class="not-displayed" href="themes/pb/assets/img/roadtrip/IMG4742.jpg" data-lightbox="step4"></a>' +
+        '<a class="not-displayed" href="themes/pb/assets/img/roadtrip/IMG4736.jpg" data-lightbox="step4"></a>' +
+        '<a class="not-displayed" href="themes/pb/assets/img/roadtrip/IMG4698.jpg" data-lightbox="step4"></a>' +
+        '<a class="not-displayed" href="themes/pb/assets/img/roadtrip/IMG4898.jpg" data-lightbox="step4"></a>' +
+        '<a class="not-displayed" href="themes/pb/assets/img/roadtrip/IMG4849.jpg" data-lightbox="step4"></a>' +
+        '<a class="not-displayed" href="themes/pb/assets/img/roadtrip/IMG4860.jpg" data-lightbox="step4"></a>' +
+        '</div>' +
         '</div>'
     });
     infowindows.push(infowindowD);
@@ -233,17 +233,17 @@ function initMapRoadtrip() {
     infowindowE = new google.maps.InfoWindow({
         content:
         '<div class="roadtrip-popup">' +
-            '<h1> <span>'+ infowindowStep +' #5</span> Death Valley</h1>' +
-            '<p>' + infowindowText + '</p>' +
-            '<div class="row">' +
-                '<div class="col l4 m4 s4"><a href="themes/pb/assets/img/roadtrip/IMG_5024.jpg" data-lightbox="step5"><img src="themes/pb/assets/img/roadtrip/IMG_5024.jpg"></a></div>' +
-                '<div class="col l4 m4 s4"><a href="themes/pb/assets/img/roadtrip/IMG_4920.jpg" data-lightbox="step5"><img src="themes/pb/assets/img/roadtrip/IMG_4920.jpg"></a></div>' +
-                '<div class="col l4 m4 s4"><a href="themes/pb/assets/img/roadtrip/IMG_4933.jpg" data-lightbox="step5"><img src="themes/pb/assets/img/roadtrip/IMG_4933.jpg"></a></div>' +
-                '<a class="not-displayed" href="themes/pb/assets/img/roadtrip/IMG_4943.jpg" data-lightbox="step5"></a>' +
-                '<a class="not-displayed" href="themes/pb/assets/img/roadtrip/IMG_4978.jpg" data-lightbox="step5"></a>' +
-                '<a class="not-displayed" href="themes/pb/assets/img/roadtrip/IMG_5056.jpg" data-lightbox="step5"></a>' +
-                '<a class="not-displayed" href="themes/pb/assets/img/roadtrip/IMG_5034.jpg" data-lightbox="step5"></a>' +
-            '</div>' +
+        '<h1> <span>'+ infowindowStep +' #5</span> Death Valley</h1>' +
+        '<p>' + infowindowText + '</p>' +
+        '<div class="row">' +
+        '<div class="col l4 m4 s4"><a href="themes/pb/assets/img/roadtrip/IMG5024.jpg" data-lightbox="step5"><img src="themes/pb/assets/img/roadtrip/IMG5024.jpg"></a></div>' +
+        '<div class="col l4 m4 s4"><a href="themes/pb/assets/img/roadtrip/IMG4920.jpg" data-lightbox="step5"><img src="themes/pb/assets/img/roadtrip/IMG4920.jpg"></a></div>' +
+        '<div class="col l4 m4 s4"><a href="themes/pb/assets/img/roadtrip/IMG4933.jpg" data-lightbox="step5"><img src="themes/pb/assets/img/roadtrip/IMG4933.jpg"></a></div>' +
+        '<a class="not-displayed" href="themes/pb/assets/img/roadtrip/IMG4943.jpg" data-lightbox="step5"></a>' +
+        '<a class="not-displayed" href="themes/pb/assets/img/roadtrip/IMG4978.jpg" data-lightbox="step5"></a>' +
+        '<a class="not-displayed" href="themes/pb/assets/img/roadtrip/IMG5056.jpg" data-lightbox="step5"></a>' +
+        '<a class="not-displayed" href="themes/pb/assets/img/roadtrip/IMG5034.jpg" data-lightbox="step5"></a>' +
+        '</div>' +
         '</div>'
     });
     infowindows.push(infowindowE);
@@ -272,15 +272,15 @@ function initMapRoadtrip() {
     infowindowF = new google.maps.InfoWindow({
         content:
         '<div class="roadtrip-popup">' +
-            '<h1> <span>'+ infowindowStep +' #6</span> Yosemite Park</h1>' +
-            '<p>' + infowindowText + '</p>' +
-            '<div class="row">' +
-                '<div class="col l4 m4 s4"><a href="themes/pb/assets/img/roadtrip/IMG_5074.jpg" data-lightbox="step6"><img src="themes/pb/assets/img/roadtrip/IMG_5074.jpg"></a></div>' +
-                '<div class="col l4 m4 s4"><a href="themes/pb/assets/img/roadtrip/IMG_5110.jpg" data-lightbox="step6"><img src="themes/pb/assets/img/roadtrip/IMG_5110.jpg"></a></div>' +
-                '<div class="col l4 m4 s4"><a href="themes/pb/assets/img/roadtrip/IMG_5197.jpg" data-lightbox="step6"><img src="themes/pb/assets/img/roadtrip/IMG_5197.jpg"></a></div>' +
-                '<a class="not-displayed" href="themes/pb/assets/img/roadtrip/IMG_5210.jpg" data-lightbox="step6"></a>' +
-                '<a class="not-displayed" href="themes/pb/assets/img/roadtrip/IMG_5228.jpg" data-lightbox="step6"></a>' +
-            '</div>' +
+        '<h1> <span>'+ infowindowStep +' #6</span> Yosemite Park</h1>' +
+        '<p>' + infowindowText + '</p>' +
+        '<div class="row">' +
+        '<div class="col l4 m4 s4"><a href="themes/pb/assets/img/roadtrip/IMG5074.jpg" data-lightbox="step6"><img src="themes/pb/assets/img/roadtrip/IMG5074.jpg"></a></div>' +
+        '<div class="col l4 m4 s4"><a href="themes/pb/assets/img/roadtrip/IMG5110.jpg" data-lightbox="step6"><img src="themes/pb/assets/img/roadtrip/IMG5110.jpg"></a></div>' +
+        '<div class="col l4 m4 s4"><a href="themes/pb/assets/img/roadtrip/IMG5197.jpg" data-lightbox="step6"><img src="themes/pb/assets/img/roadtrip/IMG5197.jpg"></a></div>' +
+        '<a class="not-displayed" href="themes/pb/assets/img/roadtrip/IMG5210.jpg" data-lightbox="step6"></a>' +
+        '<a class="not-displayed" href="themes/pb/assets/img/roadtrip/IMG5228.jpg" data-lightbox="step6"></a>' +
+        '</div>' +
         '</div>'
     });
     infowindows.push(infowindowF);
@@ -309,13 +309,13 @@ function initMapRoadtrip() {
     infowindowG = new google.maps.InfoWindow({
         content:
         '<div class="roadtrip-popup">' +
-            '<h1> <span>'+ infowindowStep +' #7</span> San Francisco</h1>' +
-            '<p>' + infowindowText + '</p>' +
-            '<div class="row">' +
-                '<div class="col l4 m4 s4"><a href="themes/pb/assets/img/roadtrip/SFO01.jpg" data-lightbox="step7"><img src="themes/pb/assets/img/roadtrip/SFO01.jpg"></a></div>' +
-                '<div class="col l4 m4 s4"><a href="themes/pb/assets/img/roadtrip/SFO02.jpg" data-lightbox="step7"><img src="themes/pb/assets/img/roadtrip/SFO02.jpg"></a></div>' +
-                '<div class="col l4 m4 s4"><a href="themes/pb/assets/img/roadtrip/SFO03.jpg" data-lightbox="step7"><img src="themes/pb/assets/img/roadtrip/SFO03.jpg"></a></div>' +
-            '</div>' +
+        '<h1> <span>'+ infowindowStep +' #7</span> San Francisco</h1>' +
+        '<p>' + infowindowText + '</p>' +
+        '<div class="row">' +
+        '<div class="col l4 m4 s4"><a href="themes/pb/assets/img/roadtrip/SFO01.jpg" data-lightbox="step7"><img src="themes/pb/assets/img/roadtrip/SFO01.jpg"></a></div>' +
+        '<div class="col l4 m4 s4"><a href="themes/pb/assets/img/roadtrip/SFO02.jpg" data-lightbox="step7"><img src="themes/pb/assets/img/roadtrip/SFO02.jpg"></a></div>' +
+        '<div class="col l4 m4 s4"><a href="themes/pb/assets/img/roadtrip/SFO03.jpg" data-lightbox="step7"><img src="themes/pb/assets/img/roadtrip/SFO03.jpg"></a></div>' +
+        '</div>' +
         '</div>'
     });
     infowindows.push(infowindowG);
@@ -342,13 +342,13 @@ function initMapRoadtrip() {
     infowindowH = new google.maps.InfoWindow({
         content:
         '<div class="roadtrip-popup">' +
-            '<h1> <span>'+ infowindowStep +' #8</span> Big Sur</h1>' +
-            '<p>' + infowindowText + '</p>' +
-            '<div class="row">' +
-                '<div class="col l4 m4 s4"><a href="themes/pb/assets/img/roadtrip/IMG_5315.jpg" data-lightbox="step8"><img src="themes/pb/assets/img/roadtrip/IMG_5315.jpg"></a></div>' +
-                '<div class="col l4 m4 s4"><a href="themes/pb/assets/img/roadtrip/BS01.jpg" data-lightbox="step8"><img src="themes/pb/assets/img/roadtrip/BS01.jpg"></a></div>' +
-                '<div class="col l4 m4 s4"><a href="themes/pb/assets/img/roadtrip/BS02.jpg" data-lightbox="step8"><img src="themes/pb/assets/img/roadtrip/BS02.jpg"></a></div>' +
-            '</div>' +
+        '<h1> <span>'+ infowindowStep +' #8</span> Big Sur</h1>' +
+        '<p>' + infowindowText + '</p>' +
+        '<div class="row">' +
+        '<div class="col l4 m4 s4"><a href="themes/pb/assets/img/roadtrip/IMG5315.jpg" data-lightbox="step8"><img src="themes/pb/assets/img/roadtrip/IMG5315.jpg"></a></div>' +
+        '<div class="col l4 m4 s4"><a href="themes/pb/assets/img/roadtrip/BS01.jpg" data-lightbox="step8"><img src="themes/pb/assets/img/roadtrip/BS01.jpg"></a></div>' +
+        '<div class="col l4 m4 s4"><a href="themes/pb/assets/img/roadtrip/BS02.jpg" data-lightbox="step8"><img src="themes/pb/assets/img/roadtrip/BS02.jpg"></a></div>' +
+        '</div>' +
         '</div>'
     });
     infowindows.push(infowindowH);
@@ -377,19 +377,19 @@ function initMapRoadtrip() {
     infowindowI = new google.maps.InfoWindow({
         content:
         '<div class="roadtrip-popup">' +
-            '<h1> <span>'+ infowindowStep +' #9</span> Los Angeles</h1>' +
-            '<p>' + infowindowText + '</p>' +
-            '<div class="row">' +
-                '<div class="col l4 m4 s4"><a href="themes/pb/assets/img/roadtrip/IMG_3936.jpg" data-lightbox="step9"><img src="themes/pb/assets/img/roadtrip/IMG_3936.jpg"></a></div>' +
-                '<div class="col l4 m4 s4"><a href="themes/pb/assets/img/roadtrip/LA01.jpg" data-lightbox="step9"><img src="themes/pb/assets/img/roadtrip/LA01.jpg"></a></div>' +
-                '<div class="col l4 m4 s4"><a href="themes/pb/assets/img/roadtrip/LA02.jpg" data-lightbox="step9"><img src="themes/pb/assets/img/roadtrip/LA02.jpg"></a></div>' +
-                '<a class="not-displayed" href="themes/pb/assets/img/roadtrip/IMG_3964.jpg" data-lightbox="step9"></a>' +
-                '<a class="not-displayed" href="themes/pb/assets/img/roadtrip/LA04.jpg" data-lightbox="step9"></a>' +
-                '<a class="not-displayed" href="themes/pb/assets/img/roadtrip/LA03.jpg" data-lightbox="step9"></a>' +
-                '<a class="not-displayed" href="themes/pb/assets/img/roadtrip/IMG_3906.jpg" data-lightbox="step9"></a>' +
-                '<a class="not-displayed" href="themes/pb/assets/img/roadtrip/IMG_3939.jpg" data-lightbox="step9"></a>' +
-                '<a class="not-displayed" href="themes/pb/assets/img/roadtrip/IMG_3974.jpg" data-lightbox="step9"></a>' +
-            '</div>' +
+        '<h1> <span>'+ infowindowStep +' #9</span> Los Angeles</h1>' +
+        '<p>' + infowindowText + '</p>' +
+        '<div class="row">' +
+        '<div class="col l4 m4 s4"><a href="themes/pb/assets/img/roadtrip/IMG3936.jpg" data-lightbox="step9"><img src="themes/pb/assets/img/roadtrip/IMG3936.jpg"></a></div>' +
+        '<div class="col l4 m4 s4"><a href="themes/pb/assets/img/roadtrip/LA01.jpg" data-lightbox="step9"><img src="themes/pb/assets/img/roadtrip/LA01.jpg"></a></div>' +
+        '<div class="col l4 m4 s4"><a href="themes/pb/assets/img/roadtrip/LA02.jpg" data-lightbox="step9"><img src="themes/pb/assets/img/roadtrip/LA02.jpg"></a></div>' +
+        '<a class="not-displayed" href="themes/pb/assets/img/roadtrip/IMG3964.jpg" data-lightbox="step9"></a>' +
+        '<a class="not-displayed" href="themes/pb/assets/img/roadtrip/LA04.jpg" data-lightbox="step9"></a>' +
+        '<a class="not-displayed" href="themes/pb/assets/img/roadtrip/LA03.jpg" data-lightbox="step9"></a>' +
+        '<a class="not-displayed" href="themes/pb/assets/img/roadtrip/IMG3906.jpg" data-lightbox="step9"></a>' +
+        '<a class="not-displayed" href="themes/pb/assets/img/roadtrip/IMG3939.jpg" data-lightbox="step9"></a>' +
+        '<a class="not-displayed" href="themes/pb/assets/img/roadtrip/IMG3974.jpg" data-lightbox="step9"></a>' +
+        '</div>' +
         '</div>'
     });
     infowindows.push(infowindowI);
@@ -440,6 +440,3 @@ function closeOtherIW(openIW, infowindows) {
         }
     }
 }
-
-
-

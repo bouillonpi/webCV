@@ -1,9 +1,3 @@
-title = "home"
-url = "/"
-layout = "standard"
-is_hidden = 0
-==
-
 {% partial "sidenav" %}
 
 <script>
@@ -37,9 +31,9 @@ is_hidden = 0
                 </div>
                 <div class="col l6 m6 s12">
                     {% if activeLocale == 'fr' %}
-                        <a href="{{ 'assets/doc/resume/CV-BOUILLON-FRENCH.pdf'| theme }}" download><div class="button-cv"><i class="fa fa-download"></i>Download CV</div></a>
+                    <a href="{{ 'assets/doc/resume/CV-BOUILLON-FRENCH.pdf'| theme }}" download><div class="button-cv"><i class="fa fa-download"></i>Download CV</div></a>
                     {% else %}
-                        <a href="{{ 'assets/doc/resume/CV-BOUILLON-ENGLISH.pdf'| theme }}" download><div class="button-cv"><i class="fa fa-download"></i>Download CV</div></a>
+                    <a href="{{ 'assets/doc/resume/CV-BOUILLON-ENGLISH.pdf'| theme }}" download><div class="button-cv"><i class="fa fa-download"></i>Download CV</div></a>
                     {% endif %}
                 </div>
             </div>
@@ -245,7 +239,7 @@ is_hidden = 0
                 </div>
 
                 <a class="experience-picture"
-                   href="{{ 'assets/img/roadtrip/IMG_4248.jpg'| theme }}"
+                   href="{{ 'assets/img/roadtrip/IMG4248.jpg'| theme }}"
                    data-title="{% if activeLocale == 'fr' %} Roadtrip de deux semaines dans l'Ouest Américain {% else %} Two-week roadtrip in Western US {% endif %}"
                    data-lightbox="picture-set-1">
                 </a>
