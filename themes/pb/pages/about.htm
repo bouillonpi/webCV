@@ -1,8 +1,13 @@
+title = "about"
+url = "/about"
+layout = "standard"
+is_hidden = 0
+==
 <script>
     var activeLocale = "{{activeLocale}}";
 </script>
 <script src="{{ 'assets/script/roadtrip.js' |theme }}"></script>
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDKHYdkvjUeSFl7VQqI8vioY_xTfJg_FhQ&callback=initMapRoadtrip" async defer></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDtKaSUKqH_s5JnJZ8ZqwnRuHb4nAECxx8&callback=initMapRoadtrip" async defer></script>
 
 <!------------------------------------------------>
 
@@ -37,39 +42,6 @@
         <div class="hobbies row">
 
             <div class="col l4 m6 s6">
-                <i class="fa fa-hand-paper-o"></i>
-                <h1>
-                    {% if activeLocale == 'fr' %} Arts <br class="hide-on-med-and-up"> Martiaux
-                    {% else %} Martial Arts {% endif %}
-                </h1>
-                <p>
-                    {% if activeLocale == 'fr' %} Wing Chun Kung Fu ({{ "now"|date('Y') - 2014 }} ans) et Karaté ({{ "now"|date('Y') - 2015 }} ans) - Discipline et maîtrise de soi
-                    {% else %}  Wing Chun Kung Fu ({{ "now"|date('Y') - 2014 }} years) and Karate ({{ "now"|date('Y') - 2015 }} years) - Discipline and self-control {% endif %}
-                </p>
-            </div>
-
-            <div class="col l4 m6 s6">
-                <i class="fa fa-gamepad"></i>
-                <h1>
-                    {% if activeLocale == 'fr' %} Jeux <br class="hide-on-med-and-up"> vidéos
-                    {% else %} Video Games {% endif %}
-                </h1>
-                <p>League of Legends (Gold 5 NA), Battlefield 1, PUBG, Warcraft III, Starcraft II</p>
-            </div>
-
-            <div class="col l4 m6 s6">
-                <i class="fa fa-plane"></i>
-                <h1>
-                    {% if activeLocale == 'fr' %} Aventure
-                    {% else %} Adventure {% endif %}
-                </h1>
-                <p>
-                    {% if activeLocale == 'fr' %} Roadtrip en Californie, éco-volontariat dans une ferme Irlandaise, Espagne
-                    {% else %} Western US Roadtrip in 2017, Ecovolunteering in an Irish farm, Roadtrips in Spain {% endif %}
-                </p>
-            </div>
-
-            <div class="col l4 m6 s6">
                 <i class="fa fa-camera-retro"></i>
                 <h1>
                     {% if activeLocale == 'fr' %} Audiovisuel
@@ -88,6 +60,39 @@
                     {% if activeLocale == 'fr' %} Réalisation de logos, affiches d'événements, dessin et webdesign
                     {% else %} Designed company and association logos, event posters, business cards and banners {% endif %}
                 </p>
+            </div>
+
+            <div class="col l4 m6 s6">
+                <i class="fa fa-plane"></i>
+                <h1>
+                    {% if activeLocale == 'fr' %} Aventure
+                    {% else %} Adventure {% endif %}
+                </h1>
+                <p>
+                    {% if activeLocale == 'fr' %} Roadtrip en Californie, éco-volontariat dans une ferme Irlandaise, Espagne
+                    {% else %} Western US Roadtrip in 2017, Ecovolunteering in an Irish farm, Roadtrips in Spain {% endif %}
+                </p>
+            </div>
+
+            <div class="col l4 m6 s6">
+                <i class="fa fa-hand-paper-o"></i>
+                <h1>
+                    {% if activeLocale == 'fr' %} Arts <br class="hide-on-med-and-up"> Martiaux
+                    {% else %} Martial Arts {% endif %}
+                </h1>
+                <p>
+                    {% if activeLocale == 'fr' %} Wing Chun Kung Fu ({{ "now"|date('Y') - 2014 }} ans) et Karaté ({{ "now"|date('Y') - 2015 }} ans) - Discipline et maîtrise de soi
+                    {% else %}  Wing Chun Kung Fu ({{ "now"|date('Y') - 2014 }} years) and Karate ({{ "now"|date('Y') - 2015 }} years) - Discipline and self-control {% endif %}
+                </p>
+            </div>
+
+            <div class="col l4 m6 s6">
+                <i class="fa fa-gamepad"></i>
+                <h1>
+                    {% if activeLocale == 'fr' %} Jeux <br class="hide-on-med-and-up"> vidéos
+                    {% else %} Video Games {% endif %}
+                </h1>
+                <p>League of Legends (Gold 5 NA), Battlefield 1, PUBG, Warcraft III, Starcraft II</p>
             </div>
 
             <div class="col l4 m6 s6">
@@ -209,7 +214,7 @@
                 en creusant une tranchée avec mon père le long d'une vieille bâtisse landaise. Peu de temps après, je me procure un détecteur de métaux
                 et commence à arpenter les sentiers de la forêt des Landes. Bien que cette forêt soit jeune, son histoire n'en est pas moins riche.
                 Il y a près de 200 ans, la région des Landes était marécageuse et ses terres difficilement cultivables.
-                Tombé amoureux de la région, Napoléon III entreprend d'assainir les marécages et stabiliser les dunes en par la
+                Tombé amoureux de la région, Napoléon III entreprend d'assainir les marécages et stabiliser les dunes par la
                 plantation massive de pins maritimes, aujourd'hui devenu l'arbre emblèmatique de la région.
                 Cette nouvelle forêt apporte avec elle une activité économique très lucrative : le gemmage.
                 Ce métier consiste à récolter la résine des pins en plantant une bandelette de zinc dans le tronc de l'arbre pour que la sève s'écoule dans un pot.

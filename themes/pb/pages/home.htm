@@ -1,3 +1,8 @@
+title = "home"
+url = "/"
+layout = "standard"
+is_hidden = 0
+==
 {% partial "sidenav" %}
 
 <script>
@@ -7,7 +12,7 @@
 </script>
 
 <script src="{{ 'assets/script/map.js' |theme }}"></script>
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDKHYdkvjUeSFl7VQqI8vioY_xTfJg_FhQ&callback=initMap" async defer></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDtKaSUKqH_s5JnJZ8ZqwnRuHb4nAECxx8&callback=initMap" async defer></script>
 
 <!------------------------------------------------>
 
@@ -239,14 +244,8 @@
                 </div>
 
                 <a class="experience-picture"
-                   href="{{ 'assets/img/roadtrip/IMG4248.jpg'| theme }}"
-                   data-title="{% if activeLocale == 'fr' %} Roadtrip de deux semaines dans l'Ouest Américain {% else %} Two-week roadtrip in Western US {% endif %}"
-                   data-lightbox="picture-set-1">
-                </a>
-
-                <a class="experience-picture"
                    href="{{ 'assets/img/PB/GC01.jpg'| theme }}"
-                   data-title="Grand Canyon - Arizona"
+                   data-title="{% if activeLocale == 'fr' %} Roadtrip de deux semaines dans l'Ouest Américain {% else %} Two-week roadtrip in Western US {% endif %}"
                    data-lightbox="picture-set-1">
                 </a>
 
