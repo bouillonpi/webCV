@@ -30,6 +30,12 @@ $("#about-scroll").click(function() {
     }, 800);
 });
 
+$(".backtotop").click(function() {
+    $('html, body').animate({
+        scrollTop: $('.nav-wrapper').offset().top
+    }, 800);
+});
+
 // https://macarthur.me/typeit
 // https://macarthur.me/typeit/docs
 $('#typeWriteHome-fr').typeIt({

@@ -5,6 +5,8 @@
     height:100%;
     width:100%;
     margin-top: -70px;
+    position: relative;
+    z-index: 6;
 }
 
 .home-hero .hero-content {
@@ -113,6 +115,9 @@
     border-top: 10px solid #e2e2e2;
     border-bottom: 10px solid #e2e2e2;
     text-align: center;
+    position: relative;
+    z-index: 6;
+    background: #fff;
 }
 
 .home-intro > .container > img {
