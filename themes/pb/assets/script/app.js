@@ -6,12 +6,6 @@ $( document ).ready(function(){
 
     $('ul.tabs').tabs();
 
-    $('.tooltipped').tooltip({
-        delay: 50,
-        position: 'bottom',
-        html: true
-    });
-
     $('.scrollspy').scrollSpy({
         scrollOffset: 0
     });
@@ -34,6 +28,10 @@ $(".backtotop").click(function() {
     $('html, body').animate({
         scrollTop: $('.nav-wrapper').offset().top
     }, 800);
+});
+
+$( ".locale-dropdown-trigger" ).click(function() {
+    $( ".locale-dropdown" ).toggleClass("locale-dropdown-active");
 });
 
 // https://macarthur.me/typeit

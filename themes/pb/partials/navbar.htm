@@ -35,22 +35,20 @@
             <li class="language-picker">
                 <section>
                     {% if activeLocale == 'fr' %}
-                        <a href="#"
-                           class="tooltipped"
-                           data-request="onSwitchLocale"
-                           data-request-data="locale: 'en'"
-                           data-tooltip="<div class='language-tooltip'>Change language to English</div>">
-                            <img src="{{ 'assets/img/flags/FR.png'|theme }}">
-                        </a>
+                        <img class="locale-dropdown-trigger" src="{{ 'assets/img/flags/FR.png'|theme }}">
+                        <div class="locale-dropdown">
+                            <a href="#" data-request="onSwitchLocale" data-request-data="locale: 'en'">
+                                <img src="{{ 'assets/img/flags/US.png'|theme }}">
+                            </a>
+                        </div>
                     {% endif %}
                     {% if activeLocale == 'en' %}
-                        <a href="#"
-                           class="tooltipped"
-                           data-request="onSwitchLocale"
-                           data-request-data="locale: 'fr'"
-                           data-tooltip="<div class='language-tooltip'>Changer la langue en Français</div>">
-                            <img src="{{ 'assets/img/flags/US.png'|theme }}">
-                        </a>
+                        <img class="locale-dropdown-trigger" src="{{ 'assets/img/flags/US.png'|theme }}">
+                        <div class="locale-dropdown">
+                            <a href="#" data-request="onSwitchLocale" data-request-data="locale: 'fr'">
+                                <img src="{{ 'assets/img/flags/FR.png'|theme }}">
+                            </a>
+                        </div>
                     {% endif %}
                 </section>
             </li>

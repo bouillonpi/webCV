@@ -76,8 +76,12 @@ nav ul .contact-button a:hover {
     transition: all 0.2s;
 }
 
+/* ---------------------------------------------- */
+/* ---------------------------------------------- */
+
 nav ul .language-picker {
     background-color: transparent!important;
+    position: relative;
 }
 
 nav ul .language-picker > section {
@@ -87,25 +91,59 @@ nav ul .language-picker > section {
     height: 25px;
 }
 
-nav ul .language-picker a {
+nav ul .language-picker > section > img {
     padding: 0;
     width: 25px;
     height: 25px;
+    display: block;
+    cursor: pointer;
 }
 
-nav ul .language-picker a img {
+nav ul .language-picker > section > .locale-dropdown-active {
+    opacity: 1!important;
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -ms-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    transition: all 0.2s;
+}
+
+nav ul .language-picker > section > .locale-dropdown {
+    position: absolute;
+    top: 70px;
+    left: -20px;
+    padding: 15px 20px;
+    background: #565656;
+    opacity: 0;
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -ms-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    transition: all 0.2s;
+}
+
+nav ul .language-picker > section > .locale-dropdown:before {
+    position: absolute;
+    content: '';
+    top: -10px;
+    left: 24px;
+    width: 0;
+    height: 0;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-bottom: 10px solid #565656;
+}
+
+nav ul .language-picker > section > .locale-dropdown > a,
+nav ul .language-picker > section > a {
+    width: 25px;
+    padding: 0;
+}
+
+nav ul .language-picker > section > .locale-dropdown > a > img,
+nav ul .language-picker > section > a > img {
     width: 25px;
     display: block;
-}
-
-.backdrop {
-    background-color: transparent;
-}
-
-.language-tooltip {
-    background: #484848;
-    margin-top: -4px;
-    padding: 15px 20px;
 }
 
 /* ---------------------------------------------- */
@@ -115,6 +153,10 @@ nav .button-collapse i {
     color: #5a5a5a;
     font-size: 24px;
     line-height: 70px!important;
+}
+
+#sidenav-overlay {
+    z-index: 8;
 }
 
 nav .side-nav li {
