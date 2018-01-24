@@ -207,10 +207,10 @@
 }
 
 .home-education .cover-picture {
-    background: url(../img/EISTI.jpg);
+    background: url(../img/PB/diplome01.jpg);
     background-size: cover;
     background-position: center;
-    height: 360px;
+    height: 450px;
     border: 8px solid #fff;
 }
 
@@ -254,6 +254,7 @@
 .home-education .cursus {
     background: #dadada;
     margin-top: 30px;
+    margin-bottom: 35px;
     border-left: 5px solid #80b5df;
     padding-top: 20px;
     padding-bottom: 25px;
@@ -274,6 +275,34 @@
     font-family: ProximaBold, sans-serif;
     color: #484848;
     padding-right: 15px;
+}
+
+.home-education .call-to-action {
+    cursor: pointer;
+    background: #80b5df;
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 14px;
+    margin-right: 5px;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.home-education .call-to-action:hover {
+    background: #72a1c5;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.home-education .call-to-action i {
+    margin-right: 8px;
 }
 
 /* ---------------------------------------------- */
