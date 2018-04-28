@@ -42,6 +42,15 @@ is_hidden = 0
         <div class="hobbies row">
 
             <div class="col l4 m6 s6">
+                <i class="fa fa-gamepad"></i>
+                <h1>
+                    {% if activeLocale == 'fr' %} Jeux <br class="hide-on-med-and-up"> vidéos
+                    {% else %} Video Games {% endif %}
+                </h1>
+                <p>PUBG, League of Legends, Battlefield 1, Warcraft III, Starcraft II</p>
+            </div>
+
+            <div class="col l4 m6 s6">
                 <i class="fa fa-camera-retro"></i>
                 <h1>
                     {% if activeLocale == 'fr' %} Audiovisuel
@@ -84,15 +93,6 @@ is_hidden = 0
                     {% if activeLocale == 'fr' %} Wing Chun Kung Fu ({{ "now"|date('Y') - 2014 }} ans) et Karaté ({{ "now"|date('Y') - 2015 }} ans) - Discipline et maîtrise de soi
                     {% else %}  Wing Chun Kung Fu ({{ "now"|date('Y') - 2014 }} years) and Karate ({{ "now"|date('Y') - 2015 }} years) - Discipline and self-control {% endif %}
                 </p>
-            </div>
-
-            <div class="col l4 m6 s6">
-                <i class="fa fa-gamepad"></i>
-                <h1>
-                    {% if activeLocale == 'fr' %} Jeux <br class="hide-on-med-and-up"> vidéos
-                    {% else %} Video Games {% endif %}
-                </h1>
-                <p>League of Legends (Gold 5 NA), Battlefield 1, PUBG, Warcraft III, Starcraft II</p>
             </div>
 
             <div class="col l4 m6 s6">

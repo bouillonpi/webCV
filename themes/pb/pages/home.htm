@@ -6,8 +6,8 @@ is_hidden = 0
 {% partial "sidenav" %}
 
 <script>
-    var latitude = 43.604652;
-    var longitude = 1.4442090;
+    var latitude = 45.501689;
+    var longitude = -73.567256;
     var zoom = 12;
 </script>
 
@@ -23,8 +23,8 @@ is_hidden = 0
             {% if activeLocale == 'fr' %} Ingénieur logiciel bilingue diplômé de l'EISTI
             {% else %} Software Engineer graduated from EISTI, bilingual French/English {% endif %}
             <br class="hide-on-small-and-down">
-            {% if activeLocale == 'fr' %} Disponible dès Janvier 2018 pour premier emploi
-            {% else %} Available for first opportunity in January 2018 {% endif %}
+            {% if activeLocale == 'fr' %} Développeur Front-End Javascript chez Ludia Montréal
+            {% else %} Javascript Front-End Developer at Ludia Montréal {% endif %}
         </h2>
         <div class="call-to-action">
             <div class="row">
@@ -79,12 +79,12 @@ is_hidden = 0
             <div class="col l4 m6 s6">
                 <i class="fa fa-cubes"></i>
                 <h1>
-                    {% if activeLocale == 'fr' %} Stages
-                    {% else %} Internships {% endif %}
+                    {% if activeLocale == 'fr' %} Expérience
+                    {% else %} Experience {% endif %}
                 </h1>
                 <p>
-                    {% if activeLocale == 'fr' %} Trois stages développement web full stack dont deux aux États-Unis
-                    {% else %} Three full-stack web development internships, two of which in the USA {% endif %}
+                    {% if activeLocale == 'fr' %} Une expérience à Montréal et trois stages développement web full stack
+                    {% else %} One work experience in Montreal and three full-stack web development internships {% endif %}
                 </p>
             </div>
 
@@ -121,7 +121,7 @@ is_hidden = 0
             <div class="col l4 m6 s6">
                 <i class="fa fa-shield"></i>
                 <h1>Expertise</h1>
-                <p>AngularJS | Angular 4 | Java | Scala | UI/UX | HTML/CSS/JS</p>
+                <p>AngularJS | Angular 4 | Javascript | Scala | Java | UI/UX | HTML/CSS/JS</p>
             </div>
 
         </div>
@@ -159,7 +159,7 @@ is_hidden = 0
                     </ul>
 
                     <a href="{{ 'assets/doc/recommandation/LOR-EISTI.pdf'| theme }}" target="_blank" class="call-to-action">
-                        <i class="fa fa-envelope-o"></i>
+                        <i class="fa fa-download"></i>
                         {% if activeLocale == 'fr' %} Lettre de recommandation de la directrice {% else %} Letter of recommandation from the director {% endif %}
                     </a>
 
@@ -182,6 +182,67 @@ is_hidden = 0
     </div>
 
     <section id="cd-timeline">
+
+        <!-- LUDIA -->
+        <div class="cd-timeline-block">
+            <div class="cd-timeline-img"><img src="{{ 'assets/img/flags/CA.png'| theme }}"></div>
+            <div class="cd-timeline-content">
+
+                <div class="row experience-title">
+                    <div class="col l2 s12 logo-company"><img src="{{ 'assets/img/logos/ludia.png'| theme }}"></div>
+                    <div class="col l10 s12">
+                        <h2>
+                            {% if activeLocale == 'fr' %} Ingénieur Front End Javascript
+                            {% else %} Front End Javascript Engineer {% endif %}
+                        </h2>
+                    </div>
+                </div>
+
+                <h3><i class="fa fa-map-marker"></i> LUDIA | <a href="https://www.ludia.com" target="_blank">www.ludia.com</a></h3>
+                <h3><i class="fa fa-clock-o"></i>
+                    {% if activeLocale == 'fr' %} Avril 2018 - Aujourd'hui
+                    {% else %} April 2018 - Today {% endif %}
+                </h3>
+                <h3><i class="fa fa-globe"></i>
+                    {% if activeLocale == 'fr' %} Montréal, Canada
+                    {% else %} Montréal, Canada {% endif %}
+                </h3>
+
+                <p>
+                    {% if activeLocale == 'fr' %} Développement d'une application web interne qui permet la supervision et le paramétrage des jeux vidéos développés par Ludia.
+                    {% else %} As part of the CoreTech team, I develop the internal web application that manages Ludia video games settings. {% endif %}
+                </p>
+
+                <ul class="tasks-list">
+                    <li><i class="fa fa-circle"></i>{% if activeLocale == 'fr' %} Développement Web Front End {% else %} Front End web development {% endif %}</li>
+                    <li><i class="fa fa-circle"></i>{% if activeLocale == 'fr' %} Migration de l'application vers Angular 4+ {% else %} Application migration to Angular 4+ {% endif %}</li>
+                    <li><i class="fa fa-circle"></i>{% if activeLocale == 'fr' %} Utilisation des méthodes Agiles et Scrum {% else %} Agile approach and Scrum {% endif %}</li>
+                </ul>
+
+                <ul class="chips-list">
+                    <li class="chip">AngularJS</li>
+                    <li class="chip">Angular 4+</li>
+                    <li class="chip">SASS</li>
+                    <li class="chip">ESLint</li>
+                    <li class="chip">Jasmine</li>
+                    <li class="chip">Karma</li>
+                    <li class="chip">Gulp</li>
+                    <li class="chip">Npm</li>
+                    <li class="chip">JIRA</li>
+                    <li class="chip">Confluence</li>
+                    <li class="chip">Bitbucket</li>
+                </ul>
+
+                <div class="actions">
+                    <a href="https://www.ludia.com" target="_blank" class="call-to-action media">
+                        <i class="fa fa-globe"></i>
+                        {% if activeLocale == 'fr' %} Site Ludia {% else %} Ludia website {% endif %}
+                    </a>
+                </div>
+
+                <span class="cd-date">2018</span>
+            </div>
+        </div>
 
         <!-- OBERTHUR 2017 -->
         <div class="cd-timeline-block">
@@ -236,15 +297,8 @@ is_hidden = 0
                 </ul>
 
                 <div class="actions">
-                    <a href="{{ 'assets/img/OT/WF02.jpg'| theme }}"
-                       data-title="{% if activeLocale == 'fr' %} The Watch Factory - Bureaux d'IDEMIA Boston {% else %} The Watch Factory - IDEMIA's Boston office {% endif %}"
-                       data-lightbox="picture-set-1"
-                       class="call-to-action media">
-                        <i class="fa fa-th"></i>
-                        {% if activeLocale == 'fr' %} Voir photos {% else %} Pictures {% endif %}
-                    </a>
                     <a href="{{ 'assets/doc/recommandation/LoR-IDEMIA.pdf'| theme }}" target="_blank" class="call-to-action">
-                        <i class="fa fa-envelope-o"></i>
+                        <i class="fa fa-download"></i>
                         {% if activeLocale == 'fr' %} Lettre de recommandation du directeur {% else %} Letter of recommandation from the director {% endif %}
                     </a>
                 </div>
@@ -307,36 +361,11 @@ is_hidden = 0
                 </ul>
 
                 <div class="actions">
-                    <a href="{{ 'assets/img/OT/WF01.jpg'| theme }}"
-                       data-title="{% if activeLocale == 'fr' %} Bureaux de Oberthur Technologies Boston {% else %} Oberthur Technologies Boston office {% endif %}"
-                       data-lightbox="picture-set-2"
-                       class="call-to-action media">
-                        <i class="fa fa-th"></i>
-                        {% if activeLocale == 'fr' %} Voir photos {% else %} Pictures {% endif %}
-                    </a>
-                    <a href="http://www.idemia.com/" target="_blank" class="call-to-action">
+                    <a href="http://www.idemia.com/" target="_blank" class="call-to-action media">
                         <i class="fa fa-globe"></i>
                         {% if activeLocale == 'fr' %} Site IDEMIA {% else %} IDEMIA Website {% endif %}
                     </a>
                 </div>
-
-                <a class="experience-picture"
-                   href="{{ 'assets/img/NYC01.jpg'| theme }}"
-                   data-title="{% if activeLocale == 'fr' %} Vue de Manhattan depuis la Statue de la Liberté {% else %} Manhattan view from the Statue of Liberty {% endif %}"
-                   data-lightbox="picture-set-2">
-                </a>
-
-                <a class="experience-picture"
-                   href="{{ 'assets/img/OT/NYC02.jpg'| theme }}"
-                   data-title="{% if activeLocale == 'fr' %} Coucher de soleil à New York City {% else %} Sunset view at NYC {% endif %}"
-                   data-lightbox="picture-set-2">
-                </a>
-
-                <a class="experience-picture"
-                   href="{{ 'assets/img/OT/NYC01.jpg'| theme }}"
-                   data-title="{% if activeLocale == 'fr' %} Manhattan depuis l'Empire State Building {% else %} Manhattan from the Empire State Building {% endif %}"
-                   data-lightbox="picture-set-2">
-                </a>
 
                 <span class="cd-date">2016</span>
             </div>
@@ -512,14 +541,7 @@ is_hidden = 0
                 </ul>
 
                 <div class="actions">
-                    <a href="{{ 'assets/img/OT/SS01.jpg'| theme }}"
-                       data-title="{% if activeLocale == 'fr' %} Technopole Hélioparc - Bureaux de Sopra Steria Pau {% else %} Technopole Hélioparc - Sopra Steria Pau office {% endif %}"
-                       data-lightbox="picture-set-4"
-                       class="call-to-action media">
-                        <i class="fa fa-th"></i>
-                        {% if activeLocale == 'fr' %} Voir photos {% else %} Pictures {% endif %}
-                    </a>
-                    <a href="https://www.soprasteria.com" target="_blank" class="call-to-action">
+                    <a href="https://www.soprasteria.com" target="_blank" class="call-to-action media">
                         <i class="fa fa-globe"></i>
                         {% if activeLocale == 'fr' %} Site SopraSteria {% else %} SopraSteria Website {% endif %}
                     </a>
