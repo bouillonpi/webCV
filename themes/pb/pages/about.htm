@@ -41,7 +41,7 @@ is_hidden = 0
 
         <div class="hobbies row">
 
-            <div class="col l4 m6 s6">
+            <div class="col l4 m12 s12">
                 <i class="fa fa-gamepad"></i>
                 <h1>
                     {% if activeLocale == 'fr' %} Jeux <br class="hide-on-med-and-up"> vidéos
@@ -50,28 +50,7 @@ is_hidden = 0
                 <p>PUBG, League of Legends, Battlefield 1, Warcraft III, Starcraft II</p>
             </div>
 
-            <div class="col l4 m6 s6">
-                <i class="fa fa-camera-retro"></i>
-                <h1>
-                    {% if activeLocale == 'fr' %} Audiovisuel
-                    {% else %} Audiovisual {% endif %}
-                </h1>
-                <p>
-                    {% if activeLocale == 'fr' %} Co-fondateur association vidéo-montage, Caméraman du youtuber ZeratoR
-                    {% else %} Cofounder of a video editing association, Cameraman of the French youtuber ZeratoR {% endif %}
-                </p>
-            </div>
-
-            <div class="col l4 m6 s6">
-                <i class="fa fa-pencil"></i>
-                <h1>Design</h1>
-                <p>
-                    {% if activeLocale == 'fr' %} Réalisation de logos, affiches d'événements, dessin et webdesign
-                    {% else %} Designed company and association logos, event posters, business cards and banners {% endif %}
-                </p>
-            </div>
-
-            <div class="col l4 m6 s6">
+            <div class="col l4 m12 s12">
                 <i class="fa fa-plane"></i>
                 <h1>
                     {% if activeLocale == 'fr' %} Aventure
@@ -83,105 +62,17 @@ is_hidden = 0
                 </p>
             </div>
 
-            <div class="col l4 m6 s6">
-                <i class="fa fa-hand-paper-o"></i>
-                <h1>
-                    {% if activeLocale == 'fr' %} Arts <br class="hide-on-med-and-up"> Martiaux
-                    {% else %} Martial Arts {% endif %}
-                </h1>
+            <div class="col l4 m12 s12">
+                <i class="fas fa-pen-nib"></i>
+                <h1>Design</h1>
                 <p>
-                    {% if activeLocale == 'fr' %} Wing Chun Kung Fu ({{ "now"|date('Y') - 2014 }} ans) et Karaté ({{ "now"|date('Y') - 2015 }} ans) - Discipline et maîtrise de soi
-                    {% else %}  Wing Chun Kung Fu ({{ "now"|date('Y') - 2014 }} years) and Karate ({{ "now"|date('Y') - 2015 }} years) - Discipline and self-control {% endif %}
-                </p>
-            </div>
-
-            <div class="col l4 m6 s6">
-                <i class="fa fa-magnet"></i>
-                <h1>
-                    {% if activeLocale == 'fr' %} Détection
-                    {% else %} Metal Detecting {% endif %}
-                </h1>
-                <p>
-                    {% if activeLocale == 'fr' %} Détection de métaux en France - Meilleure trouvaille : pièce datant de 1624
-                    {% else %} Metal Detecting in South-West France - Best finding: a bronze coin dated 1624 {% endif %}
+                    {% if activeLocale == 'fr' %} Réalisation de logos, affiches d'événements, dessin et webdesign
+                    {% else %} Designed company and association logos, event posters, business cards and banners {% endif %}
                 </p>
             </div>
 
         </div>
 
-    </div>
-</section>
-
-<!------------------------------------------------>
-
-<section class="about-onfocus">
-    <div class="container">
-
-        <img src="{{ 'assets/img/onfocus/onfocus.png'| theme }}">
-
-        <div class="block-title">
-            <h1>
-                {% if activeLocale == 'fr' %} Association Vidéo-Photo-Montage
-                {% else %} Video-Photo-Montage Association {% endif %}
-            </h1>
-        </div>
-
-        <div class="container-fluid">
-            <div class="row">
-
-                <div class="col l7 m12 s12 cover-picture hide-on-med-and-down"></div>
-
-                <div class="col l5 m12 s12">
-                    <div class="content-container">
-                        <h2><i class="fa fa-user"></i>
-                            {% if activeLocale == 'fr' %} Cofondateur - Caméraman - Graphiste de l'association
-                            {% else %} Cofounder - Cameraman - Designer of the association {% endif %}
-                        </h2>
-                        <h2><i class="fa fa-cog"></i>
-                            {% if activeLocale == 'fr' %}  Investissement matériel audiovisuel : +5000€
-                            {% else %} Audiovisual equipment investment: +5000€ {% endif %}
-                        </h2>
-                        <h2><i class="fa fa-map-marker"></i>
-                            {% if activeLocale == 'fr' %} Équipe vidéo officielle du youtuber
-                            {% else %} Official video team of the youtuber {% endif %}
-                            <a href="http://zerator.com/" target="_blank">ZeratoR</a>
-                        </h2>
-
-                        <ul class="details">
-                            <li>
-                                <span>{% if activeLocale == 'fr' %} Équipe {% else %} Team {% endif %}</span>
-                                <span>+10 {% if activeLocale == 'fr' %} membres {% else %} members {% endif %}</span>
-                            </li>
-                            <li>
-                                <span>{% if activeLocale == 'fr' %} Vidéos {% else %} Videos {% endif %}</span>
-                                <span>+30 {% if activeLocale == 'fr' %} réalisations {% else %} projects {% endif %}</span>
-                            </li>
-                            <li>
-                                <span>Youtube</span>
-                                <span>+700 000 {% if activeLocale == 'fr' %} vues {% else %} views {% endif %}</span>
-                            </li>
-                            <li>
-                                <span>{% if activeLocale == 'fr' %} Caméra {% else %} Camera {% endif %}</span>
-                                <span>Black Magic Cinema</span>
-                            </li>
-                        </ul>
-
-                        <div class="actions">
-                            <a href="{{ 'assets/img/onfocus/of2.jpg'| theme }}" data-lightbox="picture-set-award" class="call-to-action media">
-                                <i class="fa fa-th"></i>
-                                {% if activeLocale == 'fr' %} Voir photos
-                                {% else %} Pictures {% endif %}
-                            </a>
-                            <a href="http://www.onfocus.fr" target="_blank" class="call-to-action"><i class="fa fa-globe"></i>www.onfocus.fr</a>
-                        </div>
-
-                        <a class="experience-picture" href="{{ 'assets/img/onfocus/of1.jpg'| theme }}" data-lightbox="picture-set-award"></a>
-
-                    </div>
-                </div>
-
-            </div>
-        </div>
     </div>
 </section>
 
