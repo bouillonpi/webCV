@@ -13,6 +13,12 @@
     # RewriteBase /
 
     ##
+    ## Hide index.php in URL
+    ##
+    RewriteCond %{THE_REQUEST} /index.php HTTP
+    RewriteRule (.*)index.php$ /$1 [R=301,L]
+
+    ##
     ## Black listed folders
     ##
     RewriteRule ^bootstrap/.* index.php [L,NC]
@@ -49,13 +55,5 @@
     ##
     RewriteCond %{REQUEST_FILENAME} !-f
     RewriteRule ^index.php/(.*)$ /$1 [L]
-
-    ##
-    ## Force secure connection
-    ##
-    RewriteCond %{HTTP:X-Forwarded-Proto} =http [OR]
-    RewriteCond %{HTTP:X-Forwarded-Proto} =""
-    RewriteCond %{HTTPS} !=on
-    RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 
 </IfModule>
