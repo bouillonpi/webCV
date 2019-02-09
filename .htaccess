@@ -16,7 +16,6 @@
     ## Hide index.php in URL
     ##
     RewriteCond %{REQUEST_FILENAME} -f
-    RewriteCond %{REQUEST_FILENAME} \.php$
     RewriteRule ^index.php/(.*)$ /$1 [L,R=301]
 
     ##
