@@ -15,8 +15,9 @@
     ##
     ## Hide index.php in URL
     ##
-    RewriteCond %{THE_REQUEST} /index.php HTTP
-    RewriteRule (.*)index.php$ /$1 [R=301,L]
+    RewriteCond %{REQUEST_FILENAME} -f
+    RewriteCond %{REQUEST_FILENAME} \.php$
+    RewriteRule ^index.php/(.*)$ /$1 [L,R=301]
 
     ##
     ## Black listed folders
