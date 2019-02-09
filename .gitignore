@@ -9,7 +9,6 @@
 /vendor/
 /plugins/
 
-/.htaccess
 /artisan
 /index.php
 
