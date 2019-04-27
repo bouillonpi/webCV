@@ -36,7 +36,7 @@ $( ".locale-dropdown-trigger" ).click(function() {
 
 // https://macarthur.me/typeit
 // https://macarthur.me/typeit/docs
-$('#typeWriteHome-fr').typeIt({
+$('#typeWriteProfile-fr').typeIt({
     speed: 80,
     autoStart: false,
     breakLines: false,
@@ -54,7 +54,7 @@ $('#typeWriteHome-fr').typeIt({
     ]
 });
 
-$('#typeWriteHome-en').typeIt({
+$('#typeWriteProfile-en').typeIt({
     speed: 80,
     autoStart: false,
     breakLines: false,

@@ -1,5 +1,5 @@
-title = "home"
-url = "/"
+title = "profile"
+url = "/profile"
 layout = "standard"
 is_hidden = 0
 ==
@@ -16,7 +16,7 @@ is_hidden = 0
 
 <!------------------------------------------------>
 
-<div id="home-hero" class="home-hero scrollspy">
+<div id="profile-hero" class="profile-hero scrollspy">
     <div class="hero-content">
         <h1>Pierre-Baptiste <br class="hide-on-large-only"> Bouillon</h1>
         <h2>
@@ -29,7 +29,7 @@ is_hidden = 0
         <div class="call-to-action">
             <div class="row">
                 <div class="col l6 m6 s12">
-                    <div id="home-scroll" class="button-profil">
+                    <div id="profile-scroll" class="button-profil">
                         {% if activeLocale == 'fr' %} Voir profil
                         {% else %} Profile {% endif %}
                     </div>
@@ -48,7 +48,7 @@ is_hidden = 0
 
 <!------------------------------------------------>
 
-<div id="home-intro" class="home-intro scrollspy">
+<div id="profile-intro" class="profile-intro scrollspy">
 
     <div class="container">
 
@@ -98,7 +98,7 @@ is_hidden = 0
                 <i class="fa fa-briefcase"></i>
                 <h1>Entrepreneur</h1>
                 <p>
-                    {% if activeLocale == 'fr' %} Fondateur d'une entreprise de création de sites internet innovants
+                    {% if activeLocale == 'fr' %} Fondateur d'une entreprise de création de boutiques en ligne
                     {% else %} Founder of a web development and webdesign innovative company {% endif %}
                 </p>
             </div>
@@ -130,7 +130,7 @@ is_hidden = 0
 
 <!------------------------------------------------>
 
-<div id="home-education" class="home-education container-fluid scrollspy">
+<div id="profile-education" class="profile-education container-fluid scrollspy">
     <div class="container" style="width: 75%">
         <div class="row">
 
@@ -172,7 +172,7 @@ is_hidden = 0
 
 <!------------------------------------------------>
 
-<div id="home-timeline" class="home-timeline container-fluid scrollspy">
+<div id="profile-timeline" class="profile-timeline container-fluid scrollspy">
 
     <div class="block-title">
         <h1>
@@ -567,9 +567,9 @@ is_hidden = 0
 
 <!------------------------------------------------>
 
-<div id="home-award" class="scrollspy">
-    <div class="home-picture-ipag hide-on-med-and-down"></div>
-    <div class="home-award">
+<div id="profile-award" class="scrollspy">
+    <div class="profile-picture-ipag hide-on-med-and-down"></div>
+    <div class="profile-award">
         <div class="container">
 
             <img src="{{ 'assets/img/IPB/microsoft.png'| theme }}">
@@ -669,7 +669,7 @@ is_hidden = 0
 
 <!------------------------------------------------>
 
-<div id="home-technology" class="home-technology scrollspy">
+<div id="profile-technology" class="profile-technology scrollspy">
     <div class="container">
 
         <div class="block-title">
@@ -712,9 +712,9 @@ is_hidden = 0
                         </p>
                     </div>
                     <ul>
-                        <li><i class="fa fa-circle"></i> Karma / Jasmine</li>
-                        <li><i class="fa fa-circle"></i> Jest / Protractor</li>
-                        <li><i class="fa fa-circle"></i> Cucumber.js</li>
+                        <li><i class="fa fa-circle"></i> Jest </li>
+                        <li><i class="fa fa-circle"></i> Jasmine </li>
+                        <li><i class="fa fa-circle"></i> Cucumber </li>
                     </ul>
                 </div>
             </div>
@@ -840,7 +840,7 @@ is_hidden = 0
 
 <!------------------------------------------------>
 
-<div class="home-map">
+<div class="profile-map">
     <div id="contact-map" class="contact-map"></div>
     <div class="property-map-info">
         <h1>
@@ -857,7 +857,7 @@ is_hidden = 0
 
 <!------------------------------------------------>
 
-<div id="home-international" class="home-international scrollspy">
+<div id="profile-international" class="profile-international scrollspy">
     <div class="container">
 
         <div class="block-title">
@@ -894,14 +894,14 @@ is_hidden = 0
 
 <!------------------------------------------------>
 
-<div class="home-cool">
+<div class="profile-cool">
     <div class="container-fluid">
         <div class="row">
             <h1>
                 {% if activeLocale == 'fr' %} En dehors du travail ?
                 {% else %} Outside work? {% endif %}
             </h1>
-            <h1 id="typeWriteHome-{{activeLocale}}"></h1>
+            <h1 id="typeWriteProfile-{{activeLocale}}"></h1>
             <a href="{{ 'about'|page }}" class="button-about">
                 {% if activeLocale == 'fr' %} Découvrir
                 {% else %} Learn more about me {% endif %}

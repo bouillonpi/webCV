@@ -1,0 +1,424 @@
+.services-hero {
+    position: relative;
+    background-image: linear-gradient(to right bottom, #47c1bf, #26b7c8, #14abce, #2b9ed0, #4990cd, #4e81c2, #5372b5, #5863a7, #495295, #3a4183, #2b3171, #1c2260);  
+    width:100%;
+    height: 760px;
+    text-align: center;
+    z-index: 6;
+    transform: skewY(-6deg);
+    transform-origin: 0;
+}
+
+.services-hero > .container-fluid {
+    transform: skewY(6deg);
+    padding-top: 180px;
+}
+
+.services-hero section {
+    text-align: center;
+}
+
+.services-hero section > img {
+    width: 50px;
+}
+
+.services-hero h1 {
+    margin-top: 0;
+    margin-bottom: 25px;
+    padding-top: 30px;
+    font-size: 40px;
+    letter-spacing: 5px;
+    word-spacing: 10px;
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.services-hero .separator {
+    width: 100px;
+    margin: 0 auto;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.17);
+}
+
+.services-hero h2 {
+    font-size: 22px;
+    font-family: ProximaRegular, serif;
+    color: #1c2260;
+    margin-top: 40px;
+    margin-bottom: 0;
+}
+
+.services-hero .shopify-design {
+    width: 750px;
+    margin-top: 50px;
+}
+
+/* ---------------------------------------------- */
+/* ---------------------------------------------- */
+
+.services-partner {
+    text-align: center;
+}
+
+.services-partner > .container {
+    padding-top: 90px;
+    padding-bottom: 100px;
+}
+
+.services-partner .profile-picture {
+    background: #dadada;
+    border: 5px solid #dadada;
+    border-radius: 100%;
+    display: block;
+    margin: 0 auto;
+    width: 120px;
+}
+
+.services-partner .shopify-partner {
+    margin-top: 5px;
+    width: 250px;
+}
+
+.services-partner p {
+    font-family: ProximaRegular, serif;
+    font-size: 20px;
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 25px;    
+}
+
+/* ---------------------------------------------- */
+/* ---------------------------------------------- */
+
+.services-ready {
+    position: relative;
+    text-align: center;
+}
+
+.services-ready > .container {
+    padding-top: 80px;
+    padding-bottom: 90px;  
+}
+
+.services-ready img {
+    width: 100%;
+    max-width: 400px;
+}
+
+.services-ready h1 {
+    color: #2d3134;
+    font-family: ProximaBold, serif;
+    font-size: 35px;
+    padding-bottom: 15px; 
+}
+
+.services-ready p {
+    font-family: ProximaRegular, serif;
+    text-align: justify;
+    font-size: 18px;
+}
+
+.services-ready a {
+    border-radius: 50px;
+    padding: 12px 35px;
+    color: #fff;
+    font-family: ProximaRegular, serif;
+    font-size: 18px;
+    border: none;
+    display: inline-block;
+    margin-top: 38px;
+    background: #6d7bbf;
+}
+
+.services-ready a:hover {
+    background: #5462bd;
+}
+
+/* ---------------------------------------------- */
+/* ---------------------------------------------- */
+
+.services-professional {
+    background: #f5f5f5;
+    position: relative;
+    text-align: center;
+}
+
+.services-professional > .container {
+    padding-top: 70px;
+    padding-bottom: 100px;  
+}
+
+.services-professional > .container > h1 {
+    text-align: center;
+    color: #2d3134;
+    font-family: ProximaBold, serif;
+    font-size: 35px;
+    padding-bottom: 15px;
+}
+
+.services-professional > .container > .row {
+    padding-top: 30px; 
+}
+
+.services-professional > .container > .row .centered-mockup {
+    max-height: 50vh;
+}
+
+.services-professional > .container > .row ul {
+    margin: 0;
+}
+
+.services-professional > .container > .row ul li h1 {
+    font-size: 20px;
+    font-family: ProximaBold, serif;
+    color: #5462bd;
+    margin-bottom: 0;
+    margin-top: 50px;
+}
+
+.services-professional .professional-section-left h1 > img {
+    margin-left: 12px;
+}
+
+.services-professional .professional-section-right h1 > img {
+    margin-right: 12px;
+}
+
+.services-professional > .container > .row ul li h1 img {
+    height: 32px;
+    vertical-align: middle;
+}
+
+.services-professional > .container > .row ul li:first-child h1 {
+    margin-top: 0;
+}
+
+.services-professional > .container > .row ul li p {
+    font-size: 15px;
+}
+
+/* ---------------------------------------------- */
+/* ---------------------------------------------- */
+
+.services-process {
+    background: #404790;
+}
+
+.services-process > .container-lg {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 20px;
+    width: 100%;
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 90px;
+}
+
+.services-process > .container-lg > h1 {
+    text-align: center;
+    color: #fff;
+    font-family: ProximaBold, serif;
+    font-size: 35px;
+    padding-bottom: 25px;
+    margin-top: 0;
+}
+
+.services-process .row {
+    padding: 12px;
+    background: #383e7d;
+    border-radius: 4px;
+}
+
+.services-process .row > .col {
+    padding-left: 6px;
+    padding-right: 6px;
+}
+
+.services-process .row > .col:first-child {
+    padding-left: 0px;
+}
+
+.services-process .row > .col:last-child {
+    padding-right: 0px;
+}
+
+.services-process .row > .col {
+    padding-left: 6px;
+    padding-right: 6px;
+}
+
+.services-process .header {
+    background: #5462bd;
+    border-radius: 4px;
+    box-shadow: 0 4px 6px rgba(0,0,0,.11), 0 1px 3px rgba(0,0,0,.1);
+    position: relative;
+}
+
+.services-process .col:nth-child(1) .header,
+.services-process .col:nth-child(1) .header:after {
+    background: #4c539a;
+}
+
+.services-process .col:nth-child(2) .header,
+.services-process .col:nth-child(2) .header:after {
+    background: #5f68b5;
+}
+
+.services-process .col:nth-child(3) .header,
+.services-process .col:nth-child(3) .header:after {
+    background: #747dca;
+}
+
+.services-process .col:nth-child(4) .header {
+    background: #479695;
+}
+
+.services-process .col:nth-child(4) .content {
+    background: #47969547;
+}
+
+.services-process .col:not(:last-child) .header:after {
+    content: "";
+    position: absolute;
+    z-index: 10;
+    right: -6px;
+    top: calc(50% - 10px);
+    width: 20px;
+    height: 20px;
+    transform: rotate(45deg);
+    border-radius: 3px;
+}
+
+.services-process .col:not(:first-child) .header:before {
+    content: "";
+    position: absolute;
+    left: -12px;
+    top: calc(50% - 10px);
+    width: 20px;
+    height: 20px;
+    transform: rotate(45deg);
+    border-radius: 3px;
+    background: #383e7d;
+}
+
+.services-process .header > h1 {
+    color: #fff;
+    font-family: ProximaBold, serif;
+    font-size: 16px;
+    height: 70px;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+}
+
+.services-process .header > h1 > span {
+    color: #0000005c;
+    padding-right: 10px;
+}
+
+.services-process .content {
+    box-shadow: 0 1px 3px rgba(0,0,0,.2), 0 1px 0 rgba(0,0,0,.04);
+    background: #444b90;
+    color: #ffffffa6;
+    padding-top: 25px;
+    padding-bottom: 30px;
+    margin-bottom: 2px;
+}
+
+.services-process .content > li {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+/* ---------------------------------------------- */
+/* ---------------------------------------------- */
+
+.services-stores {
+    background: #f5f5f5;
+}
+
+.services-stores > .container-fluid {
+
+}
+
+.services-stores .store-wrapper {
+    height: 650px;
+    margin: 0;
+}
+
+.services-stores .store-wrapper .col {
+    height: 100%;
+    padding: 0;
+}
+
+.services-stores .store-wrapper .store-description {
+    margin: 0 auto;
+    text-align: left;
+}
+
+.services-stores .store-wrapper h1 {
+    color: #2d3134;
+    font-family: ProximaBold, serif;
+    font-size: 35px;
+    padding-bottom: 15px; 
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+.services-stores .store-wrapper h1 .separator {
+    width: 45px;
+    height: 4px;
+    margin-bottom: 15px;
+    background-color: #2d3134;
+}
+
+.services-stores .store-wrapper p {
+    margin-top: 10px;
+    color: #2d3134;
+    font-family: ProximaRegular, serif;
+    font-size: 20px;
+    width: 400px;
+}
+
+.services-stores .store-wrapper .col .image-store-wrapper {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+}
+
+.services-stores .store-wrapper .col .image-store-wrapper .image-store {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+}
+
+.services-stores .store-wrapper .store-link {
+    border-radius: 50px;
+    padding: 12px 35px;
+    color: #fff;
+    font-family: ProximaRegular, serif;
+    font-size: 18px;
+    border: none;
+    display: inline-block;
+    margin-top: 10px;
+    background: #6d7bbf;
+}
+
+.services-stores .store-wrapper .store-link:hover {
+    background: #5462bd;
+}
+
+/* ---------------------------------------------- */
+/* ---------------------------------------------- */
+
+
+
+/* ---------------------------------------------- */
+/* ---------------------------------------------- */

@@ -1,0 +1,512 @@
+title = "services"
+url = "/"
+layout = "standard"
+is_hidden = 0
+
+[viewBag]
+localeUrl[en] = "/services"
+==
+<section class="services-hero">
+    <div class="container-fluid">
+
+    
+    <section><img src="{{ 'assets/img/cameleon.png'| theme }}"></section>
+    <h1>Caméléon<br class="hide-on-med-and-up"> Design</h1>
+    <div class="separator"></div>
+    <h2>
+        {% if activeLocale == 'fr' %} 
+        Création de boutiques en ligne <br> pour booster votre business
+        {% else %} 
+        Strategic online stores <br> for growing businesses
+        {% endif %}
+    </h2>
+    <img class="shopify-design" src="{{ 'assets/img/shopify-design1.png'| theme }}">
+</div>
+</section>
+
+<!------------------------------------------------>
+
+<section class="services-ready">
+
+    <div class="container">
+
+        <h1>
+            {% if activeLocale == 'fr' %}
+                Prêt à vendre vos produits en ligne ?
+            {% else %}
+                Ready to launch your online store?
+            {% endif %}
+        </h1>
+
+        <div class="row valign-wrapper">
+            <div class="col l5 m12 s12 valign">  
+                <p>
+                    {% if activeLocale == 'fr' %}
+                        Vous êtes un entrepreneur avec un produit à vendre, maintenant ce dont vous avez besoin c'est d'une belle boutique en ligne. <br><br>
+                        En tant que Shopify Partner, je suis spécialisé dans la création et le lancement de votre 
+                        boutique de e-commerce, quelle que soit la taille de votre entreprise. <br><br>
+                        Contactez-moi pour discuter de votre projet et dans quelques semaines nous célébrerons votre première vente !
+                    {% else %}
+                        You're an entrepreneur with a product to sell, now all you need is a beautiful online store. <br><br>
+                        As Shopify Partner, I'm well equipped to create and launch your e-commerce store, no matter the size of your business. <br><br>
+                        From setting up your Shopify store all the way to launch, I will take care of everything. 
+                        Reach out, tell me about your project and in a few weeks we'll be celebrating your first order!
+                    {% endif %}
+                    <a href="#contact-modal">
+                        {% if activeLocale == 'fr' %}
+                            Lancez-vous
+                        {% else %}
+                            Contact me
+                        {% endif %}
+                    </a>
+                </p>
+            </div>
+
+            <div class="col l7 m12 s12">
+                <img src="{{ 'assets/img/artwork4.png'| theme }}" style="width: 100%">
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+<!------------------------------------------------>
+
+<section class="services-professional">
+
+    <div class="container">
+
+        <h1>
+            {% if activeLocale == 'fr' %}
+                Je crée des boutiques professionnelles avec Shopify
+            {% else %}
+                I make professional Shopify stores
+            {% endif %}
+        </h1>
+
+        <div class="row valign-wrapper">
+
+            <div class="col l4 m4 valign professional-section-left" style="text-align: right">
+                <ul>
+                    <li>
+                        <h1>
+                            {% if activeLocale == 'fr' %} 
+                                Thèmes magnifiques
+                            {% else %}
+                                Beautiful themes
+                            {% endif %}
+                            <img src="{{ 'assets/img/icons/shop.svg'| theme }}">
+                        </h1>
+                        <p>
+                            {% if activeLocale == 'fr' %} 
+                                L'apparence de votre boutique en ligne peut grandement influencer les ventes.
+                                Shopify Theme Store propose plus de 100 thèmes professionnels gratuits ou premiums
+                                que vous pouvez utiliser pour votre boutique en ligne.
+                            {% else %}
+                                Your online store's appearance can have a big impact on sales. 
+                                Shopify Theme Store includes over 100 free and premium professionally designed ecommerce website templates
+                                that you can use for your own online store.
+                            {% endif %}
+                        </p>
+                    </li>
+                    <li>
+                        <h1>
+                            {% if activeLocale == 'fr' %} 
+                                Gérer vos produits
+                            {% else %}
+                                Manage your products
+                            {% endif %}
+                            <img src="{{ 'assets/img/icons/products.svg'| theme }}">
+                        </h1>
+                        <p>
+                            {% if activeLocale == 'fr' %} 
+                                Gérer l'intégralité de votre inventaire avec Shopify.
+                                Organisez vos produits par catégorie, type, saison, vente et plus.
+                                Ajoutez plusieurs images à chacun de vos produits pour les présenter sous différents angles.
+                            {% else %}
+                                Manage your entire inventory with Shopify.
+                                Organize your products by category, type, season, sale and more.
+                                Add multiple images for your products, so you can show it off from all angles.
+                            {% endif %}
+                        </p>
+                    </li>
+                    <li>
+                        <h1>
+                            {% if activeLocale == 'fr' %} 
+                                Votre nom de domaine
+                            {% else %}
+                                Your own domain name
+                            {% endif %}
+                            <img src="{{ 'assets/img/icons/domain.svg'| theme }}">
+                        </h1>
+                        <p>
+                            {% if activeLocale == 'fr' %} 
+                                Un domaine est l'URL ou l'adresse internet que vos clients cherchent pour trouver votre boutique en ligne.
+                                Shopify offre la possibilité d'ajouter votre propre nom de domaine pour personnaliser davantage votre store.
+                            {% else %}
+                                A domain is the URL, or the website address, where your customers go to find your store online.
+                                Shopify offers the possibility to add your own domain name to make it easier for your customers to find your store.
+                            {% endif %}
+                        </p>
+                    </li>
+                </ul>
+            </div>
+            <div class="col l4 m4 valign"><img src="{{ 'assets/img/Mockup1.png'| theme }}" class="centered-mockup"></div>
+            <div class="col l4 m4 valign professional-section-right" style="text-align: left">
+                <ul>
+                    <li>
+                        <h1>
+                            <img src="{{ 'assets/img/icons/payments.svg'| theme }}">
+                            {% if activeLocale == 'fr' %} 
+                                Paiements en ligne
+                            {% else %}
+                                Orders and payments
+                            {% endif %}
+                        </h1>
+                        <p>
+                            {% if activeLocale == 'fr' %} 
+                                Acceptez les paiements par carte ou par toute autre moyen pour faciliter les achats de vos clients.
+                                Les détails de paiement sont clairement synchronisés avec les commandes pour vous aider à gérer vos revenus.
+                            {% else %}
+                                Accept credit cards and other payment methods to make checkout convenient for customers.
+                                Payment details are clearly synced with orders, making it easy to see how much you’ve been paid without ever leaving Shopify.
+                            {% endif %}
+                        </p>
+                    </li>
+                    <li>
+                        <h1>    
+                            <img src="{{ 'assets/img/icons/shipping.svg'| theme }}">                        
+                            {% if activeLocale == 'fr' %} 
+                                Expédition
+                            {% else %}
+                                Shipping
+                            {% endif %}
+                            
+                        </h1>
+                        <p>
+                            {% if activeLocale == 'fr' %} 
+                                Il est important de définir les différentes méthodes d'expéditions que vous souhaitez proposer à vos clients.
+                                La fonctionnalité de gestion d'expédition de Shopify est incroyablement pratique pour ce faire !
+                            {% else %}
+                                Before you take your first order, you need to decide what shipping methods you want to use, 
+                                and then set up your store's shipping settings so that your customers can choose a delivery method at checkout.
+                            {% endif %}
+                        </p>
+                    </li>
+                    <li>
+                        <h1>
+                            <img src="{{ 'assets/img/icons/marketing.svg'| theme }}">
+                            {% if activeLocale == 'fr' %} 
+                                Marketing et réductions
+                            {% else %}
+                                Marketing and discounts
+                            {% endif %}
+                            
+                        </h1>
+                        <p>
+                            {% if activeLocale == 'fr' %} 
+                            Après le lancement de votre boutique, il est important d'augmenter le trafic et de convertir les visiteurs en clients.
+                            Le développement d'un plan de marketing peut vous aider à choisir des tactiques de marketing adaptées à votre boutique.
+                            {% else %}
+                                After you launch your store, it's important to increase traffic and convert visitors into customers.
+                                Developing a marketing plan can help you to choose marketing tactics that are right for your store.
+                            {% endif %}
+                        </p>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>   
+
+<!------------------------------------------------>
+
+<section class="services-process">
+
+    <div class="container-lg">
+
+        <h1>
+            {% if activeLocale == 'fr' %}
+                Créons votre boutique en quelques étapes
+            {% else %}
+                Let's create your online store
+            {% endif %}
+        </h1>
+
+        <div class="row">
+            <div class="col l3 m12 s12">
+                <div class="header">
+                    <h1>
+                        <span>1.</span> 
+                        {% if activeLocale == 'fr' %}
+                            Premiers pas
+                        {% else %}
+                            First steps
+                        {% endif %}
+                    </h1>
+                </div>
+                <ul class="content">
+                    <li>{% if activeLocale == 'fr' %} Définition de vos besoins {% else %} Definition of your needs {% endif %}</li>
+                    <li>{% if activeLocale == 'fr' %} Ouverture du compte Shopify {% else %} Register your Shopify account {% endif %}</li>
+                    <li>{% if activeLocale == 'fr' %} Sélection du thème Shopify {% else %} Select a Shopify Theme {% endif %}</li>
+                    <li>{% if activeLocale == 'fr' %} Choix de la langue du store {% else %} Set store language {% endif %}</li>
+                    <li>{% if activeLocale == 'fr' %} Choix des devises {% else %} Set store currencies {% endif %}</li>
+                    <li>{% if activeLocale == 'fr' %} Ajout de votre nom de domaine {% else %} Add your custom domain name {% endif %}</li>
+                </ul>
+            </div>
+            <div class="col l3 m12 s12">
+                <div class="header">
+                    <h1>
+                        <span>2.</span> 
+                        {% if activeLocale == 'fr' %}
+                            Construction
+                        {% else %}
+                            Organize your store
+                        {% endif %}
+                    </h1>
+                </div>
+                <ul class="content">
+                    <li>{% if activeLocale == 'fr' %} Ajout de vos produits {% else %} Add your products {% endif %}</li>
+                    <li>{% if activeLocale == 'fr' %} Organisation de vos collections {% else %} Organize your collections {% endif %}</li>
+                    <li>{% if activeLocale == 'fr' %} Design des pages de la boutique {% else %} Design the store pages {% endif %}</li>
+                    <li>{% if activeLocale == 'fr' %} Gestion des modalités d'expédition {% else %} Set up your shipping settings {% endif %}</li>
+                    <li>{% if activeLocale == 'fr' %} Configuration des taxes {% else %} Configure your taxes {% endif %}</li>
+                    <li>{% if activeLocale == 'fr' %} Intégration du paiement en ligne {% else %} Set up payment providers {% endif %}</li>
+                </ul>
+            </div>
+            <div class="col l3 m12 s12">
+                <div class="header">
+                    <h1>
+                        <span>3.</span> 
+                        {% if activeLocale == 'fr' %}
+                            Marketing
+                        {% else %}
+                            Marketing
+                        {% endif %}
+                    </h1>
+                </div>
+                <ul class="content">
+                    <li>{% if activeLocale == 'fr' %} Lier Facebook & Instagram au store {% else %} Add Instagram sales channels {% endif %}</li>
+                    <li>{% if activeLocale == 'fr' %} Personnaliser les mails clients {% else %} Customize customers emails {% endif %}</li>
+                    <li>{% if activeLocale == 'fr' %} Créer des réductions et des coupons {% else %} Create discounts and coupons {% endif %}</li>
+                    <li>{% if activeLocale == 'fr' %} Mettre en place votre newsletter {% else %} Set up your newsletter {% endif %}</li>
+                    <li>{% if activeLocale == 'fr' %} Fixer un prix de livraison gratuite {% else %} Set a free shipping minimum amount {% endif %}</li>
+                    <li>{% if activeLocale == 'fr' %} Créer une campagne d'inauguration {% else %} Create a campaign for store openning {% endif %}</li>
+                </ul>
+            </div>
+            <div class="col l3 m12 s12">
+                <div class="header">
+                    <h1>
+                        <span>4.</span> 
+                        {% if activeLocale == 'fr' %}
+                            Ouverture !
+                        {% else %}
+                            Launch!
+                        {% endif %}
+                    </h1>
+                </div>
+                <ul class="content">
+                    <li>{% if activeLocale == 'fr' %} Faites la promotion de votre boutique {% else %} Promote your store {% endif %}</li>
+                    <li>{% if activeLocale == 'fr' %} Consulter les rapports analytiques {% else %} Track customer behavior with analytics {% endif %}</li>
+                    <li>{% if activeLocale == 'fr' %} Traiter les commandes et paiements {% else %} Capture payments and fulfill orders {% endif %}</li>
+                    <li>{% if activeLocale == 'fr' %} Planifier les campagnes marketing {% else %} Plan future marketing campaigns {% endif %}</li>
+                    <li>{% if activeLocale == 'fr' %} Affiner le design de votre boutique {% else %} Refine your store design {% endif %}</li>
+                    <li>{% if activeLocale == 'fr' %} Ajouter des articles dans le blog {% else %} Add new articles for your store blog {% endif %}</li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+<!------------------------------------------------>
+
+<section class="services-partner">
+    
+    <div class="container">
+        
+        <img class="profile-picture" src="{{ 'assets/img/PB/PB02.jpg'| theme }}">
+        <img class="shopify-partner" src="{{ 'assets/img/logos/shopify-partner.png'| theme }}">
+        
+        <p>
+            {% if activeLocale == 'fr' %}
+                J'aborde chaque projet de boutique en ligne avec passion et détermination, du développement à la maintenance.
+                En tant que Shopify Partner, j'introduis les entreprises aux merveilles de Shopify dans le but de booster leurs ventes en ligne.
+            {% else %}
+                I approach every online store project with passion and determination, from development to post-launch support.
+                As a Shopify Partner, I introduce brands to the wonders of Shopify to boost their sales online.
+            {% endif %}
+        </p>
+        
+    </div>
+    
+</section>
+
+<!------------------------------------------------>
+
+<section class="services-shopify" style="display: none">
+    
+    <div class="container">
+        
+        <h1>
+            {% if activeLocale == 'fr' %}
+                Pourquoi choisir Shopify ?
+            {% else %}
+                Why Shopify?
+            {% endif %}
+        </h1>
+
+        <div class="row valign-wrapper">
+
+            <div class="col l6 m12 s12 valign">
+                <img src="{{ 'assets/img/shopify-design2.png'| theme }}" style="width: 100%">
+            </div>
+
+            <div class="col l6 m12 s12">
+                <p>
+                    {% if activeLocale == 'fr' %}   
+                        Shopify est une plateforme de e-commerce très complète qui permet de créer une boutique en ligne et de vendre ses produits.
+                        Shopify est une solution entièrement hébergée ce qui vous offre la flexibilité de gérer votre business depuis n'importe quel endroit 
+                        avec une connexion internet. 
+                        Voici les fonctionnalités clés de Shopify.
+                    {% else %}
+                        Shopify is a complete commerce platform that lets you start, grow, and manage a business. 
+                        Shopify is completely cloud-based and hosted, which means you don’t have to worry about upgrading or maintaining software or web servers. 
+                        This gives you the flexibility to access and run your business from anywhere with an internet connection.
+                        Below are Shopify key features.
+                    {% endif %}
+                </p>
+                <ul>
+                    <li> 
+                        {% if activeLocale == 'fr' %} 
+                            Centaines de thèmes magnifiques
+                        {% else %}
+                            Thousands of beautiful themes
+                        {% endif %}
+                    </li>
+                    <li>
+                        {% if activeLocale == 'fr' %}
+                            Utilisez votre propre nom de domaine
+                        {% else %}
+                            Use your own domain name
+                        {% endif %}
+                    </li>
+                    <li>
+                        {% if activeLocale == 'fr' %}
+                            Gérer ses produits, collections, inventaire
+                        {% else %}
+                            Manage products, collections, inventory
+                        {% endif %}
+                    </li>
+                    <li>
+                        {% if activeLocale == 'fr' %}
+                            Créer des coupons et des codes de réduction pour vos clients
+                        {% else %}
+                            Create coupons and discount codes for your customers
+                        {% endif %}
+                    </li>
+                    <li>
+                        {% if activeLocale == 'fr' %}
+                            Accepter les paiements en ligne du monde entier
+                        {% else %}
+                            Process credit card payments directly through Shopify
+                        {% endif %}
+                    </li>
+                    <li>
+                        {% if activeLocale == 'fr' %}
+                            Plateforme blog intégrée pour créer vos articles de blog
+                        {% else %}
+                            Integrated blogging platform to create blog posts
+                        {% endif %}
+                    </li>
+                    <li> {% if activeLocale == 'fr' %} Rapport analytique détaillé sur votre boutique et vos clients {% else %} Advanced analytics reporting {% endif %} </li>
+                    <li> {% if activeLocale == 'fr' %} Module d'organisation de vos zones et prix de livraison {% else %} Shipping carrier integration {% endif %} </li>
+                </ul>
+            </div>
+
+        </div>
+
+    </div>
+    
+</section>
+
+<!------------------------------------------------>
+
+<section class="services-stores">
+
+    <div class="container-fluid">
+
+        <div class="row store-wrapper">
+            <div class="col m6 valign-wrapper">
+                <div class="valign store-description">
+                    <h1>
+                        <div class="separator"></div>
+                        Eikosi Dyo
+                    </h1>
+                    <p>
+                        {% if activeLocale == 'fr' %}
+                            Boutique Shopify réalisée pour une marque de haute joaillerie poétique
+                        {% else %}
+                            Shopify store designed for a poetic fine jewellery brand
+                        {% endif %}
+                    </p>
+                    <a href="https://www.eikosi-dyo.com" target="_blank" class="store-link">
+                        {% if activeLocale == 'fr' %}
+                            Visiter la boutique
+                        {% else %}
+                            View store
+                        {% endif %}
+                    </a>
+                </div>
+            </div>
+            <div class="col m6">
+                <div class="image-store-wrapper">
+                    <div class="image-store" style="background-image: url({{ 'assets/img/clients/eikosi-dyo1.jpg'| theme }})"></div>
+                </div>
+            </div> 
+        </div>
+
+        <div class="row store-wrapper">
+            <div class="col m6">
+                <div class="image-store-wrapper">
+                    <div class="image-store" style="background-image: url({{ 'assets/img/clients/thomas-dal-farra1.jpg'| theme }})"></div>
+                </div>
+            </div>
+            <div class="col m6 valign-wrapper">
+                <div class="valign store-description">
+                    <h1>
+                        <div class="separator"></div>
+                        Thomas Dal Farra Photography
+                    </h1>
+                    <p>
+                        {% if activeLocale == 'fr' %}
+                            Boutique Shopify réalisée pour un photographe du Sud-Ouest de la France
+                        {% else %}
+                            Shopify store designed for a French photographer
+                        {% endif %}
+                    </p>
+                    <a href="https://shop.thomasdalfarra.com" target="_blank" class="store-link">
+                        {% if activeLocale == 'fr' %}
+                            Visiter la boutique
+                        {% else %}
+                            View store
+                        {% endif %}
+                    </a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+<!------------------------------------------------>
+
+
+
+<!------------------------------------------------>

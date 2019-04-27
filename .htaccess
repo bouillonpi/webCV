@@ -21,6 +21,7 @@
     ##
     ## Force secure connection
     ##
+    RewriteCond %{HTTP_HOST} !=localhost
     RewriteCond %{HTTP:X-Forwarded-Proto} =http [OR]
     RewriteCond %{HTTP:X-Forwarded-Proto} =""
     RewriteCond %{HTTPS} !=on

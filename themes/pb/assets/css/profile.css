@@ -1,4 +1,4 @@
-.home-hero {
+.profile-hero {
     background: url(../img/NYC01.jpg);
     background-size: cover;
     background-position-y: bottom;
@@ -9,7 +9,7 @@
     z-index: 6;
 }
 
-.home-hero .hero-content {
+.profile-hero .hero-content {
     position: absolute;
     margin: auto;
     top: 0;
@@ -20,7 +20,7 @@
     height: 50%;
 }
 
-.home-hero h1 {
+.profile-hero h1 {
     margin-top: 0;
     font-size: 35px;
     letter-spacing: 6px;
@@ -30,7 +30,7 @@
     text-transform: uppercase;
 }
 
-.home-hero h2 {
+.profile-hero h2 {
     margin-top: 20px;
     font-family: SourceSansProRegular, serif;
     font-size: 17px;
@@ -39,20 +39,20 @@
     line-height: 25px;
 }
 
-.home-hero h2 a {
+.profile-hero h2 a {
     text-decoration: none;
     color: #48698b!important;
 }
 
-.home-hero .call-to-action {
+.profile-hero .call-to-action {
     width: 500px;
     margin: 0 auto;
     margin-top: 160px;
     text-align: center;
 }
 
-.home-hero .call-to-action .button-profil,
-.home-hero .call-to-action .button-cv {
+.profile-hero .call-to-action .button-profil,
+.profile-hero .call-to-action .button-cv {
     cursor: pointer;
     width: 100%;
     margin: 0 auto;
@@ -63,7 +63,7 @@
     font-size: 14px;
 }
 
-.home-hero .button-profil {
+.profile-hero .button-profil {
     background: white;
     color: #484848;
     margin-bottom: 20px!important;
@@ -74,7 +74,7 @@
     transition: all 0.3s;
 }
 
-.home-hero .button-profil:hover {
+.profile-hero .button-profil:hover {
     background: #dcdcdc;
     box-shadow: 0 2px 0 0;
     -webkit-transition: all 0.4s;
@@ -84,7 +84,7 @@
     transition: all 0.4s;
 }
 
-.home-hero .button-cv {
+.profile-hero .button-cv {
     background: #484848;
     color: white;
     -webkit-transition: all 0.3s;
@@ -94,7 +94,7 @@
     transition: all 0.3s;
 }
 
-.home-hero .button-cv:hover {
+.profile-hero .button-cv:hover {
     background: #676767;
     box-shadow: 0 2px 0 0 #fff;
     -webkit-transition: all 0.4s;
@@ -104,14 +104,14 @@
     transition: all 0.4s;
 }
 
-.home-hero .button-cv i {
+.profile-hero .button-cv i {
     margin-right: 8px;
 }
 
 /* ---------------------------------------------- */
 /* ---------------------------------------------- */
 
-.home-intro {
+.profile-intro {
     border-top: 10px solid #e2e2e2;
     border-bottom: 10px solid #e2e2e2;
     text-align: center;
@@ -120,7 +120,7 @@
     background: #fff;
 }
 
-.home-intro > .container > img {
+.profile-intro > .container > img {
     margin: 0 auto;
     margin-top: 90px;
     width: 160px;
@@ -133,12 +133,12 @@
     background: #484848;
 }
 
-.home-intro .block-title {
+.profile-intro .block-title {
     position: relative;
     margin-top: -20px;
 }
 
-.home-intro .block-title h1 {
+.profile-intro .block-title h1 {
     position: relative;
     text-transform: uppercase;
     letter-spacing: 5px;
@@ -152,7 +152,7 @@
     z-index: 1;
 }
 
-.home-intro .block-title .custom-line {
+.profile-intro .block-title .custom-line {
     position: relative;
     width: 80%;
     height: 2px;
@@ -161,21 +161,21 @@
     background: #dcdcdc;
 }
 
-.home-intro .key-info {
+.profile-intro .key-info {
     margin-top: 45px;
     margin-bottom: 110px;
 }
 
-.home-intro .key-info .col {
+.profile-intro .key-info .col {
     margin: 30px 0;
 }
 
-.home-intro .key-info .col i {
+.profile-intro .key-info .col i {
     font-size: 35px;
     color: #80b5df;
 }
 
-.home-intro .key-info .col h1 {
+.profile-intro .key-info .col h1 {
     font-size: 15px;
     margin-top: 20px;
     margin-bottom: 12px;
@@ -184,29 +184,30 @@
     text-transform: uppercase;
 }
 
-.home-intro .key-info .col p {
+.profile-intro .key-info .col p {
     width: 90%;
     margin: 0 auto;
     font-size: 14px;
     font-family: SourceSansProRegular, serif;
+    height: 50px;
     color: #848484;
 }
 
 /* ---------------------------------------------- */
 /* ---------------------------------------------- */
 
-.home-education {
+.profile-education {
     border-bottom: 10px solid #dadada;
     background: #eaeaea;
 }
 
-.home-education > .container > .row {
+.profile-education > .container > .row {
     padding-top: 100px;
     padding-bottom: 100px;
     margin-bottom: 0;
 }
 
-.home-education .cover-picture {
+.profile-education .cover-picture {
     background: url(../img/PB/diplome01.jpg);
     background-size: cover;
     background-position: center;
@@ -214,12 +215,12 @@
     border: 8px solid #fff;
 }
 
-.home-education .content-container {
+.profile-education .content-container {
     width: 90%;
     margin: 0 auto;
 }
 
-.home-education h1 {
+.profile-education h1 {
     text-align: center;
     text-transform: uppercase;
     letter-spacing: 5px;
@@ -231,27 +232,27 @@
     color: #fff;
 }
 
-.home-education h2 {
+.profile-education h2 {
     font-family: SourceSansProRegular, serif;
     margin-top: -5px;
     font-size: 15px;
     color: #848484;
 }
 
-.home-education h2:first-of-type {
+.profile-education h2:first-of-type {
     margin-top: 40px;
 }
 
-.home-education h2 i {
+.profile-education h2 i {
     margin-right: 6px;
 }
 
-.home-education h2 a {
+.profile-education h2 a {
     color: #80b5df;
     text-decoration: none;
 }
 
-.home-education .cursus {
+.profile-education .cursus {
     background: #dadada;
     margin-top: 30px;
     margin-bottom: 35px;
@@ -260,24 +261,24 @@
     padding-bottom: 25px;
 }
 
-.home-education .cursus li {
+.profile-education .cursus li {
     font-family: SourceSansProRegular, serif;
     margin-top: 15px;
     margin-left: 20px;
     color: #484848;
 }
 
-.home-education .cursus li:first-of-type {
+.profile-education .cursus li:first-of-type {
     margin-top: 0;
 }
 
-.home-education .cursus li span {
+.profile-education .cursus li span {
     font-family: ProximaBold, sans-serif;
     color: #484848;
     padding-right: 15px;
 }
 
-.home-education .call-to-action {
+.profile-education .call-to-action {
     cursor: pointer;
     background: #80b5df;
     color: #fff;
@@ -292,7 +293,7 @@
     transition: all 0.3s;
 }
 
-.home-education .call-to-action:hover {
+.profile-education .call-to-action:hover {
     background: #72a1c5;
     -webkit-transition: all 0.3s;
     -moz-transition: all 0.3s;
@@ -301,30 +302,30 @@
     transition: all 0.3s;
 }
 
-.home-education .call-to-action i {
+.profile-education .call-to-action i {
     margin-right: 8px;
 }
 
 /* ---------------------------------------------- */
 /* ---------------------------------------------- */
 
-.home-timeline {
+.profile-timeline {
     background: #484848;
 }
 
-.home-timeline > #cd-timeline {
+.profile-timeline > #cd-timeline {
     width: 90%;
     max-width: 1250px;
     margin: 0 auto;
 }
 
-.home-timeline > .block-title {
+.profile-timeline > .block-title {
     text-align: center;
     padding-top: 50px;
     margin-bottom: -25px;
 }
 
-.home-timeline > .block-title > h1 {
+.profile-timeline > .block-title > h1 {
     display: inline-block;
     text-transform: uppercase;
     letter-spacing: 5px;
@@ -336,14 +337,14 @@
     border: 2px solid #fff;
 }
 
-.home-timeline .experience-picture {
+.profile-timeline .experience-picture {
     display: none;
 }
 
 /* ---------------------------------------------- */
 /* ---------------------------------------------- */
 
-.home-picture-ipag {
+.profile-picture-ipag {
     background-image: url(../img/IPB/IPB01.jpg);
     background-size:cover;
     background-position-x: center;
@@ -356,34 +357,34 @@
 /* ---------------------------------------------- */
 /* ---------------------------------------------- */
 
-.home-award {
+.profile-award {
     border-bottom: 10px solid #e2e2e2;
     background: #eaeaea;
     text-align: center;
 }
 
-.home-award > .container {
+.profile-award > .container {
     width: 75%;
     margin: 0 auto;
     max-width: inherit;
 }
 
-.home-award > .container > img {
+.profile-award > .container > img {
     margin: 0 auto;
     margin-top: 90px;
     width: 150px;
 }
 
-.home-award .row {
+.profile-award .row {
     background: #d4d4d4;
 }
 
-.home-award .block-title {
+.profile-award .block-title {
     position: relative;
     margin-top: 5px;
 }
 
-.home-award .block-title h1 {
+.profile-award .block-title h1 {
     position: relative;
     text-transform: uppercase;
     letter-spacing: 5px;
@@ -398,13 +399,13 @@
     z-index: 1;
 }
 
-.home-award .container-fluid {
+.profile-award .container-fluid {
     text-align: center;
     margin-top: 50px;
     padding-bottom: 105px;
 }
 
-.home-award .cover-picture {
+.profile-award .cover-picture {
     background: url(../img/IPB/IPB02.jpg);
     background-size: cover;
     background-position-x: right;
@@ -415,33 +416,33 @@
     border: 5px solid #d4d4d4;
 }
 
-.home-award .content-container {
+.profile-award .content-container {
     width: 90%;
     margin: 0 auto;
     text-align: left;
 }
 
-.home-award h2 {
+.profile-award h2 {
     font-family: SourceSansProRegular, serif;
     margin-top: -5px;
     font-size: 15px;
     color: #757575;
 }
 
-.home-award h2:first-of-type {
+.profile-award h2:first-of-type {
     margin-top: 30px;
 }
 
-.home-award h2 i {
+.profile-award h2 i {
     margin-right: 6px;
 }
 
-.home-award h2 a {
+.profile-award h2 a {
     color: #80b5df;
     text-decoration: none;
 }
 
-.home-award .details {
+.profile-award .details {
     background: #eaeaea;
     margin-top: 35px;
     border-left: 5px solid #80b5df;
@@ -449,35 +450,35 @@
     padding-bottom: 25px;
 }
 
-.home-award .details li {
+.profile-award .details li {
     font-family: SourceSansProRegular, serif;
     margin-top: 15px;
     margin-left: 20px;
     color: #484848;
 }
 
-.home-award .details li:first-of-type {
+.profile-award .details li:first-of-type {
     margin-top: 0;
 }
 
-.home-award .details li span:first-of-type {
+.profile-award .details li span:first-of-type {
     font-family: ProximaBold, sans-serif;
     color: #484848;
     display: inline-block;
     width: 100px;
 }
 
-.home-award .details li span:last-of-type {
+.profile-award .details li span:last-of-type {
     margin-left: 12px;
     text-align: left;
 }
 
-.home-award .actions {
+.profile-award .actions {
     padding-top: 20px;
     padding-bottom: 10px;
 }
 
-.home-award .call-to-action {
+.profile-award .call-to-action {
     display: inline-block;
     margin-bottom: 6px;
     cursor: pointer;
@@ -494,7 +495,7 @@
     margin-right: 5px;
 }
 
-.home-award .call-to-action:hover {
+.profile-award .call-to-action:hover {
     background: #6f6f6f;
     -webkit-transition: all 0.3s;
     -moz-transition: all 0.3s;
@@ -503,15 +504,15 @@
     transition: all 0.3s;
 }
 
-.home-award .call-to-action i {
+.profile-award .call-to-action i {
     margin-right: 8px;
 }
 
-.home-award .media {
+.profile-award .media {
     background: #80b5df;
 }
 
-.home-award .media:hover {
+.profile-award .media:hover {
     background: #72a1c5;
     -webkit-transition: all 0.3s;
     -moz-transition: all 0.3s;
@@ -520,29 +521,29 @@
     transition: all 0.3s;
 }
 
-.home-award .experience-picture {
+.profile-award .experience-picture {
     display: none;
 }
 
 /* ---------------------------------------------- */
 /* ---------------------------------------------- */
 
-.home-technology {
+.profile-technology {
     text-align: center;
 }
 
-.home-technology > .container {
+.profile-technology > .container {
     width: 75%;
     margin: 0 auto;
     padding-top: 120px;
     padding-bottom: 70px;
 }
 
-.home-technology .block-title {
+.profile-technology .block-title {
     position: relative;
 }
 
-.home-technology .block-title h1 {
+.profile-technology .block-title h1 {
     position: relative;
     text-transform: uppercase;
     letter-spacing: 5px;
@@ -556,21 +557,21 @@
     color: #484848;
 }
 
-.home-technology .technologies {
+.profile-technology .technologies {
     padding-top: 80px;
 }
 
-.home-technology .technology {
+.profile-technology .technology {
     margin-bottom: 40px;
 }
 
-.home-technology .technology img {
+.profile-technology .technology img {
     width: 65px;
     height: 65px;
     margin: 0 auto;
 }
 
-.home-technology .details {
+.profile-technology .details {
     width: 90%;
     padding-top: 22px;
     padding-bottom: 20px;
@@ -581,7 +582,7 @@
     border-bottom: transparent;
 }
 
-.home-technology .technology h1 {
+.profile-technology .technology h1 {
     font-size: 16px;
     margin-top: 20px;
     margin-bottom: 12px;
@@ -590,14 +591,14 @@
     text-transform: uppercase;
 }
 
-.home-technology .technology p {
+.profile-technology .technology p {
     width: 90%;
     margin: 0 auto;
     font-family: SourceSansProRegular, serif;
     color: #848484;
 }
 
-.home-technology .technology ul {
+.profile-technology .technology ul {
     width: 90%;
     margin: 0 auto;
     background: #484848;
@@ -607,12 +608,12 @@
     text-align: left;
 }
 
-.home-technology .technology li {
+.profile-technology .technology li {
     font-family: SourceSansProRegular, serif;
     padding-left: 40px;
 }
 
-.home-technology .technology li i {
+.profile-technology .technology li i {
     font-size: 12px;
     margin-right: 10px;
 }
@@ -620,23 +621,23 @@
 /* ---------------------------------------------- */
 /* ---------------------------------------------- */
 
-.home-international {
+.profile-international {
     background: #484848;
     text-align: center;
 }
 
-.home-international > .container {
+.profile-international > .container {
     width: 75%;
     margin: 0 auto;
     padding-top: 120px;
     padding-bottom: 60px;
 }
 
-.home-international .block-title {
+.profile-international .block-title {
     position: relative;
 }
 
-.home-international .block-title h1 {
+.profile-international .block-title h1 {
     position: relative;
     text-transform: uppercase;
     letter-spacing: 5px;
@@ -650,17 +651,17 @@
     z-index: 1;
 }
 
-.home-international .langues {
+.profile-international .langues {
     margin-top: 75px;
     margin-bottom: 50px;
     text-align: center;
 }
 
-.home-international .langues .col {
+.profile-international .langues .col {
     margin-bottom: 30px;
 }
 
-.home-international .langues h1 {
+.profile-international .langues h1 {
     font-size: 15px;
     margin-top: 5px;
     margin-bottom: 12px;
@@ -670,11 +671,11 @@
     color: #fff;
 }
 
-.home-international .langues img {
+.profile-international .langues img {
     width: 80px;
 }
 
-.home-international .langues .level {
+.profile-international .langues .level {
     color: #fff;
     display: inline-block;
     padding: 7px 25px;
@@ -686,40 +687,40 @@
 /* ---------------------------------------------- */
 /* ---------------------------------------------- */
 
-.home-cool {
+.profile-cool {
     border-top: 10px solid #dadada;
     background-image: url(../img/BG/BG02.png);
     text-align: center;
 }
 
-.home-cool .row {
+.profile-cool .row {
     padding-top: 100px;
     padding-bottom: 95px;
     margin: 0;
 }
 
-.home-cool img {
+.profile-cool img {
     width: 100%;
     border: 6px solid #484848;
 }
 
-.home-cool h1 {
+.profile-cool h1 {
     font-size: 25px;
     font-family: SourceSansProRegular, serif;
     color: #484848;
     margin: 0;
 }
 
-.home-cool h1 i {
+.profile-cool h1 i {
     margin-left : 5px;
 }
 
-.home-cool #typeWriteHome-fr,
-.home-cool #typeWriteHome-en {
+.profile-cool #typeWriteProfile-fr,
+.profile-cool #typeWriteProfile-en {
     color: #80b5df!important;
 }
 
-.home-cool .button-about {
+.profile-cool .button-about {
     display: inline-block;
     margin-top: 30px;
     background: #80b5df;
@@ -738,7 +739,7 @@
     transition: all 0.3s;
 }
 
-.home-cool .button-about:hover {
+.profile-cool .button-about:hover {
     background: #6995b9;
     box-shadow: 0 2px 0 0 #fff;
     -webkit-transition: all 0.3s;

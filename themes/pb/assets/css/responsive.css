@@ -220,113 +220,113 @@
         width: 95%!important;
     }
 
-    .websites-hero {
+    .services-hero {
         height: 600px;
     }
 
-    .websites-hero > section {
+    .services-hero > section {
         padding-top: 135px;
     }
 
-    .websites-hero > h1 {
+    .services-hero > h1 {
         font-size: 30px;
     }
 
-    .websites-hero > h2,
-    .websites-hero > h3 {
+    .services-hero > h2,
+    .services-hero > h3 {
         font-size: 13px;
     }
 
-    .websites-services > .container {
+    .services-services > .container {
         padding-top: 60px;
         padding-bottom: 65px;
     }
 
-    .websites-services .intro {
+    .services-services .intro {
         width: 100%;
         font-size: 13px;
     }
 
-    .websites-services .services .col p {
+    .services-services .services .col p {
         width: 90%;
         font-size: 13px;
     }
 
-    .websites-realisations > .container {
+    .services-realisations > .container {
         padding-top: 70px;
         padding-bottom: 60px;
         width: 85%;
     }
 
-    .websites-casestudy > .container {
+    .services-casestudy > .container {
         padding-top: 50px;
         padding-bottom: 50px;
         width: 85%;
     }
 
-    .websites-casestudy .intro .cover-picture {
+    .services-casestudy .intro .cover-picture {
         height: 350px;
     }
 
-    .websites-casestudy .intro .details {
+    .services-casestudy .intro .details {
         text-align: left;
         margin-top: 15px!important;
     }
 
-    .websites-casestudy .intro .details ul {
+    .services-casestudy .intro .details ul {
         font-size: 12px;
     }
 
-    .websites-casestudy .intro .details ul li span:first-of-type {
+    .services-casestudy .intro .details ul li span:first-of-type {
         width: 100px;
     }
 
-    .websites-casestudy .step .container {
+    .services-casestudy .step .container {
         width: 100%;
     }
 
-    .websites-casestudy .step > .container > section {
+    .services-casestudy .step > .container > section {
         padding: 15px 30px;
     }
 
-    .websites-casestudy .logowork {
+    .services-casestudy .logowork {
         text-align: center;
     }
 
-    .websites-casestudy .logowork img {
+    .services-casestudy .logowork img {
         width: 80%;
     }
 
-    .websites-casestudy .logowork .panel {
+    .services-casestudy .logowork .panel {
         float: none;
     }
 
-    .websites-casestudy .logowork .finished {
+    .services-casestudy .logowork .finished {
         width: 70%;
         margin-top: 25px;
         margin-left: 0;
     }
 
-    .websites-testimonials .testimonial {
+    .services-testimonials .testimonial {
         width: 100%;
         padding: 20px 35px;
     }
 
-    .websites-testimonials .testimonial p {
+    .services-testimonials .testimonial p {
         column-count: 1;
     }
 
-    .websites-testimonials .container {
+    .services-testimonials .container {
         padding-top: 70px;
         padding-bottom: 50px;
     }
 
-    .websites-logos .container {
+    .services-logos .container {
         margin-top: 70px;
         margin-bottom: 50px;
     }
 
-    .websites-logos h1 {
+    .services-logos h1 {
         margin-bottom: 40px;
     }
 
@@ -496,7 +496,7 @@
 
 @media screen and (max-width: 992px) {
 
-    .home-education .content-container {
+    .profile-education .content-container {
         width: 100%;
     }
 
@@ -514,7 +514,34 @@
         margin-bottom: 30px;
     }
 
-    .websites-tabs .tabs i {
+    .services-ready > .container > .row {
+        display: inherit;
+    }
+
+    .services-ready h1 {
+        padding-bottom: 0;
+        margin-bottom: 10px;
+    }
+
+    .services-ready p {
+        text-align: center;
+    }
+
+    .services-ready p br {
+        display: none;
+    }
+
+    .services-ready button {
+        margin: 0 auto;
+        margin-top: 25px;
+        margin-bottom: 50px;
+    }
+
+    .services-shopify > .container > .row {
+        display: inherit;
+    }
+
+    .services-tabs .tabs i {
         font-size: 25px;
         margin-top: 45px;
     }
@@ -561,7 +588,7 @@
 /* BIG SCREEN */
 @media screen and (min-width: 1300px) {
 
-    .home-intro .key-info .col p,
+    .profile-intro .key-info .col p,
     .about-intro .hobbies .col p {
         width: 65%;
     }
