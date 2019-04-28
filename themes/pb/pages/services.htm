@@ -53,11 +53,13 @@ localeUrl[en] = "/services"
                         Reach out, tell me about your project and in a few weeks we'll be celebrating your first order!
                     {% endif %}
                     <a href="#contact-modal">
-                        {% if activeLocale == 'fr' %}
-                            Lancez-vous
-                        {% else %}
-                            Contact me
-                        {% endif %}
+                        <button>
+                            {% if activeLocale == 'fr' %}
+                                Lancez-vous
+                            {% else %}
+                                Contact me
+                            {% endif %}
+                        </button>
                     </a>
                 </p>
             </div>
@@ -87,16 +89,17 @@ localeUrl[en] = "/services"
 
         <div class="row valign-wrapper">
 
-            <div class="col l4 m4 valign professional-section-left" style="text-align: right">
+            <div class="col l4 m12 s12 valign professional-section-left" style="text-align: right">
                 <ul>
                     <li>
                         <h1>
+                            <img class="icon-left" src="{{ 'assets/img/icons/shop.svg'| theme }}">
                             {% if activeLocale == 'fr' %} 
                                 Thèmes magnifiques
                             {% else %}
                                 Beautiful themes
                             {% endif %}
-                            <img src="{{ 'assets/img/icons/shop.svg'| theme }}">
+                            <img class="icon-right" src="{{ 'assets/img/icons/shop.svg'| theme }}">
                         </h1>
                         <p>
                             {% if activeLocale == 'fr' %} 
@@ -112,12 +115,13 @@ localeUrl[en] = "/services"
                     </li>
                     <li>
                         <h1>
+                            <img class="icon-left" src="{{ 'assets/img/icons/products.svg'| theme }}">
                             {% if activeLocale == 'fr' %} 
                                 Gérer vos produits
                             {% else %}
                                 Manage your products
                             {% endif %}
-                            <img src="{{ 'assets/img/icons/products.svg'| theme }}">
+                            <img class="icon-right" src="{{ 'assets/img/icons/products.svg'| theme }}">
                         </h1>
                         <p>
                             {% if activeLocale == 'fr' %} 
@@ -133,12 +137,13 @@ localeUrl[en] = "/services"
                     </li>
                     <li>
                         <h1>
+                            <img class="icon-left" src="{{ 'assets/img/icons/domain.svg'| theme }}">
                             {% if activeLocale == 'fr' %} 
                                 Votre nom de domaine
                             {% else %}
                                 Your own domain name
                             {% endif %}
-                            <img src="{{ 'assets/img/icons/domain.svg'| theme }}">
+                            <img class="icon-right" src="{{ 'assets/img/icons/domain.svg'| theme }}">
                         </h1>
                         <p>
                             {% if activeLocale == 'fr' %} 
@@ -152,8 +157,8 @@ localeUrl[en] = "/services"
                     </li>
                 </ul>
             </div>
-            <div class="col l4 m4 valign"><img src="{{ 'assets/img/Mockup1.png'| theme }}" class="centered-mockup"></div>
-            <div class="col l4 m4 valign professional-section-right" style="text-align: left">
+            <div class="col l4 valign professional-section-center"><img src="{{ 'assets/img/Mockup1.png'| theme }}" class="centered-mockup"></div>
+            <div class="col l4 m12 s12 valign professional-section-right" style="text-align: left">
                 <ul>
                     <li>
                         <h1>
@@ -349,100 +354,12 @@ localeUrl[en] = "/services"
 
 <!------------------------------------------------>
 
-<section class="services-shopify" style="display: none">
-    
-    <div class="container">
-        
-        <h1>
-            {% if activeLocale == 'fr' %}
-                Pourquoi choisir Shopify ?
-            {% else %}
-                Why Shopify?
-            {% endif %}
-        </h1>
-
-        <div class="row valign-wrapper">
-
-            <div class="col l6 m12 s12 valign">
-                <img src="{{ 'assets/img/shopify-design2.png'| theme }}" style="width: 100%">
-            </div>
-
-            <div class="col l6 m12 s12">
-                <p>
-                    {% if activeLocale == 'fr' %}   
-                        Shopify est une plateforme de e-commerce très complète qui permet de créer une boutique en ligne et de vendre ses produits.
-                        Shopify est une solution entièrement hébergée ce qui vous offre la flexibilité de gérer votre business depuis n'importe quel endroit 
-                        avec une connexion internet. 
-                        Voici les fonctionnalités clés de Shopify.
-                    {% else %}
-                        Shopify is a complete commerce platform that lets you start, grow, and manage a business. 
-                        Shopify is completely cloud-based and hosted, which means you don’t have to worry about upgrading or maintaining software or web servers. 
-                        This gives you the flexibility to access and run your business from anywhere with an internet connection.
-                        Below are Shopify key features.
-                    {% endif %}
-                </p>
-                <ul>
-                    <li> 
-                        {% if activeLocale == 'fr' %} 
-                            Centaines de thèmes magnifiques
-                        {% else %}
-                            Thousands of beautiful themes
-                        {% endif %}
-                    </li>
-                    <li>
-                        {% if activeLocale == 'fr' %}
-                            Utilisez votre propre nom de domaine
-                        {% else %}
-                            Use your own domain name
-                        {% endif %}
-                    </li>
-                    <li>
-                        {% if activeLocale == 'fr' %}
-                            Gérer ses produits, collections, inventaire
-                        {% else %}
-                            Manage products, collections, inventory
-                        {% endif %}
-                    </li>
-                    <li>
-                        {% if activeLocale == 'fr' %}
-                            Créer des coupons et des codes de réduction pour vos clients
-                        {% else %}
-                            Create coupons and discount codes for your customers
-                        {% endif %}
-                    </li>
-                    <li>
-                        {% if activeLocale == 'fr' %}
-                            Accepter les paiements en ligne du monde entier
-                        {% else %}
-                            Process credit card payments directly through Shopify
-                        {% endif %}
-                    </li>
-                    <li>
-                        {% if activeLocale == 'fr' %}
-                            Plateforme blog intégrée pour créer vos articles de blog
-                        {% else %}
-                            Integrated blogging platform to create blog posts
-                        {% endif %}
-                    </li>
-                    <li> {% if activeLocale == 'fr' %} Rapport analytique détaillé sur votre boutique et vos clients {% else %} Advanced analytics reporting {% endif %} </li>
-                    <li> {% if activeLocale == 'fr' %} Module d'organisation de vos zones et prix de livraison {% else %} Shipping carrier integration {% endif %} </li>
-                </ul>
-            </div>
-
-        </div>
-
-    </div>
-    
-</section>
-
-<!------------------------------------------------>
-
 <section class="services-stores">
 
     <div class="container-fluid">
 
         <div class="row store-wrapper">
-            <div class="col m6 valign-wrapper">
+            <div class="col l6 m12 s12 valign-wrapper">
                 <div class="valign store-description">
                     <h1>
                         <div class="separator"></div>
@@ -464,7 +381,7 @@ localeUrl[en] = "/services"
                     </a>
                 </div>
             </div>
-            <div class="col m6">
+            <div class="col l6 m12 s12 image-store-col">
                 <div class="image-store-wrapper">
                     <div class="image-store" style="background-image: url({{ 'assets/img/clients/eikosi-dyo1.jpg'| theme }})"></div>
                 </div>
@@ -472,12 +389,12 @@ localeUrl[en] = "/services"
         </div>
 
         <div class="row store-wrapper">
-            <div class="col m6">
+            <div class="col l6 m12 s12 image-store-col">
                 <div class="image-store-wrapper">
                     <div class="image-store" style="background-image: url({{ 'assets/img/clients/thomas-dal-farra1.jpg'| theme }})"></div>
                 </div>
             </div>
-            <div class="col m6 valign-wrapper">
+            <div class="col l6 m12 s12 valign-wrapper">
                 <div class="valign store-description">
                     <h1>
                         <div class="separator"></div>

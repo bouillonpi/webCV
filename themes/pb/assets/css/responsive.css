@@ -12,21 +12,21 @@
         width: 90%;
     }
 
-    .home-hero .call-to-action {
+    .profile-hero .call-to-action {
         width: 90%;
         margin: 0 auto;
         margin-top: 50px;
         text-align: center;
     }
 
-    .home-hero {
+    .profile-hero {
         background: #80b3de;
         height: auto;
         width:100%;
         margin-top: -70px;
     }
 
-    .home-hero .hero-content {
+    .profile-hero .hero-content {
         position: relative;
         margin: auto;
         width: 100%;
@@ -34,67 +34,67 @@
         margin-top: 70px;
     }
 
-    .home-hero h1 {
+    .profile-hero h1 {
         font-size: 25px;
         padding-top: 90px;
     }
 
-    .home-hero h2 {
+    .profile-hero h2 {
         font-size: 15px;
         margin: 0 auto;
         width: 70%;
         margin-top: 35px;
     }
 
-    .home-hero .call-to-action {
+    .profile-hero .call-to-action {
         padding-bottom: 65px;
     }
 
-    .home-intro .block-title h1 {
+    .profile-intro .block-title h1 {
         padding: 15px 35px;
     }
 
-    .home-intro > .container > img {
+    .profile-intro > .container > img {
         margin: 0 auto;
         margin-top: 50px;
     }
 
-    .home-intro .key-info .col p {
+    .profile-intro .key-info .col p {
         width: 100%;
         font-size: 13px;
     }
 
-    .home-intro .key-info {
+    .profile-intro .key-info {
         margin-top: 30px;
         margin-bottom: 40px;
     }
 
-    .home-education > .container {
+    .profile-education > .container {
         width: 85%!important;
     }
 
-    .home-education h1 {
+    .profile-education h1 {
         padding: 15px 30px;
     }
 
-    .home-education > .container > .row {
+    .profile-education > .container > .row {
         padding-top: 55px;
         padding-bottom: 50px;
     }
 
-    .home-education h2 {
+    .profile-education h2 {
         font-size: 14px;
     }
 
-    .home-education .cursus li {
+    .profile-education .cursus li {
         font-size: 13px;
     }
 
-    .home-timeline > .block-title > h1 {
+    .profile-timeline > .block-title > h1 {
         padding: 15px 35px;
     }
 
-    .home-timeline > .block-title {
+    .profile-timeline > .block-title {
         padding-top: 35px;
     }
 
@@ -102,7 +102,7 @@
         padding-bottom: 85px;
     }
 
-    .home-timeline > #cd-timeline {
+    .profile-timeline > #cd-timeline {
         width: 95%;
     }
 
@@ -127,63 +127,63 @@
         margin-bottom: 5px;
     }
 
-    .home-award .block-title h1 {
+    .profile-award .block-title h1 {
         padding: 15px 35px;
     }
 
-    .home-award > .container > img {
+    .profile-award > .container > img {
         margin-top: 55px;
     }
 
-    .home-award .container-fluid {
+    .profile-award .container-fluid {
         margin-top: 30px;
         padding-bottom: 50px;
     }
 
-    .home-award h2 {
+    .profile-award h2 {
         font-size: 14px;
     }
 
-    .home-award .details {
+    .profile-award .details {
         margin-top: 30px;
     }
 
-    .home-award .details li {
+    .profile-award .details li {
         font-size: 13px;
     }
 
-    .home-award .details li span:first-of-type {
+    .profile-award .details li span:first-of-type {
         width: 85px;
     }
 
-    .home-award .actions {
+    .profile-award .actions {
         padding-top: 5px;
         padding-bottom: 25px;
     }
 
-    .home-technology > .container {
+    .profile-technology > .container {
         width: 90%;
         padding-top: 65px;
         padding-bottom: 40px;
     }
 
-    .home-technology .technologies {
+    .profile-technology .technologies {
         padding-top: 50px;
     }
 
-    .home-technology .details {
+    .profile-technology .details {
         width: 100%;
     }
 
-    .home-technology .technology ul {
+    .profile-technology .technology ul {
         width: 100%;
     }
 
-    .home-technology .technology li {
+    .profile-technology .technology li {
         padding-left: 20px;
     }
 
-    .home-technology .technology p {
+    .profile-technology .technology p {
         font-size: 13px;
     }
 
@@ -195,21 +195,21 @@
         margin-left: -140px;
     }
 
-    .home-international > .container {
+    .profile-international > .container {
         padding-top: 80px;
         padding-bottom: 15px;
     }
 
-    .home-international .block-title h1 {
+    .profile-international .block-title h1 {
         padding: 15px 35px;
     }
 
-    .home-international .langues {
+    .profile-international .langues {
         margin-top: 45px;
     }
 
-    .home-cool #typeWriteHome-fr,
-    .home-cool #typeWriteHome-en {
+    .profile-cool #typeWriteProfile-fr,
+    .profile-cool #typeWriteProfile-en {
         width: 75%;
         margin: 0 auto;
         margin-top: 12px;
@@ -512,29 +512,6 @@
 
     footer.page-footer > .container > .row > .col:not(:last-of-type) {
         margin-bottom: 30px;
-    }
-
-    .services-ready > .container > .row {
-        display: inherit;
-    }
-
-    .services-ready h1 {
-        padding-bottom: 0;
-        margin-bottom: 10px;
-    }
-
-    .services-ready p {
-        text-align: center;
-    }
-
-    .services-ready p br {
-        display: none;
-    }
-
-    .services-ready button {
-        margin: 0 auto;
-        margin-top: 25px;
-        margin-bottom: 50px;
     }
 
     .services-shopify > .container > .row {
